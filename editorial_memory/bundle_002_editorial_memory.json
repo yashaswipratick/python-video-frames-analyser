@@ -1,0 +1,21 @@
+{
+  "memoryVersion": 1,
+  "bundleId": "analysis_bundle_002",
+  "status": "PENDING_DETAILED_CAPTURE",
+  "rule": "This file is a deliberate placeholder. No exact editorial timestamps, visual events or speech conclusions are invented here.",
+  "knownHistoricalContext": "An earlier conversational review of bundle 002 exists outside the repository memory layer. Its complete evidence-derived reasoning was not persisted, so this file must be replaced with the detailed review before final timeline consolidation.",
+  "requiredCapture": [
+    "bundle manifest/video list",
+    "source durations and hashes",
+    "per-video visual observations",
+    "exact speech ranges and useful dialogue",
+    "exact keep/remove/shorten ranges",
+    "closed visual event labels",
+    "B-roll candidates with exact source ranges",
+    "music candidates with exact source ranges",
+    "story-role mapping",
+    "cross-bundle relationships",
+    "repetition and continuity notes",
+    "evidence ambiguities"
+  ]
+}
