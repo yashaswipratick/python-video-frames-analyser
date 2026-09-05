@@ -1,132 +1,63 @@
 {
   "schemaVersion": 1,
-  "status": "AI_ANALYZED_PARTIAL_BUNDLE",
-  "purpose": "AI editorial decisions keyed by exact source video filename for downstream DaVinci Resolve timeline generation.",
-  "videos": {
-    "DJI_20260830123104_0221_D.MP4": {
-      "sourceFileName": "DJI_20260830123104_0221_D.MP4",
-      "durationMs": 29333,
-      "overallDecision": "KEEP_WITH_EDITS",
-      "recommendedEditedDurationMs": 23000,
-      "summary": "Single continuous talking-head intro. The destination is introduced clearly and the off-road trail creates the strongest curiosity hook. Reduce static talking-head time and cover explanatory speech with destination/road/off-road B-roll when available.",
-      "storyRole": "INTRO_AND_ADVENTURE_SETUP",
-      "timeline": [
-        {
-          "sourceStartMs": 0,
-          "sourceEndMs": 4560,
-          "action": "REMOVE",
-          "reason": "No speech; opening visual is less useful as a cold open than the later direct-to-camera introduction.",
-          "davinci": {
-            "track": "VIDEO",
-            "operation": "CUT"
-          }
-        },
-        {
-          "sourceStartMs": 4560,
-          "sourceEndMs": 7520,
-          "action": "KEEP",
-          "reason": "Natural greeting and vlog opening.",
-          "editPurpose": "HOOK_SETUP",
-          "davinci": {
-            "track": "VIDEO_AUDIO",
-            "operation": "KEEP"
-          }
-        },
-        {
-          "sourceStartMs": 7520,
-          "sourceEndMs": 16060,
-          "action": "KEEP_AS_PRIMARY_SPEECH_WITH_BROLL",
-          "reason": "Clearly establishes the destination and the distinctive temple-inside-the-hill premise. Static talking head should be visually supported by relevant travel footage if available.",
-          "editPurpose": "DESTINATION_SETUP",
-          "davinci": {
-            "track": "VIDEO_AUDIO",
-            "operation": "J_CUT_OR_L_CUT_WITH_BROLL"
-          }
-        },
-        {
-          "sourceStartMs": 16060,
-          "sourceEndMs": 20500,
-          "action": "KEEP",
-          "reason": "Strong narrative information leading into the off-road thread.",
-          "editPurpose": "DISCOVERY_SETUP"
-        },
-        {
-          "sourceStartMs": 20500,
-          "sourceEndMs": 24100,
-          "action": "STRONG_KEEP",
-          "reason": "Best hook in the clip: the off-road trail and the possibility of taking a car to the hilltop creates a concrete unresolved question/adventure thread.",
-          "editPurpose": "ADVENTURE_HOOK",
-          "priority": "HIGH",
-          "davinci": {
-            "track": "VIDEO_AUDIO",
-            "operation": "KEEP_AND_EMPHASIZE"
-          }
-        },
-        {
-          "sourceStartMs": 24100,
-          "sourceEndMs": 28000,
-          "action": "KEEP_AS_TRANSITION",
-          "reason": "Natural transition from setup into the journey/exploration section.",
-          "editPurpose": "TRANSITION",
-          "davinci": {
-            "track": "VIDEO_AUDIO",
-            "operation": "KEEP"
-          }
-        },
-        {
-          "sourceStartMs": 28000,
-          "sourceEndMs": 29333,
-          "action": "REMOVE_OR_TRIM",
-          "reason": "Trailing material adds little editorial value after the transition into the journey.",
-          "editPurpose": "PACING"
-        }
+  "analysisType": "AI_EDITOR_TIMELINE",
+  "generatedFrom": {
+    "analysisBundle": "analysis_bundle(2).zip",
+    "videosProcessed": 1,
+    "sourcePolicy": "Use only evidence present in the uploaded analysis bundle; no missing footage is inferred."
+  },
+  "DJI_20260830123104_0221_D.MP4": {
+    "sourceFileName": "DJI_20260830123104_0221_D.MP4",
+    "sourceRelativePath": "DJI_20260830123104_0221_D.MP4",
+    "sourceDurationMs": 29333,
+    "sourceDuration": "00:29.333",
+    "overallDecision": "KEEP_AS_INTRO",
+    "recommendedFinalUse": "Use this clip as the opening/setup for the Kailasagiri travel vlog, but trim the beginning/end and cover most of the static talking-head portion with destination/road B-roll when available.",
+    "recommendedUsedDurationMs": 20500,
+    "recommendedUsedDuration": "~00:20.5",
+    "strengths": [
+      "Clear direct-to-camera introduction after the initial framing settles.",
+      "Destination is introduced early, which gives the vlog a clear premise.",
+      "The temple-inside-the-hill detail creates curiosity.",
+      "The off-road trail/car angle is the strongest adventure hook in this clip.",
+      "Final sentence provides a natural transition into the journey."
+    ],
+    "weaknesses": [
+      "First few seconds are poorly framed because the subject is turned away from the camera.",
+      "The clip is visually repetitive because it remains a close talking-head shot for almost the entire duration.",
+      "The ending frame becomes tighter and is less useful as a final shot."
+    ],
+    "frameEvidence": [
+      {"timestampMs": 0, "timestamp": "00:00.000", "frameFile": "frames/frame_0001.jpg", "visualAssessment": "Tight side-profile/turned-away talking-head composition; weak opening frame.", "visualDecision": "CUT"},
+      {"timestampMs": 5000, "timestamp": "00:05.000", "frameFile": "frames/frame_0002.jpg", "visualAssessment": "Subject faces camera; usable direct-to-camera composition.", "visualDecision": "KEEP"},
+      {"timestampMs": 10000, "timestamp": "00:10.000", "frameFile": "frames/frame_0003.jpg", "visualAssessment": "Centered talking-head framing with face clearly visible.", "visualDecision": "KEEP_OR_COVER_WITH_BROLL"},
+      {"timestampMs": 14331, "timestamp": "00:14.331", "frameFile": "frames/frame_0004.jpg", "visualAssessment": "Centered talking-head shot; expression supports active delivery but remains visually static.", "visualDecision": "KEEP_OR_COVER_WITH_BROLL"},
+      {"timestampMs": 15000, "timestamp": "00:15.000", "frameFile": "frames/frame_0005.jpg", "visualAssessment": "Clear face-forward composition; suitable for the temple explanation, but B-roll would improve visual variety.", "visualDecision": "KEEP_OR_COVER_WITH_BROLL"},
+      {"timestampMs": 20000, "timestamp": "00:20.000", "frameFile": "frames/frame_0006.jpg", "visualAssessment": "Clear face-forward frame aligned with the off-road discussion; visually static but editorially important speech beat.", "visualDecision": "KEEP_AUDIO_AND_PREFER_BROLL"},
+      {"timestampMs": 25000, "timestamp": "00:25.000", "frameFile": "frames/frame_0007.jpg", "visualAssessment": "Face-forward transition section; usable as a brief on-camera handoff to the journey.", "visualDecision": "KEEP"},
+      {"timestampMs": 28661, "timestamp": "00:28.661", "frameFile": "frames/frame_0008.jpg", "visualAssessment": "Tighter/lower framing that is less useful as a closing frame.", "visualDecision": "CUT"},
+      {"timestampMs": 29332, "timestamp": "00:29.332", "frameFile": "frames/frame_0009.jpg", "visualAssessment": "End-of-clip frame; not needed for the edited intro.", "visualDecision": "CUT"}
+    ],
+    "timeline": [
+      {"startMs": 0, "endMs": 4560, "start": "00:00.000", "end": "00:04.560", "decision": "REMOVE", "decisionScore": 0.98, "reason": "Weak opening composition with the subject turned away and no speech yet.", "editAction": "DELETE"},
+      {"startMs": 4560, "endMs": 7520, "start": "00:04.560", "end": "00:07.520", "decision": "KEEP", "decisionScore": 0.84, "reason": "Natural greeting and vlog opening.", "speechSummary": "Greeting / welcome to the vlog.", "editAction": "KEEP", "audioAction": "KEEP", "visualAction": "FACE_TO_CAMERA"},
+      {"startMs": 7520, "endMs": 9920, "start": "00:07.520", "end": "00:09.920", "decision": "KEEP_WITH_BROLL", "decisionScore": 0.90, "reason": "Introduces the destination. The speech is useful, while the static talking-head visual can be replaced or covered with journey/destination footage.", "speechSummary": "Going to Kailasagiri Hills today.", "editAction": "J_CUT_OR_L_CUT", "audioAction": "KEEP", "visualAction": "PREFER_BROLL", "brollSuggestion": ["Car starting / leaving home", "Driving POV", "Road footage", "Destination establishing shot if available"]},
+      {"startMs": 9920, "endMs": 15820, "start": "00:09.920", "end": "00:15.820", "decision": "KEEP_SHORTEN", "decisionScore": 0.78, "reason": "The temple-inside-the-hill explanation is useful, but the spoken explanation contains repetition around the hill/inside wording. Preserve the core fact and remove redundant wording during the final cut.", "speechSummary": "Famous temple; temple is built inside the hill.", "editAction": "KEEP_CORE_SENTENCE_AND_TRIM_REPETITION", "audioAction": "KEEP_AFTER_TRIM", "visualAction": "COVER_WITH_DESTINATION_BROLL_WHEN_AVAILABLE"},
+      {"startMs": 15820, "endMs": 24100, "start": "00:15.820", "end": "00:24.100", "decision": "STRONG_KEEP", "decisionScore": 0.96, "reason": "This is the strongest story hook in the clip: the existence of an off-road trail where the car can potentially be taken toward the hilltop. It creates an open question that can pull the viewer into the journey.", "speechSummary": "There is reportedly an off-road trail where a car can be taken toward the hill top.", "editAction": "KEEP", "audioAction": "KEEP", "visualAction": "PREFER_OFFROAD_OR_DRIVING_BROLL", "brollSuggestion": ["Off-road trail", "Car POV on rough road", "Trail entrance", "Hill road / ascent"]},
+      {"startMs": 24100, "endMs": 28000, "start": "00:24.100", "end": "00:28.000", "decision": "KEEP_TRANSITION", "decisionScore": 0.74, "reason": "Natural handoff from setup into the journey. Keep it short and use it to cut directly into the next travel shot.", "speechSummary": "Let's go explore and see what we find at Kailasagiri.", "editAction": "KEEP_AND_CUT_TO_NEXT_CLIP", "audioAction": "KEEP", "visualAction": "FACE_OR_QUICK_BROLL"},
+      {"startMs": 28000, "endMs": 29333, "start": "00:28.000", "end": "00:29.333", "decision": "REMOVE", "decisionScore": 0.93, "reason": "No additional story value; the final framing is less useful and the transition is already complete.", "editAction": "DELETE"}
+    ],
+    "daVinciAssembly": {
+      "recommendedSequence": [
+        {"sourceInMs": 4560, "sourceOutMs": 7520, "action": "KEEP", "notes": "Opening greeting."},
+        {"sourceInMs": 7520, "sourceOutMs": 24100, "action": "KEEP_WITH_BROLL_OVERLAY", "notes": "Use speech as the spine; replace/cover talking-head visuals with relevant travel footage where available."},
+        {"sourceInMs": 24100, "sourceOutMs": 28000, "action": "KEEP", "notes": "Transition straight into the next journey clip."}
       ],
-      "speech": {
-        "languageDetected": "hi",
-        "transcriptQuality": "GOOD_WITH_HINGLISH_PHONETIC_VARIATIONS",
-        "speechSegments": [
-          {
-            "startMs": 4560,
-            "endMs": 24100,
-            "editorialRole": "INTRO_DESTINATION_AND_ADVENTURE_SETUP"
-          },
-          {
-            "startMs": 24100,
-            "endMs": 28000,
-            "editorialRole": "TRANSITION_TO_EXPLORATION"
-          }
-        ]
-      },
-      "visual": {
-        "sceneCountDetected": 1,
-        "sceneDetectionNote": "PySceneDetect identified one continuous camera scene; editorial beats are finer-grained than camera-cut boundaries.",
-        "visualEditorialAssessment": "Talking-head intro with clear subject visibility and usable framing. Later framing is more useful than the opening moment. Static delivery should be broken up with B-roll rather than removed wholesale because the speech establishes the vlog premise."
-      },
-      "brollRecommendations": [
-        {
-          "coverSpeech": "Destination introduction",
-          "preferredVisuals": ["driving POV", "road", "destination sign", "hill", "temple exterior"]
-        },
-        {
-          "coverSpeech": "Temple inside the hill",
-          "preferredVisuals": ["hill entrance", "cave/temple", "destination close-up"]
-        },
-        {
-          "coverSpeech": "Off-road trail / car access",
-          "preferredVisuals": ["car", "rough road", "off-road trail", "hill climb"]
-        }
+      "removeSourceRanges": [
+        {"startMs": 0, "endMs": 4560, "range": "00:00.000-00:04.560"},
+        {"startMs": 28000, "endMs": 29333, "range": "00:28.000-00:29.333"}
       ],
-      "daVinci": {
-        "assemblyOrder": 1,
-        "recommendedSequence": [
-          "KEEP 4560-7520",
-          "BROLL_OVER 7520-16060",
-          "KEEP/BROLL 16060-20500",
-          "EMPHASIZE 20500-24100",
-          "KEEP 24100-28000",
-          "TRIM 28000-29333"
-        ]
-      }
+      "targetEditorialRole": "VLOG_INTRO_AND_SETUP"
     }
   }
 }
