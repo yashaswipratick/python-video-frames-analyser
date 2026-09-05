@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "sourceTimeline": "edit_timeline.json",
+  "assemblyName": "Kaiwara_Kailasagiri_Final_Edit",
+  "targetDuration": "08:00-10:30",
+  "rawOriginalsMustRemainUntouched": true,
+  "tracks": {
+    "V1": "primary_story",
+    "V2": "broll_overlays",
+    "A1": "source_dialogue_and_natural_sound",
+    "A2": "optional_external_music"
+  },
+  "mainTimeline": [
+    {"order":1,"section":"HOOK","sourceFile":"DJI_20260830123104_0221_D.MP4","sourceStart":"00:04.560","sourceEnd":"00:24.120","mediaRole":"speech-driven","reason":"Fast hook: hill/temple premise plus off-road promise."},
+    {"order":2,"section":"JOURNEY_START","sourceFile":"DJI_20260830123736_0222_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:03.285","mediaRole":"music-driven","reason":"Fast visual transition out of the hook."},
+    {"order":3,"section":"PLAN","sourceFile":"DJI_20260830124910_0224_D.MP4","sourceStart":"00:03.660","sourceEnd":"00:16.820","mediaRole":"speech-driven","reason":"Trip start, distance and traffic."},
+    {"order":4,"section":"FOOD_STOP","sourceFile":"DJI_20260830125616_0226_D.MP4","sourceStart":"00:06.000","sourceEnd":"00:26.000","mediaRole":"speech-driven","reason":"Keep the natural breakfast/local-food interaction compact."},
+    {"order":5,"section":"BREAKFAST_PROBLEM","sourceFile":"DJI_20260830141434_0233_D.MP4","sourceStart":"00:02.640","sourceEnd":"00:27.640","mediaRole":"speech-driven","reason":"Breakfast plan fails; real interruption creates story movement."},
+    {"order":6,"section":"LOCAL_FOOD_DISCOVERY","sourceFile":"DJI_20260830141434_0233_D.MP4","sourceStart":"00:35.630","sourceEnd":"00:55.630","mediaRole":"speech-driven","reason":"Compact local thali/food discovery."},
+    {"order":7,"section":"VILLAGE_ROAD_BRIDGE","sourceFile":"DJI_20260830141434_0233_D.MP4","sourceStart":"01:01.500","sourceEnd":"01:21.500","mediaRole":"speech-driven","reason":"Village-road progression without overlong driving footage."},
+    {"order":8,"section":"TEA_STOP","sourceFile":"DJI_20260830144306_0241_D.MP4","sourceStart":"00:01.070","sourceEnd":"00:20.250","mediaRole":"speech-driven","reason":"Human/local texture before the push to the destination."},
+    {"order":9,"section":"URGENCY","sourceFile":"DJI_20260830144306_0241_D.MP4","sourceStart":"00:20.250","sourceEnd":"00:42.830","mediaRole":"speech-driven","reason":"Late-day urgency motivates the destination push."},
+    {"order":10,"section":"HILL_APPROACH","sourceFile":"DJI_20260830150748_0245-1_D.MP4","sourceStart":"00:00.620","sourceEnd":"00:11.500","mediaRole":"speech-driven","reason":"Clean hill approach/reveal."},
+    {"order":11,"section":"DESTINATION_CONTEXT","sourceFile":"DJI_20260830151143_0247_D.MP4","sourceStart":"00:01.650","sourceEnd":"00:23.950","mediaRole":"speech-driven","reason":"Concise destination approach context."},
+    {"order":12,"section":"DESTINATION_REVEAL","sourceFile":"DJI_20260830153327_0251_D.MP4","sourceStart":"00:06.360","sourceEnd":"00:28.720","mediaRole":"speech-driven","reason":"Best short destination/temple-inside-hill explanation."},
+    {"order":13,"section":"TREK_REACTION","sourceFile":"DJI_20260830153327_0251_D.MP4","sourceStart":"00:29.960","sourceEnd":"00:50.960","mediaRole":"speech-driven","reason":"Walking/physical-reaction beat; trim before repetition."},
+    {"order":14,"section":"ADVENTURE_SETUP","sourceFile":"DJI_20260830162708_0279_D.MP4","sourceStart":"00:05.840","sourceEnd":"00:25.720","mediaRole":"speech-driven","reason":"Parking/access changes lead naturally into off-road decision."},
+    {"order":15,"section":"ADVENTURE_HANDOFF","sourceFile":"DJI_20260830164511_0283_D.MP4","sourceStart":"01:40.860","sourceEnd":"02:03.050","mediaRole":"speech-driven","reason":"Use the clean car/truck joke as the bridge to the payoff."},
+    {"order":16,"section":"MAIN_ADVENTURE","sourceFile":"DJI_20260830173839_0290_D.MP4","sourceStart":"00:20.140","sourceEnd":"01:23.570","mediaRole":"speech-driven","reason":"Primary off-road payoff: steep rocky climb and authentic reaction."},
+    {"order":17,"section":"ADVENTURE_SECOND_ANGLE","sourceFile":"DJI_20260830165745_0285_D.MP4","sourceStart":"00:03.860","sourceEnd":"00:45.000","mediaRole":"music-driven","reason":"Second visual angle to extend the adventure without repeating the same camera position."},
+    {"order":18,"section":"ADVENTURE_ESCALATION","sourceFile":"DJI_20260830173839_0290_D.MP4","sourceStart":"01:28.750","sourceEnd":"02:00.000","mediaRole":"speech-driven","reason":"Escalate briefly with stronger terrain; stop before repetition."},
+    {"order":19,"section":"HUMAN_RESET","sourceFile":"DJI_20260830180725_0291_D.MP4","sourceStart":"00:00.400","sourceEnd":"00:15.400","mediaRole":"speech-driven","reason":"Short passenger/human reaction reset."},
+    {"order":20,"section":"RETURN","sourceFile":"DJI_20260830180912_0292_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.141","mediaRole":"music-driven","reason":"Compact scenic descent and reset."},
+    {"order":21,"section":"USEFUL_INFO","sourceFile":"DJI_20260830181824_0294_D.MP4","sourceStart":"00:18.580","sourceEnd":"00:53.580","mediaRole":"speech-driven","reason":"Only the useful practical driving/road information."},
+    {"order":22,"section":"LATE_DESTINATION","sourceFile":"DJI_20260830182058_0295_D.MP4","sourceStart":"00:00.620","sourceEnd":"00:20.620","mediaRole":"speech-driven","reason":"Late destination observation; visual semantics require final confirmation."},
+    {"order":23,"section":"WILDLIFE_MOMENT","sourceFile":"DJI_20260830182750_0300_D.MP4","sourceStart":"02:08.370","sourceEnd":"02:19.490","mediaRole":"speech-driven","reason":"Spontaneous empty-road/monkey observation; use only if visuals support it."},
+    {"order":24,"section":"SUNSET_REFLECTION","sourceFile":"DJI_20260830182750_0300_D.MP4","sourceStart":"02:24.000","sourceEnd":"02:54.000","mediaRole":"music-driven","reason":"Short emotional reflection/sunset section; keep only the strongest lines/visuals."},
+    {"order":25,"section":"FINAL_VERDICT","sourceFile":"DJI_20260830185028_0302_D.MP4","sourceStart":"00:07.150","sourceEnd":"00:30.070","mediaRole":"speech-driven","reason":"Strongest final assessment of the adventure and trail."},
+    {"order":26,"section":"OUTRO","sourceFile":"DJI_20260830185028_0302_D.MP4","sourceStart":"00:30.070","sourceEnd":"00:40.070","mediaRole":"speech-driven","reason":"Short clean CTA; stop before repeated closing language."}
+  ],
+  "brollOverlays": [
+    {"id":"B001","timelineStart":"00:03.000","sourceFile":"DJI_20260830141434_0233_D.MP4","sourceStart":"01:01.500","sourceEnd":"01:07.500","track":"V2","reason":"Road/village visual cover for the trip-plan speech."},
+    {"id":"B002","timelineStart":"00:50.000","sourceFile":"DJI_20260830141434_0233_D.MP4","sourceStart":"00:35.630","sourceEnd":"00:45.630","track":"V2","reason":"Food visuals over breakfast-problem narration."},
+    {"id":"B003","timelineStart":"03:15.000","sourceFile":"DJI_20260830150748_0245_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.000","track":"V2","reason":"Destination visual reveal over approach/context speech."},
+    {"id":"B004","timelineStart":"03:35.000","sourceFile":"DJI_20260830151054_0246_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.000","track":"V2","reason":"Clean establishing mountain visual cover."},
+    {"id":"B005","timelineStart":"04:22.000","sourceFile":"DJI_20260830163649_0281_D.MP4","sourceStart":"00:22.110","sourceEnd":"00:30.110","track":"V2","reason":"Rough-road/off-road proof over setup speech."},
+    {"id":"B006","timelineStart":"04:42.000","sourceFile":"DJI_20260830165231_0284_D.MP4","sourceStart":"00:28.430","sourceEnd":"00:38.430","track":"V2","reason":"Terrain/vehicle cutaway over the first off-road payoff."},
+    {"id":"B007","timelineStart":"05:35.000","sourceFile":"DJI_20260830165745_0285_D.MP4","sourceStart":"01:00.000","sourceEnd":"01:10.000","track":"V2","reason":"Alternate off-road angle to avoid repetitive same-camera coverage."},
+    {"id":"B008","timelineStart":"06:12.000","sourceFile":"DJI_20260830173839_0290_D.MP4","sourceStart":"03:30.950","sourceEnd":"03:40.950","track":"V2","reason":"Late route/barrier observation as a visual punctuation beat."},
+    {"id":"B009","timelineStart":"07:42.000","sourceFile":"DJI_20260830182750_0300_D.MP4","sourceStart":"02:24.000","sourceEnd":"02:34.000","track":"V2","reason":"Sunset visual cover for reflection speech; confirm the frames first."}
+  ],
+  "musicCues": [
+    {"id":"M001","timelineStart":"00:22.845","duration":"00:03.285","sourceVideo":"DJI_20260830123736_0222_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:03.285","role":"JOURNEY_TRANSITION"},
+    {"id":"M002","timelineStart":"03:15.000","duration":"00:08.000","sourceVideo":"DJI_20260830150748_0245_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.000","role":"DESTINATION_REVEAL"},
+    {"id":"M003","timelineStart":"06:55.336","duration":"00:08.141","sourceVideo":"DJI_20260830180912_0292_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.141","role":"RETURN_RESET"},
+    {"id":"M004","timelineStart":"08:26.456","duration":"00:20.000","sourceVideo":"DJI_20260830182750_0300_D.MP4","sourceStart":"02:24.000","sourceEnd":"02:44.000","role":"SUNSET_REFLECTION"}
+  ],
+  "musicPolicy": {
+    "externalAudioFile": null,
+    "requiredForFinal": true,
+    "instruction": "Place a licensed music bed on A2 over musicCues, duck under dialogue, and let natural sound breathe between beds. No unknown or unlicensed track is assumed."
+  },
+  "expectedOutcome": {
+    "mechanicalAssembly": "High",
+    "manualWorkAfterImport": [
+      "verify B-roll visual match",
+      "choose licensed music",
+      "mix dialogue/music/ambience",
+      "fine-tune pacing",
+      "color grade",
+      "captions and titles",
+      "final review"
+    ]
+  }
+}
