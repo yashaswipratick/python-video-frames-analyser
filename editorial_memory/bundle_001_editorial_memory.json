@@ -1,0 +1,95 @@
+{
+  "memoryVersion": 1,
+  "bundleId": "analysis_bundle_001",
+  "status": "DETAILED_PERSISTED_FROM_EDITORIAL_REVIEW",
+  "scope": "Opening through early journey, breakfast/local-food stop, journey progression, tea/urgency, first hill/destination approach.",
+  "sourceOfTruth": "Evidence from bundle 001 as previously reviewed and the corresponding exact range decisions persisted in edit_timeline.json.",
+  "editorialObjective": "Establish the premise quickly, preserve the natural breakfast problem and local moments, accelerate the journey, and build anticipation toward the hill/adventure payoff.",
+  "storyBeats": [
+    {"beat":"HOOK","detail":"Creator introduces the trip, temple-in-the-hill premise and an off-road promise. The first seconds before useful setup are weak and should be removed."},
+    {"beat":"PLAN","detail":"Journey starts with distance/traffic context and an intention to stop for breakfast."},
+    {"beat":"FOOD_STOP","detail":"Breakfast search becomes a natural small problem/stop rather than a generic restaurant insertion."},
+    {"beat":"UNEXPECTED_EVENT","detail":"Breakfast plan fails/changes, creating room for a local food/thali discovery and a more authentic journey."},
+    {"beat":"JOURNEY","detail":"Village/single-lane-road travel and changing scenery provide progression toward the destination."},
+    {"beat":"LOCAL_INTERACTION","detail":"Bike/tea/local interactions provide human texture and prevent the journey from becoming only road footage."},
+    {"beat":"URGENCY","detail":"Realization that it is already late creates a reason to stop meandering and push toward the destination."},
+    {"beat":"DESTINATION_REVEAL","detail":"Hill/landscape footage starts transitioning the story from travel toward the destination/adventure payoff."}
+  ],
+  "videos": {
+    "DJI_20260830123104_0221_D.MP4": {
+      "sourceDuration":"00:29.333","overallDecision":"KEEP","storyRole":"HOOK",
+      "selectedRanges":[
+        {"start":"00:04.560","end":"00:24.120","decision":"KEEP","mediaRole":"speech-driven","events":["People","Close-up"],"editorialReason":"Strongest opening setup: destination, temple-in-hill premise and off-road trail tease."},
+        {"start":"00:24.120","end":"00:29.300","decision":"KEEP","mediaRole":"speech-driven","events":["People","Close-up"],"editorialReason":"Continuation of opening premise and bridge into the journey."}
+      ],
+      "removedRanges":[{"start":"00:00.000","end":"00:04.560","reason":"Weak opening before useful greeting/setup."}],
+      "retentionNote":"This is the strongest known bundle-001 opening anchor; later adventure footage can be used as a cold-open flash-forward if final consolidation improves curiosity."},
+    "DJI_20260830123736_0222_D.MP4": {"sourceDuration":"00:03.285","overallDecision":"KEEP_FOR_MUSIC","storyRole":"JOURNEY","selectedRanges":[{"start":"00:00.000","end":"00:03.285","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["B-roll","Transition Shot"],"editorialReason":"Short speechless connector after hook."}]},
+    "DJI_20260830124309_0223_D.MP4": {"sourceDuration":"00:14.514","overallDecision":"REMOVE","storyRole":null,"selectedRanges":[],"removedRanges":[{"start":"00:00.000","end":"00:14.514","reason":"No useful detected speech/story evidence."}]},
+    "DJI_20260830124910_0224_D.MP4": {
+      "sourceDuration":"00:45.913","overallDecision":"KEEP","storyRole":"PLAN",
+      "selectedRanges":[
+        {"start":"00:03.660","end":"00:16.820","decision":"KEEP","mediaRole":"speech-driven","events":["Driving","Road","Vehicle"],"editorialReason":"Establishes journey start, distance and traffic."},
+        {"start":"00:17.700","end":"00:38.400","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Driving","Road"],"editorialReason":"Breakfast search introduces a natural small problem/stop."}
+      ],
+      "removedRanges":[{"start":"00:38.400","end":"00:45.913","reason":"Repetition after breakfast plan is established."}]},
+    "DJI_20260830125037_0225_D.MP4": {"sourceDuration":"00:07.741","overallDecision":"KEEP_AS_TRANSITION","storyRole":"JOURNEY","selectedRanges":[{"start":"00:01.420","end":"00:03.900","decision":"KEEP_AS_TRANSITION","mediaRole":"speech-driven","events":["Driving","Road","Vehicle"],"editorialReason":"Brief bridge from plan into journey."}]},
+    "DJI_20260830125616_0226_D.MP4": {"sourceDuration":"00:45.000","overallDecision":"KEEP_WITH_BROLL","storyRole":"FOOD_STOP","selectedRanges":[{"start":"00:06.000","end":"00:39.630","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Food","People"],"editorialReason":"Natural local-search moment around the idli/breakfast stop."}]},
+    "DJI_20260830125616_0227_D.MP4": {"sourceDuration":"00:05.000","overallDecision":"KEEP_FOR_MUSIC","storyRole":"FOOD_STOP","selectedRanges":[{"start":"00:00.000","end":"00:05.000","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Food","B-roll"],"editorialReason":"Short speechless supporting food footage."}]},
+    "DJI_20260830125616_0230-1_D.MP4": {"sourceDuration":"00:28.100","overallDecision":"KEEP_FOR_MUSIC","storyRole":"FOOD_STOP","selectedRanges":[{"start":"00:00.000","end":"00:12.000","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Food","People","Close-up"],"editorialReason":"Local-food interaction texture; prioritize visuals over fragmented speech."}]},
+    "DJI_20260830125616_0239-2_D.MP4": {"sourceDuration":"00:24.100","overallDecision":"KEEP_FOR_MUSIC","storyRole":"FOOD_STOP","selectedRanges":[{"start":"00:00.000","end":"00:13.500","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Food","People","Close-up"],"editorialReason":"Natural food interaction and reaction texture."}]},
+    "DJI_20260830140155_0229_D.MP4": {"sourceDuration":"01:33.600","overallDecision":"REVIEW","storyRole":"JOURNEY","selectedRanges":[],"editorialReason":"Long mostly speechless clip; retain only as a visual comparison pool until stronger travel sections are ranked."},
+    "DJI_20260830140709_0230_D.MP4": {
+      "sourceDuration":"00:25.000","overallDecision":"KEEP","storyRole":"FOOD_STOP",
+      "selectedRanges":[
+        {"start":"00:02.880","end":"00:09.500","decision":"KEEP","mediaRole":"speech-driven","events":["Food","People"],"editorialReason":"Positive idli/local-food moment."},
+        {"start":"00:09.740","end":"00:10.840","decision":"KEEP_AS_TRANSITION","mediaRole":"speech-driven","events":["Vehicle","People"],"editorialReason":"Small local observation with human texture."}
+      ],
+      "removedRanges":[{"start":"00:17.300","end":"00:21.620","reason":"Fragmentary/repetitive speech with low story value."}]},
+    "DJI_20260830140830_0231_D.MP4": {"sourceDuration":"00:24.300","overallDecision":"KEEP_FOR_MUSIC","storyRole":"FOOD_STOP","selectedRanges":[{"start":"00:00.000","end":"00:24.300","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Food","B-roll"],"editorialReason":"Speechless breakfast/restaurant cutaway pool."}]},
+    "DJI_20260830141219_0232_D.MP4": {
+      "sourceDuration":"01:18.900","overallDecision":"KEEP_WITH_BROLL","storyRole":"JOURNEY",
+      "selectedRanges":[
+        {"start":"00:04.820","end":"00:58.690","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Road","Driving","Vehicle"],"editorialReason":"Long natural journey narration; use selectively over changing visuals."},
+        {"start":"01:06.950","end":"01:07.630","decision":"KEEP_AS_TRANSITION","mediaRole":"speech-driven","events":["People"],"editorialReason":"Brief ending line/sound useful as a bridge if context fits."}
+      ]},
+    "DJI_20260830141434_0233_D.MP4": {
+      "sourceDuration":"01:32.500","overallDecision":"STRONG_KEEP","storyRole":"PROBLEM",
+      "selectedRanges":[
+        {"start":"00:02.640","end":"00:35.630","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["People","Food"],"editorialReason":"Breakfast plan fails; real-life interruption adds story value."},
+        {"start":"00:35.630","end":"01:01.500","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Food","People"],"editorialReason":"Lunch/thali discovery and local experience."},
+        {"start":"01:01.500","end":"01:29.500","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Road","Driving","Landscape"],"editorialReason":"Moves from food into village/single-lane-road journey toward destination."}
+      ],
+      "continuityNote":"This is a key pivot: the day does not proceed exactly as planned, which makes the journey feel lived rather than scripted."},
+    "DJI_20260830141627_0234_D.MP4": {"sourceDuration":"01:07.100","overallDecision":"REVIEW","storyRole":"JOURNEY","selectedRanges":[],"editorialReason":"Mostly speechless visual travel candidate; reserve until compared with stronger scenic/adventure footage."},
+    "DJI_20260830141844_0235_D.MP4": {"sourceDuration":"00:12.400","overallDecision":"KEEP","storyRole":"UNEXPECTED_EVENT","selectedRanges":[{"start":"00:00.750","end":"00:04.130","decision":"KEEP","mediaRole":"speech-driven","events":["Vehicle","People"],"editorialReason":"Natural reaction/interaction about a bike; useful texture if it fits the story rhythm."}]},
+    "DJI_20260830141949_0236_D.MP4": {"sourceDuration":"00:50.500","overallDecision":"KEEP_FOR_MUSIC","storyRole":"JOURNEY","selectedRanges":[{"start":"00:00.000","end":"00:50.500","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Landscape","Road","Driving"],"editorialReason":"Calm scenic travel breathing space; trim to the strongest visual section later."}]},
+    "DJI_20260830142212_0237_D.MP4": {"sourceDuration":"01:54.800","overallDecision":"KEEP_FOR_MUSIC","storyRole":"JOURNEY","selectedRanges":[{"start":"01:29.000","end":"01:36.500","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Landscape","Road","B-roll"],"editorialReason":"Short late visual/reaction candidate; retain pending comparison with stronger scenic footage."}]},
+    "DJI_20260830142416_0238_D.MP4": {"sourceDuration":"00:11.300","overallDecision":"KEEP_FOR_MUSIC","storyRole":"JOURNEY","selectedRanges":[{"start":"00:00.000","end":"00:11.300","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["B-roll","Transition Shot"],"editorialReason":"Short speechless connector."}]},
+    "DJI_20260830143533_0239_D.MP4": {"sourceDuration":"00:23.800","overallDecision":"KEEP_FOR_MUSIC","storyRole":"JOURNEY","selectedRanges":[{"start":"00:00.000","end":"00:23.800","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["B-roll","Transition Shot"],"editorialReason":"Speechless travel connector candidate."}]},
+    "DJI_20260830143621_0240_D.MP4": {"sourceDuration":"00:09.400","overallDecision":"KEEP","storyRole":"FOOD_STOP","selectedRanges":[{"start":"00:00.500","end":"00:09.000","decision":"KEEP","mediaRole":"speech-driven","events":["Food","People","Close-up"],"editorialReason":"Natural sugar/food-making local detail."}]},
+    "DJI_20260830144306_0241_D.MP4": {
+      "sourceDuration":"00:48.000","overallDecision":"STRONG_KEEP","storyRole":"JOURNEY",
+      "selectedRanges":[
+        {"start":"00:01.070","end":"00:20.250","decision":"KEEP","mediaRole":"speech-driven","events":["People","Food"],"editorialReason":"Tea stop and casual local moment."},
+        {"start":"00:20.250","end":"00:42.830","decision":"KEEP","mediaRole":"speech-driven","events":["Road","Driving"],"editorialReason":"Realization that it is already late adds urgency and explains the direct push to the destination."}
+      ]},
+    "DJI_20260830145638_0242_D.MP4": {"sourceDuration":"00:41.400","overallDecision":"KEEP_FOR_MUSIC","storyRole":"JOURNEY","selectedRanges":[{"start":"00:00.000","end":"00:41.400","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Road","Driving","Landscape"],"editorialReason":"Speechless travel progression candidate."}]},
+    "DJI_20260830145834_0243_D.MP4": {"sourceDuration":"00:54.100","overallDecision":"KEEP_FOR_MUSIC","storyRole":"JOURNEY","selectedRanges":[{"start":"00:00.000","end":"00:54.100","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Road","Driving","Landscape"],"editorialReason":"Speechless travel progression candidate; final sub-range to be chosen visually."}]},
+    "DJI_20260830150424_0244_D.MP4": {"sourceDuration":"01:39.200","overallDecision":"KEEP_FOR_MUSIC","storyRole":"JOURNEY","selectedRanges":[{"start":"00:00.000","end":"01:39.200","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Road","Driving","Landscape"],"editorialReason":"Long visual pool; use only strongest short sections to avoid repetition."}]},
+    "DJI_20260830150748_0245-1_D.MP4": {
+      "sourceDuration":"00:46.000","overallDecision":"STRONG_KEEP","storyRole":"DESTINATION_REVEAL",
+      "selectedRanges":[
+        {"start":"00:00.620","end":"00:11.500","decision":"KEEP","mediaRole":"speech-driven","events":["Landscape","Mountain"],"editorialReason":"Strong hill/destination approach observation."},
+        {"start":"00:30.480","end":"00:44.340","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Landscape","Lake/Water","People","Food"],"editorialReason":"Spontaneous water/fishing observation that breaks route monotony."}
+      ]},
+    "DJI_20260830150748_0245_D.MP4": {"sourceDuration":"00:37.500","overallDecision":"KEEP_FOR_MUSIC","storyRole":"DESTINATION_REVEAL","selectedRanges":[{"start":"00:00.000","end":"00:37.500","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Landscape","Mountain","B-roll"],"editorialReason":"Complementary hill-reveal visuals."}]},
+    "DJI_20260830151054_0246_D.MP4": {"sourceDuration":"00:16.100","overallDecision":"KEEP_FOR_MUSIC","storyRole":"DESTINATION_REVEAL","selectedRanges":[{"start":"00:00.000","end":"00:16.100","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Mountain","Landscape","Establishing Shot"],"editorialReason":"Short speechless destination reveal candidate."}]}
+  },
+  "crossBundleEditorialNotes": {
+    "bestNarrativeMaterial":"Problem/food pivot, tea/late realization, and destination approach are more editorially valuable than raw driving minutes.",
+    "musicPool":"Food close-ups, short connectors, scenic road sections and first hill reveals should remain available for later montage construction.",
+    "repetitionRisk":"Road footage is abundant; prefer visual progression and use only brief strongest portions.",
+    "futureNeed":"Compare these ranges against later-bundle adventure/destination evidence before finalizing the master timeline. Later off-road footage can fulfil the opening tease more strongly than early journey footage."
+  }
+}
