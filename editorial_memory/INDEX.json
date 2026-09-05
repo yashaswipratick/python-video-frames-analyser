@@ -32,8 +32,8 @@
     },
     "bundle_005": {
       "path": "editorial_memory/bundle_005_editorial_memory.json",
-      "status": "NOT_YET_PERSISTED",
-      "notes": "Bundle 005 is attached and local generated evidence is now available in the repository, but detailed LLM editorial reasoning has not yet been persisted."
+      "status": "DETAILED_PERSISTED",
+      "notes": "Late destination/return/closing material: steep-path and cow observation, sunset/camera experiment, spontaneous monkey/empty-road humor, sunset worth-it reflection, optional night epilogue, and final off-road verdict/outro. Deterministic evidence has AI vision pending, so unsupported visual labels are not persisted; bundle 004 frame-boundary continuation remains unverified."
     }
   },
   "generatedEvidence": {
