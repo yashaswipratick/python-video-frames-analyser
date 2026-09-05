@@ -1,0 +1,21 @@
+{
+  "memoryVersion": 1,
+  "bundleId": "analysis_bundle_003",
+  "status": "PENDING_DETAILED_CAPTURE",
+  "rule": "This file is a deliberate placeholder. No exact editorial timestamps, visual events or speech conclusions are invented here.",
+  "knownHistoricalContext": "Earlier review indicates that this bundle contains important destination-side material, including Kailasagiri/cave-temple exploration, people/crowd/local-interaction texture and footage relevant to the later adventure payoff. The exact evidence-derived reasoning was not persisted in the repository yet.",
+  "requiredCapture": [
+    "bundle manifest/video list",
+    "source durations and hashes",
+    "per-video visual observations",
+    "exact speech ranges and useful dialogue",
+    "exact keep/remove/shorten ranges",
+    "closed visual event labels",
+    "B-roll candidates with exact source ranges",
+    "music candidates with exact source ranges",
+    "destination/exploration story roles",
+    "cross-bundle relationships",
+    "repetition and continuity notes",
+    "evidence ambiguities"
+  ]
+}
