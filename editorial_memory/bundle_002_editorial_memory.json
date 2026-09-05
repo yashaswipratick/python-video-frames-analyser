@@ -1,21 +1,188 @@
 {
-  "memoryVersion": 1,
+  "memoryVersion": 2,
   "bundleId": "analysis_bundle_002",
-  "status": "PENDING_DETAILED_CAPTURE",
-  "rule": "This file is a deliberate placeholder. No exact editorial timestamps, visual events or speech conclusions are invented here.",
-  "knownHistoricalContext": "An earlier conversational review of bundle 002 exists outside the repository memory layer. Its complete evidence-derived reasoning was not persisted, so this file must be replaced with the detailed review before final timeline consolidation.",
-  "requiredCapture": [
-    "bundle manifest/video list",
-    "source durations and hashes",
-    "per-video visual observations",
-    "exact speech ranges and useful dialogue",
-    "exact keep/remove/shorten ranges",
-    "closed visual event labels",
-    "B-roll candidates with exact source ranges",
-    "music candidates with exact source ranges",
-    "story-role mapping",
-    "cross-bundle relationships",
-    "repetition and continuity notes",
-    "evidence ambiguities"
-  ]
+  "status": "DETAILED_PERSISTED_FROM_GENERATED_LOCAL_EVIDENCE",
+  "evidenceIndex": "editorial_memory/generated/editorial_evidence_index.json",
+  "editorialScope": "Destination approach and Kailasagiri-area exploration material between the early journey and later adventure footage. Bundle 002 strengthens the destination/reveal, crowd/traffic observation, local interaction, temple/hill context, walking/trek progression, heat/route texture and aerial-view intention.",
+  "importantBoundary": "The generated evidence layer preserves transcripts, exact timestamps, scenes, source identity and frame references. It does not itself assign semantic visual events; deterministic image metrics are unavailable for these repository copies. Therefore visual event labels below are used only where supported by the persisted prior visual review context; otherwise the range is explicitly marked for visual confirmation rather than inventing labels.",
+  "storyBeats": [
+    {"beat":"DESTINATION_APPROACH","detail":"The creator reaches the Kailasagiri/Kailasagiri-area approach and starts explaining the small route toward the hill and temple area."},
+    {"beat":"CROWD_OBSERVATION","detail":"The creator contrasts the area with an earlier visit several years ago, noting that it is now much more crowded/traffic-heavy. This is a useful lived observation and supports the sense that the place has become more popular."},
+    {"beat":"DESTINATION_REVEAL","detail":"The creator points out that the temple is inside the hill and explains the path in front, turning the visual destination into something the viewer can understand before the exploration."},
+    {"beat":"TREK_SETUP","detail":"The creator explains that the route continues upward on foot and reacts to the amount of walking, including fatigue and leg discomfort. This adds authentic physical experience rather than generic destination narration."},
+    {"beat":"LOCAL/HUMAN_TEXTURE","detail":"There are destination-area interactions/questions and observations around nearby organizations, signs/locations and people. Several ASR segments are low-confidence, so dialogue should be listen-checked before making it a major story beat."},
+    {"beat":"ENVIRONMENTAL_OBSERVATION","detail":"The creator comments on a sudden change in heat and later notices posters/hoardings and local surroundings. These are texture beats rather than core plot points."},
+    {"beat":"AERIAL_VIEW_INTENT","detail":"A clear line at 01:08.690–01:11.810 says the creator will show an aerial view using the selfie stick. This can become a visual payoff only if the corresponding footage actually shows the intended overview."},
+    {"beat":"TEMPLE/AREA_EXPLORATION","detail":"Later bundle-002 material appears to continue the destination exploration before the major off-road payoff preserved in bundle 004. Use bundle 002 to establish place and human atmosphere, not to duplicate later adventure footage."}
+  ],
+  "videos": {
+    "DJI_20260830151143_0247_D.MP4": {
+      "sourceDuration":"00:04:00.407","sha256":"25a0213f7c1b9a14a72626f2cffaf6e154e0a4432ef4daa82e89eec591f180a8",
+      "storyRole":"DESTINATION_APPROACH",
+      "overallDecision":"STRONG_KEEP",
+      "selectedRanges":[
+        {"start":"00:01.650","end":"00:23.950","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Road","Mountain","People"],"reason":"The usable speech introduces the roadside stop/shop context and points out the small road toward the hill; strong setup for moving from journey into destination approach.","confidence":"MEDIUM"}
+      ],
+      "speechNotes":["The ASR is Hindi with moderate language confidence.","Useful words include shop/road/hill and a named route fragment; exact route-name transcription is uncertain and should not be quoted as factual without listening."],
+      "visualNotes":"Prior review context indicates this is part of the first destination approach; exact visual event mapping should remain conservative because the current generated evidence exposes frame references, not semantic captions.",
+      "retentionValue":"Medium-high: it changes the story from generic travel to a specific destination approach.",
+      "removedOrUnused":"The long remainder contains a merged low-confidence transcript and should not be kept as a continuous talking section.",
+      "crossBundle":"Use before 0251 destination reveal; avoid repeating the same hill description later."
+    },
+    "DJI_20260830151748_0248_D.MP4": {
+      "sourceDuration":"00:01:05.666","sha256":"db50b6860165973da8cb22c41311b3f74b504ef994dfa30db794b911e8aa764d",
+      "storyRole":"OBSERVATION",
+      "overallDecision":"KEEP",
+      "selectedRanges":[
+        {"start":"00:09.010","end":"00:47.210","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["People","Vehicle","Road"],"reason":"Creator says he came here roughly four to six years earlier when he used to ride a bike, remembers the area as far less known/quiet, and contrasts that with current traffic/crowds. Strong authentic before-vs-now observation.","confidence":"HIGH for speech meaning; MEDIUM for exact visual-event coverage"}
+      ],
+      "speechNotes":["Core meaning is a retrospective comparison: earlier visit + much lower awareness vs current traffic/crowd."],
+      "retentionValue":"High as a short human observation; do not play the entire 38 seconds if the visual repeats.",
+      "editorialTreatment":"Keep the strongest sentence(s), cover static talking-head portions with destination-area traffic/people visuals where available.",
+      "crossBundle":"Pairs well with 0251 because it explains why the destination feels busy before the temple/hill reveal."
+    },
+    "DJI_20260830152738_0249_D.MP4": {
+      "sourceDuration":"00:17.195","sha256":"80dcc9ce584843f9a035faaab4bd9578ff222717b4dbeb4e72d8905017465f28",
+      "storyRole":"DESTINATION_VISUAL_BRIDGE",
+      "overallDecision":"KEEP_FOR_MUSIC",
+      "selectedRanges":[{"start":"00:00.000","end":"00:17.184","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":[],"reason":"Speechless 17-second visual pool with multiple scene changes. Use only the strongest 2–6 second fragments after visual frame inspection; do not invent semantic event labels from metadata alone.","confidence":"MEDIUM"}],
+      "sceneStructure":"Six detected scenes: 0–3.337, 3.337–4.338, 4.338–8.342, 8.342–10.043, 10.043–13.247, 13.247–17.184.",
+      "visualReviewRequirement":"Choose exact fragments by inspecting the corresponding source frames/proxy; current repository JSON contains references but not semantic captions."
+    },
+    "DJI_20260830153222_0250_D.MP4": {
+      "sourceDuration":"00:26.460","sha256":"e38e7c94fa012217706f93ead8de5c223f1c0e281cf99986706b458dc40ac46b",
+      "storyRole":"DESTINATION_VISUAL_BRIDGE",
+      "overallDecision":"KEEP_FOR_MUSIC",
+      "selectedRanges":[{"start":"00:00.000","end":"00:26.459","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":[],"reason":"Speechless visual sequence with three detected scenes. Candidate for a short destination-arrival/exploration montage after visual confirmation.","confidence":"MEDIUM"}],
+      "sceneStructure":"0–1.535, 2.502–25.225, 25.225–26.460; note a short detected gap between 1.535 and 2.502.",
+      "visualReviewRequirement":"Semantic events must be assigned only after actual frame inspection."
+    },
+    "DJI_20260830153327_0251_D.MP4": {
+      "sourceDuration":"00:02:56.009","sha256":"11277468ce342f89d394242741c7644af64bffd9b246c9aedb2302fb69c8dda2",
+      "storyRole":"DESTINATION_REVEAL_AND_TREK_SETUP",
+      "overallDecision":"STRONG_KEEP",
+      "selectedRanges":[
+        {"start":"00:06.360","end":"00:28.720","decision":"STRONG_KEEP","mediaRole":"speech + B-roll","events":["People","Mountain","Temple","Building"],"reason":"Creator points out the large number of people, wonders about the organization/trust nearby, then explains that the temple is inside the hill and points out the route in front. This is the strongest destination-context speech in the bundle.","confidence":"HIGH"},
+        {"start":"00:29.960","end":"01:05.960","decision":"STRONG_KEEP","mediaRole":"speech + B-roll","events":["People","Mountain","Road"],"reason":"Creator explains that they must continue upward from here, talks about trekking/walking and being tired after a long time without this much walking, then points toward the hill/parking context. Preserve the authentic physical reaction but shorten the explanatory repetition.","confidence":"HIGH"}
+      ],
+      "speechNotes":["The first range contains a useful destination reveal: many people + temple inside hill + visible route.","The second range contains the human/physical reaction to walking and establishes the next action: going upward.","ASR later in the file is merged and low-confidence; do not use the long remainder wholesale."],
+      "retentionValue":"Very high for destination setup because it combines visual context, curiosity and genuine reaction.",
+      "brollNeeds":"Use exact hill/people/temple/route imagery over static portions if available from adjacent visual sources; avoid reusing later off-road footage here because the story has not reached the adventure payoff yet.",
+      "crossBundle":"This should precede later temple/cave exploration and then the bundle-004 off-road escalation."
+    },
+    "DJI_20260830154037_0253_D.MP4": {
+      "sourceDuration":"00:50.717","sha256":"7bea1a192bf2ee61ff421bc10c421bfdb273c172b2a6b3f1f3551ab79dc16011",
+      "storyRole":"INCIDENTAL_LOCAL_AUDIO",
+      "overallDecision":"REMOVE",
+      "selectedRanges":[],
+      "reason":"The transcript is dominated by low-confidence filler such as repeated 'Yes, sir' and an isolated 'Daddy, mom is here.' It does not currently provide a reliable story beat.",
+      "retentionValue":"Low unless direct listening reveals a genuine local/reaction moment missed by ASR.",
+      "reopenCondition":"Re-open only if the final story appears to be missing a local interaction and this clip is suspected to contain it."
+    },
+    "DJI_20260830154154_0255_D.MP4": {
+      "sourceDuration":"00:03:41.722","sha256":"cce2ab93b27829b699e6b6eea2fd74d3f2081832a500d96dbc12e9deff31939e",
+      "storyRole":"LOCAL_INTERACTION",
+      "overallDecision":"KEEP_FOR_REVIEW",
+      "selectedRanges":[
+        {"start":"00:11.180","end":"00:17.680","decision":"KEEP_FOR_REVIEW","mediaRole":"speech-driven","events":["People"],"reason":"Two questions about which organization/place this is. Potential spontaneous local/destination interaction, but speech confidence is not strong enough to make it a major story beat without listening.","confidence":"MEDIUM"},
+        {"start":"00:46.020","end":"00:58.740","decision":"KEEP_FOR_REVIEW","mediaRole":"speech-driven","events":["People"],"reason":"A sequence around Karnataka/Kaiwara naming and a conversational exchange. Potentially useful for showing the creator figuring out where he is or interacting locally; verify actual conversation before using.","confidence":"LOW-MEDIUM"},
+        {"start":"00:59.340","end":"01:03.440","decision":"KEEP_FOR_REVIEW","mediaRole":"speech-driven","events":["People"],"reason":"Mentions Isha/Isha Foundation in uncertain ASR. Keep only if listening confirms a useful spontaneous exchange and the visual clearly supports it.","confidence":"LOW"}
+      ],
+      "majorWarning":"Do not state that the nearby organization is Patanjali/Isha/etc. solely from low-confidence ASR. The transcript contains uncertain names and must be human-listen checked.",
+      "retentionValue":"Potentially high for human texture, but only after verification."
+    },
+    "DJI_20260830154604_0256_D.MP4": {
+      "sourceDuration":"00:13.824","sha256":"636c7e0617fa96075e16d3f5e68ff2a539c1ca20c54e01035a4cfe2d88f40bbf",
+      "storyRole":"INCIDENTAL_AUDIO",
+      "overallDecision":"REMOVE",
+      "selectedRanges":[],
+      "reason":"Whisper produced false/irrelevant Spanish number counting and 'Gracias.' It is not trustworthy as story speech.",
+      "retentionValue":"Low unless visual review finds an independently useful silent shot."
+    },
+    "DJI_20260830154649_0258_D.MP4": {
+      "sourceDuration":"00:09.543","sha256":"02f4b6155ee1d7bb1501f5d81792d63a09fc04cbf806726aa78f42fdb7b6fb08",
+      "storyRole":"LOCAL_REACTION",
+      "overallDecision":"KEEP_AS_TRANSITION",
+      "selectedRanges":[{"start":"00:08.290","end":"00:09.130","decision":"KEEP_AS_TRANSITION","mediaRole":"speech-driven","events":["People"],"reason":"Very short 'What do you mean?' reaction. Useful only as a conversational punctuation/transition if the surrounding interaction is understandable.","confidence":"MEDIUM"}],
+      "visualReviewRequirement":"Confirm who is speaking/visible before using."
+    },
+    "DJI_20260830154840_0263_D.MP4": {
+      "sourceDuration":"00:05:04.640","sha256":"d2c81b4edadbd3e95f4afb07b1a761aeb0a6f6e23b99402537acad52a916d516",
+      "storyRole":"DESTINATION_EXPLORATION",
+      "overallDecision":"STRONG_KEEP_BUT_TRIM_HEAVILY",
+      "selectedRanges":[
+        {"start":"00:00:33.370","end":"00:02:37.010","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["People","Building"],"reason":"Creator comments on a sudden change in heat and then describes posters/hoardings and nearby surroundings. The visual context can add local atmosphere, but the continuous two-minute speech should be mined for the clearest observations only.","confidence":"MEDIUM"},
+        {"start":"00:02:37.930","end":"00:03:45.630","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Building","People"],"reason":"Further local/temple-related observation and heat commentary. Use only the strongest factual/interesting line and matching visual, not the whole merged ASR segment.","confidence":"MEDIUM-LOW"}
+      ],
+      "speechNotes":["Clearly useful words include sudden heat, posters/hoardings, and temple-related observations.","The ASR contains substantial errors, so exact names/claims should not be copied from it without listening."],
+      "retentionValue":"Medium: useful environmental texture and local discovery, but not a core plot beat.",
+      "editingRule":"Treat as a source pool. Pull 5–15 second extracts rather than keeping long unbroken narration."
+    },
+    "DJI_20260830160147_0267_D.MP4": {
+      "sourceDuration":"00:01:58.293","sha256":"386c467ab24a7fe9cf7a974e2ae10aaacf3d7e037a84e17161f78a2fd0ef1f48",
+      "storyRole":"AERIAL_VIEW_SETUP",
+      "overallDecision":"KEEP_WITH_BROLL",
+      "selectedRanges":[
+        {"start":"01:08.690","end":"01:11.810","decision":"KEEP","mediaRole":"speech-driven","events":["People"],"reason":"Creator explicitly says he will show an aerial view using the selfie stick. This is a clean promise/setup line.","confidence":"HIGH for speech"}
+      ],
+      "visualReviewRequirement":"The actual aerial-view payoff must be verified from the following frames/source footage. If the subsequent visuals do not provide a meaningful overview, keep the line only if it still works as a setup joke/transition.",
+      "retentionValue":"Medium-high if the promised reveal visually pays off."
+    },
+    "DJI_20260830160442_0268_D.MP4": {
+      "sourceDuration":"00:06.656","sha256":"dc84bf71e1068c5b1c93d8ca99034462c8a0ffe50ec66edad5291ee09031fe26",
+      "storyRole":"VISUAL_TRANSITION",
+      "overallDecision":"KEEP_FOR_VISUAL_REVIEW",
+      "selectedRanges":[{"start":"00:00.000","end":"00:06.655","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":[],"reason":"Very short speechless shot; exact use depends on frame inspection. Candidate for a visual punctuation or connector between destination moments.","confidence":"LOW until visual review"}]
+    },
+    "DJI_20260830160759_0272_D.MP4": {
+      "sourceDuration":"00:25.092","sha256":"67cfeae0e2d8b8c5cd3be6b552313be8688bf1a2e5d0f9543d1ae064cc4b0f69",
+      "storyRole":"DESTINATION_MUSIC_POOL",
+      "overallDecision":"KEEP_FOR_VISUAL_REVIEW",
+      "selectedRanges":[{"start":"00:00.000","end":"00:25.091","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":[],"reason":"25-second speechless single-scene visual pool. Potentially useful for a short destination/exploration music passage, but only after actual frame inspection; do not assign semantic events from metadata.","confidence":"LOW until visual review"}]
+    }
+  },
+  "bundleLevelEditorialRanking": {
+    "highestValue": [
+      "DJI_20260830153327_0251_D.MP4 00:06.360–00:28.720 — strongest destination reveal/context speech",
+      "DJI_20260830153327_0251_D.MP4 00:29.960–01:05.960 — trek/physical-reaction setup",
+      "DJI_20260830151748_0248_D.MP4 00:09.010–00:47.210 — before-vs-now crowd/traffic observation",
+      "DJI_20260830151143_0247_D.MP4 00:01.650–00:23.950 — route/hill approach setup",
+      "DJI_20260830154840_0263_D.MP4 selected extracts — local environmental texture/observation",
+      "DJI_20260830160147_0267_D.MP4 01:08.690–01:11.810 — aerial-view promise"
+    ],
+    "mediumValue": [
+      "0255 local interaction candidates",
+      "0258 short reaction",
+      "0249/0250/0268/0272 speechless visual pools pending frame inspection"
+    ],
+    "lowValue": [
+      "0253 incidental low-confidence audio",
+      "0256 false/irrelevant transcription",
+      "0264 generic thank-you speech if used as destination content"
+    ]
+  },
+  "musicCandidates": [
+    {"sourceFile":"DJI_20260830152738_0249_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:17.184","recommendedMusicRole":"DESTINATION_BRIDGE","reason":"Short multi-scene speechless visual pool; choose only strongest fragments after frame inspection."},
+    {"sourceFile":"DJI_20260830153222_0250_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:26.459","recommendedMusicRole":"DESTINATION_EXPLORATION","reason":"Speechless three-scene pool; use selectively, not full length."},
+    {"sourceFile":"DJI_20260830160442_0268_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:06.655","recommendedMusicRole":"TRANSITION_PUNCTUATION","reason":"Very short speechless connector candidate."},
+    {"sourceFile":"DJI_20260830160759_0272_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:25.091","recommendedMusicRole":"DESTINATION_VISUAL_BREATH","reason":"Potential visual breathing section; semantic content must be confirmed from frames before final use."}
+  ],
+  "brollRelationships": [
+    {"speechSource":"DJI_20260830151143_0247_D.MP4 00:01.650–00:23.950","brollGoal":"show the small approach road/hill destination visually while the creator explains it","candidatePool":["0249","0250","0251"],"status":"FRAME_MATCH_REQUIRED"},
+    {"speechSource":"DJI_20260830151748_0248_D.MP4 00:09.010–00:47.210","brollGoal":"cover before-vs-now crowd/traffic statement with actual current destination-area traffic/people","candidatePool":["0251","later destination footage"],"status":"FRAME_MATCH_REQUIRED"},
+    {"speechSource":"DJI_20260830153327_0251_D.MP4 00:06.360–00:28.720","brollGoal":"show people + hill/temple/route while the creator explains the destination","candidatePool":["0251 adjacent visuals","0249/0250 speechless destination pools"],"status":"FRAME_MATCH_REQUIRED"},
+    {"speechSource":"DJI_20260830153327_0251_D.MP4 00:29.960–01:05.960","brollGoal":"cover trek/upper-hill setup with walking/route visuals and preserve genuine fatigue reaction","candidatePool":["0251","0267 aerial setup","later exploration footage"],"status":"FRAME_MATCH_REQUIRED"}
+  ],
+  "repetitionAndContinuity": {
+    "risk":"Bundle 002 contains several long destination-observation speeches. Do not stack them. One clear destination explanation, one crowd observation and one physical trek reaction are enough before moving into exploration/adventure.",
+    "avoidDuplicateWithBundle001":"Bundle 001 already establishes the journey and route progression. Bundle 002 should not repeat the entire drive explanation.",
+    "avoidDuplicateWithBundle004":"Bundle 002 is destination understanding/exploration setup; bundle 004 contains the major off-road payoff. Do not reveal the whole off-road sequence too early unless a short teaser is deliberately used in the hook.",
+    "continuityOrder":"approach → crowd/now-vs-then observation → destination/temple-in-hill explanation → trek setup → exploration/local texture → later adventure payoff."
+  },
+  "safetyAndEvidence": {
+    "offRoadRule":"No safety/permission claims are inferred from this bundle.",
+    "locationNaming":"Use Kailasagiri/Kaiwara naming only where supported by the source/story context; low-confidence ASR place-name variants must not become facts without listening/visual confirmation.",
+    "eventRule":"Never create a visual event solely because a word appears in speech. The closed taxonomy remains binding."
+  },
+  "finalMergeGuidance": "Bundle 002 should provide the destination middle of the vlog: the viewer understands that the area has become busy, sees/understands the hill-and-temple concept, and feels the creator physically beginning the climb. Keep the storytelling conversational and observational. Use short music/visual breaths where they add atmosphere, but avoid long generic destination narration. Preserve uncertain local-interaction footage as review candidates rather than forcing it into the final story. Bundle 004 should later supply the high-energy off-road escalation and payoff."
 }
