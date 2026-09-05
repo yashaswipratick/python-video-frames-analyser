@@ -1,89 +1,100 @@
 # Automated DaVinci Resolve Timeline Assembly
 
-The editorial workflow now has two machine-readable layers:
+The workflow now separates editorial intelligence from machine assembly:
 
 ```text
+raw videos
+   ↓
 analysis bundles
-      ↓
+   ↓
 AI editorial analysis
-      ↓
-edit_timeline.json        ← editorial source of truth
-      ↓
-generate_fcpxml.py        ← interchange/assembly layer
-      ↓
+   ↓
+edit_timeline.json             ← editorial source of truth
+   ↓
+resolve_assembly.json          ← executable V1/V2/A2 placement plan
+   ↓
+build_resolve_timeline.py
+   ↓
 edit_timeline.fcpxml
-      ↓
+   ↓
 DaVinci Resolve
 ```
+
+## Current assembly for the Kaiwara/Kailasagiri vlog
+
+`resolve_assembly.json` contains an explicit condensed edit plan built from the consolidated bundles 001-005. It is intentionally more aggressively trimmed than the descriptive `masterTimeline` so the Resolve import starts as an actual edit rather than a 15+ minute string of source selections.
+
+The current executable plan is approximately **09:29** before any additional creative trimming. The duration is a target, not a quota; repeated material should still be removed during review.
 
 ## Track model
 
 | Track | Purpose |
 |---|---|
-| V1 | Primary story spine in `masterTimeline` order |
-| V2 | Connected B-roll overlays when an exact `speechRange` + `bestBroll` recommendation exists |
-| A1 | Source audio carried by the V1 clips |
-| A2 | Optional external music bed supplied explicitly by the editor |
+| V1 | Primary story spine with exact source IN/OUT ranges |
+| V2 | Explicit B-roll overlays at exact timeline positions |
+| A1 | Original dialogue and useful natural sound carried by V1 |
+| A2 | Optional licensed music bed aligned to music cues |
 
-The converter deliberately does not invent B-roll placement from matching event labels. An overlay is created only when the editorial JSON contains an exact source speech range and an exact best-B-roll source range. This protects against visually plausible but incorrect automatic edits.
-
-## Generate the Resolve XML
+## One-command build
 
 From the repository root on the editing Mac:
 
 ```bash
-python3 validate_edit_timeline.py --timeline edit_timeline.json
-```
-
-Then:
-
-```bash
-python3 generate_fcpxml.py \
+python3 build_resolve_timeline.py \
   --timeline edit_timeline.json \
+  --assembly resolve_assembly.json \
   --media-dir /Users/yashaswipratick/Documents/video-analyser/videos \
   --output edit_timeline.fcpxml
 ```
 
-If you have a licensed music file ready:
+The command first validates the editorial JSON. If validation fails, XML generation stops rather than creating a questionable timeline.
+
+With a licensed music track:
 
 ```bash
-python3 generate_fcpxml.py \
+python3 build_resolve_timeline.py \
   --timeline edit_timeline.json \
+  --assembly resolve_assembly.json \
   --media-dir /Users/yashaswipratick/Documents/video-analyser/videos \
   --music-file "/absolute/path/to/licensed-music.m4a" \
   --output edit_timeline.fcpxml
 ```
 
-## What the current converter automates
+## What the XML does automatically
 
-- exact source filenames;
-- exact source IN/OUT ranges;
-- chronological story assembly;
-- primary V1 story spine;
-- exact B-roll connected clips where a mapping is explicitly present;
-- source-audio carry-through;
-- music-section cue metadata;
-- optional A2 music-bed asset;
-- deterministic timeline placement;
-- validation of timestamps, decisions, and event taxonomy.
+- places the selected source clips on V1 in story order;
+- uses exact original source filenames;
+- uses exact source IN/OUT ranges;
+- places the explicit B-roll overlays on V2 at the specified timeline coordinates;
+- mutes B-roll camera audio so A1 dialogue remains clean;
+- keeps source audio with the primary footage;
+- creates A2 music clips over the defined music cues when a licensed music file is supplied;
+- uses deterministic timeline placement;
+- leaves the original source media untouched.
 
-## What still requires explicit evidence or creative input
+## What remains after import
 
-The current editorial JSON contains music-worthy **video footage** but does not contain a separate licensed music track. The converter therefore cannot truthfully invent a song or choose an unknown local music file.
+The XML is intended to get the project **very close to an editable first cut**, not to fake a finished human mix.
 
-Likewise, B-roll cannot be safely guessed merely because two ranges share labels such as `Road`, `Mountain`, or `Driving`. Exact editorial mappings are required before they are put onto V2.
+The remaining work is primarily:
 
-## Import into Resolve
+- listen/watch pass and any bad-cut corrections;
+- verify the B-roll visual match, especially Bundle-005 sections whose semantic vision evidence was unavailable;
+- choose the right licensed music track when one is not supplied;
+- tune music/dialogue/ambient levels and ducking;
+- final pacing adjustments;
+- captions/titles;
+- color grade;
+- sound design and final review.
 
-1. Generate `edit_timeline.fcpxml` on the Mac that has the original footage.
-2. Open DaVinci Resolve.
-3. Import the FCPXML as a timeline.
-4. When Resolve asks for media relinking, point it at `/Users/yashaswipratick/Documents/video-analyser/videos` if required.
-5. Review the imported V1/V2/A1/A2 structure.
-6. Finish music selection/mix, sound design, captions, color, transitions, and the final creative pass.
+The system deliberately refuses to invent a music track. A2 is populated only when `--music-file` is explicitly supplied.
 
-The raw videos remain untouched. The XML is only an edit decision/interchange file.
+## Import into DaVinci Resolve
 
-## Important expectation
+1. Generate `edit_timeline.fcpxml` on the Mac that has the original media.
+2. Open DaVinci Resolve and import the FCPXML timeline.
+3. Relink the media to `/Users/yashaswipratick/Documents/video-analyser/videos` if Resolve asks.
+4. Confirm the V1/V2/A1/A2 structure and watch the complete timeline once.
+5. Perform the final creative/audio/color/caption pass.
 
-The goal is **high mechanical completion**, not a claim that XML can replace editorial judgement. When the JSON contains explicit placement information, the converter can assemble it directly. When information is missing, the converter leaves a cue/warning rather than silently making a potentially wrong cut.
+The raw DJI files remain untouched throughout the analysis and assembly pipeline.
