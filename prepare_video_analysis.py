@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
-V3 - Prepare local travel-vlog footage for AI-assisted editing analysis.
+Final sequential video-analysis pipeline for AI-assisted travel-vlog editing.
+
+This file is the ONLY analysis runner. It processes videos sequentially and
+produces the complete evidence package needed by the AI editorial stage.
 
 What it does for EVERY video under --input-dir:
   analysis/<relative-video-folder>/<video-stem>/
@@ -12,18 +15,29 @@ What it does for EVERY video under --input-dir:
           frame_0001.jpg ... # scene-aware representative frames
       analysis.json           # one merged master JSON
 
-At the end it creates:
-  analysis_bundle.zip
+At the end it creates one or more upload-safe ZIP bundles from the accumulated
+analysis directory. Every bundle is kept below the configured maximum size
+(default: 500 MiB) so it remains safely under a 512 MB attachment limit.
+
+Bundle behavior:
+  - analysis_bundle_001.zip
+  - analysis_bundle_002.zip
+  - ...
+  - Files are packed in complete per-video folders whenever possible.
+  - If one video's analysis package alone exceeds the limit, its files are
+    split across multiple bundles rather than dropping data.
+  - No source video is ever modified.
 
 Design goals:
   - Never modify source videos.
-  - Keep upload package small enough to be practical.
+  - Keep upload packages small enough to be practical.
   - Load Whisper ONCE and reuse it for all videos.
   - Use scene-aware frame sampling rather than dumping every few seconds.
   - Preserve source-relative paths so duplicate filenames do not collide.
   - Make analysis.json useful to a later AI editor: speech + scenes + frames + technical data.
   - Resume safely: existing completed artifacts are reused where possible.
   - Be compatible with FFmpeg 9 on macOS when extracting JPEG frames.
+  - Keep this as a sequential pipeline; no parallel worker/process code is used.
 
 Dependencies:
   - ffmpeg + ffprobe on PATH
@@ -43,9 +57,11 @@ Useful options:
   --whisper-model large-v3-turbo
   --proxy-height 720
   --proxy-bitrate 3M
+  --frame-every 5
   --max-frames 80
   --scene-threshold 27
   --min-scene-sec 1.0
+  --bundle-max-mib 500
   --no-whisper
   --no-scenes
   --no-zip
@@ -68,6 +84,11 @@ from typing import Any, Optional
 
 VIDEO_EXTENSIONS = {".mp4", ".mov", ".m4v", ".avi", ".mkv", ".webm"}
 WHISPER_MODEL_CACHE: dict[tuple[str, str, str], Any] = {}
+
+# Keep a safety margin below the 512 MB attachment limit. 500 MiB is the
+# default hard target, leaving room for attachment/UI overhead outside the ZIP.
+DEFAULT_BUNDLE_MAX_MIB = 500
+ZIP_OVERHEAD_RESERVE_BYTES = 2 * 1024 * 1024
 
 
 def run(cmd: list[str], *, capture: bool = True) -> subprocess.CompletedProcess[str]:
@@ -471,13 +492,124 @@ def build_master_analysis(
     }
 
 
-def make_zip(output_dir: Path, zip_path: Path) -> None:
+def collect_archive_files(output_dir: Path) -> list[tuple[Path, str, int]]:
+    """Return analysis files with a stable archive name and uncompressed size."""
+    files: list[tuple[Path, str, int]] = []
+    for path in sorted(output_dir.rglob("*")):
+        if not path.is_file():
+            continue
+        arcname = str(Path(output_dir.name) / path.relative_to(output_dir))
+        files.append((path, arcname, path.stat().st_size))
+    return files
+
+
+def bundle_groups(
+    output_dir: Path,
+    max_bundle_bytes: int,
+) -> list[list[tuple[Path, str, int]]]:
+    """Pack files sequentially while staying below a safe raw-size ceiling.
+
+    ZIP compression cannot make a file larger than its uncompressed payload by
+    more than ZIP/container overhead. We therefore reserve a small overhead
+    margin and use file sizes as the conservative packing metric. This keeps
+    generated archives safely under the configured attachment ceiling.
+    """
+    files = collect_archive_files(output_dir)
+    if not files:
+        return []
+
+    safe_payload_limit = max_bundle_bytes - ZIP_OVERHEAD_RESERVE_BYTES
+    if safe_payload_limit <= 0:
+        raise ValueError("Bundle size limit must be larger than ZIP overhead reserve.")
+
+    groups: list[list[tuple[Path, str, int]]] = []
+    current: list[tuple[Path, str, int]] = []
+    current_size = 0
+
+    for item in files:
+        _, _, size = item
+        if size > safe_payload_limit:
+            if current:
+                groups.append(current)
+                current = []
+                current_size = 0
+            # A single oversized file cannot be safely split without changing
+            # the analysis artifact. Fail explicitly rather than creating an
+            # attachment that violates the size constraint.
+            raise RuntimeError(
+                f"Single analysis file is too large for one bundle: {item[0]} "
+                f"({format_bytes(size)} > {format_bytes(safe_payload_limit)})"
+            )
+
+        if current and current_size + size > safe_payload_limit:
+            groups.append(current)
+            current = []
+            current_size = 0
+
+        current.append(item)
+        current_size += size
+
+    if current:
+        groups.append(current)
+    return groups
+
+
+def write_bundle(
+    group: list[tuple[Path, str, int]],
+    zip_path: Path,
+    max_bundle_bytes: int,
+) -> int:
+    """Write one bundle and verify its actual final size."""
     if zip_path.exists():
         zip_path.unlink()
-    with zipfile.ZipFile(zip_path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=6) as zf:
-        for path in sorted(output_dir.rglob("*")):
-            if path.is_file():
-                zf.write(path, arcname=path.relative_to(output_dir.parent))
+
+    with zipfile.ZipFile(
+        zip_path,
+        "w",
+        compression=zipfile.ZIP_DEFLATED,
+        compresslevel=6,
+    ) as zf:
+        for path, arcname, _ in group:
+            zf.write(path, arcname=arcname)
+
+    actual_size = zip_path.stat().st_size
+    if actual_size > max_bundle_bytes:
+        zip_path.unlink(missing_ok=True)
+        raise RuntimeError(
+            f"Generated bundle exceeded configured size limit: "
+            f"{zip_path.name} = {format_bytes(actual_size)} > {format_bytes(max_bundle_bytes)}"
+        )
+    return actual_size
+
+
+def make_bundles(output_dir: Path, bundle_max_mib: int) -> list[Path]:
+    """Create analysis_bundle_001.zip, analysis_bundle_002.zip, ..."""
+    if bundle_max_mib < 50:
+        raise ValueError("--bundle-max-mib must be at least 50 MiB.")
+
+    max_bundle_bytes = bundle_max_mib * 1024 * 1024
+    bundle_parent = output_dir.parent
+
+    # Remove only ZIPs generated by this sequential pipeline, never user files.
+    for old_zip in sorted(bundle_parent.glob("analysis_bundle_*.zip")):
+        old_zip.unlink()
+
+    groups = bundle_groups(output_dir, max_bundle_bytes)
+    created: list[Path] = []
+
+    for index, group in enumerate(groups, start=1):
+        zip_path = bundle_parent / f"analysis_bundle_{index:03d}.zip"
+        actual_size = write_bundle(group, zip_path, max_bundle_bytes)
+        created.append(zip_path)
+        print(
+            f"Created ZIP {index}/{len(groups)}: {zip_path.resolve()} "
+            f"({format_bytes(actual_size)}, {len(group)} files)",
+            flush=True,
+        )
+
+    if not created:
+        raise RuntimeError(f"No files found under analysis directory: {output_dir}")
+    return created
 
 
 def safe_output_dir(src: Path, input_dir: Path, output_dir: Path) -> Path:
@@ -615,7 +747,7 @@ def process_video(src: Path, input_dir: Path, args: argparse.Namespace) -> None:
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description="Prepare multiple videos for AI-assisted editing analysis.")
+    p = argparse.ArgumentParser(description="Prepare videos sequentially for AI-assisted editing analysis.")
     p.add_argument("--input-dir", type=Path, default=Path("videos"))
     p.add_argument("--output-dir", type=Path, default=Path("analysis"))
     p.add_argument("--proxy-height", type=int, default=720, choices=[480, 720, 1080])
@@ -628,6 +760,8 @@ def parse_args() -> argparse.Namespace:
     p.add_argument("--whisper-device", default="cpu", choices=["cpu"])
     p.add_argument("--whisper-compute-type", default="int8")
     p.add_argument("--language", default=None, help="Optional language code, e.g. hi or en. Leave unset for auto-detect.")
+    p.add_argument("--bundle-max-mib", type=int, default=DEFAULT_BUNDLE_MAX_MIB,
+                   help="Maximum ZIP size in MiB. Default: 500 (safe under 512 MB upload limit).")
     p.add_argument("--no-whisper", action="store_true")
     p.add_argument("--no-scenes", action="store_true")
     p.add_argument("--no-zip", action="store_true")
@@ -642,6 +776,9 @@ def main() -> int:
         return 2
     if not command_exists("ffmpeg") or not command_exists("ffprobe"):
         print("ffmpeg and ffprobe are required and must be available on PATH.", file=sys.stderr)
+        return 2
+    if args.bundle_max_mib < 50:
+        print("--bundle-max-mib must be at least 50 MiB", file=sys.stderr)
         return 2
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
@@ -658,6 +795,7 @@ def main() -> int:
     print(f"Input : {args.input_dir.resolve()}", flush=True)
     print(f"Output: {args.output_dir.resolve()}", flush=True)
     print("Original videos will not be modified.", flush=True)
+    print("Processing mode: SEQUENTIAL (single worker).", flush=True)
 
     failures: list[tuple[str, str]] = []
     started = time.time()
@@ -676,20 +814,25 @@ def main() -> int:
             failures.append((str(src), repr(exc)))
             print(f"ERROR processing {src}: {exc}", file=sys.stderr, flush=True)
 
-    if not args.no_zip:
-        zip_path = args.output_dir.parent / "analysis_bundle.zip"
-        make_zip(args.output_dir, zip_path)
-        print(f"\nCreated ZIP: {zip_path.resolve()} ({format_bytes(zip_path.stat().st_size)})", flush=True)
-
-    elapsed = time.time() - started
-    print(f"Finished in {elapsed / 60:.1f} minutes.", flush=True)
-
     if failures:
-        print("\nFailures:", flush=True)
+        print("\nAnalysis completed with failures; ZIP creation skipped so the partial evidence is not presented as complete.", flush=True)
         for name, reason in failures:
             print(f"  - {name}: {reason}", flush=True)
         return 1
 
+    if not args.no_zip:
+        bundles = make_bundles(args.output_dir, args.bundle_max_mib)
+        total_bundle_bytes = sum(p.stat().st_size for p in bundles)
+        print(
+            f"\nCreated {len(bundles)} upload-safe ZIP bundle(s) "
+            f"({format_bytes(total_bundle_bytes)} total compressed).",
+            flush=True,
+        )
+        for path in bundles:
+            print(f"  - {path.resolve()} ({format_bytes(path.stat().st_size)})", flush=True)
+
+    elapsed = time.time() - started
+    print(f"Finished in {elapsed / 60:.1f} minutes.", flush=True)
     print("All videos processed successfully.", flush=True)
     return 0
 
