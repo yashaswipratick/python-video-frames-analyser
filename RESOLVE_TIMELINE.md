@@ -1,41 +1,52 @@
 # Automated DaVinci Resolve Timeline Assembly
 
-The workflow now separates editorial intelligence from machine assembly:
+The editorial workflow now has two machine-readable layers:
 
 ```text
-raw videos
-   ↓
 analysis bundles
-   ↓
+      ↓
 AI editorial analysis
-   ↓
-edit_timeline.json             ← editorial source of truth
-   ↓
-resolve_assembly.json          ← executable V1/V2/A2 placement plan
-   ↓
-build_resolve_timeline.py
-   ↓
+      ↓
+edit_timeline.json        ← editorial source of truth
+      ↓
+resolve_assembly.json     ← executable V1/V2/A1/A2 plan
+      ↓
+generate_fcpxml.py        ← interchange/assembly layer
+      ↓
 edit_timeline.fcpxml
-   ↓
+      ↓
 DaVinci Resolve
 ```
-
-## Current assembly for the Kaiwara/Kailasagiri vlog
-
-`resolve_assembly.json` contains an explicit condensed edit plan built from the consolidated bundles 001-005. It is intentionally more aggressively trimmed than the descriptive `masterTimeline` so the Resolve import starts as an actual edit rather than a 15+ minute string of source selections.
-
-The current executable plan is approximately **09:29** before any additional creative trimming. The duration is a target, not a quota; repeated material should still be removed during review.
 
 ## Track model
 
 | Track | Purpose |
 |---|---|
-| V1 | Primary story spine with exact source IN/OUT ranges |
-| V2 | Explicit B-roll overlays at exact timeline positions |
-| A1 | Original dialogue and useful natural sound carried by V1 |
-| A2 | Optional licensed music bed aligned to music cues |
+| V1 | Primary story spine in `mainTimeline` order |
+| V2 | Exact B-roll overlays from `brollOverlays` |
+| A1 | Source dialogue / natural sound carried by the V1 clips |
+| A2 | External music bed placed over `musicCues` |
 
-## One-command build
+The converter does not invent B-roll placement. Each V2 overlay must have an exact timeline position and exact source IN/OUT range in `resolve_assembly.json`.
+
+## Music: one MP3 file
+
+The normal workflow no longer requires a `--music-file` argument.
+
+Put your single music file here:
+
+```text
+music/
+    your-track.mp3
+```
+
+Supported automatic formats are `.mp3`, `.m4a`, `.wav`, `.aac`, and `.flac`.
+
+When exactly one supported audio file exists in `./music`, `build_resolve_timeline.py` automatically selects it and passes it to the FCPXML generator as the A2 music asset.
+
+If more than one music file exists, the build stops rather than choosing one arbitrarily. You can still override discovery with an explicit `--music-file`.
+
+## Generate the Resolve XML
 
 From the repository root on the editing Mac:
 
@@ -47,54 +58,47 @@ python3 build_resolve_timeline.py \
   --output edit_timeline.fcpxml
 ```
 
-The command first validates the editorial JSON. If validation fails, XML generation stops rather than creating a questionable timeline.
+That is now the recommended command.
 
-With a licensed music track:
+The script first validates `edit_timeline.json`, automatically discovers the single music file in `./music`, and then generates the FCPXML.
+
+To use a music file from somewhere else, use:
 
 ```bash
 python3 build_resolve_timeline.py \
   --timeline edit_timeline.json \
   --assembly resolve_assembly.json \
   --media-dir /Users/yashaswipratick/Documents/video-analyser/videos \
-  --music-file "/absolute/path/to/licensed-music.m4a" \
+  --music-file "/absolute/path/to/your-track.mp3" \
   --output edit_timeline.fcpxml
 ```
 
-## What the XML does automatically
+## What the current converter automates
 
-- places the selected source clips on V1 in story order;
-- uses exact original source filenames;
-- uses exact source IN/OUT ranges;
-- places the explicit B-roll overlays on V2 at the specified timeline coordinates;
-- mutes B-roll camera audio so A1 dialogue remains clean;
-- keeps source audio with the primary footage;
-- creates A2 music clips over the defined music cues when a licensed music file is supplied;
-- uses deterministic timeline placement;
-- leaves the original source media untouched.
+- exact source filenames;
+- exact source IN/OUT ranges;
+- chronological story assembly;
+- primary V1 story spine;
+- exact V2 B-roll placements from the executable assembly plan;
+- source-audio carry-through;
+- A2 music-bed asset and cue placement when a music file is supplied/discovered;
+- deterministic timeline placement;
+- validation before XML generation.
 
-## What remains after import
+## What still requires explicit evidence or creative input
 
-The XML is intended to get the project **very close to an editable first cut**, not to fake a finished human mix.
+The music file is an external audio asset supplied by the editor; the pipeline does not invent or download one. The system also does not automatically decide a song's creative mix beyond the configured A2 cue placements.
 
-The remaining work is primarily:
+B-roll placement must remain evidence-grounded. The converter will not guess an overlay merely because two clips share labels such as `Road`, `Mountain`, or `Driving`.
 
-- listen/watch pass and any bad-cut corrections;
-- verify the B-roll visual match, especially Bundle-005 sections whose semantic vision evidence was unavailable;
-- choose the right licensed music track when one is not supplied;
-- tune music/dialogue/ambient levels and ducking;
-- final pacing adjustments;
-- captions/titles;
-- color grade;
-- sound design and final review.
+## Import into Resolve
 
-The system deliberately refuses to invent a music track. A2 is populated only when `--music-file` is explicitly supplied.
+1. Put exactly one music file under `./music/`.
+2. Generate `edit_timeline.fcpxml`.
+3. Open DaVinci Resolve.
+4. Import the FCPXML as a timeline.
+5. When Resolve asks for media relinking, point it at `/Users/yashaswipratick/Documents/video-analyser/videos` if required.
+6. Review V1/V2/A1/A2.
+7. Finish music mixing, sound design, captions, color, transitions, and final creative polish.
 
-## Import into DaVinci Resolve
-
-1. Generate `edit_timeline.fcpxml` on the Mac that has the original media.
-2. Open DaVinci Resolve and import the FCPXML timeline.
-3. Relink the media to `/Users/yashaswipratick/Documents/video-analyser/videos` if Resolve asks.
-4. Confirm the V1/V2/A1/A2 structure and watch the complete timeline once.
-5. Perform the final creative/audio/color/caption pass.
-
-The raw DJI files remain untouched throughout the analysis and assembly pipeline.
+The raw videos remain untouched. The XML is an edit/interchange file only.
