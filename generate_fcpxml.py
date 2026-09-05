@@ -1,31 +1,28 @@
 #!/usr/bin/env python3
-"""Generate a DaVinci Resolve-compatible FCPXML timeline from edit_timeline.json.
+"""Generate a DaVinci Resolve/FCPXML timeline from the editorial assembly.
 
-The editorial JSON remains the source of truth. This generator turns the
-chronological master timeline into a real edit structure and uses explicit
-B-roll recommendations when they contain an exact speechRange + bestBroll
-mapping. It never invents a B-roll mapping just because two clips share an
-event label.
+Preferred input is resolve_assembly.json, which contains explicit V1 main
+clips, V2 B-roll overlay placements and music cues. edit_timeline.json remains
+the editorial source of truth; resolve_assembly.json is the machine-executable
+assembly plan derived from it.
 
 Tracks:
-  V1 = primary story / talking-head / source footage
-  V2 = connected B-roll overlays when an exact recommendation can be mapped
-  A1 = source audio carried by the primary V1 clips
-  A2 = optional external music bed(s) when music asset placement is supplied
+  V1 = primary story
+  V2 = connected B-roll overlays
+  A1 = original source audio carried by V1 clips
+  A2 = optional licensed external music bed
 
 Usage:
   python3 generate_fcpxml.py \
-      --timeline edit_timeline.json \
-      --media-dir /Users/yashaswipratick/Documents/video-analyser/videos \
-      --output edit_timeline.fcpxml
+    --timeline edit_timeline.json \
+    --assembly resolve_assembly.json \
+    --media-dir /Users/yashaswipratick/Documents/video-analyser/videos \
+    --output edit_timeline.fcpxml
 
-Optional external music:
-  --music-file "/path/to/music.m4a"
+Optional music:
+  python3 generate_fcpxml.py ... --music-file "/path/to/licensed-track.m4a"
 
-The current edit_timeline.json contains music-worthy source footage, but does
-not contain a separate licensed music asset. Therefore the default output does
-NOT invent an audio track. It adds music cue metadata so the editor knows where
-a music bed belongs. A real music asset can be supplied explicitly.
+The generator never modifies or copies the original source videos.
 """
 
 from __future__ import annotations
@@ -35,7 +32,7 @@ import json
 from dataclasses import dataclass
 from fractions import Fraction
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any
 from urllib.parse import quote
 import xml.etree.ElementTree as ET
 
@@ -44,46 +41,56 @@ DEFAULT_FPS = 30
 
 
 @dataclass(frozen=True)
-class Clip:
+class MainClip:
     order: int
     section: str
     source: str
     start: Fraction
     end: Fraction
-    decision: str
     role: str
-    events: tuple[str, ...]
     reason: str
 
     @property
     def duration(self) -> Fraction:
-        value = self.end - self.start
-        if value <= 0:
-            raise ValueError(f"Invalid source range: {self.source} {self.start}->{self.end}")
-        return value
+        return self.end - self.start
 
 
 @dataclass(frozen=True)
-class TimelinePlacement:
-    clip: Clip
+class Overlay:
+    ident: str
     timeline_start: Fraction
-
-
-@dataclass(frozen=True)
-class BrollPlacement:
     source: str
-    start: Fraction
-    duration: Fraction
-    timeline_start: Fraction
-    parent_order: int
+    source_start: Fraction
+    source_end: Fraction
     reason: str
+
+    @property
+    def duration(self) -> Fraction:
+        return self.source_end - self.source_start
+
+
+@dataclass(frozen=True)
+class MusicCue:
+    ident: str
+    timeline_start: Fraction
+    duration: Fraction
+    role: str
+
+
+@dataclass(frozen=True)
+class ParentSpan:
+    clip: MainClip
+    timeline_start: Fraction
+
+    @property
+    def timeline_end(self) -> Fraction:
+        return self.timeline_start + self.clip.duration
 
 
 def ts(value: str | int | float) -> Fraction:
     if isinstance(value, (int, float)):
         return Fraction(str(value))
-    text = str(value).strip()
-    parts = text.split(":")
+    parts = str(value).strip().split(":")
     if len(parts) == 1:
         return Fraction(parts[0])
     if len(parts) != 3:
@@ -94,6 +101,10 @@ def ts(value: str | int | float) -> Fraction:
     return h * 3600 + m * 60 + s
 
 
+def fx(value: Fraction) -> str:
+    return f"{int(round(float(value) * TIMESCALE))}/{TIMESCALE}s"
+
+
 def fmt(value: Fraction) -> str:
     total_ms = int(round(float(value) * 1000))
     h, rem = divmod(total_ms, 3_600_000)
@@ -102,18 +113,8 @@ def fmt(value: Fraction) -> str:
     return f"{h:02d}:{m:02d}:{s:02d}.{ms:03d}"
 
 
-def fx(value: Fraction) -> str:
-    return f"{int(round(float(value) * TIMESCALE))}/{TIMESCALE}s"
-
-
 def file_url(path: Path) -> str:
     return "file://" + quote(str(path.expanduser().resolve()), safe="/:@-._~")
-
-
-def note(parent: ET.Element, key: str, value: Any) -> None:
-    child = ET.SubElement(parent, "note")
-    child.set("key", key)
-    child.set("value", str(value))
 
 
 def find_media(media_dir: Path, filename: str) -> Path:
@@ -125,251 +126,150 @@ def find_media(media_dir: Path, filename: str) -> Path:
         raise FileNotFoundError(f"Source media not found: {filename!r} under {media_dir}")
     if len(matches) > 1:
         raise RuntimeError(
-            "Multiple source files found for " + filename + ":\n" +
+            f"Multiple source files found for {filename!r}:\n" +
             "\n".join(f"  {p}" for p in matches[:10])
         )
     return matches[0]
 
 
-def parse_range(value: Any) -> tuple[Fraction, Fraction]:
-    if isinstance(value, dict):
-        return ts(value["start"]), ts(value["end"])
-    if isinstance(value, (list, tuple)) and len(value) == 2:
-        return ts(value[0]), ts(value[1])
-    raise ValueError(f"Unsupported range: {value!r}")
-
-
-def parse_range_object(value: Any) -> tuple[str, Fraction, Fraction]:
-    if not isinstance(value, dict):
-        raise ValueError(f"Expected range object, got {value!r}")
-    source = str(value.get("sourceFile") or value.get("file") or "").strip()
-    start_value = value.get("sourceStart", value.get("start"))
-    end_value = value.get("sourceEnd", value.get("end"))
-    if not source or start_value is None or end_value is None:
-        raise ValueError(f"Incomplete range object: {value!r}")
-    return source, ts(start_value), ts(end_value)
-
-
-def load(path: Path) -> dict[str, Any]:
+def load_json(path: Path) -> dict[str, Any]:
     data = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(data, dict) or not isinstance(data.get("masterTimeline"), list):
-        raise ValueError("edit_timeline.json must contain masterTimeline[]")
+    if not isinstance(data, dict):
+        raise ValueError(f"{path} must contain a JSON object")
     return data
 
 
-def build_clips(data: dict[str, Any]) -> list[Clip]:
-    result: list[Clip] = []
-    for index, item in enumerate(data["masterTimeline"], 1):
+def load_assembly(path: Path, timeline_path: Path | None) -> dict[str, Any]:
+    data = load_json(path)
+    if not isinstance(data.get("mainTimeline"), list):
+        raise ValueError("resolve_assembly.json must contain mainTimeline[]")
+    return data
+
+
+def build_main_clips(data: dict[str, Any]) -> list[MainClip]:
+    result: list[MainClip] = []
+    for index, item in enumerate(data["mainTimeline"], start=1):
         if not isinstance(item, dict):
             continue
-        decision = str(item.get("decision", "KEEP")).upper()
-        if decision == "REMOVE":
-            continue
-        source = str(item.get("sourceFile", "")).strip()
-        if not source:
-            raise ValueError(f"masterTimeline[{index}] missing sourceFile")
+        start = ts(item["sourceStart"])
+        end = ts(item["sourceEnd"])
+        if end <= start:
+            raise ValueError(f"mainTimeline[{index}] has non-positive source range")
         result.append(
-            Clip(
-                order=int(item.get("sequenceOrder", index)),
-                section=str(item.get("editorialSection", "")),
-                source=source,
-                start=ts(item["sourceStart"]),
-                end=ts(item["sourceEnd"]),
-                decision=decision,
-                role=str(item.get("mediaRole", "")),
-                events=tuple(str(x) for x in item.get("events", [])),
+            MainClip(
+                order=int(item.get("order", index)),
+                section=str(item.get("section", "EDIT")),
+                source=str(item["sourceFile"]),
+                start=start,
+                end=end,
+                role=str(item.get("mediaRole", "speech-driven")),
                 reason=str(item.get("reason", "")),
             )
         )
-    result.sort(key=lambda x: x.order)
+    result.sort(key=lambda item: item.order)
     return result
 
 
-def build_spine(clips: Iterable[Clip]) -> list[TimelinePlacement]:
-    placements: list[TimelinePlacement] = []
+def build_spans(clips: list[MainClip]) -> list[ParentSpan]:
+    spans: list[ParentSpan] = []
     cursor = Fraction(0)
     for clip in clips:
-        placements.append(TimelinePlacement(clip=clip, timeline_start=cursor))
+        spans.append(ParentSpan(clip=clip, timeline_start=cursor))
         cursor += clip.duration
-    return placements
+    return spans
 
 
-def range_overlap(a_start: Fraction, a_end: Fraction, b_start: Fraction, b_end: Fraction) -> Fraction:
-    return max(Fraction(0), min(a_end, b_end) - max(a_start, b_start))
+def build_overlays(data: dict[str, Any]) -> list[Overlay]:
+    raw = data.get("brollOverlays", [])
+    if not isinstance(raw, list):
+        return []
+    result: list[Overlay] = []
+    for index, item in enumerate(raw, start=1):
+        if not isinstance(item, dict):
+            continue
+        result.append(
+            Overlay(
+                ident=str(item.get("id", f"B{index:03d}")),
+                timeline_start=ts(item["timelineStart"]),
+                source=str(item["sourceFile"]),
+                source_start=ts(item["sourceStart"]),
+                source_end=ts(item["sourceEnd"]),
+                reason=str(item.get("reason", "Exact editorial B-roll placement")),
+            )
+        )
+    return [item for item in result if item.duration > 0]
 
 
-def extract_best_broll(rec: dict[str, Any]) -> tuple[str, Fraction, Fraction] | None:
-    candidate = rec.get("bestBroll") or rec.get("best_broll")
-    if isinstance(candidate, dict):
-        try:
-            return parse_range_object(candidate)
-        except (KeyError, ValueError):
-            return None
-    if isinstance(candidate, list) and candidate and isinstance(candidate[0], dict):
-        try:
-            return parse_range_object(candidate[0])
-        except (KeyError, ValueError):
-            return None
+def build_music_cues(data: dict[str, Any]) -> list[MusicCue]:
+    raw = data.get("musicCues", [])
+    if not isinstance(raw, list):
+        return []
+    result: list[MusicCue] = []
+    for index, item in enumerate(raw, start=1):
+        if not isinstance(item, dict):
+            continue
+        result.append(
+            MusicCue(
+                ident=str(item.get("id", f"M{index:03d}")),
+                timeline_start=ts(item["timelineStart"]),
+                duration=ts(item["duration"]),
+                role=str(item.get("role", "MUSIC")),
+            )
+        )
+    return [item for item in result if item.duration > 0]
+
+
+def parent_for_time(spans: list[ParentSpan], timeline_start: Fraction) -> ParentSpan | None:
+    for span in spans:
+        if span.timeline_start <= timeline_start < span.timeline_end:
+            return span
+    if spans and timeline_start == spans[-1].timeline_end:
+        return spans[-1]
     return None
 
 
-def extract_speech_range(rec: dict[str, Any]) -> tuple[str, Fraction, Fraction] | None:
-    value = rec.get("speechRange") or rec.get("speech_range")
-    if value is None:
+def attach_overlay(
+    parent: ParentSpan,
+    overlay: Overlay,
+) -> tuple[Fraction, Fraction] | None:
+    relative_start = overlay.timeline_start - parent.timeline_start
+    if relative_start < 0 or relative_start >= parent.clip.duration:
         return None
-    try:
-        return parse_range_object(value)
-    except (KeyError, ValueError):
+    available = parent.clip.duration - relative_start
+    duration = min(overlay.duration, available)
+    if duration <= 0:
         return None
+    return relative_start, duration
 
 
-def build_broll_placements(
-    data: dict[str, Any],
-    spine: list[TimelinePlacement],
-) -> tuple[list[BrollPlacement], list[str]]:
-    recommendations = data.get("brollRecommendations", [])
-    if not isinstance(recommendations, list):
-        return [], ["brollRecommendations is not an array; no automatic B-roll overlays created."]
-
-    placements: list[BrollPlacement] = []
-    warnings: list[str] = []
-
-    for rec_index, rec in enumerate(recommendations, 1):
-        if not isinstance(rec, dict):
-            continue
-        speech = extract_speech_range(rec)
-        best = extract_best_broll(rec)
-        if not speech or not best:
-            warnings.append(f"B-roll recommendation #{rec_index} lacks exact speechRange or bestBroll; left as a recommendation only.")
-            continue
-
-        speech_source, speech_start, speech_end = speech
-        broll_source, broll_start, broll_end = best
-        if broll_end <= broll_start:
-            warnings.append(f"B-roll recommendation #{rec_index} has an invalid bestBroll range.")
-            continue
-
-        target: TimelinePlacement | None = None
-        for candidate in spine:
-            if candidate.clip.source != speech_source:
-                continue
-            overlap = range_overlap(
-                candidate.clip.start,
-                candidate.clip.end,
-                speech_start,
-                speech_end,
-            )
-            if overlap > 0:
-                target = candidate
-                break
-        if target is None:
-            warnings.append(
-                f"B-roll recommendation #{rec_index} speech range does not map to an explicit masterTimeline clip; not auto-placed."
-            )
-            continue
-
-        target_start = max(candidate for candidate in [speech_start, target.clip.start])
-        target_end = min(speech_end, target.clip.end)
-        duration = target_end - target_start
-        broll_duration = broll_end - broll_start
-        duration = min(duration, broll_duration)
-        if duration <= 0:
-            continue
-
-        timeline_start = target.timeline_start + (target_start - target.clip.start)
-        placements.append(
-            BrollPlacement(
-                source=broll_source,
-                start=broll_start,
-                duration=duration,
-                timeline_start=timeline_start,
-                parent_order=target.clip.order,
-                reason=str(rec.get("reason") or rec.get("brollReason") or "Exact editorial B-roll recommendation"),
-            )
-        )
-
-    # Avoid two exact recommendations fighting for the same lane/time.
-    placements.sort(key=lambda p: (p.timeline_start, p.parent_order, p.source, p.start))
-    accepted: list[BrollPlacement] = []
-    occupied: list[tuple[Fraction, Fraction]] = []
-    for placement in placements:
-        start = placement.timeline_start
-        end = start + placement.duration
-        if any(range_overlap(start, end, a, b) > 0 for a, b in occupied):
-            continue
-        accepted.append(placement)
-        occupied.append((start, end))
-    return accepted, warnings
-
-
-def build_music_cues(data: dict[str, Any]) -> list[dict[str, Any]]:
-    raw = data.get("musicSections", [])
-    if not isinstance(raw, list):
-        return []
-    cues: list[dict[str, Any]] = []
-    for index, item in enumerate(raw, 1):
-        if not isinstance(item, dict):
-            continue
-        source = str(item.get("sourceFile") or item.get("file") or "").strip()
-        start = item.get("sourceStart", item.get("start"))
-        end = item.get("sourceEnd", item.get("end"))
-        if not source or start is None or end is None:
-            continue
-        try:
-            source_start = ts(start)
-            source_end = ts(end)
-        except ValueError:
-            continue
-        cues.append({
-            "id": str(item.get("musicSectionId") or item.get("id") or f"MUSIC_{index:03d}"),
-            "sourceFile": source,
-            "sourceStart": source_start,
-            "sourceEnd": source_end,
-            "role": str(item.get("recommendedMusicRole") or item.get("musicRole") or "MUSIC_MONTAGE"),
-            "reason": str(item.get("reason") or item.get("musicReason") or "Music-driven visual section"),
-        })
-    return cues
-
-
-def add_asset(resources: ET.Element, ref: str, name: str, path: Path, has_video: bool, has_audio: bool) -> None:
+def add_asset(resources: ET.Element, ref: str, name: str, path: Path, *, video: bool, audio: bool, duration: Fraction | None = None) -> None:
     attrs = {
         "id": ref,
         "name": name,
         "src": file_url(path),
         "start": "0s",
-        "duration": "0s",
-        "hasVideo": "1" if has_video else "0",
-        "hasAudio": "1" if has_audio else "0",
+        "duration": fx(duration) if duration and duration > 0 else "0s",
+        "hasVideo": "1" if video else "0",
+        "hasAudio": "1" if audio else "0",
     }
     ET.SubElement(resources, "asset", attrs)
 
 
-def add_clip_notes(element: ET.Element, clip: Clip) -> None:
-    note(element, "sequenceOrder", clip.order)
-    note(element, "editorialSection", clip.section)
-    note(element, "decision", clip.decision)
-    note(element, "mediaRole", clip.role)
-    note(element, "events", ", ".join(clip.events))
-    note(element, "reason", clip.reason)
-
-
 def generate(
-    data: dict[str, Any],
+    assembly: dict[str, Any],
     media_dir: Path,
     fps: int,
     music_file: Path | None,
 ) -> tuple[str, dict[str, Any]]:
-    clips = build_clips(data)
-    spine = build_spine(clips)
-    if not spine:
-        raise ValueError("masterTimeline contains no usable clips")
+    main = build_main_clips(assembly)
+    spans = build_spans(main)
+    overlays = build_overlays(assembly)
+    music_cues = build_music_cues(assembly)
+    warnings: list[str] = []
 
-    broll, broll_warnings = build_broll_placements(data, spine)
-    music_cues = build_music_cues(data)
-
-    source_names = {placement.clip.source for placement in spine}
-    source_names.update(item.source for item in broll)
-    media: dict[str, Path] = {name: find_media(media_dir, name) for name in sorted(source_names)}
+    source_names = {item.source for item in main}
+    source_names.update(item.source for item in overlays)
+    media = {name: find_media(media_dir, name) for name in sorted(source_names)}
 
     root = ET.Element("fcpxml", {"version": "1.10"})
     resources = ET.SubElement(root, "resources")
@@ -389,18 +289,19 @@ def generate(
     for index, (name, path) in enumerate(media.items(), start=2):
         ref = f"r{index}"
         refs[name] = ref
-        add_asset(resources, ref, name, path, has_video=True, has_audio=True)
+        add_asset(resources, ref, name, path, video=True, audio=True)
 
     music_ref: str | None = None
     if music_file:
         if not music_file.is_file():
             raise FileNotFoundError(f"Music file not found: {music_file}")
         music_ref = f"r{len(refs) + 2}"
-        add_asset(resources, music_ref, music_file.name, music_file, has_video=False, has_audio=True)
+        max_music_duration = max((cue.duration for cue in music_cues), default=Fraction(1))
+        add_asset(resources, music_ref, music_file.name, music_file, video=False, audio=True, duration=max_music_duration)
 
     library = ET.SubElement(root, "library")
-    event = ET.SubElement(library, "event", {"name": "AI Editorial Timeline"})
-    project = ET.SubElement(event, "project", {"name": "AI Editorial Timeline"})
+    event = ET.SubElement(library, "event", {"name": str(assembly.get("assemblyName", "AI Editorial Timeline"))})
+    project = ET.SubElement(event, "project", {"name": str(assembly.get("assemblyName", "AI Editorial Timeline"))})
     sequence = ET.SubElement(
         project,
         "sequence",
@@ -411,113 +312,148 @@ def generate(
             "audioRate": "48k",
         },
     )
-    spine_element = ET.SubElement(sequence, "spine")
+    spine = ET.SubElement(sequence, "spine")
 
-    # Build the V1 spine. Connected V2 B-roll is attached to the main clip
-    # containing the exact speechRange it was recommended for.
-    for placement in spine:
+    # Map overlays to their parent V1 clip. FCPXML connected clips are attached
+    # to the parent asset-clip and use a positive lane for V2.
+    for span in spans:
         clip = ET.SubElement(
-            spine_element,
+            spine,
             "asset-clip",
             {
-                "name": placement.clip.source,
-                "ref": refs[placement.clip.source],
-                "offset": fx(placement.timeline_start),
-                "start": fx(placement.clip.start),
-                "duration": fx(placement.clip.duration),
+                "name": f"{span.clip.order:02d} {span.clip.section} | {span.clip.source}",
+                "ref": refs[span.clip.source],
+                "offset": fx(span.timeline_start),
+                "start": fx(span.clip.start),
+                "duration": fx(span.clip.duration),
                 "enabled": "1",
             },
         )
-        add_clip_notes(clip, placement.clip)
-        for br in broll:
-            if br.parent_order != placement.clip.order:
+
+        for overlay in overlays:
+            placement = attach_overlay(span, overlay)
+            if placement is None:
                 continue
-            overlay = ET.SubElement(
+            relative_start, duration = placement
+            overlay_clip = ET.SubElement(
                 clip,
                 "asset-clip",
                 {
-                    "name": br.source,
-                    "ref": refs[br.source],
+                    "name": f"V2 {overlay.ident} | {overlay.source}",
+                    "ref": refs[overlay.source],
                     "lane": "1",
-                    "offset": fx(br.timeline_start - placement.timeline_start),
-                    "start": fx(br.start),
-                    "duration": fx(br.duration),
+                    "offset": fx(relative_start),
+                    "start": fx(overlay.source_start),
+                    "duration": fx(duration),
                     "enabled": "1",
                 },
             )
-            note(overlay, "track", "V2")
-            note(overlay, "role", "B-ROLL_OVERLAY")
-            note(overlay, "reason", br.reason)
+            # B-roll visuals should not replace dialogue with their camera audio.
+            adjust = ET.SubElement(overlay_clip, "adjust-volume", {"amount": "-96dB"})
+            adjust.set("name", "mute-broll-audio")
 
-    # Optional A2 music bed. The current JSON contains exact visual music
-    # sections, but no licensed audio asset. If the caller supplies a music
-    # asset we place it as one continuous bed; the cue list is preserved in
-    # metadata so the editor can tune/trim it to the exact sections.
-    if music_ref and music_cues:
-        music_lane = ET.SubElement(spine_element, "asset-clip", {
-            "name": music_file.name,
-            "ref": music_ref,
-            "lane": "-1",
-            "offset": "0s",
-            "start": "0s",
-            "duration": fx(spine[-1].timeline_start + spine[-1].clip.duration),
-            "enabled": "1",
-        })
-        note(music_lane, "track", "A2")
-        note(music_lane, "role", "MUSIC_BED")
-        note(music_lane, "mixInstruction", "Lower music under dialogue; keep full-volume only in music-driven sections.")
+        # Optional A2 music cue(s) whose timeline start falls inside this V1 clip.
+        if music_ref:
+            for cue in music_cues:
+                if not (span.timeline_start <= cue.timeline_start < span.timeline_end):
+                    continue
+                relative_start = cue.timeline_start - span.timeline_start
+                available = span.clip.duration - relative_start
+                duration = min(cue.duration, available)
+                if duration <= 0:
+                    continue
+                music_clip = ET.SubElement(
+                    clip,
+                    "asset-clip",
+                    {
+                        "name": f"A2 {cue.ident} | {music_file.name}",
+                        "ref": music_ref,
+                        "lane": "-1",
+                        "offset": fx(relative_start),
+                        "start": "0s",
+                        "duration": fx(duration),
+                        "enabled": "1",
+                    },
+                )
+                ET.SubElement(music_clip, "adjust-volume", {"amount": "-12dB"})
+
+    # Validate overlay bounds and explain anything intentionally left out.
+    assembled_end = spans[-1].timeline_end
+    for overlay in overlays:
+        if overlay.timeline_start < 0 or overlay.timeline_start >= assembled_end:
+            warnings.append(f"{overlay.ident} is outside the assembled V1 timeline and was not placed")
+            continue
+        parent = parent_for_time(spans, overlay.timeline_start)
+        if parent is None:
+            warnings.append(f"{overlay.ident} could not be mapped to a V1 parent")
+        elif overlay.timeline_start + overlay.duration > parent.timeline_end:
+            warnings.append(
+                f"{overlay.ident} crosses a V1 clip boundary; it was truncated to the containing V1 clip"
+            )
+
+    if music_cues and not music_ref:
+        warnings.append(
+            "Music cues exist, but no external music asset was supplied. Re-run with --music-file using a licensed track to populate A2."
+        )
 
     metadata = ET.SubElement(root, "metadata")
-    note(metadata, "generator", "generate_fcpxml.py")
-    note(metadata, "sourceSchemaVersion", data.get("schemaVersion"))
-    note(metadata, "v1", "Primary story spine")
-    note(metadata, "v2", "Exact B-roll overlays only when speechRange + bestBroll mapping is explicit")
-    note(metadata, "a1", "Source audio carried by V1 clips")
-    note(metadata, "a2", "Optional external music bed; not invented unless supplied")
-    note(metadata, "musicCueCount", len(music_cues))
-    note(metadata, "brollOverlayCount", len(broll))
+    ET.SubElement(metadata, "md", {"key": "assemblyName", "value": str(assembly.get("assemblyName", "AI Editorial Timeline"))})
+    ET.SubElement(metadata, "md", {"key": "generator", "value": "generate_fcpxml.py"})
+    ET.SubElement(metadata, "md", {"key": "V1", "value": "Primary story spine"})
+    ET.SubElement(metadata, "md", {"key": "V2", "value": "Explicit B-roll overlays from resolve_assembly.json"})
+    ET.SubElement(metadata, "md", {"key": "A1", "value": "Original source audio carried by V1"})
+    ET.SubElement(metadata, "md", {"key": "A2", "value": "Optional licensed music bed"})
 
     ET.indent(root, space="  ")
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(root, encoding="unicode") + "\n"
 
-    total_duration = spine[-1].timeline_start + spine[-1].clip.duration
-    summary = {
-        "masterTimelineItems": len(spine),
+    return xml, {
+        "assemblyName": assembly.get("assemblyName"),
+        "mainTimelineItems": len(main),
         "sourceAssets": len(media),
-        "brollOverlaysPlaced": len(broll),
-        "musicCuesDetected": len(music_cues),
-        "externalMusicAsset": str(music_file) if music_file else None,
-        "timelineDuration": fmt(total_duration),
-        "timelineDurationSeconds": float(total_duration),
+        "brollOverlaysRequested": len(overlays),
+        "musicCues": len(music_cues),
+        "musicAssetPlaced": bool(music_ref),
+        "timelineDuration": fmt(assembled_end),
+        "timelineDurationSeconds": float(assembled_end),
         "fps": fps,
-        "tracks": {"V1": "primary story", "V2": "exact B-roll overlays", "A1": "source audio", "A2": "optional music bed"},
-        "sourceMediaModified": False,
-        "warnings": broll_warnings + ([] if music_file or not music_cues else [
-            "Music sections are visual cues only because edit_timeline.json does not contain a separate music audio asset.",
-            "Pass --music-file to place an actual A2 music bed.",
-        ]),
+        "tracks": {
+            "V1": "primary story",
+            "V2": "connected B-roll",
+            "A1": "source dialogue/natural sound",
+            "A2": "optional external music",
+        },
+        "rawOriginalsModified": False,
+        "warnings": warnings,
     }
-    return xml, summary
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--timeline", type=Path, default=Path("edit_timeline.json"))
-    parser.add_argument("--media-dir", type=Path, required=True)
+    parser.add_argument("--timeline", type=Path, default=Path("edit_timeline.json"), help="Editorial source-of-truth JSON")
+    parser.add_argument("--assembly", type=Path, default=Path("resolve_assembly.json"), help="Machine-executable Resolve assembly plan")
+    parser.add_argument("--media-dir", type=Path, required=True, help="Directory containing original source videos")
     parser.add_argument("--output", type=Path, default=Path("edit_timeline.fcpxml"))
     parser.add_argument("--fps", type=int, default=DEFAULT_FPS, choices=(24, 25, 30, 50, 60))
-    parser.add_argument("--music-file", type=Path, default=None, help="Optional licensed music asset for the A2 bed")
+    parser.add_argument("--music-file", type=Path, default=None, help="Optional licensed music file for A2")
     args = parser.parse_args()
 
     try:
-        data = load(args.timeline)
-        xml, summary = generate(data, args.media_dir, args.fps, args.music_file)
+        editorial = load_json(args.timeline)
+        assembly = load_assembly(args.assembly, args.timeline)
+        if assembly.get("sourceTimeline") and assembly["sourceTimeline"] != args.timeline.name:
+            print(
+                f"WARNING: assembly sourceTimeline={assembly['sourceTimeline']!r} differs from --timeline={args.timeline.name!r}"
+            )
+        xml, summary = generate(assembly, args.media_dir, args.fps, args.music_file)
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(xml, encoding="utf-8")
     except Exception as exc:
         print(f"ERROR: {exc}")
         return 1
 
+    summary["editorialSchemaVersion"] = editorial.get("schemaVersion")
+    summary["assemblySchemaVersion"] = assembly.get("schemaVersion")
     print(json.dumps({"output": str(args.output.resolve()), **summary}, indent=2))
     return 0
 
