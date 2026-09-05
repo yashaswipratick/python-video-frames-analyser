@@ -1,0 +1,107 @@
+{
+  "memoryVersion": 1,
+  "bundleId": "analysis_bundle_004",
+  "status": "DETAILED_PERSISTED_FROM_EDITORIAL_REVIEW",
+  "scope": "Major off-road adventure, destination arrival/parking, natural passenger interaction, return descent, practical driving explanation and outro.",
+  "sourceEvidence": {
+    "bundleSizeBytes": 503750947,
+    "videoCount": 9,
+    "frameBoundaryNote":"The bundle package was split at a chunk boundary. Several final frame samples were not physically present in bundle 004 and were expected to continue in bundle 005; this must not be treated as loss of source video evidence until the next bundle is checked."
+  },
+  "editorialObjective": "Use the genuine off-road adventure as the major payoff to the early hook, preserve authentic reactions, show arrival and weather/road texture, keep the practical information compact, and avoid turning the driving explanation into a tutorial.",
+  "storyBeats": [
+    {"beat":"ADVENTURE","detail":"Rocky dirt-road driving becomes a sustained high-value sequence rather than a generic travel montage. The terrain visibly supports the narration about roughness and ground clearance."},
+    {"beat":"REACTION","detail":"Direct-to-camera and passenger interaction provide authentic excitement and humour during the climb."},
+    {"beat":"DESTINATION_REVEAL","detail":"Arrival/parking material confirms movement from rough route into destination space with vehicles, people, buildings and mountain surroundings."},
+    {"beat":"SECOND_ADVENTURE_BEAT","detail":"A later explicit 'one more off-road' sequence creates a second escalation and directly fulfils the promise made in the hook."},
+    {"beat":"LOCAL_INTERACTION","detail":"Natural in-car interaction gives human texture and a breath between physically intense road sections."},
+    {"beat":"RETURN","detail":"Descent footage plus worsening/wet conditions provides a visual and tonal move toward closing."},
+    {"beat":"USEFUL_INFO","detail":"Practical commentary about rough-road/rain driving can survive in a short covered section; it should not dominate the ending."},
+    {"beat":"OUTRO","detail":"Natural wrap-up speech is preserved as the closing anchor."}
+  ],
+  "videos": {
+    "DJI_20260830165231_0284_D.MP4": {
+      "sourceDuration":"00:04:56.096","overallDecision":"STRONG_KEEP","storyRole":"ADVENTURE",
+      "visualSummary":"Rocky dirt road, hill terrain, sunlight, vehicles and people. The strongest material demonstrates that the vehicle is genuinely traversing rough/off-road terrain.",
+      "selectedRanges":[
+        {"start":"00:28.430","end":"00:46.060","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Off-road Terrain","Driving","Road","Mountain","Landscape","Vehicle"],"editorialReason":"Natural narration about the rough road and vehicle ground clearance matches visible rocky terrain. Strong candidate for authentic explanation with exact visual coverage."},
+        {"start":"00:56.600","end":"01:13.170","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Off-road Terrain","Driving","Road","Mountain","Landscape","Vehicle"],"editorialReason":"Continuation of off-road narration with humour/comparison. Use only as much as needed after the stronger first segment."},
+        {"start":"03:10.000","end":"03:16.000","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Off-road Terrain","Driving","Road","Mountain","Landscape"],"editorialReason":"Short clean adventure visual suitable for a beat/drop or transition in a music-led sequence."}
+      ],
+      "removedOrUnused":"No broad keep of the full 296 seconds. Long stretches should be treated as source pool and cut aggressively if they duplicate stronger climbs later.",
+      "crossBundleRole":"Early strong proof that the off-road promise is real; later 0290 can provide an even stronger escalation, so this should not necessarily be the whole adventure section."},
+    "DJI_20260830165745_0285_D.MP4": {
+      "sourceDuration":"00:05:23.924","overallDecision":"STRONG_KEEP","storyRole":"ADVENTURE",
+      "visualSummary":"First ~100 seconds show rocky hill-road climbing. Middle section includes direct-to-camera passenger interaction. Later section returns to dirt road and mountain terrain.",
+      "selectedRanges":[
+        {"start":"00:03.860","end":"01:37.750","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Off-road Terrain","Driving","Road","Mountain","Landscape","Vehicle"],"editorialReason":"Strong continuous rocky climb with authentic reactions; one of the clearest long-form adventure sources."},
+        {"start":"01:37.750","end":"02:55.000","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["People","Driving","Vehicle","Off-road Terrain"],"editorialReason":"Creator explains the thrill/adventure while road footage can cover static/direct-to-camera portions. Preserve best reaction lines only."},
+        {"start":"03:35.220","end":"05:10.000","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Road","Driving","Landscape","Mountain"],"editorialReason":"Continuation of off-road/travel progression; use only strongest moments because similar terrain is available elsewhere."}
+      ],
+      "editorialNote":"This source can carry the adventure sequence visually, but final assembly should choose the most exciting continuous climb and avoid stacking near-identical rocky-road shots."},
+    "DJI_20260830170412_0286_D.MP4": {
+      "sourceDuration":"00:03:27.275","overallDecision":"KEEP","storyRole":"DESTINATION_REVEAL",
+      "visualSummary":"Descending/approach road, rocky slope and arrival/parking area with people, vehicles and buildings.",
+      "selectedRanges":[
+        {"start":"01:44.690","end":"02:32.830","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Off-road Terrain","Driving","Road","Mountain","Landscape","Vehicle","People"],"editorialReason":"Arrival/parking narration is supported by visible dirt-road approach, vehicles and people."},
+        {"start":"02:15.000","end":"03:00.000","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Building","People","Vehicle","Mountain","Landscape"],"editorialReason":"Arrival visual pool with enough environmental change for a short music-led reveal. Choose only the strongest visual beats."}
+      ],
+      "boundaryNote":"The source duration is 03:27.275, so both ranges are within the source, but they overlap and should not both be used at full length."},
+    "DJI_20260830171102_0288_D.MP4": {
+      "sourceDuration":"00:10.043","overallDecision":"KEEP_FOR_MUSIC","storyRole":"TRANSITION",
+      "visualSummary":"Parking/arrival scene containing buses, people and surrounding landscape.",
+      "selectedRanges":[{"start":"00:00.000","end":"00:10.043","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Vehicle","People","Landscape","Transition Shot"],"editorialReason":"Very short environmental bridge into destination area; ideal as a visual connector rather than speech section."}]},
+    "DJI_20260830173839_0290_D.MP4": {
+      "sourceDuration":"00:03:53.200","overallDecision":"STRONG_KEEP","storyRole":"ADVENTURE",
+      "visualSummary":"Starts with creator talking, then road/sign, followed by dirt-road ascent with mountain terrain and people. This is a second explicit off-road adventure beat.",
+      "selectedRanges":[
+        {"start":"00:20.140","end":"01:23.570","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Off-road Terrain","Driving","Road","Mountain","Landscape","Vehicle"],"editorialReason":"Explicit 'one more off-road' setup immediately followed by steep rocky ascent. Strong payoff to the opening promise."},
+        {"start":"01:28.750","end":"03:09.990","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Off-road Terrain","Driving","Road","Mountain","People","Vehicle"],"editorialReason":"Extended climb with strong visual intensity. Select only the best escalating moments instead of keeping the whole stretch."},
+        {"start":"03:30.950","end":"03:50.770","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["People","Road","Driving","Vehicle"],"editorialReason":"Barrier/route observation provides context and a natural late beat in the adventure section."}
+      ],
+      "retentionNote":"This is one of the highest-value bundle-004 sequences because it combines promise, action and escalation. It should likely anchor the main adventure payoff unless a later bundle contains stronger evidence."},
+    "DJI_20260830180725_0291_D.MP4": {
+      "sourceDuration":"00:01:01.931","overallDecision":"STRONG_KEEP","storyRole":"LOCAL_INTERACTION",
+      "visualSummary":"Two people in the car; conversational/reaction chemistry.",
+      "selectedRanges":[
+        {"start":"00:00.400","end":"00:20.190","decision":"KEEP","mediaRole":"speech-driven","events":["People","Vehicle","Close-up"],"editorialReason":"Natural passenger interaction that humanizes the adventure."},
+        {"start":"00:22.390","end":"00:31.620","decision":"KEEP","mediaRole":"speech-driven","events":["People","Vehicle","Close-up"],"editorialReason":"Second compact conversational beat; use if it adds a new reaction rather than repeating the first."},
+        {"start":"00:42.630","end":"00:47.550","decision":"KEEP","mediaRole":"speech-driven","events":["People","Vehicle","Close-up"],"editorialReason":"Short reaction beat useful as a reset before return/closing."}
+      ]},
+    "DJI_20260830180912_0292_D.MP4": {
+      "sourceDuration":"00:08.141","overallDecision":"KEEP_FOR_MUSIC","storyRole":"RETURN",
+      "visualSummary":"Scenic descent on dirt road with trees and a town/landscape view; wet/worsening weather texture.",
+      "selectedRanges":[{"start":"00:00.000","end":"00:08.141","decision":"KEEP_FOR_MUSIC","mediaRole":"music-driven","events":["Off-road Terrain","Driving","Road","Landscape"],"editorialReason":"Compact visual descent/return bridge. Weather changes create tonal movement toward the ending."}]},
+    "DJI_20260830181753_0293_D.MP4": {
+      "sourceDuration":"00:23.637","overallDecision":"KEEP","storyRole":"OUTRO",
+      "visualSummary":"Driver talking to camera with some road context.",
+      "selectedRanges":[{"start":"00:05.770","end":"00:21.970","decision":"KEEP","mediaRole":"speech-driven","events":["People","Close-up"],"editorialReason":"Natural wrap-up/outro speech. Preserve as closing anchor and trim only dead space."}]},
+    "DJI_20260830181824_0294_D.MP4": {
+      "sourceDuration":"00:02:24.917","overallDecision":"KEEP_WITH_EDITS","storyRole":"USEFUL_INFO",
+      "selectedRanges":[
+        {"start":"00:18.580","end":"01:16.780","decision":"KEEP_WITH_BROLL","mediaRole":"speech + B-roll","events":["Driving","Road","Off-road Terrain","Mountain","Landscape","Vehicle"],"editorialReason":"Practical rough-road/rain-driving explanation supported by visible road and terrain. Good information, but should remain compact."},
+        {"start":"01:18.160","end":"02:14.570","decision":"SHORTEN","mediaRole":"speech + B-roll","events":["Driving","Road","Off-road Terrain","Mountain","Landscape","Vehicle","People"],"editorialReason":"Steep-descent/engine-braking explanation has value but risks becoming a driving tutorial. Retain the clearest useful statement and strongest matching visual evidence only."}
+      ],
+      "editorialNote":"Useful information should support the story after the adventure rather than interrupt its momentum."}
+  },
+  "crossBundleEditorialNotes": {
+    "adventureAnchor":"0290 is currently the best candidate for the central payoff because it explicitly reintroduces off-road activity and immediately delivers steep rocky terrain. 0285 and 0284 are strong supporting sources for alternate angles, explanation coverage and montage beats.",
+    "humanTexture":"0291 should be used as a short reaction/reset, not as a long conversation block.",
+    "destinationArrival":"0286 + 0288 can bridge rough terrain to arrival/parking before the exploration portion from later bundles.",
+    "returnTone":"0292 supplies a very short scenic descent and weather shift; useful before practical closing information/outro.",
+    "closing":"0294 useful-info plus 0293 natural outro gives a sensible post-adventure close.",
+    "repetitionRisk":"There are multiple long rocky-road stretches. Final timeline should use visual progression and escalate rather than stacking all of them.",
+    "safetyBoundary":"The footage can be described as visibly rough/off-road terrain and as the creator's experience. Do not infer permission or claim the route is safe/authorized without evidence."
+  },
+  "frameBoundaryIssues": {
+    "0284":"Manifest 62 frame samples, 61 physically present in bundle 004; likely final frame continues into next bundle.",
+    "0285":"Manifest 79, 78 present.",
+    "0286":"Manifest 44, 43 present.",
+    "0288":"Manifest 5, 4 present.",
+    "0290":"Manifest 52, 51 present.",
+    "0291":"Manifest 15, 14 present.",
+    "0292":"Manifest 4, 3 present.",
+    "0293":"Manifest 11, 9 present; likely boundary continuation.",
+    "0294":"Manifest 31, 30 present."
+  }
+}
