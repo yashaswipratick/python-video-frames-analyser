@@ -8,7 +8,12 @@
     "V1": "primary_story",
     "V2": "broll_overlays",
     "A1": "source_dialogue_and_natural_sound",
-    "A2": "optional_external_music"
+    "A2": "external_music_bed"
+  },
+  "musicPolicy": {
+    "externalAudioFile": "/Users/yashaswipratick/projects/youtube-analysis/youtube-analytics/video/Kailashagiri-hills/music/Warriyo-Laura Brehm-Mortals.mp3",
+    "requiredForFinal": true,
+    "instruction": "Use this exact MP3 on A2 for the configured music cues. Keep dialogue on A1 and duck the music beneath speech. Do not substitute another track automatically."
   },
   "mainTimeline": [
     {"order":1,"section":"HOOK","sourceFile":"DJI_20260830123104_0221_D.MP4","sourceStart":"00:04.560","sourceEnd":"00:24.120","mediaRole":"speech-driven","reason":"Fast hook: hill/temple premise plus off-road promise."},
@@ -55,16 +60,10 @@
     {"id":"M003","timelineStart":"07:12.195","duration":"00:08.141","sourceVideo":"DJI_20260830180912_0292_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.141","role":"RETURN_RESET"},
     {"id":"M004","timelineStart":"08:26.456","duration":"00:20.000","sourceVideo":"DJI_20260830182750_0300_D.MP4","sourceStart":"02:24.000","sourceEnd":"02:44.000","role":"SUNSET_REFLECTION"}
   ],
-  "musicPolicy": {
-    "externalAudioFile": null,
-    "requiredForFinal": true,
-    "instruction": "Place a licensed music bed on A2 over musicCues, duck under dialogue, and let natural sound breathe between beds. No unknown or unlicensed track is assumed."
-  },
   "expectedOutcome": {
     "mechanicalAssembly": "High",
     "manualWorkAfterImport": [
       "verify B-roll visual match",
-      "choose licensed music",
       "mix dialogue/music/ambience",
       "fine-tune pacing",
       "color grade",
