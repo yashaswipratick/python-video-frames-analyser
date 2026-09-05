@@ -1,0 +1,50 @@
+{
+  "memoryVersion": 1,
+  "purpose": "Lightweight persistent editorial reasoning index used to avoid re-opening large analysis bundles unnecessarily.",
+  "workflow": [
+    "Read this index first in every editorial session.",
+    "Read only the newly uploaded bundle evidence.",
+    "Persist the complete editorial reasoning for that bundle in its bundle_*_editorial_memory.json file.",
+    "Use all persisted bundle memories as the historical story pool.",
+    "Derive edit_timeline.json from the memory layer.",
+    "Do not silently replace an old bundle conclusion without documenting a superseding analysis."
+  ],
+  "files": {
+    "bundle_001": {
+      "path": "editorial_memory/bundle_001_editorial_memory.json",
+      "status": "DETAILED_PERSISTED",
+      "notes": "Opening, plan, breakfast/local-food problem, journey, tea/late urgency and first destination approach."
+    },
+    "bundle_002": {
+      "path": "editorial_memory/bundle_002_editorial_memory.json",
+      "status": "NOT_YET_PERSISTED",
+      "notes": "Earlier conversational review exists, but the detailed bundle-specific reasoning is not currently stored in the repository. Do not fabricate missing timestamps; capture the detailed analysis from the bundle when the processing runtime is available."
+    },
+    "bundle_003": {
+      "path": "editorial_memory/bundle_003_editorial_memory.json",
+      "status": "NOT_YET_PERSISTED",
+      "notes": "Earlier review included destination/cave-temple/crowd/local-interaction material, but exact bundle-specific reasoning is not currently stored in the repository. Capture the evidence-derived detail before final consolidation rather than guessing."
+    },
+    "bundle_004": {
+      "path": "editorial_memory/bundle_004_editorial_memory.json",
+      "status": "DETAILED_PERSISTED",
+      "notes": "Major off-road adventure, destination arrival, passenger interaction, return, practical driving information and outro."
+    },
+    "bundle_005": {
+      "path": "editorial_memory/bundle_005_editorial_memory.json",
+      "status": "NOT_YET_PERSISTED",
+      "notes": "Bundle 005 is attached, but its heavy ZIP could not currently be processed because the runtime timed out. No unsupported editorial conclusions are stored for it."
+    }
+  },
+  "lockedPrinciples": {
+    "editTimelineRole": "Final assembly source of truth",
+    "memoryRole": "Persistent reasoning/evidence interpretation layer",
+    "rawBundleRole": "Evidence package",
+    "reopenOldBundleOnlyWhen": [
+      "required evidence is absent from memory",
+      "source identity or timestamp conflict is detected",
+      "user explicitly requests re-analysis",
+      "a previous conclusion is proven inconsistent with the evidence"
+    ]
+  }
+}
