@@ -1,0 +1,26 @@
+{
+  "memoryVersion": 1,
+  "bundleId": "analysis_bundle_005",
+  "status": "PENDING_DETAILED_CAPTURE",
+  "rule": "This file is a deliberate placeholder until bundle 005 can be processed. No unsupported editorial conclusions are stored.",
+  "sourcePackage": {
+    "filename":"analysis_bundle_005.zip",
+    "sizeBytes":389563161
+  },
+  "processingNote":"The bundle is attached and registered, but attempts to process the heavy ZIP currently time out in the working runtime. The repository must be updated with the full evidence-derived memory once processing succeeds.",
+  "requiredCapture": [
+    "bundle manifest/video list",
+    "source durations and hashes",
+    "per-video visual observations",
+    "exact speech ranges and useful dialogue",
+    "exact keep/remove/shorten ranges",
+    "closed visual event labels",
+    "B-roll candidates with exact source ranges",
+    "music candidates with exact source ranges",
+    "story-role mapping",
+    "cross-bundle relationships",
+    "repetition and continuity notes",
+    "evidence ambiguities",
+    "whether any frame-boundary continuations from bundle 004 are present"
+  ]
+}
