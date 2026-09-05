@@ -17,8 +17,8 @@
     },
     "bundle_002": {
       "path": "editorial_memory/bundle_002_editorial_memory.json",
-      "status": "NOT_YET_PERSISTED",
-      "notes": "Earlier conversational review exists, but the detailed bundle-specific reasoning is not currently stored in the repository. Do not fabricate missing timestamps; capture the detailed analysis from the bundle when the processing runtime is available."
+      "status": "DETAILED_PERSISTED",
+      "notes": "Destination approach, current-vs-past crowd observation, temple-in-hill explanation, trek/physical reaction, local interaction candidates, environmental observations and aerial-view promise."
     },
     "bundle_003": {
       "path": "editorial_memory/bundle_003_editorial_memory.json",
@@ -33,8 +33,14 @@
     "bundle_005": {
       "path": "editorial_memory/bundle_005_editorial_memory.json",
       "status": "NOT_YET_PERSISTED",
-      "notes": "Bundle 005 is attached, but its heavy ZIP could not currently be processed because the runtime timed out. No unsupported editorial conclusions are stored for it."
+      "notes": "Bundle 005 is attached and local generated evidence is now available in the repository, but detailed LLM editorial reasoning has not yet been persisted."
     }
+  },
+  "generatedEvidence": {
+    "indexPath": "editorial_memory/generated/editorial_evidence_index.json",
+    "purpose": "Lightweight evidence layer generated locally from the analysis directory for LLM editorial reasoning.",
+    "videoCountRecordedByGenerator": 72,
+    "editorialLLMStatus": "PENDING_EDITORIAL_LLM"
   },
   "lockedPrinciples": {
     "editTimelineRole": "Final assembly source of truth",
@@ -44,7 +50,7 @@
       "required evidence is absent from memory",
       "source identity or timestamp conflict is detected",
       "user explicitly requests re-analysis",
-      "a previous conclusion is proven inconsistent with the evidence"
+      "a previous editorial conclusion is proven inconsistent with the evidence"
     ]
   }
 }
