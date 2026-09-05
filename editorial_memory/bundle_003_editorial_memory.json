@@ -1,21 +1,60 @@
 {
-  "memoryVersion": 1,
+  "memoryVersion": 2,
   "bundleId": "analysis_bundle_003",
-  "status": "PENDING_DETAILED_CAPTURE",
-  "rule": "This file is a deliberate placeholder. No exact editorial timestamps, visual events or speech conclusions are invented here.",
-  "knownHistoricalContext": "Earlier review indicates that this bundle contains important destination-side material, including Kailasagiri/cave-temple exploration, people/crowd/local-interaction texture and footage relevant to the later adventure payoff. The exact evidence-derived reasoning was not persisted in the repository yet.",
-  "requiredCapture": [
-    "bundle manifest/video list",
-    "source durations and hashes",
-    "per-video visual observations",
-    "exact speech ranges and useful dialogue",
-    "exact keep/remove/shorten ranges",
-    "closed visual event labels",
-    "B-roll candidates with exact source ranges",
-    "music candidates with exact source ranges",
-    "destination/exploration story roles",
-    "cross-bundle relationships",
-    "repetition and continuity notes",
-    "evidence ambiguities"
-  ]
+  "status": "DETAILED_PERSISTED_FROM_GENERATED_LOCAL_EVIDENCE",
+  "evidenceSource": "editorial_memory/generated/editorial_evidence_index.json",
+  "scope": "Destination-side exploration and context before the major off-road payoff: crowd and visitor context, local organization discussion, cave-temple explanation, prasada/access notes, parking/road changes, route/traffic observation, and the humorous off-road setup that hands the story into bundle 004.",
+  "sourceVideos": [
+    {"sourceFile":"DJI_20260830160759_0272_D.MP4","durationMs":25092,"sha256":"67cfeae0e2d8b8c5cd3be6b552313be8688bf1a2e5d0f9543d1ae064cc4b0f69","decision":"REVIEW_ONLY","storyRole":"MUSIC_OR_VISUAL_REVIEW","note":"No speech. Generated evidence contains frames/scenes but no semantic vision labels; do not assign events or lock a music range without visual confirmation."},
+    {"sourceFile":"DJI_20260830160832_0273_D.MP4","durationMs":41301,"sha256":"4b94e2458e417974346b23706c18f05bbabbc8829238fb558592f70617201d57","decision":"STRONG_KEEP","storyRole":"OBSERVATION_LOCAL_CONTEXT","selectedRanges":[{"start":"00:00.300","end":"00:09.320","decision":"KEEP_WITH_BROLL","events":["People"],"note":"Creator observes that the place is much more crowded than before."},{"start":"00:11.800","end":"00:17.440","decision":"KEEP","events":["People"],"note":"Current-vs-past association observation; useful as a brief human/context beat."},{"start":"00:18.160","end":"00:35.490","decision":"SHORTEN","events":["People"],"note":"Continues explanation of the visitors/organization; retain only the clearest portion to avoid exposition."}]},
+    {"sourceFile":"DJI_20260830160936_0274_D.MP4","durationMs":50261,"sha256":"10699eb2702c9c638f5a62e2d2bbb0be0392e17fed8f681a2ed39d88fd406dc6","decision":"STRONG_KEEP","storyRole":"DESTINATION_EXPLORATION","selectedRanges":[{"start":"00:00.340","end":"00:06.320","decision":"KEEP_WITH_BROLL","events":["People"],"note":"Local explanation of the organization; use briefly and do not present uncertain proper names as verified facts."},{"start":"00:06.320","end":"00:17.080","decision":"SHORTEN","events":["People"],"note":"Explains where visitors came from; human/context texture, not core story."},{"start":"00:17.080","end":"00:39.240","decision":"KEEP_WITH_BROLL","events":["People","Temple","Building"],"note":"Strong destination explanation: a devsthan/temple route leads into Kailasagiri; stairs and cave/lingam are described. Use this to orient viewers before exploration."}]},
+    {"sourceFile":"DJI_20260830161139_0275_D.MP4","durationMs":24458,"sha256":"3f7c133d3ea1c80c9b2f0ee3d538cf6e9c665dd5437e8d46a2cf01fe171f522c","decision":"REMOVE","storyRole":"NO_TRUSTED_SPEECH","note":"Whisper output is low-confidence English and appears unusable as editorial dialogue; retain only if later direct visual review proves an independently valuable silent moment."},
+    {"sourceFile":"DJI_20260830161224_0276_D.MP4","durationMs":21655,"sha256":"b6e21023084e722f69a820f2e7c0ec85953428f01783fafc3a524c70a3fe73ab","decision":"REMOVE","storyRole":"NO_TRUSTED_SPEECH","note":"Transcript is repeated low-confidence hallucinated text. No trusted story information should be derived from it."},
+    {"sourceFile":"DJI_20260830162420_0278_D.MP4","durationMs":132399,"sha256":"6be20bfc72ce503fafa1b8e5cc62c1a7815419aab9cf3f191da144fad1357f5d","decision":"KEEP","storyRole":"USEFUL_INFO_PRASADA","selectedRanges":[{"start":"00:00.000","end":"00:10.800","decision":"KEEP_WITH_BROLL","note":"Prasada availability/timing is discussed. Exact wording is partially noisy; verify against the actual recording before on-screen factual text."},{"start":"00:15.580","end":"00:39.540","decision":"SHORTEN","note":"Creator discusses returning next time and having prasada after darshan; human/useful-info beat, not a long segment."}]},
+    {"sourceFile":"DJI_20260830162708_0279_D.MP4","durationMs":75008,"sha256":"c29babcce84276db601c9d98813b608400b92927a6096fa2c90692b9a10b261b","decision":"STRONG_KEEP","storyRole":"ACCESS_AND_ADVENTURE_SETUP","selectedRanges":[{"start":"00:05.840","end":"00:25.720","decision":"KEEP_WITH_BROLL","events":["People","Vehicle","Road","Off-road Terrain"],"note":"Many buses/visitors, a road leading toward off-road riding, and new parking/access changes. Strong bridge from destination context into the adventure question."}],"note":"Do not treat the ASR organization name as independently verified."},
+    {"sourceFile":"DJI_20260830162845_0280_D.MP4","durationMs":158891,"sha256":"212c4128c79fb052263cd7e139554bbeb93190bc79f6459feaf7ca059e66862f","decision":"KEEP_WITH_EDITS","storyRole":"LOCAL_CONTEXT","selectedRanges":[{"start":"00:00.940","end":"00:22.160","decision":"KEEP_WITH_BROLL","events":["People","Building"],"note":"Discussion of the organization/yoga centre context. Useful only as concise context; proper names are ASR-sensitive and should be listen-checked."},{"start":"00:22.160","end":"00:48.780","decision":"SHORTEN","events":["People","Building"],"note":"More organization explanation; cut repetition and keep only the clearest human/context line."}]},
+    {"sourceFile":"DJI_20260830163649_0281_D.MP4","durationMs":393835,"sha256":"f847a226c3f757b44f6b9ea991f7fb30d62cb9126e5994547d5bd1d5cc08a0ec","decision":"STRONG_KEEP","storyRole":"OFFROAD_SETUP","selectedRanges":[{"start":"00:02.030","end":"00:22.110","decision":"KEEP_WITH_BROLL","events":["Road","Driving","Vehicle"],"note":"Parking/access change and road explanation."},{"start":"00:22.110","end":"01:31.500","decision":"KEEP_WITH_BROLL","events":["Road","Driving","Off-road Terrain","Vehicle"],"note":"Explicit setup for trying the rough/off-road route. Use as a promise/setup, but let bundle 004 carry the longer actual adventure payoff."}],"crossBundle":"Direct handoff into bundle 004's stronger off-road climb footage."},
+    {"sourceFile":"DJI_20260830164423_0282_D.MP4","durationMs":28523,"sha256":"02000d012313310eb034a58f2707fc8355598b53a7b596fdf4286de1fcb5e945","decision":"KEEP_AS_TRANSITION","storyRole":"UNEXPECTED_EVENT","selectedRanges":[{"start":"00:07.120","end":"00:12.180","decision":"KEEP","events":["Road","Driving","Vehicle"],"note":"Creator reacts to the possibility of another car appearing suddenly around a turning. Small real-life interruption that can add authenticity before the adventure."}]},
+    {"sourceFile":"DJI_20260830164511_0283_D.MP4","durationMs":242275,"sha256":"75ecc69c494817e424aeb3fdf1e4879091b2eac210af9b4125a48627582d44d6","decision":"STRONG_KEEP","storyRole":"ADVENTURE_PROMISE_AND_HANDOFF","selectedRanges":[{"start":"00:11.480","end":"01:40.100","decision":"SHORTEN","events":["Driving","Vehicle","Off-road Terrain"],"note":"Long humorous/off-road setup. Keep the clearest comedic promise and remove repeated speech."},{"start":"01:40.860","end":"02:03.050","decision":"KEEP_WITH_BROLL","events":["Vehicle","Driving","Off-road Terrain"],"note":"Creator compares the car to a truck and talks about climbing where there may not be a conventional road. Strong humorous bridge into bundle 004."}],"crossBundle":"This is the cleanest narrative handoff into the later major off-road adventure."}
+  ],
+  "bundleStory": {
+    "whatHappened": "After reaching the destination area, the footage shifts from simple arrival into understanding the place: more visitors are present than before, the creator talks with/local-observes visitors and an organization, explains the temple/cave route, notes prasada timing, observes new parking/access arrangements, and then starts wondering how far the car can go on the rough road.",
+    "newStoryBeats": ["crowded destination observation","local/visitor context","cave-temple orientation","prasada/useful-info microbeat","parking/access change","traffic/turning interruption","off-road question and humorous promise"],
+    "strongestHookCandidate": "The off-road promise is the strongest bundle-level curiosity beat, but the actual visual payoff belongs to bundle 004.",
+    "strongestDestinationMoment": "0274 00:17.080–00:39.240, where the creator explains the route upward and the cave/temple installation.",
+    "strongestAdventureSetup": "0283 01:40.860–02:03.050, followed immediately by bundle 004's real off-road climb.",
+    "strongestHumanContext": "0273 00:00.300–00:17.440 and 0274 00:06.320–00:17.080, used briefly and without over-explaining.",
+    "strongestPracticalBeat": "0278 00:00.000–00:10.800, subject to listen-check because some words/times are ASR-sensitive."
+  },
+  "brollAndMusic": {
+    "lockedBrollCandidates": [],
+    "lockedMusicCandidates": [],
+    "reason": "The generated evidence retrieved here provides exact timestamps and transcripts but not reliable semantic vision labels for every candidate. Do not lock speculative B-roll/music relationships until the corresponding frames are visually confirmed. This preserves the evidence boundary rather than inventing visual matches."
+  },
+  "crossBundleRelationships": {
+    "withBundle002": [
+      "Bundle 2 establishes arrival/crowd/temple orientation; bundle 3 should deepen that context rather than repeat it.",
+      "The aerial-view promise from bundle 2 should not be repeated here unless the actual visual payoff is stronger than the earlier setup."
+    ],
+    "withBundle004": [
+      "0279 and 0281 establish the road/parking/off-road question.",
+      "0283 provides the strongest humorous handoff.",
+      "Bundle 4 contains the principal off-road visual payoff and should receive most of the adventure runtime."
+    ]
+  },
+  "repetitionAndContinuity": [
+    "Do not use both 0273 and 0280 for a long organization explanation; choose the clearest few seconds.",
+    "Do not repeat parking/access explanation across 0279 and 0281; one concise explanation is enough before the physical adventure.",
+    "Keep cave/temple explanation short because the viewer mainly needs orientation before exploration, not a lecture.",
+    "Prasada timing is a useful micro-beat, not a destination pillar.",
+    "Let the off-road footage escalate: setup here, payoff in bundle 004."
+  ],
+  "safetyAndEvidence": [
+    "No permission or safety claim is inferred for any rough/off-road route.",
+    "The organization/proper-name ASR is imperfect; listen-check before presenting names as factual captions.",
+    "Visual events are used conservatively and only where the surrounding editorial review/evidence supports them.",
+    "0275 and 0276 are not trusted speech sources and should not drive story conclusions."
+  ],
+  "finalEditorialConclusion": "Bundle 003 is the bridge between destination arrival and adventure. Its highest value is not adding more destination exposition; it is turning the viewer's curiosity from 'we reached the place' into 'how far can we actually take the car?' The cave/temple explanation provides just enough destination payoff, while the parking/access observations and especially the humorous 0283 setup create the clean narrative handoff into bundle 004's major off-road sequence.",
+  "confidence": "MEDIUM_HIGH_OVERALL; HIGH_FOR_EXACT_TIMESTAMPS_AND_SPEECH_RANGES; LOWER_FOR_SEMANTIC_VISUAL_LABELS_WHERE_GENERATED_EVIDENCE_HAS_NOT_BEEN_VISUALLY_RECONFIRMED"
 }
