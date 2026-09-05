@@ -39,8 +39,8 @@
     {"order":26,"section":"OUTRO","sourceFile":"DJI_20260830185028_0302_D.MP4","sourceStart":"00:30.070","sourceEnd":"00:40.070","mediaRole":"speech-driven","reason":"Short clean CTA; stop before repeated closing language."}
   ],
   "brollOverlays": [
-    {"id":"B001","timelineStart":"00:03.000","sourceFile":"DJI_20260830141434_0233_D.MP4","sourceStart":"01:01.500","sourceEnd":"01:07.500","track":"V2","reason":"Road/village visual cover for the trip-plan speech."},
-    {"id":"B002","timelineStart":"00:50.000","sourceFile":"DJI_20260830141434_0233_D.MP4","sourceStart":"00:35.630","sourceEnd":"00:45.630","track":"V2","reason":"Food visuals over breakfast-problem narration."},
+    {"id":"B001","timelineStart":"00:03.000","sourceFile":"DJI_20260830141434_0233_D.MP4","sourceStart":"01:01.500","sourceEnd":"01:07.500","track":"V2","reason":"Road/village visual cover for the early trip speech."},
+    {"id":"B002","timelineStart":"00:50.000","sourceFile":"DJI_20260830141434_0233_D.MP4","sourceStart":"00:35.630","sourceEnd":"00:45.630","track":"V2","reason":"Food visuals over breakfast/local-food narration."},
     {"id":"B003","timelineStart":"03:15.000","sourceFile":"DJI_20260830150748_0245_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.000","track":"V2","reason":"Destination visual reveal over approach/context speech."},
     {"id":"B004","timelineStart":"03:35.000","sourceFile":"DJI_20260830151054_0246_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.000","track":"V2","reason":"Clean establishing mountain visual cover."},
     {"id":"B005","timelineStart":"04:22.000","sourceFile":"DJI_20260830163649_0281_D.MP4","sourceStart":"00:22.110","sourceEnd":"00:30.110","track":"V2","reason":"Rough-road/off-road proof over setup speech."},
@@ -52,7 +52,7 @@
   "musicCues": [
     {"id":"M001","timelineStart":"00:22.845","duration":"00:03.285","sourceVideo":"DJI_20260830123736_0222_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:03.285","role":"JOURNEY_TRANSITION"},
     {"id":"M002","timelineStart":"03:15.000","duration":"00:08.000","sourceVideo":"DJI_20260830150748_0245_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.000","role":"DESTINATION_REVEAL"},
-    {"id":"M003","timelineStart":"06:55.336","duration":"00:08.141","sourceVideo":"DJI_20260830180912_0292_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.141","role":"RETURN_RESET"},
+    {"id":"M003","timelineStart":"07:12.195","duration":"00:08.141","sourceVideo":"DJI_20260830180912_0292_D.MP4","sourceStart":"00:00.000","sourceEnd":"00:08.141","role":"RETURN_RESET"},
     {"id":"M004","timelineStart":"08:26.456","duration":"00:20.000","sourceVideo":"DJI_20260830182750_0300_D.MP4","sourceStart":"02:24.000","sourceEnd":"02:44.000","role":"SUNSET_REFLECTION"}
   ],
   "musicPolicy": {
