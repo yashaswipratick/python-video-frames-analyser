@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Validate and build the DaVinci Resolve FCPXML in one command.
 
-If --music-file is omitted and ./music contains exactly one supported audio
-file, that file is automatically used as the A2 music bed. This keeps the
-normal build command free from a music-path argument.
+Music selection order:
+1. Explicit --music-file, when supplied.
+2. resolve_assembly.json -> musicPolicy.externalAudioFile, when configured.
+3. Exactly one supported audio file in --music-dir (default ./music).
+
+The normal build command therefore requires no music-path argument once the
+assembly JSON has been configured for the editing machine.
 """
 
 from __future__ import annotations
@@ -38,6 +42,35 @@ def discover_music(music_dir: Path) -> Path | None:
     return None
 
 
+def configured_music_from_assembly(assembly_path: Path) -> Path | None:
+    if not assembly_path.is_file():
+        return None
+    try:
+        payload = json.loads(assembly_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return None
+    if not isinstance(payload, dict):
+        return None
+    policy = payload.get("musicPolicy")
+    if not isinstance(policy, dict):
+        return None
+    configured = policy.get("externalAudioFile")
+    if not configured:
+        return None
+    path = Path(str(configured)).expanduser()
+    if not path.is_file():
+        raise FileNotFoundError(
+            "Configured music file from resolve_assembly.json was not found: "
+            f"{path}"
+        )
+    if path.suffix.lower() not in SUPPORTED_MUSIC_EXTENSIONS:
+        raise ValueError(
+            "Configured music file has an unsupported extension: "
+            f"{path.suffix}. Supported: {', '.join(sorted(SUPPORTED_MUSIC_EXTENSIONS))}"
+        )
+    return path
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--timeline", type=Path, default=Path("edit_timeline.json"))
@@ -49,13 +82,13 @@ def main() -> int:
         "--music-file",
         type=Path,
         default=None,
-        help="Optional music file. Supports MP3 and other common audio formats.",
+        help="Optional override music file. Supports MP3 and other common audio formats.",
     )
     parser.add_argument(
         "--music-dir",
         type=Path,
         default=Path("music"),
-        help="Directory used for automatic single-track music discovery (default: ./music).",
+        help="Fallback directory used for automatic single-track discovery (default: ./music).",
     )
     args = parser.parse_args()
 
@@ -66,9 +99,11 @@ def main() -> int:
             return 1
     else:
         try:
-            music_file = discover_music(args.music_dir)
+            music_file = configured_music_from_assembly(args.assembly)
+            if music_file is None:
+                music_file = discover_music(args.music_dir)
         except Exception as exc:
-            print(f"Music discovery failed: {exc}")
+            print(f"Music selection failed: {exc}")
             return 1
 
     validation = subprocess.run(
@@ -92,7 +127,7 @@ def main() -> int:
         cmd.extend(["--music-file", str(music_file)])
         print(f"Using music: {music_file}")
     else:
-        print(f"No automatic music track found in {args.music_dir}; building without A2 music.")
+        print(f"No music track configured or found in {args.music_dir}; building without A2 music.")
 
     built = subprocess.run(cmd, text=True)
     if built.returncode != 0:
@@ -101,7 +136,7 @@ def main() -> int:
     print(json.dumps({
         "status": "READY_FOR_DAVINCI_IMPORT",
         "fcpxml": str(args.output.resolve()),
-        "music": str(music_file.resolve()) if music_file is not None else None,
+        "musicFile": str(music_file.resolve()) if music_file is not None else None,
         "nextStep": "Import the generated FCPXML into DaVinci Resolve and relink to the original videos if Resolve asks.",
     }, indent=2))
     return 0
