@@ -1,0 +1,1369 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830124910_0224_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830124910_0224_D",
+    "durationMs": 45913,
+    "sha256": "aabb20cc76cc95f809f9ff8ed8458cb76268abf8545027fe979a7ff4323f80f9"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830124910_0224_D/analysis.json",
+    "transcriptJson": "DJI_20260830124910_0224_D/transcript.json",
+    "scenesJson": "DJI_20260830124910_0224_D/scenes.json",
+    "framesDirectory": "DJI_20260830124910_0224_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "56585195"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.7784859538078308,
+    "segments": [
+      {
+        "startMs": 3660,
+        "endMs": 10020,
+        "text": "Hey, so the journey started and we have started towards Kailasagiri hills.",
+        "avgLogprob": -0.5404983278530747,
+        "noSpeechProb": 2.0188664073828022e-09,
+        "compressionRatio": 1.4802259887005649,
+        "words": [
+          {
+            "startMs": 3660,
+            "endMs": 4160,
+            "word": " Hey,",
+            "probability": 0.18467968702316284
+          },
+          {
+            "startMs": 4420,
+            "endMs": 4460,
+            "word": " so",
+            "probability": 0.9127337336540222
+          },
+          {
+            "startMs": 4460,
+            "endMs": 4840,
+            "word": " the",
+            "probability": 0.1929646134376526
+          },
+          {
+            "startMs": 4840,
+            "endMs": 5900,
+            "word": " journey",
+            "probability": 0.9366880059242249
+          },
+          {
+            "startMs": 5900,
+            "endMs": 6260,
+            "word": " started",
+            "probability": 0.5218950510025024
+          },
+          {
+            "startMs": 6260,
+            "endMs": 7140,
+            "word": " and",
+            "probability": 0.32407107949256897
+          },
+          {
+            "startMs": 7140,
+            "endMs": 8300,
+            "word": " we",
+            "probability": 0.8876801133155823
+          },
+          {
+            "startMs": 8300,
+            "endMs": 8380,
+            "word": " have",
+            "probability": 0.7566038370132446
+          },
+          {
+            "startMs": 8380,
+            "endMs": 8700,
+            "word": " started",
+            "probability": 0.9557200074195862
+          },
+          {
+            "startMs": 8700,
+            "endMs": 9120,
+            "word": " towards",
+            "probability": 0.8424397110939026
+          },
+          {
+            "startMs": 9120,
+            "endMs": 9720,
+            "word": " Kailasagiri",
+            "probability": 0.7342824697494507
+          },
+          {
+            "startMs": 9720,
+            "endMs": 10020,
+            "word": " hills.",
+            "probability": 0.47502511739730835
+          }
+        ]
+      },
+      {
+        "startMs": 10800,
+        "endMs": 16820,
+        "text": "The total distance it is showing is 55 km and there is a little traffic, so it is showing 29 minutes.",
+        "avgLogprob": -0.5404983278530747,
+        "noSpeechProb": 2.0188664073828022e-09,
+        "compressionRatio": 1.4802259887005649,
+        "words": [
+          {
+            "startMs": 10800,
+            "endMs": 11320,
+            "word": " The",
+            "probability": 0.41934746503829956
+          },
+          {
+            "startMs": 11320,
+            "endMs": 11440,
+            "word": " total",
+            "probability": 0.9621167182922363
+          },
+          {
+            "startMs": 11440,
+            "endMs": 11760,
+            "word": " distance",
+            "probability": 0.931816041469574
+          },
+          {
+            "startMs": 11760,
+            "endMs": 11940,
+            "word": " it",
+            "probability": 0.5409929752349854
+          },
+          {
+            "startMs": 11940,
+            "endMs": 12040,
+            "word": " is",
+            "probability": 0.9552002549171448
+          },
+          {
+            "startMs": 12040,
+            "endMs": 12200,
+            "word": " showing",
+            "probability": 0.9767370820045471
+          },
+          {
+            "startMs": 12200,
+            "endMs": 12320,
+            "word": " is",
+            "probability": 0.7101761698722839
+          },
+          {
+            "startMs": 12320,
+            "endMs": 12580,
+            "word": " 55",
+            "probability": 0.9441126585006714
+          },
+          {
+            "startMs": 12580,
+            "endMs": 13040,
+            "word": " km",
+            "probability": 0.3181912899017334
+          },
+          {
+            "startMs": 13040,
+            "endMs": 13560,
+            "word": " and",
+            "probability": 0.8043982982635498
+          },
+          {
+            "startMs": 13560,
+            "endMs": 13740,
+            "word": " there",
+            "probability": 0.5294427275657654
+          },
+          {
+            "startMs": 13740,
+            "endMs": 13760,
+            "word": " is",
+            "probability": 0.8592848777770996
+          },
+          {
+            "startMs": 13760,
+            "endMs": 13760,
+            "word": " a",
+            "probability": 0.6101865172386169
+          },
+          {
+            "startMs": 13760,
+            "endMs": 13800,
+            "word": " little",
+            "probability": 0.6219075918197632
+          },
+          {
+            "startMs": 13800,
+            "endMs": 14300,
+            "word": " traffic,",
+            "probability": 0.953882098197937
+          },
+          {
+            "startMs": 14800,
+            "endMs": 15100,
+            "word": " so",
+            "probability": 0.6926266551017761
+          },
+          {
+            "startMs": 15100,
+            "endMs": 15940,
+            "word": " it",
+            "probability": 0.48452553153038025
+          },
+          {
+            "startMs": 15940,
+            "endMs": 16160,
+            "word": " is",
+            "probability": 0.35663649439811707
+          },
+          {
+            "startMs": 16160,
+            "endMs": 16160,
+            "word": " showing",
+            "probability": 0.6196309924125671
+          },
+          {
+            "startMs": 16160,
+            "endMs": 16240,
+            "word": " 29",
+            "probability": 0.4839187264442444
+          },
+          {
+            "startMs": 16240,
+            "endMs": 16820,
+            "word": " minutes.",
+            "probability": 0.7695101499557495
+          }
+        ]
+      },
+      {
+        "startMs": 17700,
+        "endMs": 25560,
+        "text": "But before that, since we have not done breakfast, we are searching for a restaurant.",
+        "avgLogprob": -0.5404983278530747,
+        "noSpeechProb": 2.0188664073828022e-09,
+        "compressionRatio": 1.4802259887005649,
+        "words": [
+          {
+            "startMs": 17700,
+            "endMs": 18200,
+            "word": " But",
+            "probability": 0.7962979078292847
+          },
+          {
+            "startMs": 18200,
+            "endMs": 18480,
+            "word": " before",
+            "probability": 0.24465054273605347
+          },
+          {
+            "startMs": 18480,
+            "endMs": 18840,
+            "word": " that,",
+            "probability": 0.502112627029419
+          },
+          {
+            "startMs": 21420,
+            "endMs": 21700,
+            "word": " since",
+            "probability": 0.2570861876010895
+          },
+          {
+            "startMs": 21700,
+            "endMs": 22080,
+            "word": " we",
+            "probability": 0.6791931390762329
+          },
+          {
+            "startMs": 22080,
+            "endMs": 22720,
+            "word": " have",
+            "probability": 0.26708105206489563
+          },
+          {
+            "startMs": 22720,
+            "endMs": 22740,
+            "word": " not",
+            "probability": 0.8016679883003235
+          },
+          {
+            "startMs": 22740,
+            "endMs": 22740,
+            "word": " done",
+            "probability": 0.5054792761802673
+          },
+          {
+            "startMs": 22740,
+            "endMs": 23160,
+            "word": " breakfast,",
+            "probability": 0.8113707304000854
+          },
+          {
+            "startMs": 23520,
+            "endMs": 23860,
+            "word": " we",
+            "probability": 0.7002172470092773
+          },
+          {
+            "startMs": 23860,
+            "endMs": 23960,
+            "word": " are",
+            "probability": 0.9528025388717651
+          },
+          {
+            "startMs": 23960,
+            "endMs": 24200,
+            "word": " searching",
+            "probability": 0.9113385677337646
+          },
+          {
+            "startMs": 24200,
+            "endMs": 24440,
+            "word": " for",
+            "probability": 0.9926040768623352
+          },
+          {
+            "startMs": 24440,
+            "endMs": 24880,
+            "word": " a",
+            "probability": 0.9565361738204956
+          },
+          {
+            "startMs": 24880,
+            "endMs": 25560,
+            "word": " restaurant.",
+            "probability": 0.960141122341156
+          }
+        ]
+      },
+      {
+        "startMs": 26120,
+        "endMs": 33060,
+        "text": "If there is a local Canadian restaurant or South Indian restaurant, we will stop there and have a breakfast there.",
+        "avgLogprob": -0.3980255126953125,
+        "noSpeechProb": 1.4192282765668196e-11,
+        "compressionRatio": 1.61864406779661,
+        "words": [
+          {
+            "startMs": 26120,
+            "endMs": 26520,
+            "word": " If",
+            "probability": 0.19029463827610016
+          },
+          {
+            "startMs": 26520,
+            "endMs": 26720,
+            "word": " there",
+            "probability": 0.2182539701461792
+          },
+          {
+            "startMs": 26720,
+            "endMs": 26720,
+            "word": " is",
+            "probability": 0.7097547054290771
+          },
+          {
+            "startMs": 26720,
+            "endMs": 26800,
+            "word": " a",
+            "probability": 0.6151644587516785
+          },
+          {
+            "startMs": 26800,
+            "endMs": 26920,
+            "word": " local",
+            "probability": 0.8438316583633423
+          },
+          {
+            "startMs": 26920,
+            "endMs": 28500,
+            "word": " Canadian",
+            "probability": 0.508590042591095
+          },
+          {
+            "startMs": 28500,
+            "endMs": 29220,
+            "word": " restaurant",
+            "probability": 0.9179741740226746
+          },
+          {
+            "startMs": 29220,
+            "endMs": 29300,
+            "word": " or",
+            "probability": 0.489149808883667
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29560,
+            "word": " South",
+            "probability": 0.7851300835609436
+          },
+          {
+            "startMs": 29560,
+            "endMs": 29740,
+            "word": " Indian",
+            "probability": 0.9439337253570557
+          },
+          {
+            "startMs": 29740,
+            "endMs": 30120,
+            "word": " restaurant,",
+            "probability": 0.96723473072052
+          },
+          {
+            "startMs": 30400,
+            "endMs": 31060,
+            "word": " we",
+            "probability": 0.6534364819526672
+          },
+          {
+            "startMs": 31060,
+            "endMs": 31180,
+            "word": " will",
+            "probability": 0.8310931324958801
+          },
+          {
+            "startMs": 31180,
+            "endMs": 31380,
+            "word": " stop",
+            "probability": 0.7126403450965881
+          },
+          {
+            "startMs": 31380,
+            "endMs": 31620,
+            "word": " there",
+            "probability": 0.9168469905853271
+          },
+          {
+            "startMs": 31620,
+            "endMs": 31800,
+            "word": " and",
+            "probability": 0.8244725465774536
+          },
+          {
+            "startMs": 31800,
+            "endMs": 32340,
+            "word": " have",
+            "probability": 0.7293956875801086
+          },
+          {
+            "startMs": 32340,
+            "endMs": 32480,
+            "word": " a",
+            "probability": 0.7295694351196289
+          },
+          {
+            "startMs": 32480,
+            "endMs": 32800,
+            "word": " breakfast",
+            "probability": 0.9064973592758179
+          },
+          {
+            "startMs": 32800,
+            "endMs": 33060,
+            "word": " there.",
+            "probability": 0.3817845284938812
+          }
+        ]
+      },
+      {
+        "startMs": 33460,
+        "endMs": 35460,
+        "text": "No, we will see.",
+        "avgLogprob": -0.3980255126953125,
+        "noSpeechProb": 1.4192282765668196e-11,
+        "compressionRatio": 1.61864406779661,
+        "words": [
+          {
+            "startMs": 33460,
+            "endMs": 33860,
+            "word": " No,",
+            "probability": 0.224883571267128
+          },
+          {
+            "startMs": 35040,
+            "endMs": 35200,
+            "word": " we",
+            "probability": 0.7850987911224365
+          },
+          {
+            "startMs": 35200,
+            "endMs": 35300,
+            "word": " will",
+            "probability": 0.8654065132141113
+          },
+          {
+            "startMs": 35300,
+            "endMs": 35460,
+            "word": " see.",
+            "probability": 0.8842812180519104
+          }
+        ]
+      },
+      {
+        "startMs": 35740,
+        "endMs": 38400,
+        "text": "We will stop there, first breakfast and then we will start.",
+        "avgLogprob": -0.3980255126953125,
+        "noSpeechProb": 1.4192282765668196e-11,
+        "compressionRatio": 1.61864406779661,
+        "words": [
+          {
+            "startMs": 35740,
+            "endMs": 35880,
+            "word": " We",
+            "probability": 0.1943216621875763
+          },
+          {
+            "startMs": 35880,
+            "endMs": 36120,
+            "word": " will",
+            "probability": 0.8657413125038147
+          },
+          {
+            "startMs": 36120,
+            "endMs": 36280,
+            "word": " stop",
+            "probability": 0.36926934123039246
+          },
+          {
+            "startMs": 36280,
+            "endMs": 36380,
+            "word": " there,",
+            "probability": 0.44810691475868225
+          },
+          {
+            "startMs": 36460,
+            "endMs": 36720,
+            "word": " first",
+            "probability": 0.2820265591144562
+          },
+          {
+            "startMs": 36720,
+            "endMs": 37180,
+            "word": " breakfast",
+            "probability": 0.42715489864349365
+          },
+          {
+            "startMs": 37180,
+            "endMs": 37760,
+            "word": " and",
+            "probability": 0.6977272033691406
+          },
+          {
+            "startMs": 37760,
+            "endMs": 37960,
+            "word": " then",
+            "probability": 0.9113935828208923
+          },
+          {
+            "startMs": 37960,
+            "endMs": 38100,
+            "word": " we",
+            "probability": 0.9687201380729675
+          },
+          {
+            "startMs": 38100,
+            "endMs": 38200,
+            "word": " will",
+            "probability": 0.980583667755127
+          },
+          {
+            "startMs": 38200,
+            "endMs": 38400,
+            "word": " start.",
+            "probability": 0.9717609882354736
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 45913,
+      "durationMs": 45913,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 110675,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 100463,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 101092,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 107000,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 106813,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 22956,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 111052,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 124318,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30000,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 104474,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 35000,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 101033,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40000,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 105244,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45000,
+      "frameFile": "DJI_20260830124910_0224_D/frames/frame_0011.jpg",
+      "exists": true,
+      "sizeBytes": 94388,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45912,
+      "frameFile": "frames/frame_0012.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830124910_0224_D.MP4",
+    "durationMs": 45913,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 45913,
+        "durationMs": 45913,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 3660,
+        "endMs": 10020,
+        "text": "Hey, so the journey started and we have started towards Kailasagiri hills.",
+        "avgLogprob": -0.5404983278530747,
+        "noSpeechProb": 2.0188664073828022e-09,
+        "compressionRatio": 1.4802259887005649,
+        "words": [
+          {
+            "startMs": 3660,
+            "endMs": 4160,
+            "word": " Hey,",
+            "probability": 0.18467968702316284
+          },
+          {
+            "startMs": 4420,
+            "endMs": 4460,
+            "word": " so",
+            "probability": 0.9127337336540222
+          },
+          {
+            "startMs": 4460,
+            "endMs": 4840,
+            "word": " the",
+            "probability": 0.1929646134376526
+          },
+          {
+            "startMs": 4840,
+            "endMs": 5900,
+            "word": " journey",
+            "probability": 0.9366880059242249
+          },
+          {
+            "startMs": 5900,
+            "endMs": 6260,
+            "word": " started",
+            "probability": 0.5218950510025024
+          },
+          {
+            "startMs": 6260,
+            "endMs": 7140,
+            "word": " and",
+            "probability": 0.32407107949256897
+          },
+          {
+            "startMs": 7140,
+            "endMs": 8300,
+            "word": " we",
+            "probability": 0.8876801133155823
+          },
+          {
+            "startMs": 8300,
+            "endMs": 8380,
+            "word": " have",
+            "probability": 0.7566038370132446
+          },
+          {
+            "startMs": 8380,
+            "endMs": 8700,
+            "word": " started",
+            "probability": 0.9557200074195862
+          },
+          {
+            "startMs": 8700,
+            "endMs": 9120,
+            "word": " towards",
+            "probability": 0.8424397110939026
+          },
+          {
+            "startMs": 9120,
+            "endMs": 9720,
+            "word": " Kailasagiri",
+            "probability": 0.7342824697494507
+          },
+          {
+            "startMs": 9720,
+            "endMs": 10020,
+            "word": " hills.",
+            "probability": 0.47502511739730835
+          }
+        ]
+      },
+      {
+        "startMs": 10800,
+        "endMs": 16820,
+        "text": "The total distance it is showing is 55 km and there is a little traffic, so it is showing 29 minutes.",
+        "avgLogprob": -0.5404983278530747,
+        "noSpeechProb": 2.0188664073828022e-09,
+        "compressionRatio": 1.4802259887005649,
+        "words": [
+          {
+            "startMs": 10800,
+            "endMs": 11320,
+            "word": " The",
+            "probability": 0.41934746503829956
+          },
+          {
+            "startMs": 11320,
+            "endMs": 11440,
+            "word": " total",
+            "probability": 0.9621167182922363
+          },
+          {
+            "startMs": 11440,
+            "endMs": 11760,
+            "word": " distance",
+            "probability": 0.931816041469574
+          },
+          {
+            "startMs": 11760,
+            "endMs": 11940,
+            "word": " it",
+            "probability": 0.5409929752349854
+          },
+          {
+            "startMs": 11940,
+            "endMs": 12040,
+            "word": " is",
+            "probability": 0.9552002549171448
+          },
+          {
+            "startMs": 12040,
+            "endMs": 12200,
+            "word": " showing",
+            "probability": 0.9767370820045471
+          },
+          {
+            "startMs": 12200,
+            "endMs": 12320,
+            "word": " is",
+            "probability": 0.7101761698722839
+          },
+          {
+            "startMs": 12320,
+            "endMs": 12580,
+            "word": " 55",
+            "probability": 0.9441126585006714
+          },
+          {
+            "startMs": 12580,
+            "endMs": 13040,
+            "word": " km",
+            "probability": 0.3181912899017334
+          },
+          {
+            "startMs": 13040,
+            "endMs": 13560,
+            "word": " and",
+            "probability": 0.8043982982635498
+          },
+          {
+            "startMs": 13560,
+            "endMs": 13740,
+            "word": " there",
+            "probability": 0.5294427275657654
+          },
+          {
+            "startMs": 13740,
+            "endMs": 13760,
+            "word": " is",
+            "probability": 0.8592848777770996
+          },
+          {
+            "startMs": 13760,
+            "endMs": 13760,
+            "word": " a",
+            "probability": 0.6101865172386169
+          },
+          {
+            "startMs": 13760,
+            "endMs": 13800,
+            "word": " little",
+            "probability": 0.6219075918197632
+          },
+          {
+            "startMs": 13800,
+            "endMs": 14300,
+            "word": " traffic,",
+            "probability": 0.953882098197937
+          },
+          {
+            "startMs": 14800,
+            "endMs": 15100,
+            "word": " so",
+            "probability": 0.6926266551017761
+          },
+          {
+            "startMs": 15100,
+            "endMs": 15940,
+            "word": " it",
+            "probability": 0.48452553153038025
+          },
+          {
+            "startMs": 15940,
+            "endMs": 16160,
+            "word": " is",
+            "probability": 0.35663649439811707
+          },
+          {
+            "startMs": 16160,
+            "endMs": 16160,
+            "word": " showing",
+            "probability": 0.6196309924125671
+          },
+          {
+            "startMs": 16160,
+            "endMs": 16240,
+            "word": " 29",
+            "probability": 0.4839187264442444
+          },
+          {
+            "startMs": 16240,
+            "endMs": 16820,
+            "word": " minutes.",
+            "probability": 0.7695101499557495
+          }
+        ]
+      },
+      {
+        "startMs": 17700,
+        "endMs": 25560,
+        "text": "But before that, since we have not done breakfast, we are searching for a restaurant.",
+        "avgLogprob": -0.5404983278530747,
+        "noSpeechProb": 2.0188664073828022e-09,
+        "compressionRatio": 1.4802259887005649,
+        "words": [
+          {
+            "startMs": 17700,
+            "endMs": 18200,
+            "word": " But",
+            "probability": 0.7962979078292847
+          },
+          {
+            "startMs": 18200,
+            "endMs": 18480,
+            "word": " before",
+            "probability": 0.24465054273605347
+          },
+          {
+            "startMs": 18480,
+            "endMs": 18840,
+            "word": " that,",
+            "probability": 0.502112627029419
+          },
+          {
+            "startMs": 21420,
+            "endMs": 21700,
+            "word": " since",
+            "probability": 0.2570861876010895
+          },
+          {
+            "startMs": 21700,
+            "endMs": 22080,
+            "word": " we",
+            "probability": 0.6791931390762329
+          },
+          {
+            "startMs": 22080,
+            "endMs": 22720,
+            "word": " have",
+            "probability": 0.26708105206489563
+          },
+          {
+            "startMs": 22720,
+            "endMs": 22740,
+            "word": " not",
+            "probability": 0.8016679883003235
+          },
+          {
+            "startMs": 22740,
+            "endMs": 22740,
+            "word": " done",
+            "probability": 0.5054792761802673
+          },
+          {
+            "startMs": 22740,
+            "endMs": 23160,
+            "word": " breakfast,",
+            "probability": 0.8113707304000854
+          },
+          {
+            "startMs": 23520,
+            "endMs": 23860,
+            "word": " we",
+            "probability": 0.7002172470092773
+          },
+          {
+            "startMs": 23860,
+            "endMs": 23960,
+            "word": " are",
+            "probability": 0.9528025388717651
+          },
+          {
+            "startMs": 23960,
+            "endMs": 24200,
+            "word": " searching",
+            "probability": 0.9113385677337646
+          },
+          {
+            "startMs": 24200,
+            "endMs": 24440,
+            "word": " for",
+            "probability": 0.9926040768623352
+          },
+          {
+            "startMs": 24440,
+            "endMs": 24880,
+            "word": " a",
+            "probability": 0.9565361738204956
+          },
+          {
+            "startMs": 24880,
+            "endMs": 25560,
+            "word": " restaurant.",
+            "probability": 0.960141122341156
+          }
+        ]
+      },
+      {
+        "startMs": 26120,
+        "endMs": 33060,
+        "text": "If there is a local Canadian restaurant or South Indian restaurant, we will stop there and have a breakfast there.",
+        "avgLogprob": -0.3980255126953125,
+        "noSpeechProb": 1.4192282765668196e-11,
+        "compressionRatio": 1.61864406779661,
+        "words": [
+          {
+            "startMs": 26120,
+            "endMs": 26520,
+            "word": " If",
+            "probability": 0.19029463827610016
+          },
+          {
+            "startMs": 26520,
+            "endMs": 26720,
+            "word": " there",
+            "probability": 0.2182539701461792
+          },
+          {
+            "startMs": 26720,
+            "endMs": 26720,
+            "word": " is",
+            "probability": 0.7097547054290771
+          },
+          {
+            "startMs": 26720,
+            "endMs": 26800,
+            "word": " a",
+            "probability": 0.6151644587516785
+          },
+          {
+            "startMs": 26800,
+            "endMs": 26920,
+            "word": " local",
+            "probability": 0.8438316583633423
+          },
+          {
+            "startMs": 26920,
+            "endMs": 28500,
+            "word": " Canadian",
+            "probability": 0.508590042591095
+          },
+          {
+            "startMs": 28500,
+            "endMs": 29220,
+            "word": " restaurant",
+            "probability": 0.9179741740226746
+          },
+          {
+            "startMs": 29220,
+            "endMs": 29300,
+            "word": " or",
+            "probability": 0.489149808883667
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29560,
+            "word": " South",
+            "probability": 0.7851300835609436
+          },
+          {
+            "startMs": 29560,
+            "endMs": 29740,
+            "word": " Indian",
+            "probability": 0.9439337253570557
+          },
+          {
+            "startMs": 29740,
+            "endMs": 30120,
+            "word": " restaurant,",
+            "probability": 0.96723473072052
+          },
+          {
+            "startMs": 30400,
+            "endMs": 31060,
+            "word": " we",
+            "probability": 0.6534364819526672
+          },
+          {
+            "startMs": 31060,
+            "endMs": 31180,
+            "word": " will",
+            "probability": 0.8310931324958801
+          },
+          {
+            "startMs": 31180,
+            "endMs": 31380,
+            "word": " stop",
+            "probability": 0.7126403450965881
+          },
+          {
+            "startMs": 31380,
+            "endMs": 31620,
+            "word": " there",
+            "probability": 0.9168469905853271
+          },
+          {
+            "startMs": 31620,
+            "endMs": 31800,
+            "word": " and",
+            "probability": 0.8244725465774536
+          },
+          {
+            "startMs": 31800,
+            "endMs": 32340,
+            "word": " have",
+            "probability": 0.7293956875801086
+          },
+          {
+            "startMs": 32340,
+            "endMs": 32480,
+            "word": " a",
+            "probability": 0.7295694351196289
+          },
+          {
+            "startMs": 32480,
+            "endMs": 32800,
+            "word": " breakfast",
+            "probability": 0.9064973592758179
+          },
+          {
+            "startMs": 32800,
+            "endMs": 33060,
+            "word": " there.",
+            "probability": 0.3817845284938812
+          }
+        ]
+      },
+      {
+        "startMs": 33460,
+        "endMs": 35460,
+        "text": "No, we will see.",
+        "avgLogprob": -0.3980255126953125,
+        "noSpeechProb": 1.4192282765668196e-11,
+        "compressionRatio": 1.61864406779661,
+        "words": [
+          {
+            "startMs": 33460,
+            "endMs": 33860,
+            "word": " No,",
+            "probability": 0.224883571267128
+          },
+          {
+            "startMs": 35040,
+            "endMs": 35200,
+            "word": " we",
+            "probability": 0.7850987911224365
+          },
+          {
+            "startMs": 35200,
+            "endMs": 35300,
+            "word": " will",
+            "probability": 0.8654065132141113
+          },
+          {
+            "startMs": 35300,
+            "endMs": 35460,
+            "word": " see.",
+            "probability": 0.8842812180519104
+          }
+        ]
+      },
+      {
+        "startMs": 35740,
+        "endMs": 38400,
+        "text": "We will stop there, first breakfast and then we will start.",
+        "avgLogprob": -0.3980255126953125,
+        "noSpeechProb": 1.4192282765668196e-11,
+        "compressionRatio": 1.61864406779661,
+        "words": [
+          {
+            "startMs": 35740,
+            "endMs": 35880,
+            "word": " We",
+            "probability": 0.1943216621875763
+          },
+          {
+            "startMs": 35880,
+            "endMs": 36120,
+            "word": " will",
+            "probability": 0.8657413125038147
+          },
+          {
+            "startMs": 36120,
+            "endMs": 36280,
+            "word": " stop",
+            "probability": 0.36926934123039246
+          },
+          {
+            "startMs": 36280,
+            "endMs": 36380,
+            "word": " there,",
+            "probability": 0.44810691475868225
+          },
+          {
+            "startMs": 36460,
+            "endMs": 36720,
+            "word": " first",
+            "probability": 0.2820265591144562
+          },
+          {
+            "startMs": 36720,
+            "endMs": 37180,
+            "word": " breakfast",
+            "probability": 0.42715489864349365
+          },
+          {
+            "startMs": 37180,
+            "endMs": 37760,
+            "word": " and",
+            "probability": 0.6977272033691406
+          },
+          {
+            "startMs": 37760,
+            "endMs": 37960,
+            "word": " then",
+            "probability": 0.9113935828208923
+          },
+          {
+            "startMs": 37960,
+            "endMs": 38100,
+            "word": " we",
+            "probability": 0.9687201380729675
+          },
+          {
+            "startMs": 38100,
+            "endMs": 38200,
+            "word": " will",
+            "probability": 0.980583667755127
+          },
+          {
+            "startMs": 38200,
+            "endMs": 38400,
+            "word": " start.",
+            "probability": 0.9717609882354736
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 22956
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 30000
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 35000
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 40000
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 45000
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 45912
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

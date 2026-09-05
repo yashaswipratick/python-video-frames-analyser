@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830154649_0258_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830154649_0258_D",
+    "durationMs": 9543,
+    "sha256": "02f4b6155ee1d7bb1501f5d81792d63a09fc04cbf806726aa78f42fdb7b6fb08"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830154649_0258_D/analysis.json",
+    "transcriptJson": "DJI_20260830154649_0258_D/transcript.json",
+    "scenesJson": "DJI_20260830154649_0258_D/scenes.json",
+    "framesDirectory": "DJI_20260830154649_0258_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "52541111"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.7930931448936462,
+    "segments": [
+      {
+        "startMs": 8290,
+        "endMs": 9130,
+        "text": "What do you mean?",
+        "avgLogprob": -0.8144590929150581,
+        "noSpeechProb": 1.45758710656807e-10,
+        "compressionRatio": 0.68,
+        "words": [
+          {
+            "startMs": 8290,
+            "endMs": 8690,
+            "word": " What",
+            "probability": 0.05753442272543907
+          },
+          {
+            "startMs": 8690,
+            "endMs": 8790,
+            "word": " do",
+            "probability": 0.7860448956489563
+          },
+          {
+            "startMs": 8790,
+            "endMs": 8930,
+            "word": " you",
+            "probability": 0.959283173084259
+          },
+          {
+            "startMs": 8930,
+            "endMs": 9130,
+            "word": " mean?",
+            "probability": 0.71805739402771
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 9543,
+      "durationMs": 9543,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830154649_0258_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 20522,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 4771,
+      "frameFile": "DJI_20260830154649_0258_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 15061,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830154649_0258_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 13484,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 9542,
+      "frameFile": "frames/frame_0004.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830154649_0258_D.MP4",
+    "durationMs": 9543,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 9543,
+        "durationMs": 9543,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 8290,
+        "endMs": 9130,
+        "text": "What do you mean?",
+        "avgLogprob": -0.8144590929150581,
+        "noSpeechProb": 1.45758710656807e-10,
+        "compressionRatio": 0.68,
+        "words": [
+          {
+            "startMs": 8290,
+            "endMs": 8690,
+            "word": " What",
+            "probability": 0.05753442272543907
+          },
+          {
+            "startMs": 8690,
+            "endMs": 8790,
+            "word": " do",
+            "probability": 0.7860448956489563
+          },
+          {
+            "startMs": 8790,
+            "endMs": 8930,
+            "word": " you",
+            "probability": 0.959283173084259
+          },
+          {
+            "startMs": 8930,
+            "endMs": 9130,
+            "word": " mean?",
+            "probability": 0.71805739402771
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 4771
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 9542
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

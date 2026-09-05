@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830143621_0240_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830143621_0240_D",
+    "durationMs": 9365,
+    "sha256": "96c36de522905606a7845bc7eb2b59686513f80ab9c6b5d87453f11342f97a05"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830143621_0240_D/analysis.json",
+    "transcriptJson": "DJI_20260830143621_0240_D/transcript.json",
+    "scenesJson": "DJI_20260830143621_0240_D/scenes.json",
+    "framesDirectory": "DJI_20260830143621_0240_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "56612736"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.7677382826805115,
+    "segments": [
+      {
+        "startMs": 1200,
+        "endMs": 2380,
+        "text": "Sugar number one?",
+        "avgLogprob": -0.9033775478601456,
+        "noSpeechProb": 4.377163076441093e-10,
+        "compressionRatio": 0.7837837837837838,
+        "words": [
+          {
+            "startMs": 1200,
+            "endMs": 1840,
+            "word": " Sugar",
+            "probability": 0.05769573897123337
+          },
+          {
+            "startMs": 1840,
+            "endMs": 2100,
+            "word": " number",
+            "probability": 0.632563591003418
+          },
+          {
+            "startMs": 2100,
+            "endMs": 2380,
+            "word": " one?",
+            "probability": 0.10019254684448242
+          }
+        ]
+      },
+      {
+        "startMs": 6860,
+        "endMs": 7820,
+        "text": "He's making",
+        "avgLogprob": -0.9033775478601456,
+        "noSpeechProb": 4.377163076441093e-10,
+        "compressionRatio": 0.7837837837837838,
+        "words": [
+          {
+            "startMs": 6860,
+            "endMs": 7560,
+            "word": " He's",
+            "probability": 0.7884869575500488
+          },
+          {
+            "startMs": 7560,
+            "endMs": 7820,
+            "word": " making",
+            "probability": 0.988623857498169
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 1335,
+      "durationMs": 1335,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 2,
+      "startMs": 1335,
+      "endMs": 6406,
+      "durationMs": 5071,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 3,
+      "startMs": 7341,
+      "endMs": 9343,
+      "durationMs": 2002,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830143621_0240_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 159945,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 667,
+      "frameFile": "DJI_20260830143621_0240_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 111143,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 1334,
+      "frameFile": "DJI_20260830143621_0240_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 73774,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 1335,
+      "frameFile": "DJI_20260830143621_0240_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 65922,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 3870,
+      "frameFile": "DJI_20260830143621_0240_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 97890,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830143621_0240_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 90299,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 6405,
+      "frameFile": "DJI_20260830143621_0240_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 86178,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 7341,
+      "frameFile": "DJI_20260830143621_0240_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 134835,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 8342,
+      "frameFile": "DJI_20260830143621_0240_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 156215,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 9342,
+      "frameFile": "frames/frame_0010.jpg",
+      "exists": false
+    },
+    {
+      "timestampMs": 9364,
+      "frameFile": "frames/frame_0011.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830143621_0240_D.MP4",
+    "durationMs": 9365,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 1335,
+        "durationMs": 1335,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 2,
+        "startMs": 1335,
+        "endMs": 6406,
+        "durationMs": 5071,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 3,
+        "startMs": 7341,
+        "endMs": 9343,
+        "durationMs": 2002,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 1200,
+        "endMs": 2380,
+        "text": "Sugar number one?",
+        "avgLogprob": -0.9033775478601456,
+        "noSpeechProb": 4.377163076441093e-10,
+        "compressionRatio": 0.7837837837837838,
+        "words": [
+          {
+            "startMs": 1200,
+            "endMs": 1840,
+            "word": " Sugar",
+            "probability": 0.05769573897123337
+          },
+          {
+            "startMs": 1840,
+            "endMs": 2100,
+            "word": " number",
+            "probability": 0.632563591003418
+          },
+          {
+            "startMs": 2100,
+            "endMs": 2380,
+            "word": " one?",
+            "probability": 0.10019254684448242
+          }
+        ]
+      },
+      {
+        "startMs": 6860,
+        "endMs": 7820,
+        "text": "He's making",
+        "avgLogprob": -0.9033775478601456,
+        "noSpeechProb": 4.377163076441093e-10,
+        "compressionRatio": 0.7837837837837838,
+        "words": [
+          {
+            "startMs": 6860,
+            "endMs": 7560,
+            "word": " He's",
+            "probability": 0.7884869575500488
+          },
+          {
+            "startMs": 7560,
+            "endMs": 7820,
+            "word": " making",
+            "probability": 0.988623857498169
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 667
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 1334
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 1335
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 3870
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 6405
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 7341
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 8342
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 9342
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 9364
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

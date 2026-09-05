@@ -1,0 +1,4823 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830163649_0281_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830163649_0281_D",
+    "durationMs": 393835,
+    "sha256": "f847a226c3f757b44f6b9ea991f7fb30d62cb9126e5994547d5bd1d5cc08a0ec"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830163649_0281_D/analysis.json",
+    "transcriptJson": "DJI_20260830163649_0281_D/transcript.json",
+    "scenesJson": "DJI_20260830163649_0281_D/scenes.json",
+    "framesDirectory": "DJI_20260830163649_0281_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "56463013"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "hi",
+    "languageProbability": 0.9152100682258606,
+    "segments": [
+      {
+        "startMs": 2030,
+        "endMs": 22110,
+        "text": "तो यही एक एरिया है जो कि पहले यहां पर पार्किंग नहीं होती थी बट पार्किंग भी चालू होगी है तो आप यहां गारी पार्क कर सकते हैं या पिर आपको उपर लेके जाना है अपनी गारी को तो उपर भी लेके जा सकते हैं तो यह पूरा ऐसे ही रोड है रोड बनी",
+        "avgLogprob": -0.06250325520833333,
+        "noSpeechProb": 8.45890291145679e-09,
+        "compressionRatio": 2.6682464454976302,
+        "words": [
+          {
+            "startMs": 2030,
+            "endMs": 2590,
+            "word": " तो",
+            "probability": 0.810108502705892
+          },
+          {
+            "startMs": 2590,
+            "endMs": 3290,
+            "word": " यही",
+            "probability": 0.9809718579053879
+          },
+          {
+            "startMs": 3290,
+            "endMs": 3610,
+            "word": " एक",
+            "probability": 0.9711033503214518
+          },
+          {
+            "startMs": 3610,
+            "endMs": 4530,
+            "word": " एरिया",
+            "probability": 0.8936659495035807
+          },
+          {
+            "startMs": 4530,
+            "endMs": 4710,
+            "word": " है",
+            "probability": 0.9754720330238342
+          },
+          {
+            "startMs": 4710,
+            "endMs": 6430,
+            "word": " जो",
+            "probability": 0.9134361942609152
+          },
+          {
+            "startMs": 6430,
+            "endMs": 6670,
+            "word": " कि",
+            "probability": 0.8181985318660736
+          },
+          {
+            "startMs": 6670,
+            "endMs": 8070,
+            "word": " पहले",
+            "probability": 0.9833214163780213
+          },
+          {
+            "startMs": 8070,
+            "endMs": 8250,
+            "word": " यहां",
+            "probability": 0.8769991278648377
+          },
+          {
+            "startMs": 8250,
+            "endMs": 8370,
+            "word": " पर",
+            "probability": 0.9277940392494202
+          },
+          {
+            "startMs": 8370,
+            "endMs": 8810,
+            "word": " पार्किंग",
+            "probability": 0.959055382013321
+          },
+          {
+            "startMs": 8810,
+            "endMs": 9050,
+            "word": " नहीं",
+            "probability": 0.995317256450653
+          },
+          {
+            "startMs": 9050,
+            "endMs": 9310,
+            "word": " होती",
+            "probability": 0.9876983910799026
+          },
+          {
+            "startMs": 9310,
+            "endMs": 9470,
+            "word": " थी",
+            "probability": 0.9894060293833414
+          },
+          {
+            "startMs": 9470,
+            "endMs": 9810,
+            "word": " बट",
+            "probability": 0.8046008795499802
+          },
+          {
+            "startMs": 9810,
+            "endMs": 10310,
+            "word": " पार्किंग",
+            "probability": 0.9548133671283722
+          },
+          {
+            "startMs": 10310,
+            "endMs": 10470,
+            "word": " भी",
+            "probability": 0.98061603307724
+          },
+          {
+            "startMs": 10470,
+            "endMs": 10870,
+            "word": " चालू",
+            "probability": 0.974502036968867
+          },
+          {
+            "startMs": 10870,
+            "endMs": 11110,
+            "word": " होगी",
+            "probability": 0.8906107902526855
+          },
+          {
+            "startMs": 11110,
+            "endMs": 11250,
+            "word": " है",
+            "probability": 0.9156827330589294
+          },
+          {
+            "startMs": 11250,
+            "endMs": 11550,
+            "word": " तो",
+            "probability": 0.9724130034446716
+          },
+          {
+            "startMs": 11550,
+            "endMs": 11730,
+            "word": " आप",
+            "probability": 0.9640531986951828
+          },
+          {
+            "startMs": 11730,
+            "endMs": 11950,
+            "word": " यहां",
+            "probability": 0.9823728561401367
+          },
+          {
+            "startMs": 11950,
+            "endMs": 12230,
+            "word": " गारी",
+            "probability": 0.9853607535362243
+          },
+          {
+            "startMs": 12230,
+            "endMs": 12510,
+            "word": " पार्क",
+            "probability": 0.957967201868693
+          },
+          {
+            "startMs": 12510,
+            "endMs": 12650,
+            "word": " कर",
+            "probability": 0.9648448824882507
+          },
+          {
+            "startMs": 12650,
+            "endMs": 12990,
+            "word": " सकते",
+            "probability": 0.9939043372869492
+          },
+          {
+            "startMs": 12990,
+            "endMs": 13130,
+            "word": " हैं",
+            "probability": 0.9870824615160624
+          },
+          {
+            "startMs": 13130,
+            "endMs": 13330,
+            "word": " या",
+            "probability": 0.9363428950309753
+          },
+          {
+            "startMs": 13330,
+            "endMs": 13510,
+            "word": " पिर",
+            "probability": 0.7782955542206764
+          },
+          {
+            "startMs": 13510,
+            "endMs": 13790,
+            "word": " आपको",
+            "probability": 0.996121883392334
+          },
+          {
+            "startMs": 13790,
+            "endMs": 14190,
+            "word": " उपर",
+            "probability": 0.9123800158500671
+          },
+          {
+            "startMs": 14190,
+            "endMs": 15850,
+            "word": " लेके",
+            "probability": 0.9464411497116089
+          },
+          {
+            "startMs": 15850,
+            "endMs": 16230,
+            "word": " जाना",
+            "probability": 0.9953287839889526
+          },
+          {
+            "startMs": 16230,
+            "endMs": 16370,
+            "word": " है",
+            "probability": 0.9887098670005798
+          },
+          {
+            "startMs": 16370,
+            "endMs": 16790,
+            "word": " अपनी",
+            "probability": 0.9489134748776754
+          },
+          {
+            "startMs": 16790,
+            "endMs": 17130,
+            "word": " गारी",
+            "probability": 0.9798516154289245
+          },
+          {
+            "startMs": 17130,
+            "endMs": 17310,
+            "word": " को",
+            "probability": 0.9739591479301453
+          },
+          {
+            "startMs": 17310,
+            "endMs": 17830,
+            "word": " तो",
+            "probability": 0.9845180511474609
+          },
+          {
+            "startMs": 17830,
+            "endMs": 18070,
+            "word": " उपर",
+            "probability": 0.9530235528945923
+          },
+          {
+            "startMs": 18070,
+            "endMs": 18210,
+            "word": " भी",
+            "probability": 0.980571428934733
+          },
+          {
+            "startMs": 18210,
+            "endMs": 18410,
+            "word": " लेके",
+            "probability": 0.966641616821289
+          },
+          {
+            "startMs": 18410,
+            "endMs": 18590,
+            "word": " जा",
+            "probability": 0.9886705279350281
+          },
+          {
+            "startMs": 18590,
+            "endMs": 18950,
+            "word": " सकते",
+            "probability": 0.9765785783529282
+          },
+          {
+            "startMs": 18950,
+            "endMs": 19050,
+            "word": " हैं",
+            "probability": 0.9834417104721069
+          },
+          {
+            "startMs": 19050,
+            "endMs": 19230,
+            "word": " तो",
+            "probability": 0.9377929369608561
+          },
+          {
+            "startMs": 19230,
+            "endMs": 19310,
+            "word": " यह",
+            "probability": 0.9609105587005615
+          },
+          {
+            "startMs": 19310,
+            "endMs": 19590,
+            "word": " पूरा",
+            "probability": 0.9831543068091074
+          },
+          {
+            "startMs": 19590,
+            "endMs": 19910,
+            "word": " ऐसे",
+            "probability": 0.9788713306188583
+          },
+          {
+            "startMs": 19910,
+            "endMs": 20030,
+            "word": " ही",
+            "probability": 0.9854767620563507
+          },
+          {
+            "startMs": 20030,
+            "endMs": 20290,
+            "word": " रोड",
+            "probability": 0.9861302137374878
+          },
+          {
+            "startMs": 20290,
+            "endMs": 20470,
+            "word": " है",
+            "probability": 0.9584759175777435
+          },
+          {
+            "startMs": 20470,
+            "endMs": 21830,
+            "word": " रोड",
+            "probability": 0.969272232055664
+          },
+          {
+            "startMs": 21830,
+            "endMs": 22110,
+            "word": " बनी",
+            "probability": 0.9764957278966904
+          }
+        ]
+      },
+      {
+        "startMs": 22110,
+        "endMs": 91500,
+        "text": "यह प्राइब नहीं है तो चलते हैं देखते हैं आफ रोडिंग इसा होता है आच कहा तक गारी लेकर जा सकते हैं आउन कि लिल्लक जाही यह दो नीजी एप यह दो शुटार्ण पर गोला प्रोड कि अपर शुटार्ण नीजी एप इसे तिस के लिए तेंपल राइए अवक्",
+        "avgLogprob": -0.8400493706597222,
+        "noSpeechProb": 1.4644626622484225e-09,
+        "compressionRatio": 2.294372294372294,
+        "words": [
+          {
+            "startMs": 22110,
+            "endMs": 22110,
+            "word": " यह",
+            "probability": 0.5348291595776876
+          },
+          {
+            "startMs": 22110,
+            "endMs": 22110,
+            "word": " प्राइब",
+            "probability": 0.4697139470113648
+          },
+          {
+            "startMs": 22110,
+            "endMs": 22110,
+            "word": " नहीं",
+            "probability": 0.6191065087914467
+          },
+          {
+            "startMs": 22110,
+            "endMs": 22570,
+            "word": " है",
+            "probability": 0.7177312672138214
+          },
+          {
+            "startMs": 22570,
+            "endMs": 23490,
+            "word": " तो",
+            "probability": 0.6113069951534271
+          },
+          {
+            "startMs": 25320,
+            "endMs": 25720,
+            "word": " चलते",
+            "probability": 0.956700325012207
+          },
+          {
+            "startMs": 25720,
+            "endMs": 25960,
+            "word": " हैं",
+            "probability": 0.9625198642412821
+          },
+          {
+            "startMs": 25960,
+            "endMs": 26420,
+            "word": " देखते",
+            "probability": 0.9413823996271405
+          },
+          {
+            "startMs": 26420,
+            "endMs": 26520,
+            "word": " हैं",
+            "probability": 0.9831211964289347
+          },
+          {
+            "startMs": 26520,
+            "endMs": 26680,
+            "word": " आफ",
+            "probability": 0.6784924864768982
+          },
+          {
+            "startMs": 26680,
+            "endMs": 27020,
+            "word": " रोडिंग",
+            "probability": 0.8486164079772102
+          },
+          {
+            "startMs": 27020,
+            "endMs": 27280,
+            "word": " इसा",
+            "probability": 0.6756869051605463
+          },
+          {
+            "startMs": 27280,
+            "endMs": 27560,
+            "word": " होता",
+            "probability": 0.9720743894577026
+          },
+          {
+            "startMs": 27560,
+            "endMs": 27660,
+            "word": " है",
+            "probability": 0.9756576418876648
+          },
+          {
+            "startMs": 27660,
+            "endMs": 27840,
+            "word": " आच",
+            "probability": 0.6970268487930298
+          },
+          {
+            "startMs": 27840,
+            "endMs": 28820,
+            "word": " कहा",
+            "probability": 0.7658466994762421
+          },
+          {
+            "startMs": 37100,
+            "endMs": 37300,
+            "word": " तक",
+            "probability": 0.8857637643814087
+          },
+          {
+            "startMs": 37300,
+            "endMs": 37600,
+            "word": " गारी",
+            "probability": 0.8299052834510803
+          },
+          {
+            "startMs": 37600,
+            "endMs": 37800,
+            "word": " लेकर",
+            "probability": 0.848997688293457
+          },
+          {
+            "startMs": 37800,
+            "endMs": 38020,
+            "word": " जा",
+            "probability": 0.9501310984293619
+          },
+          {
+            "startMs": 38020,
+            "endMs": 38340,
+            "word": " सकते",
+            "probability": 0.9735289663076401
+          },
+          {
+            "startMs": 38340,
+            "endMs": 38520,
+            "word": " हैं",
+            "probability": 0.9818690220514933
+          },
+          {
+            "startMs": 38520,
+            "endMs": 39160,
+            "word": " आउन",
+            "probability": 0.6521989196538925
+          },
+          {
+            "startMs": 55290,
+            "endMs": 55850,
+            "word": " कि",
+            "probability": 0.27282293885946274
+          },
+          {
+            "startMs": 55850,
+            "endMs": 56210,
+            "word": " लिल्लक",
+            "probability": 0.6122593326228005
+          },
+          {
+            "startMs": 56210,
+            "endMs": 56530,
+            "word": " जाही",
+            "probability": 0.7091449081897736
+          },
+          {
+            "startMs": 69940,
+            "endMs": 70940,
+            "word": " यह",
+            "probability": 0.49531275033950806
+          },
+          {
+            "startMs": 70940,
+            "endMs": 71200,
+            "word": " दो",
+            "probability": 0.4575998882452647
+          },
+          {
+            "startMs": 71200,
+            "endMs": 71580,
+            "word": " नीजी",
+            "probability": 0.28024170687422156
+          },
+          {
+            "startMs": 71580,
+            "endMs": 71580,
+            "word": " एप",
+            "probability": 0.2583137350156903
+          },
+          {
+            "startMs": 71580,
+            "endMs": 72900,
+            "word": " यह",
+            "probability": 0.48759472742676735
+          },
+          {
+            "startMs": 72900,
+            "endMs": 75580,
+            "word": " दो",
+            "probability": 0.4790407369534175
+          },
+          {
+            "startMs": 75580,
+            "endMs": 77660,
+            "word": " शुटार्ण",
+            "probability": 0.3102602686055682
+          },
+          {
+            "startMs": 77660,
+            "endMs": 77660,
+            "word": " पर",
+            "probability": 0.23368042210737863
+          },
+          {
+            "startMs": 77660,
+            "endMs": 77780,
+            "word": " गोला",
+            "probability": 0.19462727829813958
+          },
+          {
+            "startMs": 77780,
+            "endMs": 78800,
+            "word": " प्रोड",
+            "probability": 0.3909486989889826
+          },
+          {
+            "startMs": 78800,
+            "endMs": 79900,
+            "word": " कि",
+            "probability": 0.19126047939062119
+          },
+          {
+            "startMs": 79900,
+            "endMs": 82820,
+            "word": " अपर",
+            "probability": 0.33373638391494753
+          },
+          {
+            "startMs": 82820,
+            "endMs": 83620,
+            "word": " शुटार्ण",
+            "probability": 0.6392788887023926
+          },
+          {
+            "startMs": 83620,
+            "endMs": 84080,
+            "word": " नीजी",
+            "probability": 0.503037141636014
+          },
+          {
+            "startMs": 84080,
+            "endMs": 84760,
+            "word": " एप",
+            "probability": 0.39049178920686245
+          },
+          {
+            "startMs": 84760,
+            "endMs": 85980,
+            "word": " इसे",
+            "probability": 0.38703479897230864
+          },
+          {
+            "startMs": 85980,
+            "endMs": 85980,
+            "word": " तिस",
+            "probability": 0.26897406578063965
+          },
+          {
+            "startMs": 85980,
+            "endMs": 86200,
+            "word": " के",
+            "probability": 0.3581134118139744
+          },
+          {
+            "startMs": 86200,
+            "endMs": 86420,
+            "word": " लिए",
+            "probability": 0.5733462452888489
+          },
+          {
+            "startMs": 86420,
+            "endMs": 86500,
+            "word": " तेंपल",
+            "probability": 0.5517833259488855
+          },
+          {
+            "startMs": 86500,
+            "endMs": 86880,
+            "word": " राइए",
+            "probability": 0.7095325823341098
+          },
+          {
+            "startMs": 86880,
+            "endMs": 91500,
+            "word": " अवक्",
+            "probability": 0.2697778455913067
+          }
+        ]
+      },
+      {
+        "startMs": 91500,
+        "endMs": 112320,
+        "text": "और थेंक्यू जहां लगेगा वहां से पीछे और क्या करें कि पिछी वाजा में बाइक साया था ना तो मैंने देखा था कि",
+        "avgLogprob": -0.2594380399915907,
+        "noSpeechProb": 2.0903292430318743e-09,
+        "compressionRatio": 2.3449781659388647,
+        "words": [
+          {
+            "startMs": 91500,
+            "endMs": 92460,
+            "word": " और",
+            "probability": 0.6103438337643942
+          },
+          {
+            "startMs": 92460,
+            "endMs": 93220,
+            "word": " थेंक्यू",
+            "probability": 0.6205626229445139
+          },
+          {
+            "startMs": 93220,
+            "endMs": 94120,
+            "word": " जहां",
+            "probability": 0.7768850088119507
+          },
+          {
+            "startMs": 103820,
+            "endMs": 104200,
+            "word": " लगेगा",
+            "probability": 0.9497233405709267
+          },
+          {
+            "startMs": 104200,
+            "endMs": 104440,
+            "word": " वहां",
+            "probability": 0.7838841080665588
+          },
+          {
+            "startMs": 104440,
+            "endMs": 104620,
+            "word": " से",
+            "probability": 0.7009551227092743
+          },
+          {
+            "startMs": 104620,
+            "endMs": 105000,
+            "word": " पीछे",
+            "probability": 0.8919603526592255
+          },
+          {
+            "startMs": 105000,
+            "endMs": 106260,
+            "word": " और",
+            "probability": 0.8638914823532104
+          },
+          {
+            "startMs": 106260,
+            "endMs": 106440,
+            "word": " क्या",
+            "probability": 0.9722530096769333
+          },
+          {
+            "startMs": 106440,
+            "endMs": 106700,
+            "word": " करें",
+            "probability": 0.9424484372138977
+          },
+          {
+            "startMs": 106700,
+            "endMs": 108440,
+            "word": " कि",
+            "probability": 0.4729897379875183
+          },
+          {
+            "startMs": 108440,
+            "endMs": 108920,
+            "word": " पिछी",
+            "probability": 0.5962560127178828
+          },
+          {
+            "startMs": 108920,
+            "endMs": 109180,
+            "word": " वाजा",
+            "probability": 0.8220798969268799
+          },
+          {
+            "startMs": 109180,
+            "endMs": 109300,
+            "word": " में",
+            "probability": 0.9064341187477112
+          },
+          {
+            "startMs": 109300,
+            "endMs": 109560,
+            "word": " बाइक",
+            "probability": 0.8422824343045553
+          },
+          {
+            "startMs": 109560,
+            "endMs": 109840,
+            "word": " साया",
+            "probability": 0.785850465297699
+          },
+          {
+            "startMs": 109840,
+            "endMs": 109980,
+            "word": " था",
+            "probability": 0.9908691247304281
+          },
+          {
+            "startMs": 109980,
+            "endMs": 110160,
+            "word": " ना",
+            "probability": 0.693435420592626
+          },
+          {
+            "startMs": 110160,
+            "endMs": 111240,
+            "word": " तो",
+            "probability": 0.9420824448267618
+          },
+          {
+            "startMs": 111240,
+            "endMs": 111480,
+            "word": " मैंने",
+            "probability": 0.9633121371269227
+          },
+          {
+            "startMs": 111480,
+            "endMs": 111760,
+            "word": " देखा",
+            "probability": 0.9831121067206064
+          },
+          {
+            "startMs": 111760,
+            "endMs": 111940,
+            "word": " था",
+            "probability": 0.989729106426239
+          },
+          {
+            "startMs": 111940,
+            "endMs": 112320,
+            "word": " कि",
+            "probability": 0.8603715896606445
+          }
+        ]
+      },
+      {
+        "startMs": 113380,
+        "endMs": 188520,
+        "text": "मारूती चड़ गी थी उपर यही रोड है जचर नी स्टार्ट्स ना यह किदर है भाई तो पार्किंग में आके वह थो थार जाड़ी थी ना वही है वही उपर बाइकर लोग भीथे पीछे न ओफ रोडिंग ट्रेल ही देना इस ट्रेलास किरे पेड़ा बेड़ा बेड़ा �",
+        "avgLogprob": -0.2508692042032878,
+        "noSpeechProb": 2.120120612403298e-08,
+        "compressionRatio": 2.3244444444444445,
+        "words": [
+          {
+            "startMs": 113380,
+            "endMs": 113940,
+            "word": " मारूती",
+            "probability": 0.7987144589424133
+          },
+          {
+            "startMs": 113940,
+            "endMs": 114500,
+            "word": " चड़",
+            "probability": 0.8290573358535767
+          },
+          {
+            "startMs": 114500,
+            "endMs": 114660,
+            "word": " गी",
+            "probability": 0.7644199728965759
+          },
+          {
+            "startMs": 114660,
+            "endMs": 114820,
+            "word": " थी",
+            "probability": 0.8461812138557434
+          },
+          {
+            "startMs": 114820,
+            "endMs": 115100,
+            "word": " उपर",
+            "probability": 0.9643977165222168
+          },
+          {
+            "startMs": 122490,
+            "endMs": 123630,
+            "word": " यही",
+            "probability": 0.8883913904428482
+          },
+          {
+            "startMs": 123630,
+            "endMs": 123790,
+            "word": " रोड",
+            "probability": 0.9237082362174988
+          },
+          {
+            "startMs": 123790,
+            "endMs": 123910,
+            "word": " है",
+            "probability": 0.6853064447641373
+          },
+          {
+            "startMs": 139750,
+            "endMs": 140770,
+            "word": " जचर",
+            "probability": 0.5848548829555511
+          },
+          {
+            "startMs": 140770,
+            "endMs": 140970,
+            "word": " नी",
+            "probability": 0.6808449228604635
+          },
+          {
+            "startMs": 140970,
+            "endMs": 141550,
+            "word": " स्टार्ट्स",
+            "probability": 0.8340641802007501
+          },
+          {
+            "startMs": 141550,
+            "endMs": 141970,
+            "word": " ना",
+            "probability": 0.918499747912089
+          },
+          {
+            "startMs": 141970,
+            "endMs": 142910,
+            "word": " यह",
+            "probability": 0.7314611474672953
+          },
+          {
+            "startMs": 147900,
+            "endMs": 148220,
+            "word": " किदर",
+            "probability": 0.8000443339347839
+          },
+          {
+            "startMs": 148220,
+            "endMs": 148300,
+            "word": " है",
+            "probability": 0.7664116024971008
+          },
+          {
+            "startMs": 148300,
+            "endMs": 148540,
+            "word": " भाई",
+            "probability": 0.8574056386947632
+          },
+          {
+            "startMs": 148540,
+            "endMs": 149040,
+            "word": " तो",
+            "probability": 0.9470159610112509
+          },
+          {
+            "startMs": 149040,
+            "endMs": 149440,
+            "word": " पार्किंग",
+            "probability": 0.9441489934921264
+          },
+          {
+            "startMs": 149440,
+            "endMs": 149520,
+            "word": " में",
+            "probability": 0.9181813995043436
+          },
+          {
+            "startMs": 149520,
+            "endMs": 149780,
+            "word": " आके",
+            "probability": 0.6650220528244972
+          },
+          {
+            "startMs": 149780,
+            "endMs": 150540,
+            "word": " वह",
+            "probability": 0.839257816473643
+          },
+          {
+            "startMs": 156780,
+            "endMs": 156900,
+            "word": " थो",
+            "probability": 0.7863605519135793
+          },
+          {
+            "startMs": 156900,
+            "endMs": 157220,
+            "word": " थार",
+            "probability": 0.9371734261512756
+          },
+          {
+            "startMs": 157220,
+            "endMs": 157480,
+            "word": " जाड़ी",
+            "probability": 0.8420856818556786
+          },
+          {
+            "startMs": 157480,
+            "endMs": 157600,
+            "word": " थी",
+            "probability": 0.965212881565094
+          },
+          {
+            "startMs": 157600,
+            "endMs": 157880,
+            "word": " ना",
+            "probability": 0.8613559206326803
+          },
+          {
+            "startMs": 157880,
+            "endMs": 159180,
+            "word": " वही",
+            "probability": 0.6415950655937195
+          },
+          {
+            "startMs": 159180,
+            "endMs": 159320,
+            "word": " है",
+            "probability": 0.7117233425378799
+          },
+          {
+            "startMs": 162780,
+            "endMs": 163680,
+            "word": " वही",
+            "probability": 0.7856731861829758
+          },
+          {
+            "startMs": 163680,
+            "endMs": 163960,
+            "word": " उपर",
+            "probability": 0.9548592448234559
+          },
+          {
+            "startMs": 163960,
+            "endMs": 165600,
+            "word": " बाइकर",
+            "probability": 0.8058981341975076
+          },
+          {
+            "startMs": 165600,
+            "endMs": 165760,
+            "word": " लोग",
+            "probability": 0.9204620003700257
+          },
+          {
+            "startMs": 165760,
+            "endMs": 166000,
+            "word": " भीथे",
+            "probability": 0.7523704171180725
+          },
+          {
+            "startMs": 166000,
+            "endMs": 166340,
+            "word": " पीछे",
+            "probability": 0.922521193822225
+          },
+          {
+            "startMs": 166340,
+            "endMs": 167220,
+            "word": " न",
+            "probability": 0.5847491919994354
+          },
+          {
+            "startMs": 184300,
+            "endMs": 184500,
+            "word": " ओफ",
+            "probability": 0.7812382280826569
+          },
+          {
+            "startMs": 184500,
+            "endMs": 184760,
+            "word": " रोडिंग",
+            "probability": 0.8146410551336076
+          },
+          {
+            "startMs": 184760,
+            "endMs": 185040,
+            "word": " ट्रेल",
+            "probability": 0.9559479455153147
+          },
+          {
+            "startMs": 185040,
+            "endMs": 185100,
+            "word": " ही",
+            "probability": 0.7189106196165085
+          },
+          {
+            "startMs": 185100,
+            "endMs": 185420,
+            "word": " देना",
+            "probability": 0.7950516104698181
+          },
+          {
+            "startMs": 185420,
+            "endMs": 185920,
+            "word": " इस",
+            "probability": 0.7533206343650818
+          },
+          {
+            "startMs": 185920,
+            "endMs": 186540,
+            "word": " ट्रेलास",
+            "probability": 0.6475666090846062
+          },
+          {
+            "startMs": 186540,
+            "endMs": 186800,
+            "word": " किरे",
+            "probability": 0.7267027795314789
+          },
+          {
+            "startMs": 186800,
+            "endMs": 187340,
+            "word": " पेड़ा",
+            "probability": 0.6912570744752884
+          },
+          {
+            "startMs": 187340,
+            "endMs": 187520,
+            "word": " बेड़ा",
+            "probability": 0.8575867172330618
+          },
+          {
+            "startMs": 187520,
+            "endMs": 188180,
+            "word": " बेड़ा",
+            "probability": 0.8551860693842173
+          },
+          {
+            "startMs": 188180,
+            "endMs": 188520,
+            "word": " �",
+            "probability": 0.7065280675888062
+          }
+        ]
+      },
+      {
+        "startMs": 188520,
+        "endMs": 294440,
+        "text": "पुल स्टाइक देरोटे नाल किलम में चार किलो मेटर चालो लेट्स को वंदा अपना देख हैच्पैक लेके चर गया वाई उपर और क्या चाहिए उसको तो इस वीडियो आनी रखना है नहीं ठीके रख लेते हैं विंडो खोल गया मुझे बस यह डर है कि गारी पंचर व",
+        "avgLogprob": -0.30066112418880375,
+        "noSpeechProb": 4.306830891920299e-09,
+        "compressionRatio": 2.168,
+        "words": [
+          {
+            "startMs": 188520,
+            "endMs": 188940,
+            "word": " पुल",
+            "probability": 0.5708440601825714
+          },
+          {
+            "startMs": 188940,
+            "endMs": 189320,
+            "word": " स्टाइक",
+            "probability": 0.8042524084448814
+          },
+          {
+            "startMs": 189320,
+            "endMs": 190120,
+            "word": " देरोटे",
+            "probability": 0.5606134496629238
+          },
+          {
+            "startMs": 190120,
+            "endMs": 190320,
+            "word": " नाल",
+            "probability": 0.7960852682590485
+          },
+          {
+            "startMs": 190320,
+            "endMs": 190620,
+            "word": " किलम",
+            "probability": 0.8297397345304489
+          },
+          {
+            "startMs": 190620,
+            "endMs": 190840,
+            "word": " में",
+            "probability": 0.403303445627292
+          },
+          {
+            "startMs": 190840,
+            "endMs": 192660,
+            "word": " चार",
+            "probability": 0.823932409286499
+          },
+          {
+            "startMs": 192660,
+            "endMs": 192920,
+            "word": " किलो",
+            "probability": 0.872394248843193
+          },
+          {
+            "startMs": 192920,
+            "endMs": 193180,
+            "word": " मेटर",
+            "probability": 0.7005798637866973
+          },
+          {
+            "startMs": 222560,
+            "endMs": 223920,
+            "word": " चालो",
+            "probability": 0.44541668593883516
+          },
+          {
+            "startMs": 223920,
+            "endMs": 224340,
+            "word": " लेट्स",
+            "probability": 0.8620025260107858
+          },
+          {
+            "startMs": 224340,
+            "endMs": 224700,
+            "word": " को",
+            "probability": 0.5948455184698105
+          },
+          {
+            "startMs": 224700,
+            "endMs": 225520,
+            "word": " वंदा",
+            "probability": 0.5802131742238998
+          },
+          {
+            "startMs": 252340,
+            "endMs": 252680,
+            "word": " अपना",
+            "probability": 0.8937944571177164
+          },
+          {
+            "startMs": 252680,
+            "endMs": 253000,
+            "word": " देख",
+            "probability": 0.842812967300415
+          },
+          {
+            "startMs": 253000,
+            "endMs": 254040,
+            "word": " हैच्पैक",
+            "probability": 0.6803572078545889
+          },
+          {
+            "startMs": 254040,
+            "endMs": 254280,
+            "word": " लेके",
+            "probability": 0.8339556276798248
+          },
+          {
+            "startMs": 254280,
+            "endMs": 254440,
+            "word": " चर",
+            "probability": 0.8381999135017395
+          },
+          {
+            "startMs": 254440,
+            "endMs": 254620,
+            "word": " गया",
+            "probability": 0.8073626980185509
+          },
+          {
+            "startMs": 254620,
+            "endMs": 254820,
+            "word": " वाई",
+            "probability": 0.8978108048439026
+          },
+          {
+            "startMs": 254820,
+            "endMs": 255180,
+            "word": " उपर",
+            "probability": 0.8723981380462646
+          },
+          {
+            "startMs": 255180,
+            "endMs": 255660,
+            "word": " और",
+            "probability": 0.9263529380162557
+          },
+          {
+            "startMs": 255660,
+            "endMs": 255880,
+            "word": " क्या",
+            "probability": 0.9423807114362717
+          },
+          {
+            "startMs": 255880,
+            "endMs": 256220,
+            "word": " चाहिए",
+            "probability": 0.8487850470202309
+          },
+          {
+            "startMs": 256220,
+            "endMs": 256600,
+            "word": " उसको",
+            "probability": 0.8593956530094147
+          },
+          {
+            "startMs": 256600,
+            "endMs": 257100,
+            "word": " तो",
+            "probability": 0.48305488626162213
+          },
+          {
+            "startMs": 263270,
+            "endMs": 263390,
+            "word": " इस",
+            "probability": 0.6039293184876442
+          },
+          {
+            "startMs": 263390,
+            "endMs": 263670,
+            "word": " वीडियो",
+            "probability": 0.8172498047351837
+          },
+          {
+            "startMs": 263670,
+            "endMs": 263870,
+            "word": " आनी",
+            "probability": 0.6323235481977463
+          },
+          {
+            "startMs": 263870,
+            "endMs": 264130,
+            "word": " रखना",
+            "probability": 0.8873132467269897
+          },
+          {
+            "startMs": 264130,
+            "endMs": 264210,
+            "word": " है",
+            "probability": 0.9711249768733978
+          },
+          {
+            "startMs": 264210,
+            "endMs": 265650,
+            "word": " नहीं",
+            "probability": 0.7895629942417145
+          },
+          {
+            "startMs": 268280,
+            "endMs": 269180,
+            "word": " ठीके",
+            "probability": 0.703505526483059
+          },
+          {
+            "startMs": 269180,
+            "endMs": 269340,
+            "word": " रख",
+            "probability": 0.8019017279148102
+          },
+          {
+            "startMs": 269340,
+            "endMs": 269700,
+            "word": " लेते",
+            "probability": 0.7875599026679992
+          },
+          {
+            "startMs": 269700,
+            "endMs": 269780,
+            "word": " हैं",
+            "probability": 0.7112232446670532
+          },
+          {
+            "startMs": 272080,
+            "endMs": 272660,
+            "word": " विंडो",
+            "probability": 0.7849783982549395
+          },
+          {
+            "startMs": 272660,
+            "endMs": 272960,
+            "word": " खोल",
+            "probability": 0.8316352367401123
+          },
+          {
+            "startMs": 272960,
+            "endMs": 273200,
+            "word": " गया",
+            "probability": 0.9102160930633545
+          },
+          {
+            "startMs": 277810,
+            "endMs": 278630,
+            "word": " मुझे",
+            "probability": 0.969378391901652
+          },
+          {
+            "startMs": 278630,
+            "endMs": 278850,
+            "word": " बस",
+            "probability": 0.9851609269777933
+          },
+          {
+            "startMs": 278850,
+            "endMs": 279030,
+            "word": " यह",
+            "probability": 0.7182904879252116
+          },
+          {
+            "startMs": 279030,
+            "endMs": 279210,
+            "word": " डर",
+            "probability": 0.9485093951225281
+          },
+          {
+            "startMs": 279210,
+            "endMs": 279350,
+            "word": " है",
+            "probability": 0.9781286716461182
+          },
+          {
+            "startMs": 279350,
+            "endMs": 279590,
+            "word": " कि",
+            "probability": 0.9609418213367462
+          },
+          {
+            "startMs": 279590,
+            "endMs": 280050,
+            "word": " गारी",
+            "probability": 0.9487595200538635
+          },
+          {
+            "startMs": 280050,
+            "endMs": 280450,
+            "word": " पंचर",
+            "probability": 0.9691418707370758
+          },
+          {
+            "startMs": 286560,
+            "endMs": 294440,
+            "word": " व",
+            "probability": 0.6354059278964996
+          }
+        ]
+      },
+      {
+        "startMs": 296520,
+        "endMs": 350850,
+        "text": "हुसुम मैं तुम ही डेरिंग बीवी डेरिंग इल गई है चराओ गारी देखा जाएगा जो होगा देख वाई तुम आउफ रोडिंग देखो फोर वाई टू को अच रादी आमने उपर बहुत धीरे-धीरे चड़ना कि यार के टाटन एक्सान भी चड़ीवी है वेंट अ",
+        "avgLogprob": -0.28407487847879864,
+        "noSpeechProb": 7.311122374176193e-09,
+        "compressionRatio": 2.16017316017316,
+        "words": [
+          {
+            "startMs": 296520,
+            "endMs": 297060,
+            "word": " हुसुम",
+            "probability": 0.5087337121367455
+          },
+          {
+            "startMs": 297060,
+            "endMs": 298220,
+            "word": " मैं",
+            "probability": 0.6948110262552897
+          },
+          {
+            "startMs": 298220,
+            "endMs": 298540,
+            "word": " तुम",
+            "probability": 0.9167904376983642
+          },
+          {
+            "startMs": 298540,
+            "endMs": 298700,
+            "word": " ही",
+            "probability": 0.7400842607021332
+          },
+          {
+            "startMs": 298700,
+            "endMs": 299080,
+            "word": " डेरिंग",
+            "probability": 0.8779764845967293
+          },
+          {
+            "startMs": 299080,
+            "endMs": 299440,
+            "word": " बीवी",
+            "probability": 0.6803652693827947
+          },
+          {
+            "startMs": 299440,
+            "endMs": 299880,
+            "word": " डेरिंग",
+            "probability": 0.9608615413308144
+          },
+          {
+            "startMs": 299880,
+            "endMs": 300040,
+            "word": " इल",
+            "probability": 0.5723641514778137
+          },
+          {
+            "startMs": 300040,
+            "endMs": 300200,
+            "word": " गई",
+            "probability": 0.735192559659481
+          },
+          {
+            "startMs": 300200,
+            "endMs": 300360,
+            "word": " है",
+            "probability": 0.9811336994171143
+          },
+          {
+            "startMs": 300360,
+            "endMs": 301120,
+            "word": " चराओ",
+            "probability": 0.8633726835250854
+          },
+          {
+            "startMs": 301120,
+            "endMs": 301420,
+            "word": " गारी",
+            "probability": 0.8861373543739319
+          },
+          {
+            "startMs": 301420,
+            "endMs": 301740,
+            "word": " देखा",
+            "probability": 0.9809699157873789
+          },
+          {
+            "startMs": 301740,
+            "endMs": 302160,
+            "word": " जाएगा",
+            "probability": 0.9417054876685143
+          },
+          {
+            "startMs": 302160,
+            "endMs": 302840,
+            "word": " जो",
+            "probability": 0.8581966559092203
+          },
+          {
+            "startMs": 302840,
+            "endMs": 303160,
+            "word": " होगा",
+            "probability": 0.6990147948265075
+          },
+          {
+            "startMs": 303160,
+            "endMs": 306340,
+            "word": " देख",
+            "probability": 0.7804887115955352
+          },
+          {
+            "startMs": 306340,
+            "endMs": 306640,
+            "word": " वाई",
+            "probability": 0.491208490729332
+          },
+          {
+            "startMs": 306640,
+            "endMs": 306840,
+            "word": " तुम",
+            "probability": 0.9141392827033996
+          },
+          {
+            "startMs": 306840,
+            "endMs": 307260,
+            "word": " आउफ",
+            "probability": 0.7954822580019633
+          },
+          {
+            "startMs": 307260,
+            "endMs": 307540,
+            "word": " रोडिंग",
+            "probability": 0.9149399267302619
+          },
+          {
+            "startMs": 307540,
+            "endMs": 307840,
+            "word": " देखो",
+            "probability": 0.9706865052382151
+          },
+          {
+            "startMs": 307840,
+            "endMs": 308760,
+            "word": " फोर",
+            "probability": 0.7327622473239899
+          },
+          {
+            "startMs": 312090,
+            "endMs": 312290,
+            "word": " वाई",
+            "probability": 0.7482841670513153
+          },
+          {
+            "startMs": 312290,
+            "endMs": 312490,
+            "word": " टू",
+            "probability": 0.8631414175033569
+          },
+          {
+            "startMs": 312490,
+            "endMs": 312670,
+            "word": " को",
+            "probability": 0.8227368295192719
+          },
+          {
+            "startMs": 312670,
+            "endMs": 312870,
+            "word": " अच",
+            "probability": 0.8498048037290573
+          },
+          {
+            "startMs": 312870,
+            "endMs": 313230,
+            "word": " रादी",
+            "probability": 0.7232316235701243
+          },
+          {
+            "startMs": 313230,
+            "endMs": 313510,
+            "word": " आमने",
+            "probability": 0.8607834100723266
+          },
+          {
+            "startMs": 313510,
+            "endMs": 313870,
+            "word": " उपर",
+            "probability": 0.8682807445526123
+          },
+          {
+            "startMs": 313870,
+            "endMs": 314530,
+            "word": " बहुत",
+            "probability": 0.9157820145289103
+          },
+          {
+            "startMs": 326140,
+            "endMs": 326480,
+            "word": " धीरे",
+            "probability": 0.8666152834892273
+          },
+          {
+            "startMs": 326480,
+            "endMs": 326680,
+            "word": "-धीरे",
+            "probability": 0.7795364558696747
+          },
+          {
+            "startMs": 326680,
+            "endMs": 327040,
+            "word": " चड़ना",
+            "probability": 0.8772836215794086
+          },
+          {
+            "startMs": 327040,
+            "endMs": 328940,
+            "word": " कि",
+            "probability": 0.2960662692785263
+          },
+          {
+            "startMs": 328940,
+            "endMs": 329400,
+            "word": " यार",
+            "probability": 0.6779257357120514
+          },
+          {
+            "startMs": 339390,
+            "endMs": 340370,
+            "word": " के",
+            "probability": 0.4179390221834183
+          },
+          {
+            "startMs": 340370,
+            "endMs": 341010,
+            "word": " टाटन",
+            "probability": 0.60716862231493
+          },
+          {
+            "startMs": 341010,
+            "endMs": 341410,
+            "word": " एक्सान",
+            "probability": 0.6450551492827279
+          },
+          {
+            "startMs": 341410,
+            "endMs": 341590,
+            "word": " भी",
+            "probability": 0.9646433194478353
+          },
+          {
+            "startMs": 341590,
+            "endMs": 342010,
+            "word": " चड़ीवी",
+            "probability": 0.7753860950469971
+          },
+          {
+            "startMs": 342010,
+            "endMs": 342170,
+            "word": " है",
+            "probability": 0.9151782989501953
+          },
+          {
+            "startMs": 349590,
+            "endMs": 350670,
+            "word": " वेंट",
+            "probability": 0.7210179145137469
+          },
+          {
+            "startMs": 350670,
+            "endMs": 350850,
+            "word": " अ",
+            "probability": 0.6450128704309464
+          }
+        ]
+      },
+      {
+        "startMs": 364050,
+        "endMs": 390000,
+        "text": "सीजा था गया तो एक काम करना आगे जा चलके है ठीक है और वहां पर केमरा कुर के खरा रहे ना मैं आता हूं गारी लेकर वह टर्निंग पर",
+        "avgLogprob": -0.31057341826164114,
+        "noSpeechProb": 3.5822320665346297e-09,
+        "compressionRatio": 1.9415584415584415,
+        "words": [
+          {
+            "startMs": 364050,
+            "endMs": 364470,
+            "word": " सीजा",
+            "probability": 0.4620695382356644
+          },
+          {
+            "startMs": 364470,
+            "endMs": 364650,
+            "word": " था",
+            "probability": 0.7103035549322764
+          },
+          {
+            "startMs": 364650,
+            "endMs": 364910,
+            "word": " गया",
+            "probability": 0.9402454793453217
+          },
+          {
+            "startMs": 364910,
+            "endMs": 365410,
+            "word": " तो",
+            "probability": 0.7206098834673563
+          },
+          {
+            "startMs": 381820,
+            "endMs": 382000,
+            "word": " एक",
+            "probability": 0.8081578612327576
+          },
+          {
+            "startMs": 382000,
+            "endMs": 382200,
+            "word": " काम",
+            "probability": 0.8067638079325358
+          },
+          {
+            "startMs": 382200,
+            "endMs": 382440,
+            "word": " करना",
+            "probability": 0.8712525814771652
+          },
+          {
+            "startMs": 382440,
+            "endMs": 382620,
+            "word": " आगे",
+            "probability": 0.695772111415863
+          },
+          {
+            "startMs": 382620,
+            "endMs": 382760,
+            "word": " जा",
+            "probability": 0.978050688902537
+          },
+          {
+            "startMs": 382760,
+            "endMs": 383140,
+            "word": " चलके",
+            "probability": 0.7455111384391785
+          },
+          {
+            "startMs": 383140,
+            "endMs": 384320,
+            "word": " है",
+            "probability": 0.5422539114952087
+          },
+          {
+            "startMs": 384320,
+            "endMs": 384640,
+            "word": " ठीक",
+            "probability": 0.6985312700271606
+          },
+          {
+            "startMs": 384640,
+            "endMs": 384780,
+            "word": " है",
+            "probability": 0.9733241200447083
+          },
+          {
+            "startMs": 384780,
+            "endMs": 385600,
+            "word": " और",
+            "probability": 0.6623601913452148
+          },
+          {
+            "startMs": 385600,
+            "endMs": 386020,
+            "word": " वहां",
+            "probability": 0.8254886746406556
+          },
+          {
+            "startMs": 386020,
+            "endMs": 386100,
+            "word": " पर",
+            "probability": 0.8720562855402628
+          },
+          {
+            "startMs": 386100,
+            "endMs": 386400,
+            "word": " केमरा",
+            "probability": 0.7598038196563721
+          },
+          {
+            "startMs": 386400,
+            "endMs": 386560,
+            "word": " कुर",
+            "probability": 0.6727486178278923
+          },
+          {
+            "startMs": 386560,
+            "endMs": 386680,
+            "word": " के",
+            "probability": 0.7145161628723145
+          },
+          {
+            "startMs": 386680,
+            "endMs": 386920,
+            "word": " खरा",
+            "probability": 0.9082392007112503
+          },
+          {
+            "startMs": 386920,
+            "endMs": 387060,
+            "word": " रहे",
+            "probability": 0.8197195827960968
+          },
+          {
+            "startMs": 387060,
+            "endMs": 387220,
+            "word": " ना",
+            "probability": 0.5607434511184692
+          },
+          {
+            "startMs": 387220,
+            "endMs": 387280,
+            "word": " मैं",
+            "probability": 0.8864221970240275
+          },
+          {
+            "startMs": 387280,
+            "endMs": 387500,
+            "word": " आता",
+            "probability": 0.8874916285276413
+          },
+          {
+            "startMs": 387500,
+            "endMs": 387540,
+            "word": " हूं",
+            "probability": 0.8906776160001755
+          },
+          {
+            "startMs": 387540,
+            "endMs": 387780,
+            "word": " गारी",
+            "probability": 0.8149040639400482
+          },
+          {
+            "startMs": 387780,
+            "endMs": 387980,
+            "word": " लेकर",
+            "probability": 0.9046348571777344
+          },
+          {
+            "startMs": 387980,
+            "endMs": 389480,
+            "word": " वह",
+            "probability": 0.6579013069470724
+          },
+          {
+            "startMs": 389480,
+            "endMs": 389880,
+            "word": " टर्निंग",
+            "probability": 0.8589142759641012
+          },
+          {
+            "startMs": 389880,
+            "endMs": 390000,
+            "word": " पर",
+            "probability": 0.8575613101323446
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 293960,
+      "durationMs": 293960,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "sceneId": 2,
+      "startMs": 293960,
+      "endMs": 393827,
+      "durationMs": 99867,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 156099,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 129156,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 123448,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 114125,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 95695,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 106218,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 95067,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 35000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 88744,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 116177,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 50000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 99515,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 55000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0011.jpg",
+      "exists": true,
+      "sizeBytes": 97843,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 60000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0012.jpg",
+      "exists": true,
+      "sizeBytes": 102295,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 65000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0013.jpg",
+      "exists": true,
+      "sizeBytes": 116113,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 70000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0014.jpg",
+      "exists": true,
+      "sizeBytes": 121495,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 75000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0015.jpg",
+      "exists": true,
+      "sizeBytes": 125267,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 80000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0016.jpg",
+      "exists": true,
+      "sizeBytes": 127634,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 85000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0017.jpg",
+      "exists": true,
+      "sizeBytes": 129924,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 90000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0018.jpg",
+      "exists": true,
+      "sizeBytes": 131899,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 95000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0019.jpg",
+      "exists": true,
+      "sizeBytes": 132964,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 100000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0020.jpg",
+      "exists": true,
+      "sizeBytes": 124830,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 105000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0021.jpg",
+      "exists": true,
+      "sizeBytes": 114324,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 110000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0022.jpg",
+      "exists": true,
+      "sizeBytes": 104325,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 115000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0023.jpg",
+      "exists": true,
+      "sizeBytes": 111381,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 120000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0024.jpg",
+      "exists": true,
+      "sizeBytes": 129120,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 130000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0025.jpg",
+      "exists": true,
+      "sizeBytes": 118631,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 135000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0026.jpg",
+      "exists": true,
+      "sizeBytes": 113603,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 140000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0027.jpg",
+      "exists": true,
+      "sizeBytes": 124571,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 145000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0028.jpg",
+      "exists": true,
+      "sizeBytes": 102455,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 146980,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0029.jpg",
+      "exists": true,
+      "sizeBytes": 92894,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 150000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0030.jpg",
+      "exists": true,
+      "sizeBytes": 100939,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 155000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0031.jpg",
+      "exists": true,
+      "sizeBytes": 106673,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 160000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0032.jpg",
+      "exists": true,
+      "sizeBytes": 131777,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 165000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0033.jpg",
+      "exists": true,
+      "sizeBytes": 125913,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 170000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0034.jpg",
+      "exists": true,
+      "sizeBytes": 102603,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 175000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0035.jpg",
+      "exists": true,
+      "sizeBytes": 114614,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 180000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0036.jpg",
+      "exists": true,
+      "sizeBytes": 116413,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 185000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0037.jpg",
+      "exists": true,
+      "sizeBytes": 142845,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 190000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0038.jpg",
+      "exists": true,
+      "sizeBytes": 156703,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 195000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0039.jpg",
+      "exists": true,
+      "sizeBytes": 120967,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 200000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0040.jpg",
+      "exists": true,
+      "sizeBytes": 118397,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 210000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0041.jpg",
+      "exists": true,
+      "sizeBytes": 162588,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 215000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0042.jpg",
+      "exists": true,
+      "sizeBytes": 146010,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 220000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0043.jpg",
+      "exists": true,
+      "sizeBytes": 156570,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 225000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0044.jpg",
+      "exists": true,
+      "sizeBytes": 150915,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 230000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0045.jpg",
+      "exists": true,
+      "sizeBytes": 156879,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 235000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0046.jpg",
+      "exists": true,
+      "sizeBytes": 138510,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 240000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0047.jpg",
+      "exists": true,
+      "sizeBytes": 141854,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 245000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0048.jpg",
+      "exists": true,
+      "sizeBytes": 134517,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 250000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0049.jpg",
+      "exists": true,
+      "sizeBytes": 114617,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 255000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0050.jpg",
+      "exists": true,
+      "sizeBytes": 109613,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 260000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0051.jpg",
+      "exists": true,
+      "sizeBytes": 107113,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 265000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0052.jpg",
+      "exists": true,
+      "sizeBytes": 114033,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 270000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0053.jpg",
+      "exists": true,
+      "sizeBytes": 132618,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 275000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0054.jpg",
+      "exists": true,
+      "sizeBytes": 95743,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 280000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0055.jpg",
+      "exists": true,
+      "sizeBytes": 94287,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 285000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0056.jpg",
+      "exists": true,
+      "sizeBytes": 95471,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 293959,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0057.jpg",
+      "exists": true,
+      "sizeBytes": 63576,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 293960,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0058.jpg",
+      "exists": true,
+      "sizeBytes": 63576,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 295000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0059.jpg",
+      "exists": true,
+      "sizeBytes": 88600,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 300000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0060.jpg",
+      "exists": true,
+      "sizeBytes": 99140,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 305000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0061.jpg",
+      "exists": true,
+      "sizeBytes": 106153,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 310000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0062.jpg",
+      "exists": true,
+      "sizeBytes": 116785,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 315000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0063.jpg",
+      "exists": true,
+      "sizeBytes": 135247,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 320000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0064.jpg",
+      "exists": true,
+      "sizeBytes": 126104,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 325000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0065.jpg",
+      "exists": true,
+      "sizeBytes": 165270,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 330000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0066.jpg",
+      "exists": true,
+      "sizeBytes": 126954,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 335000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0067.jpg",
+      "exists": true,
+      "sizeBytes": 98482,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 340000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0068.jpg",
+      "exists": true,
+      "sizeBytes": 144525,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 343893,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0069.jpg",
+      "exists": true,
+      "sizeBytes": 123595,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 345000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0070.jpg",
+      "exists": true,
+      "sizeBytes": 111261,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 350000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0071.jpg",
+      "exists": true,
+      "sizeBytes": 107992,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 355000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0072.jpg",
+      "exists": true,
+      "sizeBytes": 113905,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 365000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0073.jpg",
+      "exists": true,
+      "sizeBytes": 109511,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 370000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0074.jpg",
+      "exists": true,
+      "sizeBytes": 114680,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 375000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0075.jpg",
+      "exists": true,
+      "sizeBytes": 118784,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 380000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0076.jpg",
+      "exists": true,
+      "sizeBytes": 127484,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 385000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0077.jpg",
+      "exists": true,
+      "sizeBytes": 120532,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 390000,
+      "frameFile": "DJI_20260830163649_0281_D/frames/frame_0078.jpg",
+      "exists": true,
+      "sizeBytes": 135662,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 393826,
+      "frameFile": "frames/frame_0079.jpg",
+      "exists": false
+    },
+    {
+      "timestampMs": 393834,
+      "frameFile": "frames/frame_0080.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830163649_0281_D.MP4",
+    "durationMs": 393835,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 293960,
+        "durationMs": 293960,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "sceneId": 2,
+        "startMs": 293960,
+        "endMs": 393827,
+        "durationMs": 99867,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 2030,
+        "endMs": 22110,
+        "text": "तो यही एक एरिया है जो कि पहले यहां पर पार्किंग नहीं होती थी बट पार्किंग भी चालू होगी है तो आप यहां गारी पार्क कर सकते हैं या पिर आपको उपर लेके जाना है अपनी गारी को तो उपर भी लेके जा सकते हैं तो यह पूरा ऐसे ही रोड है रोड बनी",
+        "avgLogprob": -0.06250325520833333,
+        "noSpeechProb": 8.45890291145679e-09,
+        "compressionRatio": 2.6682464454976302,
+        "words": [
+          {
+            "startMs": 2030,
+            "endMs": 2590,
+            "word": " तो",
+            "probability": 0.810108502705892
+          },
+          {
+            "startMs": 2590,
+            "endMs": 3290,
+            "word": " यही",
+            "probability": 0.9809718579053879
+          },
+          {
+            "startMs": 3290,
+            "endMs": 3610,
+            "word": " एक",
+            "probability": 0.9711033503214518
+          },
+          {
+            "startMs": 3610,
+            "endMs": 4530,
+            "word": " एरिया",
+            "probability": 0.8936659495035807
+          },
+          {
+            "startMs": 4530,
+            "endMs": 4710,
+            "word": " है",
+            "probability": 0.9754720330238342
+          },
+          {
+            "startMs": 4710,
+            "endMs": 6430,
+            "word": " जो",
+            "probability": 0.9134361942609152
+          },
+          {
+            "startMs": 6430,
+            "endMs": 6670,
+            "word": " कि",
+            "probability": 0.8181985318660736
+          },
+          {
+            "startMs": 6670,
+            "endMs": 8070,
+            "word": " पहले",
+            "probability": 0.9833214163780213
+          },
+          {
+            "startMs": 8070,
+            "endMs": 8250,
+            "word": " यहां",
+            "probability": 0.8769991278648377
+          },
+          {
+            "startMs": 8250,
+            "endMs": 8370,
+            "word": " पर",
+            "probability": 0.9277940392494202
+          },
+          {
+            "startMs": 8370,
+            "endMs": 8810,
+            "word": " पार्किंग",
+            "probability": 0.959055382013321
+          },
+          {
+            "startMs": 8810,
+            "endMs": 9050,
+            "word": " नहीं",
+            "probability": 0.995317256450653
+          },
+          {
+            "startMs": 9050,
+            "endMs": 9310,
+            "word": " होती",
+            "probability": 0.9876983910799026
+          },
+          {
+            "startMs": 9310,
+            "endMs": 9470,
+            "word": " थी",
+            "probability": 0.9894060293833414
+          },
+          {
+            "startMs": 9470,
+            "endMs": 9810,
+            "word": " बट",
+            "probability": 0.8046008795499802
+          },
+          {
+            "startMs": 9810,
+            "endMs": 10310,
+            "word": " पार्किंग",
+            "probability": 0.9548133671283722
+          },
+          {
+            "startMs": 10310,
+            "endMs": 10470,
+            "word": " भी",
+            "probability": 0.98061603307724
+          },
+          {
+            "startMs": 10470,
+            "endMs": 10870,
+            "word": " चालू",
+            "probability": 0.974502036968867
+          },
+          {
+            "startMs": 10870,
+            "endMs": 11110,
+            "word": " होगी",
+            "probability": 0.8906107902526855
+          },
+          {
+            "startMs": 11110,
+            "endMs": 11250,
+            "word": " है",
+            "probability": 0.9156827330589294
+          },
+          {
+            "startMs": 11250,
+            "endMs": 11550,
+            "word": " तो",
+            "probability": 0.9724130034446716
+          },
+          {
+            "startMs": 11550,
+            "endMs": 11730,
+            "word": " आप",
+            "probability": 0.9640531986951828
+          },
+          {
+            "startMs": 11730,
+            "endMs": 11950,
+            "word": " यहां",
+            "probability": 0.9823728561401367
+          },
+          {
+            "startMs": 11950,
+            "endMs": 12230,
+            "word": " गारी",
+            "probability": 0.9853607535362243
+          },
+          {
+            "startMs": 12230,
+            "endMs": 12510,
+            "word": " पार्क",
+            "probability": 0.957967201868693
+          },
+          {
+            "startMs": 12510,
+            "endMs": 12650,
+            "word": " कर",
+            "probability": 0.9648448824882507
+          },
+          {
+            "startMs": 12650,
+            "endMs": 12990,
+            "word": " सकते",
+            "probability": 0.9939043372869492
+          },
+          {
+            "startMs": 12990,
+            "endMs": 13130,
+            "word": " हैं",
+            "probability": 0.9870824615160624
+          },
+          {
+            "startMs": 13130,
+            "endMs": 13330,
+            "word": " या",
+            "probability": 0.9363428950309753
+          },
+          {
+            "startMs": 13330,
+            "endMs": 13510,
+            "word": " पिर",
+            "probability": 0.7782955542206764
+          },
+          {
+            "startMs": 13510,
+            "endMs": 13790,
+            "word": " आपको",
+            "probability": 0.996121883392334
+          },
+          {
+            "startMs": 13790,
+            "endMs": 14190,
+            "word": " उपर",
+            "probability": 0.9123800158500671
+          },
+          {
+            "startMs": 14190,
+            "endMs": 15850,
+            "word": " लेके",
+            "probability": 0.9464411497116089
+          },
+          {
+            "startMs": 15850,
+            "endMs": 16230,
+            "word": " जाना",
+            "probability": 0.9953287839889526
+          },
+          {
+            "startMs": 16230,
+            "endMs": 16370,
+            "word": " है",
+            "probability": 0.9887098670005798
+          },
+          {
+            "startMs": 16370,
+            "endMs": 16790,
+            "word": " अपनी",
+            "probability": 0.9489134748776754
+          },
+          {
+            "startMs": 16790,
+            "endMs": 17130,
+            "word": " गारी",
+            "probability": 0.9798516154289245
+          },
+          {
+            "startMs": 17130,
+            "endMs": 17310,
+            "word": " को",
+            "probability": 0.9739591479301453
+          },
+          {
+            "startMs": 17310,
+            "endMs": 17830,
+            "word": " तो",
+            "probability": 0.9845180511474609
+          },
+          {
+            "startMs": 17830,
+            "endMs": 18070,
+            "word": " उपर",
+            "probability": 0.9530235528945923
+          },
+          {
+            "startMs": 18070,
+            "endMs": 18210,
+            "word": " भी",
+            "probability": 0.980571428934733
+          },
+          {
+            "startMs": 18210,
+            "endMs": 18410,
+            "word": " लेके",
+            "probability": 0.966641616821289
+          },
+          {
+            "startMs": 18410,
+            "endMs": 18590,
+            "word": " जा",
+            "probability": 0.9886705279350281
+          },
+          {
+            "startMs": 18590,
+            "endMs": 18950,
+            "word": " सकते",
+            "probability": 0.9765785783529282
+          },
+          {
+            "startMs": 18950,
+            "endMs": 19050,
+            "word": " हैं",
+            "probability": 0.9834417104721069
+          },
+          {
+            "startMs": 19050,
+            "endMs": 19230,
+            "word": " तो",
+            "probability": 0.9377929369608561
+          },
+          {
+            "startMs": 19230,
+            "endMs": 19310,
+            "word": " यह",
+            "probability": 0.9609105587005615
+          },
+          {
+            "startMs": 19310,
+            "endMs": 19590,
+            "word": " पूरा",
+            "probability": 0.9831543068091074
+          },
+          {
+            "startMs": 19590,
+            "endMs": 19910,
+            "word": " ऐसे",
+            "probability": 0.9788713306188583
+          },
+          {
+            "startMs": 19910,
+            "endMs": 20030,
+            "word": " ही",
+            "probability": 0.9854767620563507
+          },
+          {
+            "startMs": 20030,
+            "endMs": 20290,
+            "word": " रोड",
+            "probability": 0.9861302137374878
+          },
+          {
+            "startMs": 20290,
+            "endMs": 20470,
+            "word": " है",
+            "probability": 0.9584759175777435
+          },
+          {
+            "startMs": 20470,
+            "endMs": 21830,
+            "word": " रोड",
+            "probability": 0.969272232055664
+          },
+          {
+            "startMs": 21830,
+            "endMs": 22110,
+            "word": " बनी",
+            "probability": 0.9764957278966904
+          }
+        ]
+      },
+      {
+        "startMs": 22110,
+        "endMs": 91500,
+        "text": "यह प्राइब नहीं है तो चलते हैं देखते हैं आफ रोडिंग इसा होता है आच कहा तक गारी लेकर जा सकते हैं आउन कि लिल्लक जाही यह दो नीजी एप यह दो शुटार्ण पर गोला प्रोड कि अपर शुटार्ण नीजी एप इसे तिस के लिए तेंपल राइए अवक्",
+        "avgLogprob": -0.8400493706597222,
+        "noSpeechProb": 1.4644626622484225e-09,
+        "compressionRatio": 2.294372294372294,
+        "words": [
+          {
+            "startMs": 22110,
+            "endMs": 22110,
+            "word": " यह",
+            "probability": 0.5348291595776876
+          },
+          {
+            "startMs": 22110,
+            "endMs": 22110,
+            "word": " प्राइब",
+            "probability": 0.4697139470113648
+          },
+          {
+            "startMs": 22110,
+            "endMs": 22110,
+            "word": " नहीं",
+            "probability": 0.6191065087914467
+          },
+          {
+            "startMs": 22110,
+            "endMs": 22570,
+            "word": " है",
+            "probability": 0.7177312672138214
+          },
+          {
+            "startMs": 22570,
+            "endMs": 23490,
+            "word": " तो",
+            "probability": 0.6113069951534271
+          },
+          {
+            "startMs": 25320,
+            "endMs": 25720,
+            "word": " चलते",
+            "probability": 0.956700325012207
+          },
+          {
+            "startMs": 25720,
+            "endMs": 25960,
+            "word": " हैं",
+            "probability": 0.9625198642412821
+          },
+          {
+            "startMs": 25960,
+            "endMs": 26420,
+            "word": " देखते",
+            "probability": 0.9413823996271405
+          },
+          {
+            "startMs": 26420,
+            "endMs": 26520,
+            "word": " हैं",
+            "probability": 0.9831211964289347
+          },
+          {
+            "startMs": 26520,
+            "endMs": 26680,
+            "word": " आफ",
+            "probability": 0.6784924864768982
+          },
+          {
+            "startMs": 26680,
+            "endMs": 27020,
+            "word": " रोडिंग",
+            "probability": 0.8486164079772102
+          },
+          {
+            "startMs": 27020,
+            "endMs": 27280,
+            "word": " इसा",
+            "probability": 0.6756869051605463
+          },
+          {
+            "startMs": 27280,
+            "endMs": 27560,
+            "word": " होता",
+            "probability": 0.9720743894577026
+          },
+          {
+            "startMs": 27560,
+            "endMs": 27660,
+            "word": " है",
+            "probability": 0.9756576418876648
+          },
+          {
+            "startMs": 27660,
+            "endMs": 27840,
+            "word": " आच",
+            "probability": 0.6970268487930298
+          },
+          {
+            "startMs": 27840,
+            "endMs": 28820,
+            "word": " कहा",
+            "probability": 0.7658466994762421
+          },
+          {
+            "startMs": 37100,
+            "endMs": 37300,
+            "word": " तक",
+            "probability": 0.8857637643814087
+          },
+          {
+            "startMs": 37300,
+            "endMs": 37600,
+            "word": " गारी",
+            "probability": 0.8299052834510803
+          },
+          {
+            "startMs": 37600,
+            "endMs": 37800,
+            "word": " लेकर",
+            "probability": 0.848997688293457
+          },
+          {
+            "startMs": 37800,
+            "endMs": 38020,
+            "word": " जा",
+            "probability": 0.9501310984293619
+          },
+          {
+            "startMs": 38020,
+            "endMs": 38340,
+            "word": " सकते",
+            "probability": 0.9735289663076401
+          },
+          {
+            "startMs": 38340,
+            "endMs": 38520,
+            "word": " हैं",
+            "probability": 0.9818690220514933
+          },
+          {
+            "startMs": 38520,
+            "endMs": 39160,
+            "word": " आउन",
+            "probability": 0.6521989196538925
+          },
+          {
+            "startMs": 55290,
+            "endMs": 55850,
+            "word": " कि",
+            "probability": 0.27282293885946274
+          },
+          {
+            "startMs": 55850,
+            "endMs": 56210,
+            "word": " लिल्लक",
+            "probability": 0.6122593326228005
+          },
+          {
+            "startMs": 56210,
+            "endMs": 56530,
+            "word": " जाही",
+            "probability": 0.7091449081897736
+          },
+          {
+            "startMs": 69940,
+            "endMs": 70940,
+            "word": " यह",
+            "probability": 0.49531275033950806
+          },
+          {
+            "startMs": 70940,
+            "endMs": 71200,
+            "word": " दो",
+            "probability": 0.4575998882452647
+          },
+          {
+            "startMs": 71200,
+            "endMs": 71580,
+            "word": " नीजी",
+            "probability": 0.28024170687422156
+          },
+          {
+            "startMs": 71580,
+            "endMs": 71580,
+            "word": " एप",
+            "probability": 0.2583137350156903
+          },
+          {
+            "startMs": 71580,
+            "endMs": 72900,
+            "word": " यह",
+            "probability": 0.48759472742676735
+          },
+          {
+            "startMs": 72900,
+            "endMs": 75580,
+            "word": " दो",
+            "probability": 0.4790407369534175
+          },
+          {
+            "startMs": 75580,
+            "endMs": 77660,
+            "word": " शुटार्ण",
+            "probability": 0.3102602686055682
+          },
+          {
+            "startMs": 77660,
+            "endMs": 77660,
+            "word": " पर",
+            "probability": 0.23368042210737863
+          },
+          {
+            "startMs": 77660,
+            "endMs": 77780,
+            "word": " गोला",
+            "probability": 0.19462727829813958
+          },
+          {
+            "startMs": 77780,
+            "endMs": 78800,
+            "word": " प्रोड",
+            "probability": 0.3909486989889826
+          },
+          {
+            "startMs": 78800,
+            "endMs": 79900,
+            "word": " कि",
+            "probability": 0.19126047939062119
+          },
+          {
+            "startMs": 79900,
+            "endMs": 82820,
+            "word": " अपर",
+            "probability": 0.33373638391494753
+          },
+          {
+            "startMs": 82820,
+            "endMs": 83620,
+            "word": " शुटार्ण",
+            "probability": 0.6392788887023926
+          },
+          {
+            "startMs": 83620,
+            "endMs": 84080,
+            "word": " नीजी",
+            "probability": 0.503037141636014
+          },
+          {
+            "startMs": 84080,
+            "endMs": 84760,
+            "word": " एप",
+            "probability": 0.39049178920686245
+          },
+          {
+            "startMs": 84760,
+            "endMs": 85980,
+            "word": " इसे",
+            "probability": 0.38703479897230864
+          },
+          {
+            "startMs": 85980,
+            "endMs": 85980,
+            "word": " तिस",
+            "probability": 0.26897406578063965
+          },
+          {
+            "startMs": 85980,
+            "endMs": 86200,
+            "word": " के",
+            "probability": 0.3581134118139744
+          },
+          {
+            "startMs": 86200,
+            "endMs": 86420,
+            "word": " लिए",
+            "probability": 0.5733462452888489
+          },
+          {
+            "startMs": 86420,
+            "endMs": 86500,
+            "word": " तेंपल",
+            "probability": 0.5517833259488855
+          },
+          {
+            "startMs": 86500,
+            "endMs": 86880,
+            "word": " राइए",
+            "probability": 0.7095325823341098
+          },
+          {
+            "startMs": 86880,
+            "endMs": 91500,
+            "word": " अवक्",
+            "probability": 0.2697778455913067
+          }
+        ]
+      },
+      {
+        "startMs": 91500,
+        "endMs": 112320,
+        "text": "और थेंक्यू जहां लगेगा वहां से पीछे और क्या करें कि पिछी वाजा में बाइक साया था ना तो मैंने देखा था कि",
+        "avgLogprob": -0.2594380399915907,
+        "noSpeechProb": 2.0903292430318743e-09,
+        "compressionRatio": 2.3449781659388647,
+        "words": [
+          {
+            "startMs": 91500,
+            "endMs": 92460,
+            "word": " और",
+            "probability": 0.6103438337643942
+          },
+          {
+            "startMs": 92460,
+            "endMs": 93220,
+            "word": " थेंक्यू",
+            "probability": 0.6205626229445139
+          },
+          {
+            "startMs": 93220,
+            "endMs": 94120,
+            "word": " जहां",
+            "probability": 0.7768850088119507
+          },
+          {
+            "startMs": 103820,
+            "endMs": 104200,
+            "word": " लगेगा",
+            "probability": 0.9497233405709267
+          },
+          {
+            "startMs": 104200,
+            "endMs": 104440,
+            "word": " वहां",
+            "probability": 0.7838841080665588
+          },
+          {
+            "startMs": 104440,
+            "endMs": 104620,
+            "word": " से",
+            "probability": 0.7009551227092743
+          },
+          {
+            "startMs": 104620,
+            "endMs": 105000,
+            "word": " पीछे",
+            "probability": 0.8919603526592255
+          },
+          {
+            "startMs": 105000,
+            "endMs": 106260,
+            "word": " और",
+            "probability": 0.8638914823532104
+          },
+          {
+            "startMs": 106260,
+            "endMs": 106440,
+            "word": " क्या",
+            "probability": 0.9722530096769333
+          },
+          {
+            "startMs": 106440,
+            "endMs": 106700,
+            "word": " करें",
+            "probability": 0.9424484372138977
+          },
+          {
+            "startMs": 106700,
+            "endMs": 108440,
+            "word": " कि",
+            "probability": 0.4729897379875183
+          },
+          {
+            "startMs": 108440,
+            "endMs": 108920,
+            "word": " पिछी",
+            "probability": 0.5962560127178828
+          },
+          {
+            "startMs": 108920,
+            "endMs": 109180,
+            "word": " वाजा",
+            "probability": 0.8220798969268799
+          },
+          {
+            "startMs": 109180,
+            "endMs": 109300,
+            "word": " में",
+            "probability": 0.9064341187477112
+          },
+          {
+            "startMs": 109300,
+            "endMs": 109560,
+            "word": " बाइक",
+            "probability": 0.8422824343045553
+          },
+          {
+            "startMs": 109560,
+            "endMs": 109840,
+            "word": " साया",
+            "probability": 0.785850465297699
+          },
+          {
+            "startMs": 109840,
+            "endMs": 109980,
+            "word": " था",
+            "probability": 0.9908691247304281
+          },
+          {
+            "startMs": 109980,
+            "endMs": 110160,
+            "word": " ना",
+            "probability": 0.693435420592626
+          },
+          {
+            "startMs": 110160,
+            "endMs": 111240,
+            "word": " तो",
+            "probability": 0.9420824448267618
+          },
+          {
+            "startMs": 111240,
+            "endMs": 111480,
+            "word": " मैंने",
+            "probability": 0.9633121371269227
+          },
+          {
+            "startMs": 111480,
+            "endMs": 111760,
+            "word": " देखा",
+            "probability": 0.9831121067206064
+          },
+          {
+            "startMs": 111760,
+            "endMs": 111940,
+            "word": " था",
+            "probability": 0.989729106426239
+          },
+          {
+            "startMs": 111940,
+            "endMs": 112320,
+            "word": " कि",
+            "probability": 0.8603715896606445
+          }
+        ]
+      },
+      {
+        "startMs": 113380,
+        "endMs": 188520,
+        "text": "मारूती चड़ गी थी उपर यही रोड है जचर नी स्टार्ट्स ना यह किदर है भाई तो पार्किंग में आके वह थो थार जाड़ी थी ना वही है वही उपर बाइकर लोग भीथे पीछे न ओफ रोडिंग ट्रेल ही देना इस ट्रेलास किरे पेड़ा बेड़ा बेड़ा �",
+        "avgLogprob": -0.2508692042032878,
+        "noSpeechProb": 2.120120612403298e-08,
+        "compressionRatio": 2.3244444444444445,
+        "words": [
+          {
+            "startMs": 113380,
+            "endMs": 113940,
+            "word": " मारूती",
+            "probability": 0.7987144589424133
+          },
+          {
+            "startMs": 113940,
+            "endMs": 114500,
+            "word": " चड़",
+            "probability": 0.8290573358535767
+          },
+          {
+            "startMs": 114500,
+            "endMs": 114660,
+            "word": " गी",
+            "probability": 0.7644199728965759
+          },
+          {
+            "startMs": 114660,
+            "endMs": 114820,
+            "word": " थी",
+            "probability": 0.8461812138557434
+          },
+          {
+            "startMs": 114820,
+            "endMs": 115100,
+            "word": " उपर",
+            "probability": 0.9643977165222168
+          },
+          {
+            "startMs": 122490,
+            "endMs": 123630,
+            "word": " यही",
+            "probability": 0.8883913904428482
+          },
+          {
+            "startMs": 123630,
+            "endMs": 123790,
+            "word": " रोड",
+            "probability": 0.9237082362174988
+          },
+          {
+            "startMs": 123790,
+            "endMs": 123910,
+            "word": " है",
+            "probability": 0.6853064447641373
+          },
+          {
+            "startMs": 139750,
+            "endMs": 140770,
+            "word": " जचर",
+            "probability": 0.5848548829555511
+          },
+          {
+            "startMs": 140770,
+            "endMs": 140970,
+            "word": " नी",
+            "probability": 0.6808449228604635
+          },
+          {
+            "startMs": 140970,
+            "endMs": 141550,
+            "word": " स्टार्ट्स",
+            "probability": 0.8340641802007501
+          },
+          {
+            "startMs": 141550,
+            "endMs": 141970,
+            "word": " ना",
+            "probability": 0.918499747912089
+          },
+          {
+            "startMs": 141970,
+            "endMs": 142910,
+            "word": " यह",
+            "probability": 0.7314611474672953
+          },
+          {
+            "startMs": 147900,
+            "endMs": 148220,
+            "word": " किदर",
+            "probability": 0.8000443339347839
+          },
+          {
+            "startMs": 148220,
+            "endMs": 148300,
+            "word": " है",
+            "probability": 0.7664116024971008
+          },
+          {
+            "startMs": 148300,
+            "endMs": 148540,
+            "word": " भाई",
+            "probability": 0.8574056386947632
+          },
+          {
+            "startMs": 148540,
+            "endMs": 149040,
+            "word": " तो",
+            "probability": 0.9470159610112509
+          },
+          {
+            "startMs": 149040,
+            "endMs": 149440,
+            "word": " पार्किंग",
+            "probability": 0.9441489934921264
+          },
+          {
+            "startMs": 149440,
+            "endMs": 149520,
+            "word": " में",
+            "probability": 0.9181813995043436
+          },
+          {
+            "startMs": 149520,
+            "endMs": 149780,
+            "word": " आके",
+            "probability": 0.6650220528244972
+          },
+          {
+            "startMs": 149780,
+            "endMs": 150540,
+            "word": " वह",
+            "probability": 0.839257816473643
+          },
+          {
+            "startMs": 156780,
+            "endMs": 156900,
+            "word": " थो",
+            "probability": 0.7863605519135793
+          },
+          {
+            "startMs": 156900,
+            "endMs": 157220,
+            "word": " थार",
+            "probability": 0.9371734261512756
+          },
+          {
+            "startMs": 157220,
+            "endMs": 157480,
+            "word": " जाड़ी",
+            "probability": 0.8420856818556786
+          },
+          {
+            "startMs": 157480,
+            "endMs": 157600,
+            "word": " थी",
+            "probability": 0.965212881565094
+          },
+          {
+            "startMs": 157600,
+            "endMs": 157880,
+            "word": " ना",
+            "probability": 0.8613559206326803
+          },
+          {
+            "startMs": 157880,
+            "endMs": 159180,
+            "word": " वही",
+            "probability": 0.6415950655937195
+          },
+          {
+            "startMs": 159180,
+            "endMs": 159320,
+            "word": " है",
+            "probability": 0.7117233425378799
+          },
+          {
+            "startMs": 162780,
+            "endMs": 163680,
+            "word": " वही",
+            "probability": 0.7856731861829758
+          },
+          {
+            "startMs": 163680,
+            "endMs": 163960,
+            "word": " उपर",
+            "probability": 0.9548592448234559
+          },
+          {
+            "startMs": 163960,
+            "endMs": 165600,
+            "word": " बाइकर",
+            "probability": 0.8058981341975076
+          },
+          {
+            "startMs": 165600,
+            "endMs": 165760,
+            "word": " लोग",
+            "probability": 0.9204620003700257
+          },
+          {
+            "startMs": 165760,
+            "endMs": 166000,
+            "word": " भीथे",
+            "probability": 0.7523704171180725
+          },
+          {
+            "startMs": 166000,
+            "endMs": 166340,
+            "word": " पीछे",
+            "probability": 0.922521193822225
+          },
+          {
+            "startMs": 166340,
+            "endMs": 167220,
+            "word": " न",
+            "probability": 0.5847491919994354
+          },
+          {
+            "startMs": 184300,
+            "endMs": 184500,
+            "word": " ओफ",
+            "probability": 0.7812382280826569
+          },
+          {
+            "startMs": 184500,
+            "endMs": 184760,
+            "word": " रोडिंग",
+            "probability": 0.8146410551336076
+          },
+          {
+            "startMs": 184760,
+            "endMs": 185040,
+            "word": " ट्रेल",
+            "probability": 0.9559479455153147
+          },
+          {
+            "startMs": 185040,
+            "endMs": 185100,
+            "word": " ही",
+            "probability": 0.7189106196165085
+          },
+          {
+            "startMs": 185100,
+            "endMs": 185420,
+            "word": " देना",
+            "probability": 0.7950516104698181
+          },
+          {
+            "startMs": 185420,
+            "endMs": 185920,
+            "word": " इस",
+            "probability": 0.7533206343650818
+          },
+          {
+            "startMs": 185920,
+            "endMs": 186540,
+            "word": " ट्रेलास",
+            "probability": 0.6475666090846062
+          },
+          {
+            "startMs": 186540,
+            "endMs": 186800,
+            "word": " किरे",
+            "probability": 0.7267027795314789
+          },
+          {
+            "startMs": 186800,
+            "endMs": 187340,
+            "word": " पेड़ा",
+            "probability": 0.6912570744752884
+          },
+          {
+            "startMs": 187340,
+            "endMs": 187520,
+            "word": " बेड़ा",
+            "probability": 0.8575867172330618
+          },
+          {
+            "startMs": 187520,
+            "endMs": 188180,
+            "word": " बेड़ा",
+            "probability": 0.8551860693842173
+          },
+          {
+            "startMs": 188180,
+            "endMs": 188520,
+            "word": " �",
+            "probability": 0.7065280675888062
+          }
+        ]
+      },
+      {
+        "startMs": 188520,
+        "endMs": 294440,
+        "text": "पुल स्टाइक देरोटे नाल किलम में चार किलो मेटर चालो लेट्स को वंदा अपना देख हैच्पैक लेके चर गया वाई उपर और क्या चाहिए उसको तो इस वीडियो आनी रखना है नहीं ठीके रख लेते हैं विंडो खोल गया मुझे बस यह डर है कि गारी पंचर व",
+        "avgLogprob": -0.30066112418880375,
+        "noSpeechProb": 4.306830891920299e-09,
+        "compressionRatio": 2.168,
+        "words": [
+          {
+            "startMs": 188520,
+            "endMs": 188940,
+            "word": " पुल",
+            "probability": 0.5708440601825714
+          },
+          {
+            "startMs": 188940,
+            "endMs": 189320,
+            "word": " स्टाइक",
+            "probability": 0.8042524084448814
+          },
+          {
+            "startMs": 189320,
+            "endMs": 190120,
+            "word": " देरोटे",
+            "probability": 0.5606134496629238
+          },
+          {
+            "startMs": 190120,
+            "endMs": 190320,
+            "word": " नाल",
+            "probability": 0.7960852682590485
+          },
+          {
+            "startMs": 190320,
+            "endMs": 190620,
+            "word": " किलम",
+            "probability": 0.8297397345304489
+          },
+          {
+            "startMs": 190620,
+            "endMs": 190840,
+            "word": " में",
+            "probability": 0.403303445627292
+          },
+          {
+            "startMs": 190840,
+            "endMs": 192660,
+            "word": " चार",
+            "probability": 0.823932409286499
+          },
+          {
+            "startMs": 192660,
+            "endMs": 192920,
+            "word": " किलो",
+            "probability": 0.872394248843193
+          },
+          {
+            "startMs": 192920,
+            "endMs": 193180,
+            "word": " मेटर",
+            "probability": 0.7005798637866973
+          },
+          {
+            "startMs": 222560,
+            "endMs": 223920,
+            "word": " चालो",
+            "probability": 0.44541668593883516
+          },
+          {
+            "startMs": 223920,
+            "endMs": 224340,
+            "word": " लेट्स",
+            "probability": 0.8620025260107858
+          },
+          {
+            "startMs": 224340,
+            "endMs": 224700,
+            "word": " को",
+            "probability": 0.5948455184698105
+          },
+          {
+            "startMs": 224700,
+            "endMs": 225520,
+            "word": " वंदा",
+            "probability": 0.5802131742238998
+          },
+          {
+            "startMs": 252340,
+            "endMs": 252680,
+            "word": " अपना",
+            "probability": 0.8937944571177164
+          },
+          {
+            "startMs": 252680,
+            "endMs": 253000,
+            "word": " देख",
+            "probability": 0.842812967300415
+          },
+          {
+            "startMs": 253000,
+            "endMs": 254040,
+            "word": " हैच्पैक",
+            "probability": 0.6803572078545889
+          },
+          {
+            "startMs": 254040,
+            "endMs": 254280,
+            "word": " लेके",
+            "probability": 0.8339556276798248
+          },
+          {
+            "startMs": 254280,
+            "endMs": 254440,
+            "word": " चर",
+            "probability": 0.8381999135017395
+          },
+          {
+            "startMs": 254440,
+            "endMs": 254620,
+            "word": " गया",
+            "probability": 0.8073626980185509
+          },
+          {
+            "startMs": 254620,
+            "endMs": 254820,
+            "word": " वाई",
+            "probability": 0.8978108048439026
+          },
+          {
+            "startMs": 254820,
+            "endMs": 255180,
+            "word": " उपर",
+            "probability": 0.8723981380462646
+          },
+          {
+            "startMs": 255180,
+            "endMs": 255660,
+            "word": " और",
+            "probability": 0.9263529380162557
+          },
+          {
+            "startMs": 255660,
+            "endMs": 255880,
+            "word": " क्या",
+            "probability": 0.9423807114362717
+          },
+          {
+            "startMs": 255880,
+            "endMs": 256220,
+            "word": " चाहिए",
+            "probability": 0.8487850470202309
+          },
+          {
+            "startMs": 256220,
+            "endMs": 256600,
+            "word": " उसको",
+            "probability": 0.8593956530094147
+          },
+          {
+            "startMs": 256600,
+            "endMs": 257100,
+            "word": " तो",
+            "probability": 0.48305488626162213
+          },
+          {
+            "startMs": 263270,
+            "endMs": 263390,
+            "word": " इस",
+            "probability": 0.6039293184876442
+          },
+          {
+            "startMs": 263390,
+            "endMs": 263670,
+            "word": " वीडियो",
+            "probability": 0.8172498047351837
+          },
+          {
+            "startMs": 263670,
+            "endMs": 263870,
+            "word": " आनी",
+            "probability": 0.6323235481977463
+          },
+          {
+            "startMs": 263870,
+            "endMs": 264130,
+            "word": " रखना",
+            "probability": 0.8873132467269897
+          },
+          {
+            "startMs": 264130,
+            "endMs": 264210,
+            "word": " है",
+            "probability": 0.9711249768733978
+          },
+          {
+            "startMs": 264210,
+            "endMs": 265650,
+            "word": " नहीं",
+            "probability": 0.7895629942417145
+          },
+          {
+            "startMs": 268280,
+            "endMs": 269180,
+            "word": " ठीके",
+            "probability": 0.703505526483059
+          },
+          {
+            "startMs": 269180,
+            "endMs": 269340,
+            "word": " रख",
+            "probability": 0.8019017279148102
+          },
+          {
+            "startMs": 269340,
+            "endMs": 269700,
+            "word": " लेते",
+            "probability": 0.7875599026679992
+          },
+          {
+            "startMs": 269700,
+            "endMs": 269780,
+            "word": " हैं",
+            "probability": 0.7112232446670532
+          },
+          {
+            "startMs": 272080,
+            "endMs": 272660,
+            "word": " विंडो",
+            "probability": 0.7849783982549395
+          },
+          {
+            "startMs": 272660,
+            "endMs": 272960,
+            "word": " खोल",
+            "probability": 0.8316352367401123
+          },
+          {
+            "startMs": 272960,
+            "endMs": 273200,
+            "word": " गया",
+            "probability": 0.9102160930633545
+          },
+          {
+            "startMs": 277810,
+            "endMs": 278630,
+            "word": " मुझे",
+            "probability": 0.969378391901652
+          },
+          {
+            "startMs": 278630,
+            "endMs": 278850,
+            "word": " बस",
+            "probability": 0.9851609269777933
+          },
+          {
+            "startMs": 278850,
+            "endMs": 279030,
+            "word": " यह",
+            "probability": 0.7182904879252116
+          },
+          {
+            "startMs": 279030,
+            "endMs": 279210,
+            "word": " डर",
+            "probability": 0.9485093951225281
+          },
+          {
+            "startMs": 279210,
+            "endMs": 279350,
+            "word": " है",
+            "probability": 0.9781286716461182
+          },
+          {
+            "startMs": 279350,
+            "endMs": 279590,
+            "word": " कि",
+            "probability": 0.9609418213367462
+          },
+          {
+            "startMs": 279590,
+            "endMs": 280050,
+            "word": " गारी",
+            "probability": 0.9487595200538635
+          },
+          {
+            "startMs": 280050,
+            "endMs": 280450,
+            "word": " पंचर",
+            "probability": 0.9691418707370758
+          },
+          {
+            "startMs": 286560,
+            "endMs": 294440,
+            "word": " व",
+            "probability": 0.6354059278964996
+          }
+        ]
+      },
+      {
+        "startMs": 296520,
+        "endMs": 350850,
+        "text": "हुसुम मैं तुम ही डेरिंग बीवी डेरिंग इल गई है चराओ गारी देखा जाएगा जो होगा देख वाई तुम आउफ रोडिंग देखो फोर वाई टू को अच रादी आमने उपर बहुत धीरे-धीरे चड़ना कि यार के टाटन एक्सान भी चड़ीवी है वेंट अ",
+        "avgLogprob": -0.28407487847879864,
+        "noSpeechProb": 7.311122374176193e-09,
+        "compressionRatio": 2.16017316017316,
+        "words": [
+          {
+            "startMs": 296520,
+            "endMs": 297060,
+            "word": " हुसुम",
+            "probability": 0.5087337121367455
+          },
+          {
+            "startMs": 297060,
+            "endMs": 298220,
+            "word": " मैं",
+            "probability": 0.6948110262552897
+          },
+          {
+            "startMs": 298220,
+            "endMs": 298540,
+            "word": " तुम",
+            "probability": 0.9167904376983642
+          },
+          {
+            "startMs": 298540,
+            "endMs": 298700,
+            "word": " ही",
+            "probability": 0.7400842607021332
+          },
+          {
+            "startMs": 298700,
+            "endMs": 299080,
+            "word": " डेरिंग",
+            "probability": 0.8779764845967293
+          },
+          {
+            "startMs": 299080,
+            "endMs": 299440,
+            "word": " बीवी",
+            "probability": 0.6803652693827947
+          },
+          {
+            "startMs": 299440,
+            "endMs": 299880,
+            "word": " डेरिंग",
+            "probability": 0.9608615413308144
+          },
+          {
+            "startMs": 299880,
+            "endMs": 300040,
+            "word": " इल",
+            "probability": 0.5723641514778137
+          },
+          {
+            "startMs": 300040,
+            "endMs": 300200,
+            "word": " गई",
+            "probability": 0.735192559659481
+          },
+          {
+            "startMs": 300200,
+            "endMs": 300360,
+            "word": " है",
+            "probability": 0.9811336994171143
+          },
+          {
+            "startMs": 300360,
+            "endMs": 301120,
+            "word": " चराओ",
+            "probability": 0.8633726835250854
+          },
+          {
+            "startMs": 301120,
+            "endMs": 301420,
+            "word": " गारी",
+            "probability": 0.8861373543739319
+          },
+          {
+            "startMs": 301420,
+            "endMs": 301740,
+            "word": " देखा",
+            "probability": 0.9809699157873789
+          },
+          {
+            "startMs": 301740,
+            "endMs": 302160,
+            "word": " जाएगा",
+            "probability": 0.9417054876685143
+          },
+          {
+            "startMs": 302160,
+            "endMs": 302840,
+            "word": " जो",
+            "probability": 0.8581966559092203
+          },
+          {
+            "startMs": 302840,
+            "endMs": 303160,
+            "word": " होगा",
+            "probability": 0.6990147948265075
+          },
+          {
+            "startMs": 303160,
+            "endMs": 306340,
+            "word": " देख",
+            "probability": 0.7804887115955352
+          },
+          {
+            "startMs": 306340,
+            "endMs": 306640,
+            "word": " वाई",
+            "probability": 0.491208490729332
+          },
+          {
+            "startMs": 306640,
+            "endMs": 306840,
+            "word": " तुम",
+            "probability": 0.9141392827033996
+          },
+          {
+            "startMs": 306840,
+            "endMs": 307260,
+            "word": " आउफ",
+            "probability": 0.7954822580019633
+          },
+          {
+            "startMs": 307260,
+            "endMs": 307540,
+            "word": " रोडिंग",
+            "probability": 0.9149399267302619
+          },
+          {
+            "startMs": 307540,
+            "endMs": 307840,
+            "word": " देखो",
+            "probability": 0.9706865052382151
+          },
+          {
+            "startMs": 307840,
+            "endMs": 308760,
+            "word": " फोर",
+            "probability": 0.7327622473239899
+          },
+          {
+            "startMs": 312090,
+            "endMs": 312290,
+            "word": " वाई",
+            "probability": 0.7482841670513153
+          },
+          {
+            "startMs": 312290,
+            "endMs": 312490,
+            "word": " टू",
+            "probability": 0.8631414175033569
+          },
+          {
+            "startMs": 312490,
+            "endMs": 312670,
+            "word": " को",
+            "probability": 0.8227368295192719
+          },
+          {
+            "startMs": 312670,
+            "endMs": 312870,
+            "word": " अच",
+            "probability": 0.8498048037290573
+          },
+          {
+            "startMs": 312870,
+            "endMs": 313230,
+            "word": " रादी",
+            "probability": 0.7232316235701243
+          },
+          {
+            "startMs": 313230,
+            "endMs": 313510,
+            "word": " आमने",
+            "probability": 0.8607834100723266
+          },
+          {
+            "startMs": 313510,
+            "endMs": 313870,
+            "word": " उपर",
+            "probability": 0.8682807445526123
+          },
+          {
+            "startMs": 313870,
+            "endMs": 314530,
+            "word": " बहुत",
+            "probability": 0.9157820145289103
+          },
+          {
+            "startMs": 326140,
+            "endMs": 326480,
+            "word": " धीरे",
+            "probability": 0.8666152834892273
+          },
+          {
+            "startMs": 326480,
+            "endMs": 326680,
+            "word": "-धीरे",
+            "probability": 0.7795364558696747
+          },
+          {
+            "startMs": 326680,
+            "endMs": 327040,
+            "word": " चड़ना",
+            "probability": 0.8772836215794086
+          },
+          {
+            "startMs": 327040,
+            "endMs": 328940,
+            "word": " कि",
+            "probability": 0.2960662692785263
+          },
+          {
+            "startMs": 328940,
+            "endMs": 329400,
+            "word": " यार",
+            "probability": 0.6779257357120514
+          },
+          {
+            "startMs": 339390,
+            "endMs": 340370,
+            "word": " के",
+            "probability": 0.4179390221834183
+          },
+          {
+            "startMs": 340370,
+            "endMs": 341010,
+            "word": " टाटन",
+            "probability": 0.60716862231493
+          },
+          {
+            "startMs": 341010,
+            "endMs": 341410,
+            "word": " एक्सान",
+            "probability": 0.6450551492827279
+          },
+          {
+            "startMs": 341410,
+            "endMs": 341590,
+            "word": " भी",
+            "probability": 0.9646433194478353
+          },
+          {
+            "startMs": 341590,
+            "endMs": 342010,
+            "word": " चड़ीवी",
+            "probability": 0.7753860950469971
+          },
+          {
+            "startMs": 342010,
+            "endMs": 342170,
+            "word": " है",
+            "probability": 0.9151782989501953
+          },
+          {
+            "startMs": 349590,
+            "endMs": 350670,
+            "word": " वेंट",
+            "probability": 0.7210179145137469
+          },
+          {
+            "startMs": 350670,
+            "endMs": 350850,
+            "word": " अ",
+            "probability": 0.6450128704309464
+          }
+        ]
+      },
+      {
+        "startMs": 364050,
+        "endMs": 390000,
+        "text": "सीजा था गया तो एक काम करना आगे जा चलके है ठीक है और वहां पर केमरा कुर के खरा रहे ना मैं आता हूं गारी लेकर वह टर्निंग पर",
+        "avgLogprob": -0.31057341826164114,
+        "noSpeechProb": 3.5822320665346297e-09,
+        "compressionRatio": 1.9415584415584415,
+        "words": [
+          {
+            "startMs": 364050,
+            "endMs": 364470,
+            "word": " सीजा",
+            "probability": 0.4620695382356644
+          },
+          {
+            "startMs": 364470,
+            "endMs": 364650,
+            "word": " था",
+            "probability": 0.7103035549322764
+          },
+          {
+            "startMs": 364650,
+            "endMs": 364910,
+            "word": " गया",
+            "probability": 0.9402454793453217
+          },
+          {
+            "startMs": 364910,
+            "endMs": 365410,
+            "word": " तो",
+            "probability": 0.7206098834673563
+          },
+          {
+            "startMs": 381820,
+            "endMs": 382000,
+            "word": " एक",
+            "probability": 0.8081578612327576
+          },
+          {
+            "startMs": 382000,
+            "endMs": 382200,
+            "word": " काम",
+            "probability": 0.8067638079325358
+          },
+          {
+            "startMs": 382200,
+            "endMs": 382440,
+            "word": " करना",
+            "probability": 0.8712525814771652
+          },
+          {
+            "startMs": 382440,
+            "endMs": 382620,
+            "word": " आगे",
+            "probability": 0.695772111415863
+          },
+          {
+            "startMs": 382620,
+            "endMs": 382760,
+            "word": " जा",
+            "probability": 0.978050688902537
+          },
+          {
+            "startMs": 382760,
+            "endMs": 383140,
+            "word": " चलके",
+            "probability": 0.7455111384391785
+          },
+          {
+            "startMs": 383140,
+            "endMs": 384320,
+            "word": " है",
+            "probability": 0.5422539114952087
+          },
+          {
+            "startMs": 384320,
+            "endMs": 384640,
+            "word": " ठीक",
+            "probability": 0.6985312700271606
+          },
+          {
+            "startMs": 384640,
+            "endMs": 384780,
+            "word": " है",
+            "probability": 0.9733241200447083
+          },
+          {
+            "startMs": 384780,
+            "endMs": 385600,
+            "word": " और",
+            "probability": 0.6623601913452148
+          },
+          {
+            "startMs": 385600,
+            "endMs": 386020,
+            "word": " वहां",
+            "probability": 0.8254886746406556
+          },
+          {
+            "startMs": 386020,
+            "endMs": 386100,
+            "word": " पर",
+            "probability": 0.8720562855402628
+          },
+          {
+            "startMs": 386100,
+            "endMs": 386400,
+            "word": " केमरा",
+            "probability": 0.7598038196563721
+          },
+          {
+            "startMs": 386400,
+            "endMs": 386560,
+            "word": " कुर",
+            "probability": 0.6727486178278923
+          },
+          {
+            "startMs": 386560,
+            "endMs": 386680,
+            "word": " के",
+            "probability": 0.7145161628723145
+          },
+          {
+            "startMs": 386680,
+            "endMs": 386920,
+            "word": " खरा",
+            "probability": 0.9082392007112503
+          },
+          {
+            "startMs": 386920,
+            "endMs": 387060,
+            "word": " रहे",
+            "probability": 0.8197195827960968
+          },
+          {
+            "startMs": 387060,
+            "endMs": 387220,
+            "word": " ना",
+            "probability": 0.5607434511184692
+          },
+          {
+            "startMs": 387220,
+            "endMs": 387280,
+            "word": " मैं",
+            "probability": 0.8864221970240275
+          },
+          {
+            "startMs": 387280,
+            "endMs": 387500,
+            "word": " आता",
+            "probability": 0.8874916285276413
+          },
+          {
+            "startMs": 387500,
+            "endMs": 387540,
+            "word": " हूं",
+            "probability": 0.8906776160001755
+          },
+          {
+            "startMs": 387540,
+            "endMs": 387780,
+            "word": " गारी",
+            "probability": 0.8149040639400482
+          },
+          {
+            "startMs": 387780,
+            "endMs": 387980,
+            "word": " लेकर",
+            "probability": 0.9046348571777344
+          },
+          {
+            "startMs": 387980,
+            "endMs": 389480,
+            "word": " वह",
+            "probability": 0.6579013069470724
+          },
+          {
+            "startMs": 389480,
+            "endMs": 389880,
+            "word": " टर्निंग",
+            "probability": 0.8589142759641012
+          },
+          {
+            "startMs": 389880,
+            "endMs": 390000,
+            "word": " पर",
+            "probability": 0.8575613101323446
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 30000
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 35000
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 45000
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 50000
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 55000
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 60000
+      },
+      {
+        "frameFile": "frames/frame_0013.jpg",
+        "timestampMs": 65000
+      },
+      {
+        "frameFile": "frames/frame_0014.jpg",
+        "timestampMs": 70000
+      },
+      {
+        "frameFile": "frames/frame_0015.jpg",
+        "timestampMs": 75000
+      },
+      {
+        "frameFile": "frames/frame_0016.jpg",
+        "timestampMs": 80000
+      },
+      {
+        "frameFile": "frames/frame_0017.jpg",
+        "timestampMs": 85000
+      },
+      {
+        "frameFile": "frames/frame_0018.jpg",
+        "timestampMs": 90000
+      },
+      {
+        "frameFile": "frames/frame_0019.jpg",
+        "timestampMs": 95000
+      },
+      {
+        "frameFile": "frames/frame_0020.jpg",
+        "timestampMs": 100000
+      },
+      {
+        "frameFile": "frames/frame_0021.jpg",
+        "timestampMs": 105000
+      },
+      {
+        "frameFile": "frames/frame_0022.jpg",
+        "timestampMs": 110000
+      },
+      {
+        "frameFile": "frames/frame_0023.jpg",
+        "timestampMs": 115000
+      },
+      {
+        "frameFile": "frames/frame_0024.jpg",
+        "timestampMs": 120000
+      },
+      {
+        "frameFile": "frames/frame_0025.jpg",
+        "timestampMs": 130000
+      },
+      {
+        "frameFile": "frames/frame_0026.jpg",
+        "timestampMs": 135000
+      },
+      {
+        "frameFile": "frames/frame_0027.jpg",
+        "timestampMs": 140000
+      },
+      {
+        "frameFile": "frames/frame_0028.jpg",
+        "timestampMs": 145000
+      },
+      {
+        "frameFile": "frames/frame_0029.jpg",
+        "timestampMs": 146980
+      },
+      {
+        "frameFile": "frames/frame_0030.jpg",
+        "timestampMs": 150000
+      },
+      {
+        "frameFile": "frames/frame_0031.jpg",
+        "timestampMs": 155000
+      },
+      {
+        "frameFile": "frames/frame_0032.jpg",
+        "timestampMs": 160000
+      },
+      {
+        "frameFile": "frames/frame_0033.jpg",
+        "timestampMs": 165000
+      },
+      {
+        "frameFile": "frames/frame_0034.jpg",
+        "timestampMs": 170000
+      },
+      {
+        "frameFile": "frames/frame_0035.jpg",
+        "timestampMs": 175000
+      },
+      {
+        "frameFile": "frames/frame_0036.jpg",
+        "timestampMs": 180000
+      },
+      {
+        "frameFile": "frames/frame_0037.jpg",
+        "timestampMs": 185000
+      },
+      {
+        "frameFile": "frames/frame_0038.jpg",
+        "timestampMs": 190000
+      },
+      {
+        "frameFile": "frames/frame_0039.jpg",
+        "timestampMs": 195000
+      },
+      {
+        "frameFile": "frames/frame_0040.jpg",
+        "timestampMs": 200000
+      },
+      {
+        "frameFile": "frames/frame_0041.jpg",
+        "timestampMs": 210000
+      },
+      {
+        "frameFile": "frames/frame_0042.jpg",
+        "timestampMs": 215000
+      },
+      {
+        "frameFile": "frames/frame_0043.jpg",
+        "timestampMs": 220000
+      },
+      {
+        "frameFile": "frames/frame_0044.jpg",
+        "timestampMs": 225000
+      },
+      {
+        "frameFile": "frames/frame_0045.jpg",
+        "timestampMs": 230000
+      },
+      {
+        "frameFile": "frames/frame_0046.jpg",
+        "timestampMs": 235000
+      },
+      {
+        "frameFile": "frames/frame_0047.jpg",
+        "timestampMs": 240000
+      },
+      {
+        "frameFile": "frames/frame_0048.jpg",
+        "timestampMs": 245000
+      },
+      {
+        "frameFile": "frames/frame_0049.jpg",
+        "timestampMs": 250000
+      },
+      {
+        "frameFile": "frames/frame_0050.jpg",
+        "timestampMs": 255000
+      },
+      {
+        "frameFile": "frames/frame_0051.jpg",
+        "timestampMs": 260000
+      },
+      {
+        "frameFile": "frames/frame_0052.jpg",
+        "timestampMs": 265000
+      },
+      {
+        "frameFile": "frames/frame_0053.jpg",
+        "timestampMs": 270000
+      },
+      {
+        "frameFile": "frames/frame_0054.jpg",
+        "timestampMs": 275000
+      },
+      {
+        "frameFile": "frames/frame_0055.jpg",
+        "timestampMs": 280000
+      },
+      {
+        "frameFile": "frames/frame_0056.jpg",
+        "timestampMs": 285000
+      },
+      {
+        "frameFile": "frames/frame_0057.jpg",
+        "timestampMs": 293959
+      },
+      {
+        "frameFile": "frames/frame_0058.jpg",
+        "timestampMs": 293960
+      },
+      {
+        "frameFile": "frames/frame_0059.jpg",
+        "timestampMs": 295000
+      },
+      {
+        "frameFile": "frames/frame_0060.jpg",
+        "timestampMs": 300000
+      },
+      {
+        "frameFile": "frames/frame_0061.jpg",
+        "timestampMs": 305000
+      },
+      {
+        "frameFile": "frames/frame_0062.jpg",
+        "timestampMs": 310000
+      },
+      {
+        "frameFile": "frames/frame_0063.jpg",
+        "timestampMs": 315000
+      },
+      {
+        "frameFile": "frames/frame_0064.jpg",
+        "timestampMs": 320000
+      },
+      {
+        "frameFile": "frames/frame_0065.jpg",
+        "timestampMs": 325000
+      },
+      {
+        "frameFile": "frames/frame_0066.jpg",
+        "timestampMs": 330000
+      },
+      {
+        "frameFile": "frames/frame_0067.jpg",
+        "timestampMs": 335000
+      },
+      {
+        "frameFile": "frames/frame_0068.jpg",
+        "timestampMs": 340000
+      },
+      {
+        "frameFile": "frames/frame_0069.jpg",
+        "timestampMs": 343893
+      },
+      {
+        "frameFile": "frames/frame_0070.jpg",
+        "timestampMs": 345000
+      },
+      {
+        "frameFile": "frames/frame_0071.jpg",
+        "timestampMs": 350000
+      },
+      {
+        "frameFile": "frames/frame_0072.jpg",
+        "timestampMs": 355000
+      },
+      {
+        "frameFile": "frames/frame_0073.jpg",
+        "timestampMs": 365000
+      },
+      {
+        "frameFile": "frames/frame_0074.jpg",
+        "timestampMs": 370000
+      },
+      {
+        "frameFile": "frames/frame_0075.jpg",
+        "timestampMs": 375000
+      },
+      {
+        "frameFile": "frames/frame_0076.jpg",
+        "timestampMs": 380000
+      },
+      {
+        "frameFile": "frames/frame_0077.jpg",
+        "timestampMs": 385000
+      },
+      {
+        "frameFile": "frames/frame_0078.jpg",
+        "timestampMs": 390000
+      },
+      {
+        "frameFile": "frames/frame_0079.jpg",
+        "timestampMs": 393826
+      },
+      {
+        "frameFile": "frames/frame_0080.jpg",
+        "timestampMs": 393834
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

@@ -1,0 +1,1127 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830182407_0296_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830182407_0296_D",
+    "durationMs": 117484,
+    "sha256": "33022d72bd9619f86c315abcabcc0dd937238095c032ec73ee80df2c3e2b9ad9"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830182407_0296_D/analysis.json",
+    "transcriptJson": "DJI_20260830182407_0296_D/transcript.json",
+    "scenesJson": "DJI_20260830182407_0296_D/scenes.json",
+    "framesDirectory": "DJI_20260830182407_0296_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "54502852"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.5891638994216919,
+    "segments": [
+      {
+        "startMs": 560,
+        "endMs": 5100,
+        "text": "Hello Madam, how are you going to adventure today?",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 560,
+            "endMs": 1040,
+            "word": " Hello",
+            "probability": 0.062071867287158966
+          },
+          {
+            "startMs": 1040,
+            "endMs": 1200,
+            "word": " Madam,",
+            "probability": 0.3810383081436157
+          },
+          {
+            "startMs": 2660,
+            "endMs": 2700,
+            "word": " how",
+            "probability": 0.349279522895813
+          },
+          {
+            "startMs": 2700,
+            "endMs": 2820,
+            "word": " are",
+            "probability": 0.13665594160556793
+          },
+          {
+            "startMs": 2820,
+            "endMs": 3420,
+            "word": " you",
+            "probability": 0.812756359577179
+          },
+          {
+            "startMs": 3420,
+            "endMs": 4280,
+            "word": " going",
+            "probability": 0.25813865661621094
+          },
+          {
+            "startMs": 4280,
+            "endMs": 4420,
+            "word": " to",
+            "probability": 0.8540690541267395
+          },
+          {
+            "startMs": 4420,
+            "endMs": 4980,
+            "word": " adventure",
+            "probability": 0.1485731154680252
+          },
+          {
+            "startMs": 4980,
+            "endMs": 5100,
+            "word": " today?",
+            "probability": 0.7907590866088867
+          }
+        ]
+      },
+      {
+        "startMs": 5700,
+        "endMs": 17020,
+        "text": "I'm going to show you the sunset.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 5700,
+            "endMs": 5920,
+            "word": " I'm",
+            "probability": 0.15014273673295975
+          },
+          {
+            "startMs": 5920,
+            "endMs": 6060,
+            "word": " going",
+            "probability": 0.2699045240879059
+          },
+          {
+            "startMs": 6060,
+            "endMs": 6240,
+            "word": " to",
+            "probability": 0.9840009212493896
+          },
+          {
+            "startMs": 6240,
+            "endMs": 6240,
+            "word": " show",
+            "probability": 0.2352498322725296
+          },
+          {
+            "startMs": 6240,
+            "endMs": 6460,
+            "word": " you",
+            "probability": 0.9036601781845093
+          },
+          {
+            "startMs": 15680,
+            "endMs": 16780,
+            "word": " the",
+            "probability": 0.21613577008247375
+          },
+          {
+            "startMs": 16780,
+            "endMs": 17020,
+            "word": " sunset.",
+            "probability": 0.3465026021003723
+          }
+        ]
+      },
+      {
+        "startMs": 17140,
+        "endMs": 17860,
+        "text": "The sunset looks good.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 17140,
+            "endMs": 17140,
+            "word": " The",
+            "probability": 0.04635472595691681
+          },
+          {
+            "startMs": 17140,
+            "endMs": 17140,
+            "word": " sunset",
+            "probability": 0.5044099688529968
+          },
+          {
+            "startMs": 17140,
+            "endMs": 17680,
+            "word": " looks",
+            "probability": 0.49003589153289795
+          },
+          {
+            "startMs": 17680,
+            "endMs": 17860,
+            "word": " good.",
+            "probability": 0.5821691751480103
+          }
+        ]
+      },
+      {
+        "startMs": 18760,
+        "endMs": 20220,
+        "text": "I'm going to stop behind the forest.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 18760,
+            "endMs": 19380,
+            "word": " I'm",
+            "probability": 0.4353831112384796
+          },
+          {
+            "startMs": 19380,
+            "endMs": 19420,
+            "word": " going",
+            "probability": 0.15426285564899445
+          },
+          {
+            "startMs": 19420,
+            "endMs": 19420,
+            "word": " to",
+            "probability": 0.9553321003913879
+          },
+          {
+            "startMs": 19420,
+            "endMs": 19420,
+            "word": " stop",
+            "probability": 0.08053673058748245
+          },
+          {
+            "startMs": 19420,
+            "endMs": 19420,
+            "word": " behind",
+            "probability": 0.11991440504789352
+          },
+          {
+            "startMs": 19420,
+            "endMs": 19440,
+            "word": " the",
+            "probability": 0.7847797274589539
+          },
+          {
+            "startMs": 19440,
+            "endMs": 20220,
+            "word": " forest.",
+            "probability": 0.07628845423460007
+          }
+        ]
+      },
+      {
+        "startMs": 26340,
+        "endMs": 28040,
+        "text": "I'm going to show you something.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 26340,
+            "endMs": 26960,
+            "word": " I'm",
+            "probability": 0.5631277412176132
+          },
+          {
+            "startMs": 26960,
+            "endMs": 27580,
+            "word": " going",
+            "probability": 0.5854360461235046
+          },
+          {
+            "startMs": 27580,
+            "endMs": 27680,
+            "word": " to",
+            "probability": 0.9928125739097595
+          },
+          {
+            "startMs": 27680,
+            "endMs": 27880,
+            "word": " show",
+            "probability": 0.1605457067489624
+          },
+          {
+            "startMs": 27880,
+            "endMs": 28040,
+            "word": " you",
+            "probability": 0.8946478366851807
+          },
+          {
+            "startMs": 28040,
+            "endMs": 28040,
+            "word": " something.",
+            "probability": 0.2081252634525299
+          }
+        ]
+      },
+      {
+        "startMs": 30160,
+        "endMs": 31840,
+        "text": "If this will work.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 30160,
+            "endMs": 30780,
+            "word": " If",
+            "probability": 0.7715429663658142
+          },
+          {
+            "startMs": 30780,
+            "endMs": 31200,
+            "word": " this",
+            "probability": 0.9285128116607666
+          },
+          {
+            "startMs": 31200,
+            "endMs": 31440,
+            "word": " will",
+            "probability": 0.8766505122184753
+          },
+          {
+            "startMs": 31440,
+            "endMs": 31840,
+            "word": " work.",
+            "probability": 0.8914440274238586
+          }
+        ]
+      },
+      {
+        "startMs": 33140,
+        "endMs": 54230,
+        "text": "Give me the camera.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 33140,
+            "endMs": 33760,
+            "word": " Give",
+            "probability": 0.1605059653520584
+          },
+          {
+            "startMs": 53790,
+            "endMs": 53910,
+            "word": " me",
+            "probability": 0.8318431377410889
+          },
+          {
+            "startMs": 53910,
+            "endMs": 54050,
+            "word": " the",
+            "probability": 0.4669574797153473
+          },
+          {
+            "startMs": 54050,
+            "endMs": 54230,
+            "word": " camera.",
+            "probability": 0.9890506267547607
+          }
+        ]
+      },
+      {
+        "startMs": 58150,
+        "endMs": 59310,
+        "text": "I don't know.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 58150,
+            "endMs": 58770,
+            "word": " I",
+            "probability": 0.11557505279779434
+          },
+          {
+            "startMs": 58770,
+            "endMs": 59170,
+            "word": " don't",
+            "probability": 0.6697681397199631
+          },
+          {
+            "startMs": 59170,
+            "endMs": 59310,
+            "word": " know.",
+            "probability": 0.3109646737575531
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 117484,
+      "durationMs": 117484,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 76056,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 78220,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 83142,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 90349,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 90616,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 76769,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 102804,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 35000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 84262,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 88882,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 90109,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 50000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0011.jpg",
+      "exists": true,
+      "sizeBytes": 91081,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 55000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0012.jpg",
+      "exists": true,
+      "sizeBytes": 90051,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 58742,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0013.jpg",
+      "exists": true,
+      "sizeBytes": 96863,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 60000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0014.jpg",
+      "exists": true,
+      "sizeBytes": 94648,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 65000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0015.jpg",
+      "exists": true,
+      "sizeBytes": 87674,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 70000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0016.jpg",
+      "exists": true,
+      "sizeBytes": 80814,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 75000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0017.jpg",
+      "exists": true,
+      "sizeBytes": 82237,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 80000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0018.jpg",
+      "exists": true,
+      "sizeBytes": 84509,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 85000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0019.jpg",
+      "exists": true,
+      "sizeBytes": 86169,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 90000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0020.jpg",
+      "exists": true,
+      "sizeBytes": 85375,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 95000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0021.jpg",
+      "exists": true,
+      "sizeBytes": 83579,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 100000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0022.jpg",
+      "exists": true,
+      "sizeBytes": 101423,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 105000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0023.jpg",
+      "exists": true,
+      "sizeBytes": 103439,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 110000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0024.jpg",
+      "exists": true,
+      "sizeBytes": 100564,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 115000,
+      "frameFile": "DJI_20260830182407_0296_D/frames/frame_0025.jpg",
+      "exists": true,
+      "sizeBytes": 96325,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 117483,
+      "frameFile": "frames/frame_0026.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830182407_0296_D.MP4",
+    "durationMs": 117484,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 117484,
+        "durationMs": 117484,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 560,
+        "endMs": 5100,
+        "text": "Hello Madam, how are you going to adventure today?",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 560,
+            "endMs": 1040,
+            "word": " Hello",
+            "probability": 0.062071867287158966
+          },
+          {
+            "startMs": 1040,
+            "endMs": 1200,
+            "word": " Madam,",
+            "probability": 0.3810383081436157
+          },
+          {
+            "startMs": 2660,
+            "endMs": 2700,
+            "word": " how",
+            "probability": 0.349279522895813
+          },
+          {
+            "startMs": 2700,
+            "endMs": 2820,
+            "word": " are",
+            "probability": 0.13665594160556793
+          },
+          {
+            "startMs": 2820,
+            "endMs": 3420,
+            "word": " you",
+            "probability": 0.812756359577179
+          },
+          {
+            "startMs": 3420,
+            "endMs": 4280,
+            "word": " going",
+            "probability": 0.25813865661621094
+          },
+          {
+            "startMs": 4280,
+            "endMs": 4420,
+            "word": " to",
+            "probability": 0.8540690541267395
+          },
+          {
+            "startMs": 4420,
+            "endMs": 4980,
+            "word": " adventure",
+            "probability": 0.1485731154680252
+          },
+          {
+            "startMs": 4980,
+            "endMs": 5100,
+            "word": " today?",
+            "probability": 0.7907590866088867
+          }
+        ]
+      },
+      {
+        "startMs": 5700,
+        "endMs": 17020,
+        "text": "I'm going to show you the sunset.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 5700,
+            "endMs": 5920,
+            "word": " I'm",
+            "probability": 0.15014273673295975
+          },
+          {
+            "startMs": 5920,
+            "endMs": 6060,
+            "word": " going",
+            "probability": 0.2699045240879059
+          },
+          {
+            "startMs": 6060,
+            "endMs": 6240,
+            "word": " to",
+            "probability": 0.9840009212493896
+          },
+          {
+            "startMs": 6240,
+            "endMs": 6240,
+            "word": " show",
+            "probability": 0.2352498322725296
+          },
+          {
+            "startMs": 6240,
+            "endMs": 6460,
+            "word": " you",
+            "probability": 0.9036601781845093
+          },
+          {
+            "startMs": 15680,
+            "endMs": 16780,
+            "word": " the",
+            "probability": 0.21613577008247375
+          },
+          {
+            "startMs": 16780,
+            "endMs": 17020,
+            "word": " sunset.",
+            "probability": 0.3465026021003723
+          }
+        ]
+      },
+      {
+        "startMs": 17140,
+        "endMs": 17860,
+        "text": "The sunset looks good.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 17140,
+            "endMs": 17140,
+            "word": " The",
+            "probability": 0.04635472595691681
+          },
+          {
+            "startMs": 17140,
+            "endMs": 17140,
+            "word": " sunset",
+            "probability": 0.5044099688529968
+          },
+          {
+            "startMs": 17140,
+            "endMs": 17680,
+            "word": " looks",
+            "probability": 0.49003589153289795
+          },
+          {
+            "startMs": 17680,
+            "endMs": 17860,
+            "word": " good.",
+            "probability": 0.5821691751480103
+          }
+        ]
+      },
+      {
+        "startMs": 18760,
+        "endMs": 20220,
+        "text": "I'm going to stop behind the forest.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 18760,
+            "endMs": 19380,
+            "word": " I'm",
+            "probability": 0.4353831112384796
+          },
+          {
+            "startMs": 19380,
+            "endMs": 19420,
+            "word": " going",
+            "probability": 0.15426285564899445
+          },
+          {
+            "startMs": 19420,
+            "endMs": 19420,
+            "word": " to",
+            "probability": 0.9553321003913879
+          },
+          {
+            "startMs": 19420,
+            "endMs": 19420,
+            "word": " stop",
+            "probability": 0.08053673058748245
+          },
+          {
+            "startMs": 19420,
+            "endMs": 19420,
+            "word": " behind",
+            "probability": 0.11991440504789352
+          },
+          {
+            "startMs": 19420,
+            "endMs": 19440,
+            "word": " the",
+            "probability": 0.7847797274589539
+          },
+          {
+            "startMs": 19440,
+            "endMs": 20220,
+            "word": " forest.",
+            "probability": 0.07628845423460007
+          }
+        ]
+      },
+      {
+        "startMs": 26340,
+        "endMs": 28040,
+        "text": "I'm going to show you something.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 26340,
+            "endMs": 26960,
+            "word": " I'm",
+            "probability": 0.5631277412176132
+          },
+          {
+            "startMs": 26960,
+            "endMs": 27580,
+            "word": " going",
+            "probability": 0.5854360461235046
+          },
+          {
+            "startMs": 27580,
+            "endMs": 27680,
+            "word": " to",
+            "probability": 0.9928125739097595
+          },
+          {
+            "startMs": 27680,
+            "endMs": 27880,
+            "word": " show",
+            "probability": 0.1605457067489624
+          },
+          {
+            "startMs": 27880,
+            "endMs": 28040,
+            "word": " you",
+            "probability": 0.8946478366851807
+          },
+          {
+            "startMs": 28040,
+            "endMs": 28040,
+            "word": " something.",
+            "probability": 0.2081252634525299
+          }
+        ]
+      },
+      {
+        "startMs": 30160,
+        "endMs": 31840,
+        "text": "If this will work.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 30160,
+            "endMs": 30780,
+            "word": " If",
+            "probability": 0.7715429663658142
+          },
+          {
+            "startMs": 30780,
+            "endMs": 31200,
+            "word": " this",
+            "probability": 0.9285128116607666
+          },
+          {
+            "startMs": 31200,
+            "endMs": 31440,
+            "word": " will",
+            "probability": 0.8766505122184753
+          },
+          {
+            "startMs": 31440,
+            "endMs": 31840,
+            "word": " work.",
+            "probability": 0.8914440274238586
+          }
+        ]
+      },
+      {
+        "startMs": 33140,
+        "endMs": 54230,
+        "text": "Give me the camera.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 33140,
+            "endMs": 33760,
+            "word": " Give",
+            "probability": 0.1605059653520584
+          },
+          {
+            "startMs": 53790,
+            "endMs": 53910,
+            "word": " me",
+            "probability": 0.8318431377410889
+          },
+          {
+            "startMs": 53910,
+            "endMs": 54050,
+            "word": " the",
+            "probability": 0.4669574797153473
+          },
+          {
+            "startMs": 54050,
+            "endMs": 54230,
+            "word": " camera.",
+            "probability": 0.9890506267547607
+          }
+        ]
+      },
+      {
+        "startMs": 58150,
+        "endMs": 59310,
+        "text": "I don't know.",
+        "avgLogprob": -0.8555495400686521,
+        "noSpeechProb": 1.3462101655647984e-08,
+        "compressionRatio": 1.554054054054054,
+        "words": [
+          {
+            "startMs": 58150,
+            "endMs": 58770,
+            "word": " I",
+            "probability": 0.11557505279779434
+          },
+          {
+            "startMs": 58770,
+            "endMs": 59170,
+            "word": " don't",
+            "probability": 0.6697681397199631
+          },
+          {
+            "startMs": 59170,
+            "endMs": 59310,
+            "word": " know.",
+            "probability": 0.3109646737575531
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 30000
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 35000
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 40000
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 45000
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 50000
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 55000
+      },
+      {
+        "frameFile": "frames/frame_0013.jpg",
+        "timestampMs": 58742
+      },
+      {
+        "frameFile": "frames/frame_0014.jpg",
+        "timestampMs": 60000
+      },
+      {
+        "frameFile": "frames/frame_0015.jpg",
+        "timestampMs": 65000
+      },
+      {
+        "frameFile": "frames/frame_0016.jpg",
+        "timestampMs": 70000
+      },
+      {
+        "frameFile": "frames/frame_0017.jpg",
+        "timestampMs": 75000
+      },
+      {
+        "frameFile": "frames/frame_0018.jpg",
+        "timestampMs": 80000
+      },
+      {
+        "frameFile": "frames/frame_0019.jpg",
+        "timestampMs": 85000
+      },
+      {
+        "frameFile": "frames/frame_0020.jpg",
+        "timestampMs": 90000
+      },
+      {
+        "frameFile": "frames/frame_0021.jpg",
+        "timestampMs": 95000
+      },
+      {
+        "frameFile": "frames/frame_0022.jpg",
+        "timestampMs": 100000
+      },
+      {
+        "frameFile": "frames/frame_0023.jpg",
+        "timestampMs": 105000
+      },
+      {
+        "frameFile": "frames/frame_0024.jpg",
+        "timestampMs": 110000
+      },
+      {
+        "frameFile": "frames/frame_0025.jpg",
+        "timestampMs": 115000
+      },
+      {
+        "frameFile": "frames/frame_0026.jpg",
+        "timestampMs": 117483
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

@@ -1,0 +1,606 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830125616_0239-2_D.MOV",
+    "relativeAnalysisPackage": "DJI_20260830125616_0239-2_D",
+    "durationMs": 24143,
+    "sha256": "e4b42c3133853c3e0af4fa2586a8f83fd29ba7bc999d94caf01d36168bca2ecc"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830125616_0239-2_D/analysis.json",
+    "transcriptJson": "DJI_20260830125616_0239-2_D/transcript.json",
+    "scenesJson": "DJI_20260830125616_0239-2_D/scenes.json",
+    "framesDirectory": "DJI_20260830125616_0239-2_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 1920,
+    "height": 1080,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p10le",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "9224267"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.4806762933731079,
+    "segments": [
+      {
+        "startMs": 1260,
+        "endMs": 2920,
+        "text": "It's good to put all the ginger in there.",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 1260,
+            "endMs": 1700,
+            "word": " It's",
+            "probability": 0.3128343028947711
+          },
+          {
+            "startMs": 1700,
+            "endMs": 1720,
+            "word": " good",
+            "probability": 0.671599805355072
+          },
+          {
+            "startMs": 1720,
+            "endMs": 2020,
+            "word": " to",
+            "probability": 0.26424384117126465
+          },
+          {
+            "startMs": 2020,
+            "endMs": 2020,
+            "word": " put",
+            "probability": 0.1286422461271286
+          },
+          {
+            "startMs": 2020,
+            "endMs": 2020,
+            "word": " all",
+            "probability": 0.2956286668777466
+          },
+          {
+            "startMs": 2020,
+            "endMs": 2080,
+            "word": " the",
+            "probability": 0.30339863896369934
+          },
+          {
+            "startMs": 2080,
+            "endMs": 2400,
+            "word": " ginger",
+            "probability": 0.5865011811256409
+          },
+          {
+            "startMs": 2400,
+            "endMs": 2740,
+            "word": " in",
+            "probability": 0.1894616037607193
+          },
+          {
+            "startMs": 2740,
+            "endMs": 2920,
+            "word": " there.",
+            "probability": 0.10714703798294067
+          }
+        ]
+      },
+      {
+        "startMs": 3240,
+        "endMs": 4080,
+        "text": "No, no, you can't.",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 3240,
+            "endMs": 3500,
+            "word": " No,",
+            "probability": 0.5605847239494324
+          },
+          {
+            "startMs": 3660,
+            "endMs": 3680,
+            "word": " no,",
+            "probability": 0.2131621390581131
+          },
+          {
+            "startMs": 3780,
+            "endMs": 3960,
+            "word": " you",
+            "probability": 0.7531102299690247
+          },
+          {
+            "startMs": 3960,
+            "endMs": 4080,
+            "word": " can't.",
+            "probability": 0.12296097725629807
+          }
+        ]
+      },
+      {
+        "startMs": 4300,
+        "endMs": 4400,
+        "text": "Huh?",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 4300,
+            "endMs": 4400,
+            "word": " Huh?",
+            "probability": 0.0657782033085823
+          }
+        ]
+      },
+      {
+        "startMs": 4720,
+        "endMs": 5240,
+        "text": "You can't.",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 4720,
+            "endMs": 4940,
+            "word": " You",
+            "probability": 0.5283833146095276
+          },
+          {
+            "startMs": 4940,
+            "endMs": 5240,
+            "word": " can't.",
+            "probability": 0.6939307451248169
+          }
+        ]
+      },
+      {
+        "startMs": 5500,
+        "endMs": 5820,
+        "text": "You can't.",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 5500,
+            "endMs": 5640,
+            "word": " You",
+            "probability": 0.0715225338935852
+          },
+          {
+            "startMs": 5640,
+            "endMs": 5820,
+            "word": " can't.",
+            "probability": 0.8525424003601074
+          }
+        ]
+      },
+      {
+        "startMs": 5820,
+        "endMs": 6000,
+        "text": "Eat it, huh?",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 5820,
+            "endMs": 5820,
+            "word": " Eat",
+            "probability": 0.02456595189869404
+          },
+          {
+            "startMs": 5820,
+            "endMs": 5840,
+            "word": " it,",
+            "probability": 0.6960675716400146
+          },
+          {
+            "startMs": 5920,
+            "endMs": 6000,
+            "word": " huh?",
+            "probability": 0.7709704041481018
+          }
+        ]
+      },
+      {
+        "startMs": 12820,
+        "endMs": 13140,
+        "text": "It's sweet.",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 12820,
+            "endMs": 13140,
+            "word": " It's",
+            "probability": 0.6665011942386627
+          },
+          {
+            "startMs": 13140,
+            "endMs": 13140,
+            "word": " sweet.",
+            "probability": 0.21352002024650574
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 24143,
+      "durationMs": 24143,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830125616_0239-2_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 78463,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830125616_0239-2_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 85615,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830125616_0239-2_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 93464,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 12071,
+      "frameFile": "DJI_20260830125616_0239-2_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 107038,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830125616_0239-2_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 99540,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830125616_0239-2_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 145502,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 24142,
+      "frameFile": "frames/frame_0007.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830125616_0239-2_D.MOV",
+    "durationMs": 24143,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 24143,
+        "durationMs": 24143,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 1260,
+        "endMs": 2920,
+        "text": "It's good to put all the ginger in there.",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 1260,
+            "endMs": 1700,
+            "word": " It's",
+            "probability": 0.3128343028947711
+          },
+          {
+            "startMs": 1700,
+            "endMs": 1720,
+            "word": " good",
+            "probability": 0.671599805355072
+          },
+          {
+            "startMs": 1720,
+            "endMs": 2020,
+            "word": " to",
+            "probability": 0.26424384117126465
+          },
+          {
+            "startMs": 2020,
+            "endMs": 2020,
+            "word": " put",
+            "probability": 0.1286422461271286
+          },
+          {
+            "startMs": 2020,
+            "endMs": 2020,
+            "word": " all",
+            "probability": 0.2956286668777466
+          },
+          {
+            "startMs": 2020,
+            "endMs": 2080,
+            "word": " the",
+            "probability": 0.30339863896369934
+          },
+          {
+            "startMs": 2080,
+            "endMs": 2400,
+            "word": " ginger",
+            "probability": 0.5865011811256409
+          },
+          {
+            "startMs": 2400,
+            "endMs": 2740,
+            "word": " in",
+            "probability": 0.1894616037607193
+          },
+          {
+            "startMs": 2740,
+            "endMs": 2920,
+            "word": " there.",
+            "probability": 0.10714703798294067
+          }
+        ]
+      },
+      {
+        "startMs": 3240,
+        "endMs": 4080,
+        "text": "No, no, you can't.",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 3240,
+            "endMs": 3500,
+            "word": " No,",
+            "probability": 0.5605847239494324
+          },
+          {
+            "startMs": 3660,
+            "endMs": 3680,
+            "word": " no,",
+            "probability": 0.2131621390581131
+          },
+          {
+            "startMs": 3780,
+            "endMs": 3960,
+            "word": " you",
+            "probability": 0.7531102299690247
+          },
+          {
+            "startMs": 3960,
+            "endMs": 4080,
+            "word": " can't.",
+            "probability": 0.12296097725629807
+          }
+        ]
+      },
+      {
+        "startMs": 4300,
+        "endMs": 4400,
+        "text": "Huh?",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 4300,
+            "endMs": 4400,
+            "word": " Huh?",
+            "probability": 0.0657782033085823
+          }
+        ]
+      },
+      {
+        "startMs": 4720,
+        "endMs": 5240,
+        "text": "You can't.",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 4720,
+            "endMs": 4940,
+            "word": " You",
+            "probability": 0.5283833146095276
+          },
+          {
+            "startMs": 4940,
+            "endMs": 5240,
+            "word": " can't.",
+            "probability": 0.6939307451248169
+          }
+        ]
+      },
+      {
+        "startMs": 5500,
+        "endMs": 5820,
+        "text": "You can't.",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 5500,
+            "endMs": 5640,
+            "word": " You",
+            "probability": 0.0715225338935852
+          },
+          {
+            "startMs": 5640,
+            "endMs": 5820,
+            "word": " can't.",
+            "probability": 0.8525424003601074
+          }
+        ]
+      },
+      {
+        "startMs": 5820,
+        "endMs": 6000,
+        "text": "Eat it, huh?",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 5820,
+            "endMs": 5820,
+            "word": " Eat",
+            "probability": 0.02456595189869404
+          },
+          {
+            "startMs": 5820,
+            "endMs": 5840,
+            "word": " it,",
+            "probability": 0.6960675716400146
+          },
+          {
+            "startMs": 5920,
+            "endMs": 6000,
+            "word": " huh?",
+            "probability": 0.7709704041481018
+          }
+        ]
+      },
+      {
+        "startMs": 12820,
+        "endMs": 13140,
+        "text": "It's sweet.",
+        "avgLogprob": -0.9429099350644831,
+        "noSpeechProb": 4.822033883300492e-09,
+        "compressionRatio": 1.2164948453608246,
+        "words": [
+          {
+            "startMs": 12820,
+            "endMs": 13140,
+            "word": " It's",
+            "probability": 0.6665011942386627
+          },
+          {
+            "startMs": 13140,
+            "endMs": 13140,
+            "word": " sweet.",
+            "probability": 0.21352002024650574
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 12071
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 24142
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

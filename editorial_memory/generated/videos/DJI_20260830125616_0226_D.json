@@ -1,0 +1,667 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830125616_0226_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830125616_0226_D",
+    "durationMs": 45013,
+    "sha256": "ae1a1435d919ad1650aa1a104edf3031f82fd941cccc1c4e292d4544940189dc"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830125616_0226_D/analysis.json",
+    "transcriptJson": "DJI_20260830125616_0226_D/transcript.json",
+    "scenesJson": "DJI_20260830125616_0226_D/scenes.json",
+    "framesDirectory": "DJI_20260830125616_0226_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "54594099"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "hi",
+    "languageProbability": 0.5243268609046936,
+    "segments": [
+      {
+        "startMs": 6000,
+        "endMs": 39630,
+        "text": "तो एटूबी दिख रहा है यहीं चलते हैं यहां का सुना एडली तट्टे एडली बहुत फेमस है यह है एटूबी की आगे वाला यही है ना पार्किंग का इसमें पूस्ट है उनको पता होगा",
+        "avgLogprob": -0.16520882245176327,
+        "noSpeechProb": 3.493403344378976e-09,
+        "compressionRatio": 2.10989010989011,
+        "words": [
+          {
+            "startMs": 6000,
+            "endMs": 6040,
+            "word": " तो",
+            "probability": 0.531197985013326
+          },
+          {
+            "startMs": 6040,
+            "endMs": 6480,
+            "word": " एटूबी",
+            "probability": 0.7465970814228058
+          },
+          {
+            "startMs": 6480,
+            "endMs": 6700,
+            "word": " दिख",
+            "probability": 0.9842375636100769
+          },
+          {
+            "startMs": 6700,
+            "endMs": 6920,
+            "word": " रहा",
+            "probability": 0.9107733517885208
+          },
+          {
+            "startMs": 6920,
+            "endMs": 7020,
+            "word": " है",
+            "probability": 0.9888206422328949
+          },
+          {
+            "startMs": 7020,
+            "endMs": 8360,
+            "word": " यहीं",
+            "probability": 0.7772604942321777
+          },
+          {
+            "startMs": 8360,
+            "endMs": 8720,
+            "word": " चलते",
+            "probability": 0.9870463967323303
+          },
+          {
+            "startMs": 8720,
+            "endMs": 8860,
+            "word": " हैं",
+            "probability": 0.9148987531661987
+          },
+          {
+            "startMs": 8860,
+            "endMs": 9560,
+            "word": " यहां",
+            "probability": 0.9548811793327332
+          },
+          {
+            "startMs": 11930,
+            "endMs": 12050,
+            "word": " का",
+            "probability": 0.9639044404029846
+          },
+          {
+            "startMs": 12050,
+            "endMs": 12370,
+            "word": " सुना",
+            "probability": 0.9875565528869629
+          },
+          {
+            "startMs": 12370,
+            "endMs": 12830,
+            "word": " एडली",
+            "probability": 0.8906708459059397
+          },
+          {
+            "startMs": 12830,
+            "endMs": 14030,
+            "word": " तट्टे",
+            "probability": 0.7212435565888882
+          },
+          {
+            "startMs": 14030,
+            "endMs": 14250,
+            "word": " एडली",
+            "probability": 0.978139191865921
+          },
+          {
+            "startMs": 14250,
+            "endMs": 14510,
+            "word": " बहुत",
+            "probability": 0.981193741162618
+          },
+          {
+            "startMs": 14510,
+            "endMs": 14810,
+            "word": " फेमस",
+            "probability": 0.8499098896980286
+          },
+          {
+            "startMs": 14810,
+            "endMs": 14990,
+            "word": " है",
+            "probability": 0.9698241651058197
+          },
+          {
+            "startMs": 14990,
+            "endMs": 15650,
+            "word": " यह",
+            "probability": 0.9599823355674744
+          },
+          {
+            "startMs": 24830,
+            "endMs": 24950,
+            "word": " है",
+            "probability": 0.6894473135471344
+          },
+          {
+            "startMs": 24950,
+            "endMs": 25410,
+            "word": " एटूबी",
+            "probability": 0.8871301180786557
+          },
+          {
+            "startMs": 25410,
+            "endMs": 25670,
+            "word": " की",
+            "probability": 0.8837347626686096
+          },
+          {
+            "startMs": 25670,
+            "endMs": 26010,
+            "word": " आगे",
+            "probability": 0.9764897584915161
+          },
+          {
+            "startMs": 26010,
+            "endMs": 26250,
+            "word": " वाला",
+            "probability": 0.9387644410133362
+          },
+          {
+            "startMs": 26250,
+            "endMs": 26550,
+            "word": " यही",
+            "probability": 0.9155249446630478
+          },
+          {
+            "startMs": 26550,
+            "endMs": 26590,
+            "word": " है",
+            "probability": 0.9418236017227173
+          },
+          {
+            "startMs": 26590,
+            "endMs": 26770,
+            "word": " ना",
+            "probability": 0.8099645177523295
+          },
+          {
+            "startMs": 26770,
+            "endMs": 28350,
+            "word": " पार्किंग",
+            "probability": 0.9332442164421082
+          },
+          {
+            "startMs": 28350,
+            "endMs": 28530,
+            "word": " का",
+            "probability": 0.9478517770767212
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28890,
+            "word": " इसमें",
+            "probability": 0.8698530892531077
+          },
+          {
+            "startMs": 37630,
+            "endMs": 38550,
+            "word": " पूस्ट",
+            "probability": 0.8722073137760162
+          },
+          {
+            "startMs": 38550,
+            "endMs": 38670,
+            "word": " है",
+            "probability": 0.8532583117485046
+          },
+          {
+            "startMs": 38670,
+            "endMs": 39050,
+            "word": " उनको",
+            "probability": 0.8538758933544159
+          },
+          {
+            "startMs": 39050,
+            "endMs": 39330,
+            "word": " पता",
+            "probability": 0.9109657108783722
+          },
+          {
+            "startMs": 39330,
+            "endMs": 39630,
+            "word": " होगा",
+            "probability": 0.9815270900726318
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 45013,
+      "durationMs": 45013,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830125616_0226_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 101693,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830125616_0226_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 97393,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830125616_0226_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 116469,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830125616_0226_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 96167,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830125616_0226_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 122579,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 22506,
+      "frameFile": "DJI_20260830125616_0226_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 105349,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830125616_0226_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 120149,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30000,
+      "frameFile": "DJI_20260830125616_0226_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 109498,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 35000,
+      "frameFile": "DJI_20260830125616_0226_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 130696,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40000,
+      "frameFile": "DJI_20260830125616_0226_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 133797,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45000,
+      "frameFile": "frames/frame_0011.jpg",
+      "exists": false
+    },
+    {
+      "timestampMs": 45012,
+      "frameFile": "frames/frame_0012.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830125616_0226_D.MP4",
+    "durationMs": 45013,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 45013,
+        "durationMs": 45013,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 6000,
+        "endMs": 39630,
+        "text": "तो एटूबी दिख रहा है यहीं चलते हैं यहां का सुना एडली तट्टे एडली बहुत फेमस है यह है एटूबी की आगे वाला यही है ना पार्किंग का इसमें पूस्ट है उनको पता होगा",
+        "avgLogprob": -0.16520882245176327,
+        "noSpeechProb": 3.493403344378976e-09,
+        "compressionRatio": 2.10989010989011,
+        "words": [
+          {
+            "startMs": 6000,
+            "endMs": 6040,
+            "word": " तो",
+            "probability": 0.531197985013326
+          },
+          {
+            "startMs": 6040,
+            "endMs": 6480,
+            "word": " एटूबी",
+            "probability": 0.7465970814228058
+          },
+          {
+            "startMs": 6480,
+            "endMs": 6700,
+            "word": " दिख",
+            "probability": 0.9842375636100769
+          },
+          {
+            "startMs": 6700,
+            "endMs": 6920,
+            "word": " रहा",
+            "probability": 0.9107733517885208
+          },
+          {
+            "startMs": 6920,
+            "endMs": 7020,
+            "word": " है",
+            "probability": 0.9888206422328949
+          },
+          {
+            "startMs": 7020,
+            "endMs": 8360,
+            "word": " यहीं",
+            "probability": 0.7772604942321777
+          },
+          {
+            "startMs": 8360,
+            "endMs": 8720,
+            "word": " चलते",
+            "probability": 0.9870463967323303
+          },
+          {
+            "startMs": 8720,
+            "endMs": 8860,
+            "word": " हैं",
+            "probability": 0.9148987531661987
+          },
+          {
+            "startMs": 8860,
+            "endMs": 9560,
+            "word": " यहां",
+            "probability": 0.9548811793327332
+          },
+          {
+            "startMs": 11930,
+            "endMs": 12050,
+            "word": " का",
+            "probability": 0.9639044404029846
+          },
+          {
+            "startMs": 12050,
+            "endMs": 12370,
+            "word": " सुना",
+            "probability": 0.9875565528869629
+          },
+          {
+            "startMs": 12370,
+            "endMs": 12830,
+            "word": " एडली",
+            "probability": 0.8906708459059397
+          },
+          {
+            "startMs": 12830,
+            "endMs": 14030,
+            "word": " तट्टे",
+            "probability": 0.7212435565888882
+          },
+          {
+            "startMs": 14030,
+            "endMs": 14250,
+            "word": " एडली",
+            "probability": 0.978139191865921
+          },
+          {
+            "startMs": 14250,
+            "endMs": 14510,
+            "word": " बहुत",
+            "probability": 0.981193741162618
+          },
+          {
+            "startMs": 14510,
+            "endMs": 14810,
+            "word": " फेमस",
+            "probability": 0.8499098896980286
+          },
+          {
+            "startMs": 14810,
+            "endMs": 14990,
+            "word": " है",
+            "probability": 0.9698241651058197
+          },
+          {
+            "startMs": 14990,
+            "endMs": 15650,
+            "word": " यह",
+            "probability": 0.9599823355674744
+          },
+          {
+            "startMs": 24830,
+            "endMs": 24950,
+            "word": " है",
+            "probability": 0.6894473135471344
+          },
+          {
+            "startMs": 24950,
+            "endMs": 25410,
+            "word": " एटूबी",
+            "probability": 0.8871301180786557
+          },
+          {
+            "startMs": 25410,
+            "endMs": 25670,
+            "word": " की",
+            "probability": 0.8837347626686096
+          },
+          {
+            "startMs": 25670,
+            "endMs": 26010,
+            "word": " आगे",
+            "probability": 0.9764897584915161
+          },
+          {
+            "startMs": 26010,
+            "endMs": 26250,
+            "word": " वाला",
+            "probability": 0.9387644410133362
+          },
+          {
+            "startMs": 26250,
+            "endMs": 26550,
+            "word": " यही",
+            "probability": 0.9155249446630478
+          },
+          {
+            "startMs": 26550,
+            "endMs": 26590,
+            "word": " है",
+            "probability": 0.9418236017227173
+          },
+          {
+            "startMs": 26590,
+            "endMs": 26770,
+            "word": " ना",
+            "probability": 0.8099645177523295
+          },
+          {
+            "startMs": 26770,
+            "endMs": 28350,
+            "word": " पार्किंग",
+            "probability": 0.9332442164421082
+          },
+          {
+            "startMs": 28350,
+            "endMs": 28530,
+            "word": " का",
+            "probability": 0.9478517770767212
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28890,
+            "word": " इसमें",
+            "probability": 0.8698530892531077
+          },
+          {
+            "startMs": 37630,
+            "endMs": 38550,
+            "word": " पूस्ट",
+            "probability": 0.8722073137760162
+          },
+          {
+            "startMs": 38550,
+            "endMs": 38670,
+            "word": " है",
+            "probability": 0.8532583117485046
+          },
+          {
+            "startMs": 38670,
+            "endMs": 39050,
+            "word": " उनको",
+            "probability": 0.8538758933544159
+          },
+          {
+            "startMs": 39050,
+            "endMs": 39330,
+            "word": " पता",
+            "probability": 0.9109657108783722
+          },
+          {
+            "startMs": 39330,
+            "endMs": 39630,
+            "word": " होगा",
+            "probability": 0.9815270900726318
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 22506
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 30000
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 35000
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 40000
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 45000
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 45012
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

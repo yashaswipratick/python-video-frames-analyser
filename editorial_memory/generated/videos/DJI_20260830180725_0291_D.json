@@ -1,0 +1,1538 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830180725_0291_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830180725_0291_D",
+    "durationMs": 61931,
+    "sha256": "b89456ea673dcbc6b8731d89d62b05e8c065097d53cf15e01830a5a5188d83b5"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830180725_0291_D/analysis.json",
+    "transcriptJson": "DJI_20260830180725_0291_D/transcript.json",
+    "scenesJson": "DJI_20260830180725_0291_D/scenes.json",
+    "framesDirectory": "DJI_20260830180725_0291_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "55158720"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.7429149746894836,
+    "segments": [
+      {
+        "startMs": 400,
+        "endMs": 3920,
+        "text": "It's so cold, it's so cold, it's so cold.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 400,
+            "endMs": 1380,
+            "word": " It's",
+            "probability": 0.3333725780248642
+          },
+          {
+            "startMs": 1380,
+            "endMs": 1420,
+            "word": " so",
+            "probability": 0.5795949101448059
+          },
+          {
+            "startMs": 1420,
+            "endMs": 1640,
+            "word": " cold,",
+            "probability": 0.24553924798965454
+          },
+          {
+            "startMs": 2300,
+            "endMs": 3040,
+            "word": " it's",
+            "probability": 0.2735455334186554
+          },
+          {
+            "startMs": 3040,
+            "endMs": 3120,
+            "word": " so",
+            "probability": 0.08337568491697311
+          },
+          {
+            "startMs": 3120,
+            "endMs": 3120,
+            "word": " cold,",
+            "probability": 0.6840660572052002
+          },
+          {
+            "startMs": 3120,
+            "endMs": 3620,
+            "word": " it's",
+            "probability": 0.31955429166555405
+          },
+          {
+            "startMs": 3620,
+            "endMs": 3620,
+            "word": " so",
+            "probability": 0.08522965013980865
+          },
+          {
+            "startMs": 3620,
+            "endMs": 3920,
+            "word": " cold.",
+            "probability": 0.773181140422821
+          }
+        ]
+      },
+      {
+        "startMs": 5500,
+        "endMs": 6300,
+        "text": "I don't understand.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 5500,
+            "endMs": 6140,
+            "word": " I",
+            "probability": 0.28537777066230774
+          },
+          {
+            "startMs": 6140,
+            "endMs": 6300,
+            "word": " don't",
+            "probability": 0.5715518519282341
+          },
+          {
+            "startMs": 6300,
+            "endMs": 6300,
+            "word": " understand.",
+            "probability": 0.21275590360164642
+          }
+        ]
+      },
+      {
+        "startMs": 7220,
+        "endMs": 8200,
+        "text": "I'm saying that it's very fast.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 7220,
+            "endMs": 7400,
+            "word": " I'm",
+            "probability": 0.4661300480365753
+          },
+          {
+            "startMs": 7400,
+            "endMs": 7640,
+            "word": " saying",
+            "probability": 0.304465115070343
+          },
+          {
+            "startMs": 7640,
+            "endMs": 7800,
+            "word": " that",
+            "probability": 0.20805896818637848
+          },
+          {
+            "startMs": 7800,
+            "endMs": 7820,
+            "word": " it's",
+            "probability": 0.7024663388729095
+          },
+          {
+            "startMs": 7820,
+            "endMs": 7840,
+            "word": " very",
+            "probability": 0.17259716987609863
+          },
+          {
+            "startMs": 7840,
+            "endMs": 8200,
+            "word": " fast.",
+            "probability": 0.13547098636627197
+          }
+        ]
+      },
+      {
+        "startMs": 8920,
+        "endMs": 10080,
+        "text": "Now let's go home.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 8920,
+            "endMs": 9560,
+            "word": " Now",
+            "probability": 0.5720668435096741
+          },
+          {
+            "startMs": 9560,
+            "endMs": 9840,
+            "word": " let's",
+            "probability": 0.6044609844684601
+          },
+          {
+            "startMs": 9840,
+            "endMs": 10020,
+            "word": " go",
+            "probability": 0.8193939924240112
+          },
+          {
+            "startMs": 10020,
+            "endMs": 10080,
+            "word": " home.",
+            "probability": 0.4221862554550171
+          }
+        ]
+      },
+      {
+        "startMs": 12970,
+        "endMs": 13990,
+        "text": "It's fun, isn't it?",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 12970,
+            "endMs": 13470,
+            "word": " It's",
+            "probability": 0.5410296320915222
+          },
+          {
+            "startMs": 13470,
+            "endMs": 13470,
+            "word": " fun,",
+            "probability": 0.5098428130149841
+          },
+          {
+            "startMs": 13770,
+            "endMs": 13990,
+            "word": " isn't",
+            "probability": 0.6243294775485992
+          },
+          {
+            "startMs": 13990,
+            "endMs": 13990,
+            "word": " it?",
+            "probability": 0.9953511953353882
+          }
+        ]
+      },
+      {
+        "startMs": 15170,
+        "endMs": 15390,
+        "text": "It's fun.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 15170,
+            "endMs": 15250,
+            "word": " It's",
+            "probability": 0.5339072868227959
+          },
+          {
+            "startMs": 15250,
+            "endMs": 15390,
+            "word": " fun.",
+            "probability": 0.4543270468711853
+          }
+        ]
+      },
+      {
+        "startMs": 16450,
+        "endMs": 16670,
+        "text": "It's fun.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 16450,
+            "endMs": 16470,
+            "word": " It's",
+            "probability": 0.591569758951664
+          },
+          {
+            "startMs": 16470,
+            "endMs": 16670,
+            "word": " fun.",
+            "probability": 0.5910435914993286
+          }
+        ]
+      },
+      {
+        "startMs": 16670,
+        "endMs": 17030,
+        "text": "It's fun.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 16670,
+            "endMs": 16670,
+            "word": " It's",
+            "probability": 0.5936635732650757
+          },
+          {
+            "startMs": 16670,
+            "endMs": 17030,
+            "word": " fun.",
+            "probability": 0.8114829063415527
+          }
+        ]
+      },
+      {
+        "startMs": 18410,
+        "endMs": 19290,
+        "text": "Let's go, bro.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 18410,
+            "endMs": 19050,
+            "word": " Let's",
+            "probability": 0.6166902855038643
+          },
+          {
+            "startMs": 19050,
+            "endMs": 19050,
+            "word": " go,",
+            "probability": 0.7470396161079407
+          },
+          {
+            "startMs": 19050,
+            "endMs": 19290,
+            "word": " bro.",
+            "probability": 0.48235461115837097
+          }
+        ]
+      },
+      {
+        "startMs": 19510,
+        "endMs": 20190,
+        "text": "Off-roading.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 19510,
+            "endMs": 19850,
+            "word": " Off",
+            "probability": 0.1476762741804123
+          },
+          {
+            "startMs": 19850,
+            "endMs": 20190,
+            "word": "-roading.",
+            "probability": 0.5007485896348953
+          }
+        ]
+      },
+      {
+        "startMs": 20350,
+        "endMs": 21550,
+        "text": "It's fun.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 20350,
+            "endMs": 20590,
+            "word": " It's",
+            "probability": 0.5046586468815804
+          },
+          {
+            "startMs": 20590,
+            "endMs": 21550,
+            "word": " fun.",
+            "probability": 0.7037227153778076
+          }
+        ]
+      },
+      {
+        "startMs": 22390,
+        "endMs": 31620,
+        "text": "It's cold.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 22390,
+            "endMs": 23030,
+            "word": " It's",
+            "probability": 0.8080115020275116
+          },
+          {
+            "startMs": 31440,
+            "endMs": 31620,
+            "word": " cold.",
+            "probability": 0.09245949983596802
+          }
+        ]
+      },
+      {
+        "startMs": 32300,
+        "endMs": 34120,
+        "text": "It's not going to happen.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 32300,
+            "endMs": 32880,
+            "word": " It's",
+            "probability": 0.7702767550945282
+          },
+          {
+            "startMs": 32880,
+            "endMs": 32980,
+            "word": " not",
+            "probability": 0.26613351702690125
+          },
+          {
+            "startMs": 32980,
+            "endMs": 33040,
+            "word": " going",
+            "probability": 0.25538361072540283
+          },
+          {
+            "startMs": 33040,
+            "endMs": 33040,
+            "word": " to",
+            "probability": 0.2927856147289276
+          },
+          {
+            "startMs": 33040,
+            "endMs": 34120,
+            "word": " happen.",
+            "probability": 0.28671523928642273
+          }
+        ]
+      },
+      {
+        "startMs": 35120,
+        "endMs": 35760,
+        "text": "Okay.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 35120,
+            "endMs": 35760,
+            "word": " Okay.",
+            "probability": 0.46926435828208923
+          }
+        ]
+      },
+      {
+        "startMs": 35760,
+        "endMs": 40440,
+        "text": "I'll take my water.",
+        "avgLogprob": -1.2311615431420158,
+        "noSpeechProb": 4.744503401266087e-11,
+        "compressionRatio": 2.0090909090909093,
+        "words": [
+          {
+            "startMs": 35760,
+            "endMs": 37120,
+            "word": " I'll",
+            "probability": 0.0216247932985425
+          },
+          {
+            "startMs": 37120,
+            "endMs": 37120,
+            "word": " take",
+            "probability": 0.07298601418733597
+          },
+          {
+            "startMs": 37120,
+            "endMs": 39860,
+            "word": " my",
+            "probability": 0.024540260434150696
+          },
+          {
+            "startMs": 39860,
+            "endMs": 40440,
+            "word": " water.",
+            "probability": 0.001663719303905964
+          }
+        ]
+      },
+      {
+        "startMs": 40440,
+        "endMs": 40480,
+        "text": "I'll take the water.",
+        "avgLogprob": -1.2311615431420158,
+        "noSpeechProb": 4.744503401266087e-11,
+        "compressionRatio": 2.0090909090909093,
+        "words": [
+          {
+            "startMs": 40440,
+            "endMs": 40480,
+            "word": " I'll",
+            "probability": 0.23417352885007858
+          },
+          {
+            "startMs": 40480,
+            "endMs": 40480,
+            "word": " take",
+            "probability": 0.2791074514389038
+          },
+          {
+            "startMs": 40480,
+            "endMs": 40480,
+            "word": " the",
+            "probability": 0.06523045152425766
+          },
+          {
+            "startMs": 40480,
+            "endMs": 40480,
+            "word": " water.",
+            "probability": 0.28207483887672424
+          }
+        ]
+      },
+      {
+        "startMs": 42630,
+        "endMs": 43250,
+        "text": "It's fun.",
+        "avgLogprob": -1.2311615431420158,
+        "noSpeechProb": 4.744503401266087e-11,
+        "compressionRatio": 2.0090909090909093,
+        "words": [
+          {
+            "startMs": 42630,
+            "endMs": 42870,
+            "word": " It's",
+            "probability": 0.3902856111526489
+          },
+          {
+            "startMs": 42870,
+            "endMs": 43250,
+            "word": " fun.",
+            "probability": 0.017542511224746704
+          }
+        ]
+      },
+      {
+        "startMs": 45910,
+        "endMs": 47550,
+        "text": "To see, some water is still airy.",
+        "avgLogprob": -1.2311615431420158,
+        "noSpeechProb": 4.744503401266087e-11,
+        "compressionRatio": 2.0090909090909093,
+        "words": [
+          {
+            "startMs": 45910,
+            "endMs": 45910,
+            "word": " To",
+            "probability": 0.005224523600190878
+          },
+          {
+            "startMs": 45910,
+            "endMs": 45910,
+            "word": " see,",
+            "probability": 0.02250274084508419
+          },
+          {
+            "startMs": 45970,
+            "endMs": 46190,
+            "word": " some",
+            "probability": 0.0043108235113322735
+          },
+          {
+            "startMs": 46190,
+            "endMs": 46390,
+            "word": " water",
+            "probability": 0.0824621245265007
+          },
+          {
+            "startMs": 46390,
+            "endMs": 46790,
+            "word": " is",
+            "probability": 0.13673055171966553
+          },
+          {
+            "startMs": 46790,
+            "endMs": 46850,
+            "word": " still",
+            "probability": 0.030891921371221542
+          },
+          {
+            "startMs": 46850,
+            "endMs": 47550,
+            "word": " airy.",
+            "probability": 0.09575001988559961
+          }
+        ]
+      },
+      {
+        "startMs": 53480,
+        "endMs": 54780,
+        "text": "I'm coming back to my office.",
+        "avgLogprob": -1.2311615431420158,
+        "noSpeechProb": 4.744503401266087e-11,
+        "compressionRatio": 2.0090909090909093,
+        "words": [
+          {
+            "startMs": 53480,
+            "endMs": 54240,
+            "word": " I'm",
+            "probability": 0.1799883283674717
+          },
+          {
+            "startMs": 54240,
+            "endMs": 54260,
+            "word": " coming",
+            "probability": 0.011065025813877583
+          },
+          {
+            "startMs": 54260,
+            "endMs": 54780,
+            "word": " back",
+            "probability": 0.06976833939552307
+          },
+          {
+            "startMs": 54780,
+            "endMs": 54780,
+            "word": " to",
+            "probability": 0.22797514498233795
+          },
+          {
+            "startMs": 54780,
+            "endMs": 54780,
+            "word": " my",
+            "probability": 0.08615846186876297
+          },
+          {
+            "startMs": 54780,
+            "endMs": 54780,
+            "word": " office.",
+            "probability": 0.005215311888605356
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 61931,
+      "durationMs": 61931,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 91749,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 82586,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 88631,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 95568,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 96526,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 101258,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 74027,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30965,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 74640,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 35000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 72830,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 77802,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0011.jpg",
+      "exists": true,
+      "sizeBytes": 75895,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 50000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0012.jpg",
+      "exists": true,
+      "sizeBytes": 77782,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 55000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0013.jpg",
+      "exists": true,
+      "sizeBytes": 77145,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 60000,
+      "frameFile": "DJI_20260830180725_0291_D/frames/frame_0014.jpg",
+      "exists": true,
+      "sizeBytes": 82243,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 61930,
+      "frameFile": "frames/frame_0015.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830180725_0291_D.MP4",
+    "durationMs": 61931,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 61931,
+        "durationMs": 61931,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 400,
+        "endMs": 3920,
+        "text": "It's so cold, it's so cold, it's so cold.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 400,
+            "endMs": 1380,
+            "word": " It's",
+            "probability": 0.3333725780248642
+          },
+          {
+            "startMs": 1380,
+            "endMs": 1420,
+            "word": " so",
+            "probability": 0.5795949101448059
+          },
+          {
+            "startMs": 1420,
+            "endMs": 1640,
+            "word": " cold,",
+            "probability": 0.24553924798965454
+          },
+          {
+            "startMs": 2300,
+            "endMs": 3040,
+            "word": " it's",
+            "probability": 0.2735455334186554
+          },
+          {
+            "startMs": 3040,
+            "endMs": 3120,
+            "word": " so",
+            "probability": 0.08337568491697311
+          },
+          {
+            "startMs": 3120,
+            "endMs": 3120,
+            "word": " cold,",
+            "probability": 0.6840660572052002
+          },
+          {
+            "startMs": 3120,
+            "endMs": 3620,
+            "word": " it's",
+            "probability": 0.31955429166555405
+          },
+          {
+            "startMs": 3620,
+            "endMs": 3620,
+            "word": " so",
+            "probability": 0.08522965013980865
+          },
+          {
+            "startMs": 3620,
+            "endMs": 3920,
+            "word": " cold.",
+            "probability": 0.773181140422821
+          }
+        ]
+      },
+      {
+        "startMs": 5500,
+        "endMs": 6300,
+        "text": "I don't understand.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 5500,
+            "endMs": 6140,
+            "word": " I",
+            "probability": 0.28537777066230774
+          },
+          {
+            "startMs": 6140,
+            "endMs": 6300,
+            "word": " don't",
+            "probability": 0.5715518519282341
+          },
+          {
+            "startMs": 6300,
+            "endMs": 6300,
+            "word": " understand.",
+            "probability": 0.21275590360164642
+          }
+        ]
+      },
+      {
+        "startMs": 7220,
+        "endMs": 8200,
+        "text": "I'm saying that it's very fast.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 7220,
+            "endMs": 7400,
+            "word": " I'm",
+            "probability": 0.4661300480365753
+          },
+          {
+            "startMs": 7400,
+            "endMs": 7640,
+            "word": " saying",
+            "probability": 0.304465115070343
+          },
+          {
+            "startMs": 7640,
+            "endMs": 7800,
+            "word": " that",
+            "probability": 0.20805896818637848
+          },
+          {
+            "startMs": 7800,
+            "endMs": 7820,
+            "word": " it's",
+            "probability": 0.7024663388729095
+          },
+          {
+            "startMs": 7820,
+            "endMs": 7840,
+            "word": " very",
+            "probability": 0.17259716987609863
+          },
+          {
+            "startMs": 7840,
+            "endMs": 8200,
+            "word": " fast.",
+            "probability": 0.13547098636627197
+          }
+        ]
+      },
+      {
+        "startMs": 8920,
+        "endMs": 10080,
+        "text": "Now let's go home.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 8920,
+            "endMs": 9560,
+            "word": " Now",
+            "probability": 0.5720668435096741
+          },
+          {
+            "startMs": 9560,
+            "endMs": 9840,
+            "word": " let's",
+            "probability": 0.6044609844684601
+          },
+          {
+            "startMs": 9840,
+            "endMs": 10020,
+            "word": " go",
+            "probability": 0.8193939924240112
+          },
+          {
+            "startMs": 10020,
+            "endMs": 10080,
+            "word": " home.",
+            "probability": 0.4221862554550171
+          }
+        ]
+      },
+      {
+        "startMs": 12970,
+        "endMs": 13990,
+        "text": "It's fun, isn't it?",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 12970,
+            "endMs": 13470,
+            "word": " It's",
+            "probability": 0.5410296320915222
+          },
+          {
+            "startMs": 13470,
+            "endMs": 13470,
+            "word": " fun,",
+            "probability": 0.5098428130149841
+          },
+          {
+            "startMs": 13770,
+            "endMs": 13990,
+            "word": " isn't",
+            "probability": 0.6243294775485992
+          },
+          {
+            "startMs": 13990,
+            "endMs": 13990,
+            "word": " it?",
+            "probability": 0.9953511953353882
+          }
+        ]
+      },
+      {
+        "startMs": 15170,
+        "endMs": 15390,
+        "text": "It's fun.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 15170,
+            "endMs": 15250,
+            "word": " It's",
+            "probability": 0.5339072868227959
+          },
+          {
+            "startMs": 15250,
+            "endMs": 15390,
+            "word": " fun.",
+            "probability": 0.4543270468711853
+          }
+        ]
+      },
+      {
+        "startMs": 16450,
+        "endMs": 16670,
+        "text": "It's fun.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 16450,
+            "endMs": 16470,
+            "word": " It's",
+            "probability": 0.591569758951664
+          },
+          {
+            "startMs": 16470,
+            "endMs": 16670,
+            "word": " fun.",
+            "probability": 0.5910435914993286
+          }
+        ]
+      },
+      {
+        "startMs": 16670,
+        "endMs": 17030,
+        "text": "It's fun.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 16670,
+            "endMs": 16670,
+            "word": " It's",
+            "probability": 0.5936635732650757
+          },
+          {
+            "startMs": 16670,
+            "endMs": 17030,
+            "word": " fun.",
+            "probability": 0.8114829063415527
+          }
+        ]
+      },
+      {
+        "startMs": 18410,
+        "endMs": 19290,
+        "text": "Let's go, bro.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 18410,
+            "endMs": 19050,
+            "word": " Let's",
+            "probability": 0.6166902855038643
+          },
+          {
+            "startMs": 19050,
+            "endMs": 19050,
+            "word": " go,",
+            "probability": 0.7470396161079407
+          },
+          {
+            "startMs": 19050,
+            "endMs": 19290,
+            "word": " bro.",
+            "probability": 0.48235461115837097
+          }
+        ]
+      },
+      {
+        "startMs": 19510,
+        "endMs": 20190,
+        "text": "Off-roading.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 19510,
+            "endMs": 19850,
+            "word": " Off",
+            "probability": 0.1476762741804123
+          },
+          {
+            "startMs": 19850,
+            "endMs": 20190,
+            "word": "-roading.",
+            "probability": 0.5007485896348953
+          }
+        ]
+      },
+      {
+        "startMs": 20350,
+        "endMs": 21550,
+        "text": "It's fun.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 20350,
+            "endMs": 20590,
+            "word": " It's",
+            "probability": 0.5046586468815804
+          },
+          {
+            "startMs": 20590,
+            "endMs": 21550,
+            "word": " fun.",
+            "probability": 0.7037227153778076
+          }
+        ]
+      },
+      {
+        "startMs": 22390,
+        "endMs": 31620,
+        "text": "It's cold.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 22390,
+            "endMs": 23030,
+            "word": " It's",
+            "probability": 0.8080115020275116
+          },
+          {
+            "startMs": 31440,
+            "endMs": 31620,
+            "word": " cold.",
+            "probability": 0.09245949983596802
+          }
+        ]
+      },
+      {
+        "startMs": 32300,
+        "endMs": 34120,
+        "text": "It's not going to happen.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 32300,
+            "endMs": 32880,
+            "word": " It's",
+            "probability": 0.7702767550945282
+          },
+          {
+            "startMs": 32880,
+            "endMs": 32980,
+            "word": " not",
+            "probability": 0.26613351702690125
+          },
+          {
+            "startMs": 32980,
+            "endMs": 33040,
+            "word": " going",
+            "probability": 0.25538361072540283
+          },
+          {
+            "startMs": 33040,
+            "endMs": 33040,
+            "word": " to",
+            "probability": 0.2927856147289276
+          },
+          {
+            "startMs": 33040,
+            "endMs": 34120,
+            "word": " happen.",
+            "probability": 0.28671523928642273
+          }
+        ]
+      },
+      {
+        "startMs": 35120,
+        "endMs": 35760,
+        "text": "Okay.",
+        "avgLogprob": -0.7555753235268382,
+        "noSpeechProb": 6.750928260856881e-09,
+        "compressionRatio": 1.7482014388489209,
+        "words": [
+          {
+            "startMs": 35120,
+            "endMs": 35760,
+            "word": " Okay.",
+            "probability": 0.46926435828208923
+          }
+        ]
+      },
+      {
+        "startMs": 35760,
+        "endMs": 40440,
+        "text": "I'll take my water.",
+        "avgLogprob": -1.2311615431420158,
+        "noSpeechProb": 4.744503401266087e-11,
+        "compressionRatio": 2.0090909090909093,
+        "words": [
+          {
+            "startMs": 35760,
+            "endMs": 37120,
+            "word": " I'll",
+            "probability": 0.0216247932985425
+          },
+          {
+            "startMs": 37120,
+            "endMs": 37120,
+            "word": " take",
+            "probability": 0.07298601418733597
+          },
+          {
+            "startMs": 37120,
+            "endMs": 39860,
+            "word": " my",
+            "probability": 0.024540260434150696
+          },
+          {
+            "startMs": 39860,
+            "endMs": 40440,
+            "word": " water.",
+            "probability": 0.001663719303905964
+          }
+        ]
+      },
+      {
+        "startMs": 40440,
+        "endMs": 40480,
+        "text": "I'll take the water.",
+        "avgLogprob": -1.2311615431420158,
+        "noSpeechProb": 4.744503401266087e-11,
+        "compressionRatio": 2.0090909090909093,
+        "words": [
+          {
+            "startMs": 40440,
+            "endMs": 40480,
+            "word": " I'll",
+            "probability": 0.23417352885007858
+          },
+          {
+            "startMs": 40480,
+            "endMs": 40480,
+            "word": " take",
+            "probability": 0.2791074514389038
+          },
+          {
+            "startMs": 40480,
+            "endMs": 40480,
+            "word": " the",
+            "probability": 0.06523045152425766
+          },
+          {
+            "startMs": 40480,
+            "endMs": 40480,
+            "word": " water.",
+            "probability": 0.28207483887672424
+          }
+        ]
+      },
+      {
+        "startMs": 42630,
+        "endMs": 43250,
+        "text": "It's fun.",
+        "avgLogprob": -1.2311615431420158,
+        "noSpeechProb": 4.744503401266087e-11,
+        "compressionRatio": 2.0090909090909093,
+        "words": [
+          {
+            "startMs": 42630,
+            "endMs": 42870,
+            "word": " It's",
+            "probability": 0.3902856111526489
+          },
+          {
+            "startMs": 42870,
+            "endMs": 43250,
+            "word": " fun.",
+            "probability": 0.017542511224746704
+          }
+        ]
+      },
+      {
+        "startMs": 45910,
+        "endMs": 47550,
+        "text": "To see, some water is still airy.",
+        "avgLogprob": -1.2311615431420158,
+        "noSpeechProb": 4.744503401266087e-11,
+        "compressionRatio": 2.0090909090909093,
+        "words": [
+          {
+            "startMs": 45910,
+            "endMs": 45910,
+            "word": " To",
+            "probability": 0.005224523600190878
+          },
+          {
+            "startMs": 45910,
+            "endMs": 45910,
+            "word": " see,",
+            "probability": 0.02250274084508419
+          },
+          {
+            "startMs": 45970,
+            "endMs": 46190,
+            "word": " some",
+            "probability": 0.0043108235113322735
+          },
+          {
+            "startMs": 46190,
+            "endMs": 46390,
+            "word": " water",
+            "probability": 0.0824621245265007
+          },
+          {
+            "startMs": 46390,
+            "endMs": 46790,
+            "word": " is",
+            "probability": 0.13673055171966553
+          },
+          {
+            "startMs": 46790,
+            "endMs": 46850,
+            "word": " still",
+            "probability": 0.030891921371221542
+          },
+          {
+            "startMs": 46850,
+            "endMs": 47550,
+            "word": " airy.",
+            "probability": 0.09575001988559961
+          }
+        ]
+      },
+      {
+        "startMs": 53480,
+        "endMs": 54780,
+        "text": "I'm coming back to my office.",
+        "avgLogprob": -1.2311615431420158,
+        "noSpeechProb": 4.744503401266087e-11,
+        "compressionRatio": 2.0090909090909093,
+        "words": [
+          {
+            "startMs": 53480,
+            "endMs": 54240,
+            "word": " I'm",
+            "probability": 0.1799883283674717
+          },
+          {
+            "startMs": 54240,
+            "endMs": 54260,
+            "word": " coming",
+            "probability": 0.011065025813877583
+          },
+          {
+            "startMs": 54260,
+            "endMs": 54780,
+            "word": " back",
+            "probability": 0.06976833939552307
+          },
+          {
+            "startMs": 54780,
+            "endMs": 54780,
+            "word": " to",
+            "probability": 0.22797514498233795
+          },
+          {
+            "startMs": 54780,
+            "endMs": 54780,
+            "word": " my",
+            "probability": 0.08615846186876297
+          },
+          {
+            "startMs": 54780,
+            "endMs": 54780,
+            "word": " office.",
+            "probability": 0.005215311888605356
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 30000
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 30965
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 35000
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 40000
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 45000
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 50000
+      },
+      {
+        "frameFile": "frames/frame_0013.jpg",
+        "timestampMs": 55000
+      },
+      {
+        "frameFile": "frames/frame_0014.jpg",
+        "timestampMs": 60000
+      },
+      {
+        "frameFile": "frames/frame_0015.jpg",
+        "timestampMs": 61930
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

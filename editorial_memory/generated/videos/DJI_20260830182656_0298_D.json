@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830182656_0298_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830182656_0298_D",
+    "durationMs": 8811,
+    "sha256": "52a831e234482530db1bc12a141dd6b8ae41c8db764ec0a3a4af780f559fc143"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830182656_0298_D/analysis.json",
+    "transcriptJson": "DJI_20260830182656_0298_D/transcript.json",
+    "scenesJson": "DJI_20260830182656_0298_D/scenes.json",
+    "framesDirectory": "DJI_20260830182656_0298_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "52590855"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.91237473487854,
+    "segments": [
+      {
+        "startMs": 1420,
+        "endMs": 3180,
+        "text": "So next blog till you",
+        "avgLogprob": -0.5244124498632219,
+        "noSpeechProb": 8.268882245587861e-10,
+        "compressionRatio": 1.1020408163265305,
+        "words": [
+          {
+            "startMs": 1420,
+            "endMs": 1900,
+            "word": " So",
+            "probability": 0.43589624762535095
+          },
+          {
+            "startMs": 1900,
+            "endMs": 2480,
+            "word": " next",
+            "probability": 0.505118727684021
+          },
+          {
+            "startMs": 2480,
+            "endMs": 2860,
+            "word": " blog",
+            "probability": 0.389667809009552
+          },
+          {
+            "startMs": 2860,
+            "endMs": 3060,
+            "word": " till",
+            "probability": 0.5987882018089294
+          },
+          {
+            "startMs": 3060,
+            "endMs": 3180,
+            "word": " you",
+            "probability": 0.21812544763088226
+          }
+        ]
+      },
+      {
+        "startMs": 5280,
+        "endMs": 7120,
+        "text": "We'll let you know the next blog",
+        "avgLogprob": -0.5244124498632219,
+        "noSpeechProb": 8.268882245587861e-10,
+        "compressionRatio": 1.1020408163265305,
+        "words": [
+          {
+            "startMs": 5280,
+            "endMs": 5740,
+            "word": " We'll",
+            "probability": 0.4614178463816643
+          },
+          {
+            "startMs": 5740,
+            "endMs": 5880,
+            "word": " let",
+            "probability": 0.9573918581008911
+          },
+          {
+            "startMs": 5880,
+            "endMs": 5960,
+            "word": " you",
+            "probability": 0.9913262724876404
+          },
+          {
+            "startMs": 5960,
+            "endMs": 6140,
+            "word": " know",
+            "probability": 0.9861017465591431
+          },
+          {
+            "startMs": 6140,
+            "endMs": 6660,
+            "word": " the",
+            "probability": 0.7602883577346802
+          },
+          {
+            "startMs": 6660,
+            "endMs": 6860,
+            "word": " next",
+            "probability": 0.9967777132987976
+          },
+          {
+            "startMs": 6860,
+            "endMs": 7120,
+            "word": " blog",
+            "probability": 0.6830024719238281
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 8811,
+      "durationMs": 8811,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830182656_0298_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 79891,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 4405,
+      "frameFile": "DJI_20260830182656_0298_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 83357,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830182656_0298_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 83385,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 8810,
+      "frameFile": "frames/frame_0004.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830182656_0298_D.MP4",
+    "durationMs": 8811,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 8811,
+        "durationMs": 8811,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 1420,
+        "endMs": 3180,
+        "text": "So next blog till you",
+        "avgLogprob": -0.5244124498632219,
+        "noSpeechProb": 8.268882245587861e-10,
+        "compressionRatio": 1.1020408163265305,
+        "words": [
+          {
+            "startMs": 1420,
+            "endMs": 1900,
+            "word": " So",
+            "probability": 0.43589624762535095
+          },
+          {
+            "startMs": 1900,
+            "endMs": 2480,
+            "word": " next",
+            "probability": 0.505118727684021
+          },
+          {
+            "startMs": 2480,
+            "endMs": 2860,
+            "word": " blog",
+            "probability": 0.389667809009552
+          },
+          {
+            "startMs": 2860,
+            "endMs": 3060,
+            "word": " till",
+            "probability": 0.5987882018089294
+          },
+          {
+            "startMs": 3060,
+            "endMs": 3180,
+            "word": " you",
+            "probability": 0.21812544763088226
+          }
+        ]
+      },
+      {
+        "startMs": 5280,
+        "endMs": 7120,
+        "text": "We'll let you know the next blog",
+        "avgLogprob": -0.5244124498632219,
+        "noSpeechProb": 8.268882245587861e-10,
+        "compressionRatio": 1.1020408163265305,
+        "words": [
+          {
+            "startMs": 5280,
+            "endMs": 5740,
+            "word": " We'll",
+            "probability": 0.4614178463816643
+          },
+          {
+            "startMs": 5740,
+            "endMs": 5880,
+            "word": " let",
+            "probability": 0.9573918581008911
+          },
+          {
+            "startMs": 5880,
+            "endMs": 5960,
+            "word": " you",
+            "probability": 0.9913262724876404
+          },
+          {
+            "startMs": 5960,
+            "endMs": 6140,
+            "word": " know",
+            "probability": 0.9861017465591431
+          },
+          {
+            "startMs": 6140,
+            "endMs": 6660,
+            "word": " the",
+            "probability": 0.7602883577346802
+          },
+          {
+            "startMs": 6660,
+            "endMs": 6860,
+            "word": " next",
+            "probability": 0.9967777132987976
+          },
+          {
+            "startMs": 6860,
+            "endMs": 7120,
+            "word": " blog",
+            "probability": 0.6830024719238281
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 4405
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 8810
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

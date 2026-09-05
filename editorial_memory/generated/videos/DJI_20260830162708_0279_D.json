@@ -1,0 +1,1505 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830162708_0279_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830162708_0279_D",
+    "durationMs": 75008,
+    "sha256": "c29babcce84276db601c9d98813b608400b92927a6096fa2c90692b9a10b261b"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830162708_0279_D/analysis.json",
+    "transcriptJson": "DJI_20260830162708_0279_D/transcript.json",
+    "scenesJson": "DJI_20260830162708_0279_D/scenes.json",
+    "framesDirectory": "DJI_20260830162708_0279_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "56158855"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "hi",
+    "languageProbability": 0.9115398526191711,
+    "segments": [
+      {
+        "startMs": 5840,
+        "endMs": 25720,
+        "text": "इतने सारे बसेज हैं इसमें सब SPYSS वाले ही हैं एक दो थीन चार बुलू कलर वाला पांच यह रोड जाती है ओफ रोड़िंग के लिए इधर इन्होंने पार्किंग बना दिया पहले यह तक इससे उपर चरके आप जा सकते थे",
+        "avgLogprob": -0.16384250948086698,
+        "noSpeechProb": 1.0376782100252058e-08,
+        "compressionRatio": 2.0684931506849313,
+        "words": [
+          {
+            "startMs": 5840,
+            "endMs": 6400,
+            "word": " इतने",
+            "probability": 0.8488270163536071
+          },
+          {
+            "startMs": 6400,
+            "endMs": 6700,
+            "word": " सारे",
+            "probability": 0.8748079687356949
+          },
+          {
+            "startMs": 6700,
+            "endMs": 7060,
+            "word": " बसेज",
+            "probability": 0.8693892955780029
+          },
+          {
+            "startMs": 7060,
+            "endMs": 7180,
+            "word": " हैं",
+            "probability": 0.7760770718256632
+          },
+          {
+            "startMs": 7180,
+            "endMs": 7360,
+            "word": " इसमें",
+            "probability": 0.8636063933372498
+          },
+          {
+            "startMs": 7360,
+            "endMs": 7480,
+            "word": " सब",
+            "probability": 0.9430973927179972
+          },
+          {
+            "startMs": 7480,
+            "endMs": 8280,
+            "word": " SPYSS",
+            "probability": 0.6184527178605398
+          },
+          {
+            "startMs": 8280,
+            "endMs": 8640,
+            "word": " वाले",
+            "probability": 0.9543974995613098
+          },
+          {
+            "startMs": 8640,
+            "endMs": 8760,
+            "word": " ही",
+            "probability": 0.9635008573532104
+          },
+          {
+            "startMs": 8760,
+            "endMs": 9000,
+            "word": " हैं",
+            "probability": 0.8720834056536356
+          },
+          {
+            "startMs": 9000,
+            "endMs": 11040,
+            "word": " एक",
+            "probability": 0.573610782623291
+          },
+          {
+            "startMs": 11040,
+            "endMs": 11740,
+            "word": " दो",
+            "probability": 0.8449932336807251
+          },
+          {
+            "startMs": 11740,
+            "endMs": 12760,
+            "word": " थीन",
+            "probability": 0.7459854744374752
+          },
+          {
+            "startMs": 12760,
+            "endMs": 14180,
+            "word": " चार",
+            "probability": 0.8850265890359879
+          },
+          {
+            "startMs": 14180,
+            "endMs": 14780,
+            "word": " बुलू",
+            "probability": 0.7679469968591418
+          },
+          {
+            "startMs": 14780,
+            "endMs": 15020,
+            "word": " कलर",
+            "probability": 0.8717751304308573
+          },
+          {
+            "startMs": 15020,
+            "endMs": 15300,
+            "word": " वाला",
+            "probability": 0.9625945687294006
+          },
+          {
+            "startMs": 15300,
+            "endMs": 15640,
+            "word": " पांच",
+            "probability": 0.9431098898251852
+          },
+          {
+            "startMs": 18620,
+            "endMs": 19640,
+            "word": " यह",
+            "probability": 0.8480275472005209
+          },
+          {
+            "startMs": 19640,
+            "endMs": 19880,
+            "word": " रोड",
+            "probability": 0.9809874892234802
+          },
+          {
+            "startMs": 19880,
+            "endMs": 20240,
+            "word": " जाती",
+            "probability": 0.9876257538795471
+          },
+          {
+            "startMs": 20240,
+            "endMs": 20420,
+            "word": " है",
+            "probability": 0.9960449039936066
+          },
+          {
+            "startMs": 20420,
+            "endMs": 20640,
+            "word": " ओफ",
+            "probability": 0.8745959401130676
+          },
+          {
+            "startMs": 20640,
+            "endMs": 20960,
+            "word": " रोड़िंग",
+            "probability": 0.8820572441274469
+          },
+          {
+            "startMs": 20960,
+            "endMs": 21080,
+            "word": " के",
+            "probability": 0.9679043591022491
+          },
+          {
+            "startMs": 21080,
+            "endMs": 21240,
+            "word": " लिए",
+            "probability": 0.994448971748352
+          },
+          {
+            "startMs": 21240,
+            "endMs": 22180,
+            "word": " इधर",
+            "probability": 0.7211073875427246
+          },
+          {
+            "startMs": 22180,
+            "endMs": 22540,
+            "word": " इन्होंने",
+            "probability": 0.9057867262098525
+          },
+          {
+            "startMs": 22540,
+            "endMs": 22920,
+            "word": " पार्किंग",
+            "probability": 0.9674638986587525
+          },
+          {
+            "startMs": 22920,
+            "endMs": 23180,
+            "word": " बना",
+            "probability": 0.9826708287000656
+          },
+          {
+            "startMs": 23180,
+            "endMs": 23380,
+            "word": " दिया",
+            "probability": 0.9864378094673156
+          },
+          {
+            "startMs": 23380,
+            "endMs": 23780,
+            "word": " पहले",
+            "probability": 0.9784247040748596
+          },
+          {
+            "startMs": 23780,
+            "endMs": 23960,
+            "word": " यह",
+            "probability": 0.8922132849693298
+          },
+          {
+            "startMs": 23960,
+            "endMs": 24180,
+            "word": " तक",
+            "probability": 0.591872771581014
+          },
+          {
+            "startMs": 24180,
+            "endMs": 24460,
+            "word": " इससे",
+            "probability": 0.924286675453186
+          },
+          {
+            "startMs": 24460,
+            "endMs": 24680,
+            "word": " उपर",
+            "probability": 0.9292690753936768
+          },
+          {
+            "startMs": 24680,
+            "endMs": 25000,
+            "word": " चरके",
+            "probability": 0.896007239818573
+          },
+          {
+            "startMs": 25000,
+            "endMs": 25160,
+            "word": " आप",
+            "probability": 0.9852459877729416
+          },
+          {
+            "startMs": 25160,
+            "endMs": 25300,
+            "word": " जा",
+            "probability": 0.9898959795633951
+          },
+          {
+            "startMs": 25300,
+            "endMs": 25600,
+            "word": " सकते",
+            "probability": 0.9918582588434219
+          },
+          {
+            "startMs": 25600,
+            "endMs": 25720,
+            "word": " थे",
+            "probability": 0.9726853171984354
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 5706,
+      "durationMs": 5706,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 2,
+      "startMs": 5706,
+      "endMs": 8442,
+      "durationMs": 2736,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 3,
+      "startMs": 8442,
+      "endMs": 9543,
+      "durationMs": 1101,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 4,
+      "startMs": 10444,
+      "endMs": 13947,
+      "durationMs": 3503,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 5,
+      "startMs": 14715,
+      "endMs": 16550,
+      "durationMs": 1835,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 6,
+      "startMs": 16550,
+      "endMs": 29496,
+      "durationMs": 12946,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 7,
+      "startMs": 29496,
+      "endMs": 38038,
+      "durationMs": 8542,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 8,
+      "startMs": 38038,
+      "endMs": 39706,
+      "durationMs": 1668,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 9,
+      "startMs": 39706,
+      "endMs": 41642,
+      "durationMs": 1936,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 10,
+      "startMs": 41642,
+      "endMs": 42910,
+      "durationMs": 1268,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 11,
+      "startMs": 42910,
+      "endMs": 43944,
+      "durationMs": 1034,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 12,
+      "startMs": 46346,
+      "endMs": 66066,
+      "durationMs": 19720,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 13,
+      "startMs": 66066,
+      "endMs": 75008,
+      "durationMs": 8942,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 114047,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 2853,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 110666,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 79712,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5705,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 90521,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5706,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 91405,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 7074,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 159070,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 8441,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 106943,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 8442,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 105575,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 8992,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 66783,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 9542,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 69131,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0011.jpg",
+      "exists": true,
+      "sizeBytes": 88482,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10444,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0012.jpg",
+      "exists": true,
+      "sizeBytes": 116613,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 12195,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0013.jpg",
+      "exists": true,
+      "sizeBytes": 112205,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 13946,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0014.jpg",
+      "exists": true,
+      "sizeBytes": 93352,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 14715,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0015.jpg",
+      "exists": true,
+      "sizeBytes": 85761,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0016.jpg",
+      "exists": true,
+      "sizeBytes": 58536,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15632,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0017.jpg",
+      "exists": true,
+      "sizeBytes": 53190,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 16549,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0018.jpg",
+      "exists": true,
+      "sizeBytes": 118596,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 16550,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0019.jpg",
+      "exists": true,
+      "sizeBytes": 119283,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0020.jpg",
+      "exists": true,
+      "sizeBytes": 128747,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 23023,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0021.jpg",
+      "exists": true,
+      "sizeBytes": 120607,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0022.jpg",
+      "exists": true,
+      "sizeBytes": 126365,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 29495,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0023.jpg",
+      "exists": true,
+      "sizeBytes": 117994,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 29496,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0024.jpg",
+      "exists": true,
+      "sizeBytes": 117994,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0025.jpg",
+      "exists": true,
+      "sizeBytes": 121428,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 33767,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0026.jpg",
+      "exists": true,
+      "sizeBytes": 96711,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 35000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0027.jpg",
+      "exists": true,
+      "sizeBytes": 90108,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 38037,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0028.jpg",
+      "exists": true,
+      "sizeBytes": 126707,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 38038,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0029.jpg",
+      "exists": true,
+      "sizeBytes": 126707,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 38872,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0030.jpg",
+      "exists": true,
+      "sizeBytes": 129063,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 39705,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0031.jpg",
+      "exists": true,
+      "sizeBytes": 138245,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 39706,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0032.jpg",
+      "exists": true,
+      "sizeBytes": 138245,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0033.jpg",
+      "exists": true,
+      "sizeBytes": 129056,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40674,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0034.jpg",
+      "exists": true,
+      "sizeBytes": 107697,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 41641,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0035.jpg",
+      "exists": true,
+      "sizeBytes": 88326,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 41642,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0036.jpg",
+      "exists": true,
+      "sizeBytes": 91929,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 42276,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0037.jpg",
+      "exists": true,
+      "sizeBytes": 86196,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 42909,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0038.jpg",
+      "exists": true,
+      "sizeBytes": 85035,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 42910,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0039.jpg",
+      "exists": true,
+      "sizeBytes": 80545,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 43427,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0040.jpg",
+      "exists": true,
+      "sizeBytes": 88078,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 43943,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0041.jpg",
+      "exists": true,
+      "sizeBytes": 104099,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0042.jpg",
+      "exists": true,
+      "sizeBytes": 90594,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 46346,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0043.jpg",
+      "exists": true,
+      "sizeBytes": 83240,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 50000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0044.jpg",
+      "exists": true,
+      "sizeBytes": 90777,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 55000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0045.jpg",
+      "exists": true,
+      "sizeBytes": 87849,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 56206,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0046.jpg",
+      "exists": true,
+      "sizeBytes": 95489,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 60000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0047.jpg",
+      "exists": true,
+      "sizeBytes": 92407,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 65000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0048.jpg",
+      "exists": true,
+      "sizeBytes": 86910,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 66065,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0049.jpg",
+      "exists": true,
+      "sizeBytes": 87505,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 66066,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0050.jpg",
+      "exists": true,
+      "sizeBytes": 87505,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 70000,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0051.jpg",
+      "exists": true,
+      "sizeBytes": 90068,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 70537,
+      "frameFile": "DJI_20260830162708_0279_D/frames/frame_0052.jpg",
+      "exists": true,
+      "sizeBytes": 93898,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 75000,
+      "frameFile": "frames/frame_0053.jpg",
+      "exists": false
+    },
+    {
+      "timestampMs": 75007,
+      "frameFile": "frames/frame_0054.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830162708_0279_D.MP4",
+    "durationMs": 75008,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 5706,
+        "durationMs": 5706,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 2,
+        "startMs": 5706,
+        "endMs": 8442,
+        "durationMs": 2736,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 3,
+        "startMs": 8442,
+        "endMs": 9543,
+        "durationMs": 1101,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 4,
+        "startMs": 10444,
+        "endMs": 13947,
+        "durationMs": 3503,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 5,
+        "startMs": 14715,
+        "endMs": 16550,
+        "durationMs": 1835,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 6,
+        "startMs": 16550,
+        "endMs": 29496,
+        "durationMs": 12946,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 7,
+        "startMs": 29496,
+        "endMs": 38038,
+        "durationMs": 8542,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 8,
+        "startMs": 38038,
+        "endMs": 39706,
+        "durationMs": 1668,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 9,
+        "startMs": 39706,
+        "endMs": 41642,
+        "durationMs": 1936,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 10,
+        "startMs": 41642,
+        "endMs": 42910,
+        "durationMs": 1268,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 11,
+        "startMs": 42910,
+        "endMs": 43944,
+        "durationMs": 1034,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 12,
+        "startMs": 46346,
+        "endMs": 66066,
+        "durationMs": 19720,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 13,
+        "startMs": 66066,
+        "endMs": 75008,
+        "durationMs": 8942,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 5840,
+        "endMs": 25720,
+        "text": "इतने सारे बसेज हैं इसमें सब SPYSS वाले ही हैं एक दो थीन चार बुलू कलर वाला पांच यह रोड जाती है ओफ रोड़िंग के लिए इधर इन्होंने पार्किंग बना दिया पहले यह तक इससे उपर चरके आप जा सकते थे",
+        "avgLogprob": -0.16384250948086698,
+        "noSpeechProb": 1.0376782100252058e-08,
+        "compressionRatio": 2.0684931506849313,
+        "words": [
+          {
+            "startMs": 5840,
+            "endMs": 6400,
+            "word": " इतने",
+            "probability": 0.8488270163536071
+          },
+          {
+            "startMs": 6400,
+            "endMs": 6700,
+            "word": " सारे",
+            "probability": 0.8748079687356949
+          },
+          {
+            "startMs": 6700,
+            "endMs": 7060,
+            "word": " बसेज",
+            "probability": 0.8693892955780029
+          },
+          {
+            "startMs": 7060,
+            "endMs": 7180,
+            "word": " हैं",
+            "probability": 0.7760770718256632
+          },
+          {
+            "startMs": 7180,
+            "endMs": 7360,
+            "word": " इसमें",
+            "probability": 0.8636063933372498
+          },
+          {
+            "startMs": 7360,
+            "endMs": 7480,
+            "word": " सब",
+            "probability": 0.9430973927179972
+          },
+          {
+            "startMs": 7480,
+            "endMs": 8280,
+            "word": " SPYSS",
+            "probability": 0.6184527178605398
+          },
+          {
+            "startMs": 8280,
+            "endMs": 8640,
+            "word": " वाले",
+            "probability": 0.9543974995613098
+          },
+          {
+            "startMs": 8640,
+            "endMs": 8760,
+            "word": " ही",
+            "probability": 0.9635008573532104
+          },
+          {
+            "startMs": 8760,
+            "endMs": 9000,
+            "word": " हैं",
+            "probability": 0.8720834056536356
+          },
+          {
+            "startMs": 9000,
+            "endMs": 11040,
+            "word": " एक",
+            "probability": 0.573610782623291
+          },
+          {
+            "startMs": 11040,
+            "endMs": 11740,
+            "word": " दो",
+            "probability": 0.8449932336807251
+          },
+          {
+            "startMs": 11740,
+            "endMs": 12760,
+            "word": " थीन",
+            "probability": 0.7459854744374752
+          },
+          {
+            "startMs": 12760,
+            "endMs": 14180,
+            "word": " चार",
+            "probability": 0.8850265890359879
+          },
+          {
+            "startMs": 14180,
+            "endMs": 14780,
+            "word": " बुलू",
+            "probability": 0.7679469968591418
+          },
+          {
+            "startMs": 14780,
+            "endMs": 15020,
+            "word": " कलर",
+            "probability": 0.8717751304308573
+          },
+          {
+            "startMs": 15020,
+            "endMs": 15300,
+            "word": " वाला",
+            "probability": 0.9625945687294006
+          },
+          {
+            "startMs": 15300,
+            "endMs": 15640,
+            "word": " पांच",
+            "probability": 0.9431098898251852
+          },
+          {
+            "startMs": 18620,
+            "endMs": 19640,
+            "word": " यह",
+            "probability": 0.8480275472005209
+          },
+          {
+            "startMs": 19640,
+            "endMs": 19880,
+            "word": " रोड",
+            "probability": 0.9809874892234802
+          },
+          {
+            "startMs": 19880,
+            "endMs": 20240,
+            "word": " जाती",
+            "probability": 0.9876257538795471
+          },
+          {
+            "startMs": 20240,
+            "endMs": 20420,
+            "word": " है",
+            "probability": 0.9960449039936066
+          },
+          {
+            "startMs": 20420,
+            "endMs": 20640,
+            "word": " ओफ",
+            "probability": 0.8745959401130676
+          },
+          {
+            "startMs": 20640,
+            "endMs": 20960,
+            "word": " रोड़िंग",
+            "probability": 0.8820572441274469
+          },
+          {
+            "startMs": 20960,
+            "endMs": 21080,
+            "word": " के",
+            "probability": 0.9679043591022491
+          },
+          {
+            "startMs": 21080,
+            "endMs": 21240,
+            "word": " लिए",
+            "probability": 0.994448971748352
+          },
+          {
+            "startMs": 21240,
+            "endMs": 22180,
+            "word": " इधर",
+            "probability": 0.7211073875427246
+          },
+          {
+            "startMs": 22180,
+            "endMs": 22540,
+            "word": " इन्होंने",
+            "probability": 0.9057867262098525
+          },
+          {
+            "startMs": 22540,
+            "endMs": 22920,
+            "word": " पार्किंग",
+            "probability": 0.9674638986587525
+          },
+          {
+            "startMs": 22920,
+            "endMs": 23180,
+            "word": " बना",
+            "probability": 0.9826708287000656
+          },
+          {
+            "startMs": 23180,
+            "endMs": 23380,
+            "word": " दिया",
+            "probability": 0.9864378094673156
+          },
+          {
+            "startMs": 23380,
+            "endMs": 23780,
+            "word": " पहले",
+            "probability": 0.9784247040748596
+          },
+          {
+            "startMs": 23780,
+            "endMs": 23960,
+            "word": " यह",
+            "probability": 0.8922132849693298
+          },
+          {
+            "startMs": 23960,
+            "endMs": 24180,
+            "word": " तक",
+            "probability": 0.591872771581014
+          },
+          {
+            "startMs": 24180,
+            "endMs": 24460,
+            "word": " इससे",
+            "probability": 0.924286675453186
+          },
+          {
+            "startMs": 24460,
+            "endMs": 24680,
+            "word": " उपर",
+            "probability": 0.9292690753936768
+          },
+          {
+            "startMs": 24680,
+            "endMs": 25000,
+            "word": " चरके",
+            "probability": 0.896007239818573
+          },
+          {
+            "startMs": 25000,
+            "endMs": 25160,
+            "word": " आप",
+            "probability": 0.9852459877729416
+          },
+          {
+            "startMs": 25160,
+            "endMs": 25300,
+            "word": " जा",
+            "probability": 0.9898959795633951
+          },
+          {
+            "startMs": 25300,
+            "endMs": 25600,
+            "word": " सकते",
+            "probability": 0.9918582588434219
+          },
+          {
+            "startMs": 25600,
+            "endMs": 25720,
+            "word": " थे",
+            "probability": 0.9726853171984354
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 2853
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 5705
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 5706
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 7074
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 8441
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 8442
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 8992
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 9542
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 10444
+      },
+      {
+        "frameFile": "frames/frame_0013.jpg",
+        "timestampMs": 12195
+      },
+      {
+        "frameFile": "frames/frame_0014.jpg",
+        "timestampMs": 13946
+      },
+      {
+        "frameFile": "frames/frame_0015.jpg",
+        "timestampMs": 14715
+      },
+      {
+        "frameFile": "frames/frame_0016.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0017.jpg",
+        "timestampMs": 15632
+      },
+      {
+        "frameFile": "frames/frame_0018.jpg",
+        "timestampMs": 16549
+      },
+      {
+        "frameFile": "frames/frame_0019.jpg",
+        "timestampMs": 16550
+      },
+      {
+        "frameFile": "frames/frame_0020.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0021.jpg",
+        "timestampMs": 23023
+      },
+      {
+        "frameFile": "frames/frame_0022.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0023.jpg",
+        "timestampMs": 29495
+      },
+      {
+        "frameFile": "frames/frame_0024.jpg",
+        "timestampMs": 29496
+      },
+      {
+        "frameFile": "frames/frame_0025.jpg",
+        "timestampMs": 30000
+      },
+      {
+        "frameFile": "frames/frame_0026.jpg",
+        "timestampMs": 33767
+      },
+      {
+        "frameFile": "frames/frame_0027.jpg",
+        "timestampMs": 35000
+      },
+      {
+        "frameFile": "frames/frame_0028.jpg",
+        "timestampMs": 38037
+      },
+      {
+        "frameFile": "frames/frame_0029.jpg",
+        "timestampMs": 38038
+      },
+      {
+        "frameFile": "frames/frame_0030.jpg",
+        "timestampMs": 38872
+      },
+      {
+        "frameFile": "frames/frame_0031.jpg",
+        "timestampMs": 39705
+      },
+      {
+        "frameFile": "frames/frame_0032.jpg",
+        "timestampMs": 39706
+      },
+      {
+        "frameFile": "frames/frame_0033.jpg",
+        "timestampMs": 40000
+      },
+      {
+        "frameFile": "frames/frame_0034.jpg",
+        "timestampMs": 40674
+      },
+      {
+        "frameFile": "frames/frame_0035.jpg",
+        "timestampMs": 41641
+      },
+      {
+        "frameFile": "frames/frame_0036.jpg",
+        "timestampMs": 41642
+      },
+      {
+        "frameFile": "frames/frame_0037.jpg",
+        "timestampMs": 42276
+      },
+      {
+        "frameFile": "frames/frame_0038.jpg",
+        "timestampMs": 42909
+      },
+      {
+        "frameFile": "frames/frame_0039.jpg",
+        "timestampMs": 42910
+      },
+      {
+        "frameFile": "frames/frame_0040.jpg",
+        "timestampMs": 43427
+      },
+      {
+        "frameFile": "frames/frame_0041.jpg",
+        "timestampMs": 43943
+      },
+      {
+        "frameFile": "frames/frame_0042.jpg",
+        "timestampMs": 45000
+      },
+      {
+        "frameFile": "frames/frame_0043.jpg",
+        "timestampMs": 46346
+      },
+      {
+        "frameFile": "frames/frame_0044.jpg",
+        "timestampMs": 50000
+      },
+      {
+        "frameFile": "frames/frame_0045.jpg",
+        "timestampMs": 55000
+      },
+      {
+        "frameFile": "frames/frame_0046.jpg",
+        "timestampMs": 56206
+      },
+      {
+        "frameFile": "frames/frame_0047.jpg",
+        "timestampMs": 60000
+      },
+      {
+        "frameFile": "frames/frame_0048.jpg",
+        "timestampMs": 65000
+      },
+      {
+        "frameFile": "frames/frame_0049.jpg",
+        "timestampMs": 66065
+      },
+      {
+        "frameFile": "frames/frame_0050.jpg",
+        "timestampMs": 66066
+      },
+      {
+        "frameFile": "frames/frame_0051.jpg",
+        "timestampMs": 70000
+      },
+      {
+        "frameFile": "frames/frame_0052.jpg",
+        "timestampMs": 70537
+      },
+      {
+        "frameFile": "frames/frame_0053.jpg",
+        "timestampMs": 75000
+      },
+      {
+        "frameFile": "frames/frame_0054.jpg",
+        "timestampMs": 75007
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

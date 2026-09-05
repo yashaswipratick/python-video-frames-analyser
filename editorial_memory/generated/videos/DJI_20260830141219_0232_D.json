@@ -1,0 +1,687 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830141219_0232_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830141219_0232_D",
+    "durationMs": 78879,
+    "sha256": "a81418f32e5373a1a28c35cff7e88fc7b523fe6a5b60feab76bd8af58fb173f5"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830141219_0232_D/analysis.json",
+    "transcriptJson": "DJI_20260830141219_0232_D/transcript.json",
+    "scenesJson": "DJI_20260830141219_0232_D/scenes.json",
+    "framesDirectory": "DJI_20260830141219_0232_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "55712007"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "hi",
+    "languageProbability": 0.47740253806114197,
+    "segments": [
+      {
+        "startMs": 4820,
+        "endMs": 58690,
+        "text": "इतने बरे बरे लोडर हें बाइए पेर काटी में ले जाना है तो में रोड से स्ट्रीट जाते ना तो दर को बोलाळरा आ",
+        "avgLogprob": -0.752085452609592,
+        "noSpeechProb": 2.259616316280244e-08,
+        "compressionRatio": 2.1700404858299596,
+        "words": [
+          {
+            "startMs": 4820,
+            "endMs": 5180,
+            "word": " इतने",
+            "probability": 0.7694811701774598
+          },
+          {
+            "startMs": 5180,
+            "endMs": 5480,
+            "word": " बरे",
+            "probability": 0.8306688219308853
+          },
+          {
+            "startMs": 5480,
+            "endMs": 5720,
+            "word": " बरे",
+            "probability": 0.9493685066699982
+          },
+          {
+            "startMs": 5720,
+            "endMs": 6040,
+            "word": " लोडर",
+            "probability": 0.7942426956918401
+          },
+          {
+            "startMs": 6040,
+            "endMs": 6080,
+            "word": " हें",
+            "probability": 0.3785224100574851
+          },
+          {
+            "startMs": 6080,
+            "endMs": 6360,
+            "word": " बाइए",
+            "probability": 0.709181795162814
+          },
+          {
+            "startMs": 6360,
+            "endMs": 7640,
+            "word": " पेर",
+            "probability": 0.7142423316836357
+          },
+          {
+            "startMs": 7640,
+            "endMs": 7900,
+            "word": " काटी",
+            "probability": 0.6900811493396759
+          },
+          {
+            "startMs": 7900,
+            "endMs": 8100,
+            "word": " में",
+            "probability": 0.5771829740454754
+          },
+          {
+            "startMs": 8100,
+            "endMs": 8140,
+            "word": " ले",
+            "probability": 0.6319111287593842
+          },
+          {
+            "startMs": 8140,
+            "endMs": 8380,
+            "word": " जाना",
+            "probability": 0.7413786336779594
+          },
+          {
+            "startMs": 8380,
+            "endMs": 8520,
+            "word": " है",
+            "probability": 0.59011110663414
+          },
+          {
+            "startMs": 8520,
+            "endMs": 9100,
+            "word": " तो",
+            "probability": 0.8108813166618347
+          },
+          {
+            "startMs": 15460,
+            "endMs": 15700,
+            "word": " में",
+            "probability": 0.9499402443567911
+          },
+          {
+            "startMs": 15700,
+            "endMs": 15920,
+            "word": " रोड",
+            "probability": 0.6209703505039215
+          },
+          {
+            "startMs": 15920,
+            "endMs": 16040,
+            "word": " से",
+            "probability": 0.9147705733776093
+          },
+          {
+            "startMs": 16040,
+            "endMs": 16340,
+            "word": " स्ट्रीट",
+            "probability": 0.8785158660676744
+          },
+          {
+            "startMs": 16340,
+            "endMs": 16580,
+            "word": " जाते",
+            "probability": 0.9699271082878113
+          },
+          {
+            "startMs": 16580,
+            "endMs": 16860,
+            "word": " ना",
+            "probability": 0.8309339086214701
+          },
+          {
+            "startMs": 16860,
+            "endMs": 17180,
+            "word": " तो",
+            "probability": 0.8298215866088867
+          },
+          {
+            "startMs": 17180,
+            "endMs": 17360,
+            "word": " दर",
+            "probability": 0.6626818353931109
+          },
+          {
+            "startMs": 17360,
+            "endMs": 17580,
+            "word": " को",
+            "probability": 0.8787383139133453
+          },
+          {
+            "startMs": 19020,
+            "endMs": 33680,
+            "word": " बोलाळरा",
+            "probability": 0.31724797907776925
+          },
+          {
+            "startMs": 50610,
+            "endMs": 58690,
+            "word": " आ",
+            "probability": 0.5375729985535145
+          }
+        ]
+      },
+      {
+        "startMs": 66950,
+        "endMs": 67630,
+        "text": "झाल झाल झाल",
+        "avgLogprob": -0.6622066895167033,
+        "noSpeechProb": 9.933868311273741e-11,
+        "compressionRatio": 1.3181818181818181,
+        "words": [
+          {
+            "startMs": 66950,
+            "endMs": 67030,
+            "word": " झाल",
+            "probability": 0.6466671861708164
+          },
+          {
+            "startMs": 67030,
+            "endMs": 67210,
+            "word": " झाल",
+            "probability": 0.6325873583555222
+          },
+          {
+            "startMs": 67210,
+            "endMs": 67630,
+            "word": " झाल",
+            "probability": 0.7569519132375717
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 78879,
+      "durationMs": 78879,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 135494,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 115055,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 104018,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 108809,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 107906,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 110103,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 106968,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 35000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 116406,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 39439,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 124753,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 99811,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0011.jpg",
+      "exists": true,
+      "sizeBytes": 82294,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 50000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0012.jpg",
+      "exists": true,
+      "sizeBytes": 90844,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 55000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0013.jpg",
+      "exists": true,
+      "sizeBytes": 89226,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 60000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0014.jpg",
+      "exists": true,
+      "sizeBytes": 113746,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 65000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0015.jpg",
+      "exists": true,
+      "sizeBytes": 103557,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 70000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0016.jpg",
+      "exists": true,
+      "sizeBytes": 91267,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 75000,
+      "frameFile": "DJI_20260830141219_0232_D/frames/frame_0017.jpg",
+      "exists": true,
+      "sizeBytes": 83475,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 78878,
+      "frameFile": "frames/frame_0018.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830141219_0232_D.MP4",
+    "durationMs": 78879,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 78879,
+        "durationMs": 78879,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 4820,
+        "endMs": 58690,
+        "text": "इतने बरे बरे लोडर हें बाइए पेर काटी में ले जाना है तो में रोड से स्ट्रीट जाते ना तो दर को बोलाळरा आ",
+        "avgLogprob": -0.752085452609592,
+        "noSpeechProb": 2.259616316280244e-08,
+        "compressionRatio": 2.1700404858299596,
+        "words": [
+          {
+            "startMs": 4820,
+            "endMs": 5180,
+            "word": " इतने",
+            "probability": 0.7694811701774598
+          },
+          {
+            "startMs": 5180,
+            "endMs": 5480,
+            "word": " बरे",
+            "probability": 0.8306688219308853
+          },
+          {
+            "startMs": 5480,
+            "endMs": 5720,
+            "word": " बरे",
+            "probability": 0.9493685066699982
+          },
+          {
+            "startMs": 5720,
+            "endMs": 6040,
+            "word": " लोडर",
+            "probability": 0.7942426956918401
+          },
+          {
+            "startMs": 6040,
+            "endMs": 6080,
+            "word": " हें",
+            "probability": 0.3785224100574851
+          },
+          {
+            "startMs": 6080,
+            "endMs": 6360,
+            "word": " बाइए",
+            "probability": 0.709181795162814
+          },
+          {
+            "startMs": 6360,
+            "endMs": 7640,
+            "word": " पेर",
+            "probability": 0.7142423316836357
+          },
+          {
+            "startMs": 7640,
+            "endMs": 7900,
+            "word": " काटी",
+            "probability": 0.6900811493396759
+          },
+          {
+            "startMs": 7900,
+            "endMs": 8100,
+            "word": " में",
+            "probability": 0.5771829740454754
+          },
+          {
+            "startMs": 8100,
+            "endMs": 8140,
+            "word": " ले",
+            "probability": 0.6319111287593842
+          },
+          {
+            "startMs": 8140,
+            "endMs": 8380,
+            "word": " जाना",
+            "probability": 0.7413786336779594
+          },
+          {
+            "startMs": 8380,
+            "endMs": 8520,
+            "word": " है",
+            "probability": 0.59011110663414
+          },
+          {
+            "startMs": 8520,
+            "endMs": 9100,
+            "word": " तो",
+            "probability": 0.8108813166618347
+          },
+          {
+            "startMs": 15460,
+            "endMs": 15700,
+            "word": " में",
+            "probability": 0.9499402443567911
+          },
+          {
+            "startMs": 15700,
+            "endMs": 15920,
+            "word": " रोड",
+            "probability": 0.6209703505039215
+          },
+          {
+            "startMs": 15920,
+            "endMs": 16040,
+            "word": " से",
+            "probability": 0.9147705733776093
+          },
+          {
+            "startMs": 16040,
+            "endMs": 16340,
+            "word": " स्ट्रीट",
+            "probability": 0.8785158660676744
+          },
+          {
+            "startMs": 16340,
+            "endMs": 16580,
+            "word": " जाते",
+            "probability": 0.9699271082878113
+          },
+          {
+            "startMs": 16580,
+            "endMs": 16860,
+            "word": " ना",
+            "probability": 0.8309339086214701
+          },
+          {
+            "startMs": 16860,
+            "endMs": 17180,
+            "word": " तो",
+            "probability": 0.8298215866088867
+          },
+          {
+            "startMs": 17180,
+            "endMs": 17360,
+            "word": " दर",
+            "probability": 0.6626818353931109
+          },
+          {
+            "startMs": 17360,
+            "endMs": 17580,
+            "word": " को",
+            "probability": 0.8787383139133453
+          },
+          {
+            "startMs": 19020,
+            "endMs": 33680,
+            "word": " बोलाळरा",
+            "probability": 0.31724797907776925
+          },
+          {
+            "startMs": 50610,
+            "endMs": 58690,
+            "word": " आ",
+            "probability": 0.5375729985535145
+          }
+        ]
+      },
+      {
+        "startMs": 66950,
+        "endMs": 67630,
+        "text": "झाल झाल झाल",
+        "avgLogprob": -0.6622066895167033,
+        "noSpeechProb": 9.933868311273741e-11,
+        "compressionRatio": 1.3181818181818181,
+        "words": [
+          {
+            "startMs": 66950,
+            "endMs": 67030,
+            "word": " झाल",
+            "probability": 0.6466671861708164
+          },
+          {
+            "startMs": 67030,
+            "endMs": 67210,
+            "word": " झाल",
+            "probability": 0.6325873583555222
+          },
+          {
+            "startMs": 67210,
+            "endMs": 67630,
+            "word": " झाल",
+            "probability": 0.7569519132375717
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 30000
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 35000
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 39439
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 40000
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 45000
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 50000
+      },
+      {
+        "frameFile": "frames/frame_0013.jpg",
+        "timestampMs": 55000
+      },
+      {
+        "frameFile": "frames/frame_0014.jpg",
+        "timestampMs": 60000
+      },
+      {
+        "frameFile": "frames/frame_0015.jpg",
+        "timestampMs": 65000
+      },
+      {
+        "frameFile": "frames/frame_0016.jpg",
+        "timestampMs": 70000
+      },
+      {
+        "frameFile": "frames/frame_0017.jpg",
+        "timestampMs": 75000
+      },
+      {
+        "frameFile": "frames/frame_0018.jpg",
+        "timestampMs": 78878
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830124309_0223_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830124309_0223_D",
+    "durationMs": 14514,
+    "sha256": "349214ea9df4675620b3d36227ad7b1f363736bd9e3eecf294f82f5c38c3dc3a"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830124309_0223_D/analysis.json",
+    "transcriptJson": "DJI_20260830124309_0223_D/transcript.json",
+    "scenesJson": "DJI_20260830124309_0223_D/scenes.json",
+    "framesDirectory": "DJI_20260830124309_0223_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "53224044"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.26806750893592834,
+    "segments": [
+      {
+        "startMs": 1200,
+        "endMs": 1880,
+        "text": "VTS.",
+        "avgLogprob": -0.9387860695521036,
+        "noSpeechProb": 6.579969347164649e-10,
+        "compressionRatio": 0.3333333333333333,
+        "words": [
+          {
+            "startMs": 1200,
+            "endMs": 1880,
+            "word": " VTS.",
+            "probability": 0.33375459909439087
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 14514,
+      "durationMs": 14514,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830124309_0223_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 96113,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830124309_0223_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 103583,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 7257,
+      "frameFile": "DJI_20260830124309_0223_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 105783,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830124309_0223_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 105491,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 14513,
+      "frameFile": "frames/frame_0005.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830124309_0223_D.MP4",
+    "durationMs": 14514,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 14514,
+        "durationMs": 14514,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 1200,
+        "endMs": 1880,
+        "text": "VTS.",
+        "avgLogprob": -0.9387860695521036,
+        "noSpeechProb": 6.579969347164649e-10,
+        "compressionRatio": 0.3333333333333333,
+        "words": [
+          {
+            "startMs": 1200,
+            "endMs": 1880,
+            "word": " VTS.",
+            "probability": 0.33375459909439087
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 7257
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 14513
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

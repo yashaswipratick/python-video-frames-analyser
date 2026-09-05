@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830154604_0256_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830154604_0256_D",
+    "durationMs": 13824,
+    "sha256": "636c7e0617fa96075e16d3f5e68ff2a539c1ca20c54e01035a4cfe2d88f40bbf"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830154604_0256_D/analysis.json",
+    "transcriptJson": "DJI_20260830154604_0256_D/transcript.json",
+    "scenesJson": "DJI_20260830154604_0256_D/scenes.json",
+    "framesDirectory": "DJI_20260830154604_0256_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "55733626"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "es",
+    "languageProbability": 0.8342630863189697,
+    "segments": [
+      {
+        "startMs": 0,
+        "endMs": 2480,
+        "text": "1, 2, 3, 4, 5.",
+        "avgLogprob": -0.7689808560742273,
+        "noSpeechProb": 3.886328064917066e-11,
+        "compressionRatio": 1.8478260869565217,
+        "words": [
+          {
+            "startMs": 0,
+            "endMs": 320,
+            "word": " 1,",
+            "probability": 0.003164552850648761
+          },
+          {
+            "startMs": 540,
+            "endMs": 560,
+            "word": " 2,",
+            "probability": 0.4882843494415283
+          },
+          {
+            "startMs": 780,
+            "endMs": 1580,
+            "word": " 3,",
+            "probability": 0.7925400733947754
+          },
+          {
+            "startMs": 1580,
+            "endMs": 2180,
+            "word": " 4,",
+            "probability": 0.7462531328201294
+          },
+          {
+            "startMs": 2180,
+            "endMs": 2480,
+            "word": " 5.",
+            "probability": 0.5884523987770081
+          }
+        ]
+      },
+      {
+        "startMs": 5240,
+        "endMs": 6680,
+        "text": "2, 3, 4, 5.",
+        "avgLogprob": -0.7689808560742273,
+        "noSpeechProb": 3.886328064917066e-11,
+        "compressionRatio": 1.8478260869565217,
+        "words": [
+          {
+            "startMs": 5240,
+            "endMs": 5640,
+            "word": " 2,",
+            "probability": 0.023198628798127174
+          },
+          {
+            "startMs": 5840,
+            "endMs": 5880,
+            "word": " 3,",
+            "probability": 0.527748167514801
+          },
+          {
+            "startMs": 5880,
+            "endMs": 6680,
+            "word": " 4,",
+            "probability": 0.7923627495765686
+          },
+          {
+            "startMs": 6680,
+            "endMs": 6680,
+            "word": " 5.",
+            "probability": 0.5723235607147217
+          }
+        ]
+      },
+      {
+        "startMs": 6680,
+        "endMs": 7160,
+        "text": "4, 5.",
+        "avgLogprob": -0.7689808560742273,
+        "noSpeechProb": 3.886328064917066e-11,
+        "compressionRatio": 1.8478260869565217,
+        "words": [
+          {
+            "startMs": 6680,
+            "endMs": 7140,
+            "word": " 4,",
+            "probability": 0.05781053379178047
+          },
+          {
+            "startMs": 7160,
+            "endMs": 7160,
+            "word": " 5.",
+            "probability": 0.3468451201915741
+          }
+        ]
+      },
+      {
+        "startMs": 7620,
+        "endMs": 7860,
+        "text": "9.",
+        "avgLogprob": -0.7689808560742273,
+        "noSpeechProb": 3.886328064917066e-11,
+        "compressionRatio": 1.8478260869565217,
+        "words": [
+          {
+            "startMs": 7620,
+            "endMs": 7860,
+            "word": " 9.",
+            "probability": 0.6223350167274475
+          }
+        ]
+      },
+      {
+        "startMs": 8660,
+        "endMs": 8880,
+        "text": "10.",
+        "avgLogprob": -0.7689808560742273,
+        "noSpeechProb": 3.886328064917066e-11,
+        "compressionRatio": 1.8478260869565217,
+        "words": [
+          {
+            "startMs": 8660,
+            "endMs": 8880,
+            "word": " 10.",
+            "probability": 0.6092792749404907
+          }
+        ]
+      },
+      {
+        "startMs": 10280,
+        "endMs": 10980,
+        "text": "Gracias.",
+        "avgLogprob": -0.7383246898651123,
+        "noSpeechProb": 3.374088786145535e-10,
+        "compressionRatio": 0.5,
+        "words": [
+          {
+            "startMs": 10280,
+            "endMs": 10980,
+            "word": " Gracias.",
+            "probability": 0.39368659257888794
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 13824,
+      "durationMs": 13824,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830154604_0256_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 70689,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830154604_0256_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 123329,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 6912,
+      "frameFile": "DJI_20260830154604_0256_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 107033,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830154604_0256_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 106095,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 13823,
+      "frameFile": "frames/frame_0005.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830154604_0256_D.MP4",
+    "durationMs": 13824,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 13824,
+        "durationMs": 13824,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 0,
+        "endMs": 2480,
+        "text": "1, 2, 3, 4, 5.",
+        "avgLogprob": -0.7689808560742273,
+        "noSpeechProb": 3.886328064917066e-11,
+        "compressionRatio": 1.8478260869565217,
+        "words": [
+          {
+            "startMs": 0,
+            "endMs": 320,
+            "word": " 1,",
+            "probability": 0.003164552850648761
+          },
+          {
+            "startMs": 540,
+            "endMs": 560,
+            "word": " 2,",
+            "probability": 0.4882843494415283
+          },
+          {
+            "startMs": 780,
+            "endMs": 1580,
+            "word": " 3,",
+            "probability": 0.7925400733947754
+          },
+          {
+            "startMs": 1580,
+            "endMs": 2180,
+            "word": " 4,",
+            "probability": 0.7462531328201294
+          },
+          {
+            "startMs": 2180,
+            "endMs": 2480,
+            "word": " 5.",
+            "probability": 0.5884523987770081
+          }
+        ]
+      },
+      {
+        "startMs": 5240,
+        "endMs": 6680,
+        "text": "2, 3, 4, 5.",
+        "avgLogprob": -0.7689808560742273,
+        "noSpeechProb": 3.886328064917066e-11,
+        "compressionRatio": 1.8478260869565217,
+        "words": [
+          {
+            "startMs": 5240,
+            "endMs": 5640,
+            "word": " 2,",
+            "probability": 0.023198628798127174
+          },
+          {
+            "startMs": 5840,
+            "endMs": 5880,
+            "word": " 3,",
+            "probability": 0.527748167514801
+          },
+          {
+            "startMs": 5880,
+            "endMs": 6680,
+            "word": " 4,",
+            "probability": 0.7923627495765686
+          },
+          {
+            "startMs": 6680,
+            "endMs": 6680,
+            "word": " 5.",
+            "probability": 0.5723235607147217
+          }
+        ]
+      },
+      {
+        "startMs": 6680,
+        "endMs": 7160,
+        "text": "4, 5.",
+        "avgLogprob": -0.7689808560742273,
+        "noSpeechProb": 3.886328064917066e-11,
+        "compressionRatio": 1.8478260869565217,
+        "words": [
+          {
+            "startMs": 6680,
+            "endMs": 7140,
+            "word": " 4,",
+            "probability": 0.05781053379178047
+          },
+          {
+            "startMs": 7160,
+            "endMs": 7160,
+            "word": " 5.",
+            "probability": 0.3468451201915741
+          }
+        ]
+      },
+      {
+        "startMs": 7620,
+        "endMs": 7860,
+        "text": "9.",
+        "avgLogprob": -0.7689808560742273,
+        "noSpeechProb": 3.886328064917066e-11,
+        "compressionRatio": 1.8478260869565217,
+        "words": [
+          {
+            "startMs": 7620,
+            "endMs": 7860,
+            "word": " 9.",
+            "probability": 0.6223350167274475
+          }
+        ]
+      },
+      {
+        "startMs": 8660,
+        "endMs": 8880,
+        "text": "10.",
+        "avgLogprob": -0.7689808560742273,
+        "noSpeechProb": 3.886328064917066e-11,
+        "compressionRatio": 1.8478260869565217,
+        "words": [
+          {
+            "startMs": 8660,
+            "endMs": 8880,
+            "word": " 10.",
+            "probability": 0.6092792749404907
+          }
+        ]
+      },
+      {
+        "startMs": 10280,
+        "endMs": 10980,
+        "text": "Gracias.",
+        "avgLogprob": -0.7383246898651123,
+        "noSpeechProb": 3.374088786145535e-10,
+        "compressionRatio": 0.5,
+        "words": [
+          {
+            "startMs": 10280,
+            "endMs": 10980,
+            "word": " Gracias.",
+            "probability": 0.39368659257888794
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 6912
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 13823
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

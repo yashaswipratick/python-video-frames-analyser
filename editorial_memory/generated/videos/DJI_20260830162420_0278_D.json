@@ -1,0 +1,3691 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830162420_0278_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830162420_0278_D",
+    "durationMs": 132399,
+    "sha256": "6be20bfc72ce503fafa1b8e5cc62c1a7815419aab9cf3f191da144fad1357f5d"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830162420_0278_D/analysis.json",
+    "transcriptJson": "DJI_20260830162420_0278_D/transcript.json",
+    "scenesJson": "DJI_20260830162420_0278_D/scenes.json",
+    "framesDirectory": "DJI_20260830162420_0278_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "56193322"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "hi",
+    "languageProbability": 0.866524338722229,
+    "segments": [
+      {
+        "startMs": 0,
+        "endMs": 10800,
+        "text": "जहां पर आपको अन्य प्रसाद मिलता है तो पता नहीं यह इफ को लिखा वाए वट लिखा आन्य प्रसाद का टाइमिंग है 12.32, 3.30",
+        "avgLogprob": -0.16428336249457465,
+        "noSpeechProb": 8.562729192362895e-09,
+        "compressionRatio": 2.3529411764705883,
+        "words": [
+          {
+            "startMs": 0,
+            "endMs": 380,
+            "word": " जहां",
+            "probability": 0.7198715955018997
+          },
+          {
+            "startMs": 380,
+            "endMs": 540,
+            "word": " पर",
+            "probability": 0.7736736734708151
+          },
+          {
+            "startMs": 540,
+            "endMs": 820,
+            "word": " आपको",
+            "probability": 0.9829800923665365
+          },
+          {
+            "startMs": 820,
+            "endMs": 1060,
+            "word": " अन्य",
+            "probability": 0.6453238070011139
+          },
+          {
+            "startMs": 1060,
+            "endMs": 1380,
+            "word": " प्रसाद",
+            "probability": 0.8924638330936432
+          },
+          {
+            "startMs": 1380,
+            "endMs": 1740,
+            "word": " मिलता",
+            "probability": 0.9866209983825683
+          },
+          {
+            "startMs": 1740,
+            "endMs": 1860,
+            "word": " है",
+            "probability": 0.9890800714492798
+          },
+          {
+            "startMs": 1860,
+            "endMs": 3440,
+            "word": " तो",
+            "probability": 0.8843831817309061
+          },
+          {
+            "startMs": 3440,
+            "endMs": 4900,
+            "word": " पता",
+            "probability": 0.9636967331171036
+          },
+          {
+            "startMs": 4900,
+            "endMs": 5020,
+            "word": " नहीं",
+            "probability": 0.8449178457260131
+          },
+          {
+            "startMs": 5020,
+            "endMs": 5140,
+            "word": " यह",
+            "probability": 0.6507782737414042
+          },
+          {
+            "startMs": 5140,
+            "endMs": 5300,
+            "word": " इफ",
+            "probability": 0.8522517383098602
+          },
+          {
+            "startMs": 5300,
+            "endMs": 5540,
+            "word": " को",
+            "probability": 0.8588705956935883
+          },
+          {
+            "startMs": 5540,
+            "endMs": 5940,
+            "word": " लिखा",
+            "probability": 0.9908355474472046
+          },
+          {
+            "startMs": 5940,
+            "endMs": 6160,
+            "word": " वाए",
+            "probability": 0.7124301016330719
+          },
+          {
+            "startMs": 6160,
+            "endMs": 6360,
+            "word": " वट",
+            "probability": 0.6507118716835976
+          },
+          {
+            "startMs": 6360,
+            "endMs": 7920,
+            "word": " लिखा",
+            "probability": 0.79354960223039
+          },
+          {
+            "startMs": 7920,
+            "endMs": 8220,
+            "word": " आन्य",
+            "probability": 0.741989940404892
+          },
+          {
+            "startMs": 8220,
+            "endMs": 8600,
+            "word": " प्रसाद",
+            "probability": 0.9766069427132607
+          },
+          {
+            "startMs": 8600,
+            "endMs": 8800,
+            "word": " का",
+            "probability": 0.9875736236572266
+          },
+          {
+            "startMs": 8800,
+            "endMs": 9200,
+            "word": " टाइमिंग",
+            "probability": 0.9748266100883484
+          },
+          {
+            "startMs": 9200,
+            "endMs": 9360,
+            "word": " है",
+            "probability": 0.9648770987987518
+          },
+          {
+            "startMs": 9360,
+            "endMs": 9780,
+            "word": " 12",
+            "probability": 0.6176231503486633
+          },
+          {
+            "startMs": 9780,
+            "endMs": 10200,
+            "word": ".32,",
+            "probability": 0.3885963410139084
+          },
+          {
+            "startMs": 10360,
+            "endMs": 10460,
+            "word": " 3",
+            "probability": 0.2517542839050293
+          },
+          {
+            "startMs": 10460,
+            "endMs": 10800,
+            "word": ".30",
+            "probability": 0.9497130215167999
+          }
+        ]
+      },
+      {
+        "startMs": 15580,
+        "endMs": 39540,
+        "text": "अगली बार अगर आते हैं तो प्रसाद भी खाया जाएगा नहीं कि आए प्रसाद खा सकते हैं आपि टेंपल्ष दिर्शन करके आए कि प्रसाद खा कि अच्य यह है यह जगहreno मिलता है अच्यांud",
+        "avgLogprob": -0.6664580702781677,
+        "noSpeechProb": 1.1467816696253408e-09,
+        "compressionRatio": 2.0793650793650795,
+        "words": [
+          {
+            "startMs": 15580,
+            "endMs": 16180,
+            "word": " अगली",
+            "probability": 0.5905668909351031
+          },
+          {
+            "startMs": 16180,
+            "endMs": 16420,
+            "word": " बार",
+            "probability": 0.9698035269975662
+          },
+          {
+            "startMs": 16420,
+            "endMs": 16620,
+            "word": " अगर",
+            "probability": 0.926273500919342
+          },
+          {
+            "startMs": 16620,
+            "endMs": 16880,
+            "word": " आते",
+            "probability": 0.9881731569766998
+          },
+          {
+            "startMs": 16880,
+            "endMs": 16940,
+            "word": " हैं",
+            "probability": 0.9864057501157125
+          },
+          {
+            "startMs": 16940,
+            "endMs": 17140,
+            "word": " तो",
+            "probability": 0.9864162007967631
+          },
+          {
+            "startMs": 17140,
+            "endMs": 17980,
+            "word": " प्रसाद",
+            "probability": 0.8788780719041824
+          },
+          {
+            "startMs": 17980,
+            "endMs": 18120,
+            "word": " भी",
+            "probability": 0.981585681438446
+          },
+          {
+            "startMs": 18120,
+            "endMs": 18420,
+            "word": " खाया",
+            "probability": 0.9637647271156311
+          },
+          {
+            "startMs": 18420,
+            "endMs": 18720,
+            "word": " जाएगा",
+            "probability": 0.9640246331691742
+          },
+          {
+            "startMs": 21760,
+            "endMs": 22960,
+            "word": " नहीं",
+            "probability": 0.6302987799048424
+          },
+          {
+            "startMs": 22960,
+            "endMs": 22960,
+            "word": " कि",
+            "probability": 0.2289665937423706
+          },
+          {
+            "startMs": 22960,
+            "endMs": 22960,
+            "word": " आए",
+            "probability": 0.4852067264728248
+          },
+          {
+            "startMs": 22960,
+            "endMs": 23480,
+            "word": " प्रसाद",
+            "probability": 0.7977559641003609
+          },
+          {
+            "startMs": 23480,
+            "endMs": 23660,
+            "word": " खा",
+            "probability": 0.8489998777707418
+          },
+          {
+            "startMs": 23660,
+            "endMs": 23960,
+            "word": " सकते",
+            "probability": 0.8098811134696007
+          },
+          {
+            "startMs": 23960,
+            "endMs": 24040,
+            "word": " हैं",
+            "probability": 0.9712132215499878
+          },
+          {
+            "startMs": 24040,
+            "endMs": 24300,
+            "word": " आपि",
+            "probability": 0.4003934422507882
+          },
+          {
+            "startMs": 24300,
+            "endMs": 26260,
+            "word": " टेंपल्ष",
+            "probability": 0.5718024879693985
+          },
+          {
+            "startMs": 26260,
+            "endMs": 26580,
+            "word": " दिर्शन",
+            "probability": 0.6545962844975293
+          },
+          {
+            "startMs": 26580,
+            "endMs": 26920,
+            "word": " करके",
+            "probability": 0.909190446138382
+          },
+          {
+            "startMs": 26920,
+            "endMs": 27400,
+            "word": " आए",
+            "probability": 0.5946057345718145
+          },
+          {
+            "startMs": 27400,
+            "endMs": 28140,
+            "word": " कि",
+            "probability": 0.46679846197366714
+          },
+          {
+            "startMs": 28140,
+            "endMs": 29260,
+            "word": " प्रसाद",
+            "probability": 0.9368836805224419
+          },
+          {
+            "startMs": 29260,
+            "endMs": 29460,
+            "word": " खा",
+            "probability": 0.9058566490809122
+          },
+          {
+            "startMs": 29460,
+            "endMs": 29660,
+            "word": " कि",
+            "probability": 0.07395283877849579
+          },
+          {
+            "startMs": 29660,
+            "endMs": 31700,
+            "word": " अच्य",
+            "probability": 0.7434439883412173
+          },
+          {
+            "startMs": 31700,
+            "endMs": 31980,
+            "word": " यह",
+            "probability": 0.6473546226819357
+          },
+          {
+            "startMs": 31980,
+            "endMs": 32220,
+            "word": " है",
+            "probability": 0.7144146859645844
+          },
+          {
+            "startMs": 34080,
+            "endMs": 35060,
+            "word": " यह",
+            "probability": 0.9440544644991556
+          },
+          {
+            "startMs": 35060,
+            "endMs": 35720,
+            "word": " जगहreno",
+            "probability": 0.7842079450563233
+          },
+          {
+            "startMs": 35720,
+            "endMs": 38200,
+            "word": " मिलता",
+            "probability": 0.6486083969473839
+          },
+          {
+            "startMs": 38200,
+            "endMs": 38420,
+            "word": " है",
+            "probability": 0.9602912664413452
+          },
+          {
+            "startMs": 38420,
+            "endMs": 39540,
+            "word": " अच्यांud",
+            "probability": 0.5284778085181946
+          }
+        ]
+      },
+      {
+        "startMs": 39540,
+        "endMs": 56520,
+        "text": "दाटके खिलाए जाता है काफी सही जगाय गए तो अगर आपको अपरसाद खाना है तो आप यहां के खा सकते है परसाद इल्ला त्टीट हटी लास्ट",
+        "avgLogprob": -0.5554806264241536,
+        "noSpeechProb": 7.461409268216812e-09,
+        "compressionRatio": 2.393013100436681,
+        "words": [
+          {
+            "startMs": 39540,
+            "endMs": 39760,
+            "word": " दाटके",
+            "probability": 0.6113166891570602
+          },
+          {
+            "startMs": 39760,
+            "endMs": 40140,
+            "word": " खिलाए",
+            "probability": 0.9178388799939837
+          },
+          {
+            "startMs": 40140,
+            "endMs": 40400,
+            "word": " जाता",
+            "probability": 0.9868648409843445
+          },
+          {
+            "startMs": 40400,
+            "endMs": 40500,
+            "word": " है",
+            "probability": 0.9400628507137299
+          },
+          {
+            "startMs": 40500,
+            "endMs": 41080,
+            "word": " काफी",
+            "probability": 0.9703452110290527
+          },
+          {
+            "startMs": 41080,
+            "endMs": 41540,
+            "word": " सही",
+            "probability": 0.7527725299199423
+          },
+          {
+            "startMs": 41540,
+            "endMs": 41880,
+            "word": " जगाय",
+            "probability": 0.7324990319708983
+          },
+          {
+            "startMs": 41880,
+            "endMs": 42640,
+            "word": " गए",
+            "probability": 0.2686379801016301
+          },
+          {
+            "startMs": 47180,
+            "endMs": 47340,
+            "word": " तो",
+            "probability": 0.8528827428817749
+          },
+          {
+            "startMs": 47340,
+            "endMs": 47580,
+            "word": " अगर",
+            "probability": 0.6048404455184937
+          },
+          {
+            "startMs": 47580,
+            "endMs": 47820,
+            "word": " आपको",
+            "probability": 0.9335528413454691
+          },
+          {
+            "startMs": 47820,
+            "endMs": 48320,
+            "word": " अपरसाद",
+            "probability": 0.6627044214142693
+          },
+          {
+            "startMs": 48320,
+            "endMs": 48700,
+            "word": " खाना",
+            "probability": 0.9662704229354858
+          },
+          {
+            "startMs": 48700,
+            "endMs": 48840,
+            "word": " है",
+            "probability": 0.9756379425525665
+          },
+          {
+            "startMs": 48840,
+            "endMs": 49100,
+            "word": " तो",
+            "probability": 0.9361941417058309
+          },
+          {
+            "startMs": 49100,
+            "endMs": 49280,
+            "word": " आप",
+            "probability": 0.8897095918655396
+          },
+          {
+            "startMs": 49280,
+            "endMs": 49480,
+            "word": " यहां",
+            "probability": 0.8782468199729919
+          },
+          {
+            "startMs": 49480,
+            "endMs": 49680,
+            "word": " के",
+            "probability": 0.6773847937583923
+          },
+          {
+            "startMs": 49680,
+            "endMs": 49860,
+            "word": " खा",
+            "probability": 0.942142128944397
+          },
+          {
+            "startMs": 49860,
+            "endMs": 50200,
+            "word": " सकते",
+            "probability": 0.9731316566467285
+          },
+          {
+            "startMs": 50200,
+            "endMs": 50300,
+            "word": " है",
+            "probability": 0.9208677113056183
+          },
+          {
+            "startMs": 51710,
+            "endMs": 52730,
+            "word": " परसाद",
+            "probability": 0.7786717425499644
+          },
+          {
+            "startMs": 52730,
+            "endMs": 52990,
+            "word": " इल्ला",
+            "probability": 0.7224119851986567
+          },
+          {
+            "startMs": 54560,
+            "endMs": 56080,
+            "word": " त्टीट",
+            "probability": 0.3557677164208144
+          },
+          {
+            "startMs": 56080,
+            "endMs": 56240,
+            "word": " हटी",
+            "probability": 0.41384588554501534
+          },
+          {
+            "startMs": 56240,
+            "endMs": 56520,
+            "word": " लास्ट",
+            "probability": 0.9606094360351562
+          }
+        ]
+      },
+      {
+        "startMs": 65280,
+        "endMs": 92210,
+        "text": "चाहलो नहीं है तो अगह के पेकेटल्टी ना परशादे पर लेसर अले कुट कोई श्याग कहतां विदू दैरिंहा हो इधसे निले भांगर्षा नहीं प्वचािए न करें लेद्धा वाला",
+        "avgLogprob": -1.5532701449924045,
+        "noSpeechProb": 1.9931386319171907e-08,
+        "compressionRatio": 2.2,
+        "words": [
+          {
+            "startMs": 65280,
+            "endMs": 66440,
+            "word": " चाहलो",
+            "probability": 0.48514595068991184
+          },
+          {
+            "startMs": 68810,
+            "endMs": 69830,
+            "word": " नहीं",
+            "probability": 0.7479298532009124
+          },
+          {
+            "startMs": 69830,
+            "endMs": 70030,
+            "word": " है",
+            "probability": 0.8932760655879974
+          },
+          {
+            "startMs": 72660,
+            "endMs": 73660,
+            "word": " तो",
+            "probability": 0.5226749777793884
+          },
+          {
+            "startMs": 73660,
+            "endMs": 74880,
+            "word": " अगह",
+            "probability": 0.27803037986159324
+          },
+          {
+            "startMs": 74880,
+            "endMs": 75240,
+            "word": " के",
+            "probability": 0.7809743881225586
+          },
+          {
+            "startMs": 75240,
+            "endMs": 76540,
+            "word": " पेकेटल्टी",
+            "probability": 0.580360647290945
+          },
+          {
+            "startMs": 76540,
+            "endMs": 76660,
+            "word": " ना",
+            "probability": 0.39479968945185345
+          },
+          {
+            "startMs": 76660,
+            "endMs": 77580,
+            "word": " परशादे",
+            "probability": 0.6833333107125428
+          },
+          {
+            "startMs": 77580,
+            "endMs": 77800,
+            "word": " पर",
+            "probability": 0.24889054894447327
+          },
+          {
+            "startMs": 77800,
+            "endMs": 78060,
+            "word": " लेसर",
+            "probability": 0.1518165037035942
+          },
+          {
+            "startMs": 78060,
+            "endMs": 79000,
+            "word": " अले",
+            "probability": 0.497897207736969
+          },
+          {
+            "startMs": 79000,
+            "endMs": 79480,
+            "word": " कुट",
+            "probability": 0.6301633358001709
+          },
+          {
+            "startMs": 79480,
+            "endMs": 79660,
+            "word": " कोई",
+            "probability": 0.5209319740533829
+          },
+          {
+            "startMs": 79660,
+            "endMs": 80580,
+            "word": " श्याग",
+            "probability": 0.3024958288962288
+          },
+          {
+            "startMs": 80580,
+            "endMs": 80680,
+            "word": " कहतां",
+            "probability": 0.09472856540232896
+          },
+          {
+            "startMs": 80680,
+            "endMs": 81080,
+            "word": " विदू",
+            "probability": 0.4787979887000152
+          },
+          {
+            "startMs": 81080,
+            "endMs": 81720,
+            "word": " दैरिंहा",
+            "probability": 0.34166117710992694
+          },
+          {
+            "startMs": 81720,
+            "endMs": 82000,
+            "word": " हो",
+            "probability": 0.15399949252605438
+          },
+          {
+            "startMs": 82000,
+            "endMs": 83960,
+            "word": " इधसे",
+            "probability": 0.28342226745250326
+          },
+          {
+            "startMs": 85270,
+            "endMs": 86330,
+            "word": " निले",
+            "probability": 0.29843556694686413
+          },
+          {
+            "startMs": 86330,
+            "endMs": 88310,
+            "word": " भांगर्षा",
+            "probability": 0.2783543685959144
+          },
+          {
+            "startMs": 88310,
+            "endMs": 90950,
+            "word": " नहीं",
+            "probability": 0.5111612096428871
+          },
+          {
+            "startMs": 90950,
+            "endMs": 91610,
+            "word": " प्वचािए",
+            "probability": 0.17991479961942372
+          },
+          {
+            "startMs": 91610,
+            "endMs": 91630,
+            "word": " न",
+            "probability": 0.39958877861499786
+          },
+          {
+            "startMs": 91630,
+            "endMs": 91770,
+            "word": " करें",
+            "probability": 0.27984434738755226
+          },
+          {
+            "startMs": 91770,
+            "endMs": 91790,
+            "word": " लेद्धा",
+            "probability": 0.3402918051514361
+          },
+          {
+            "startMs": 91790,
+            "endMs": 92210,
+            "word": " वाला",
+            "probability": 0.14677146971225738
+          }
+        ]
+      },
+      {
+        "startMs": 92210,
+        "endMs": 99890,
+        "text": "कि लिए को अप्ले के नाक儀 cham",
+        "avgLogprob": -2.505371998932402,
+        "noSpeechProb": 1.5142570530812804e-09,
+        "compressionRatio": 1.801762114537445,
+        "words": [
+          {
+            "startMs": 92210,
+            "endMs": 93230,
+            "word": " कि",
+            "probability": 0.2762034758925438
+          },
+          {
+            "startMs": 93230,
+            "endMs": 93390,
+            "word": " लिए",
+            "probability": 0.5233873508870601
+          },
+          {
+            "startMs": 93390,
+            "endMs": 94550,
+            "word": " को",
+            "probability": 0.17788342386484146
+          },
+          {
+            "startMs": 94550,
+            "endMs": 98670,
+            "word": " अप्ले",
+            "probability": 0.2721431047788688
+          },
+          {
+            "startMs": 98670,
+            "endMs": 98890,
+            "word": " के",
+            "probability": 0.13922817632555962
+          },
+          {
+            "startMs": 98890,
+            "endMs": 99890,
+            "word": " नाक儀",
+            "probability": 0.21028323973871466
+          },
+          {
+            "startMs": 99890,
+            "endMs": 99890,
+            "word": " cham",
+            "probability": 3.5418786410446046e-06
+          }
+        ]
+      },
+      {
+        "startMs": 99890,
+        "endMs": 110930,
+        "text": "किनेक्सать रतभेसी जो ये न्युटुनेजुने लिए जो Geoff",
+        "avgLogprob": -2.505371998932402,
+        "noSpeechProb": 1.5142570530812804e-09,
+        "compressionRatio": 1.801762114537445,
+        "words": [
+          {
+            "startMs": 99890,
+            "endMs": 101250,
+            "word": " किनेक्सать",
+            "probability": 0.2744176751275518
+          },
+          {
+            "startMs": 101250,
+            "endMs": 101750,
+            "word": " रतभेसी",
+            "probability": 0.07755844667553902
+          },
+          {
+            "startMs": 101750,
+            "endMs": 102150,
+            "word": " जो",
+            "probability": 0.22528858110308647
+          },
+          {
+            "startMs": 102150,
+            "endMs": 103190,
+            "word": " ये",
+            "probability": 0.19435604785879454
+          },
+          {
+            "startMs": 103190,
+            "endMs": 109290,
+            "word": " न्युटुनेजुने",
+            "probability": 0.26895791706111694
+          },
+          {
+            "startMs": 109290,
+            "endMs": 109410,
+            "word": " लिए",
+            "probability": 0.5196459293365479
+          },
+          {
+            "startMs": 109410,
+            "endMs": 109410,
+            "word": " जो",
+            "probability": 0.31659966210524243
+          },
+          {
+            "startMs": 109410,
+            "endMs": 110930,
+            "word": " Geoff",
+            "probability": 1.1377991171457325e-07
+          }
+        ]
+      },
+      {
+        "startMs": 110930,
+        "endMs": 115430,
+        "text": "कि अधण काले किसदो किसमे तक नमस Tianna",
+        "avgLogprob": -2.505371998932402,
+        "noSpeechProb": 1.5142570530812804e-09,
+        "compressionRatio": 1.801762114537445,
+        "words": [
+          {
+            "startMs": 110930,
+            "endMs": 111090,
+            "word": " कि",
+            "probability": 0.205818188842386
+          },
+          {
+            "startMs": 111090,
+            "endMs": 112110,
+            "word": " अधण",
+            "probability": 0.2505606582077841
+          },
+          {
+            "startMs": 112110,
+            "endMs": 114510,
+            "word": " काले",
+            "probability": 0.059184637386351824
+          },
+          {
+            "startMs": 114510,
+            "endMs": 115370,
+            "word": " किसदो",
+            "probability": 0.11348760578160484
+          },
+          {
+            "startMs": 115370,
+            "endMs": 115430,
+            "word": " किसमे",
+            "probability": 0.223544954508543
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " तक",
+            "probability": 0.058145357916752495
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " नमस",
+            "probability": 0.11010674806311727
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " Tianna",
+            "probability": 0.013881209637816028
+          }
+        ]
+      },
+      {
+        "startMs": 115430,
+        "endMs": 120930,
+        "text": "तरह में को चते सतक्फून्ह नाय यिए रएब घ na राख",
+        "avgLogprob": -2.505371998932402,
+        "noSpeechProb": 1.5142570530812804e-09,
+        "compressionRatio": 1.801762114537445,
+        "words": [
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " तरह",
+            "probability": 0.09270186582580209
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " में",
+            "probability": 0.42342017218470573
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " को",
+            "probability": 0.09518828988075256
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " चते",
+            "probability": 0.1600344135076739
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " सतक्फून्ह",
+            "probability": 0.18950773767110976
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115630,
+            "word": " नाय",
+            "probability": 0.07008767779916525
+          },
+          {
+            "startMs": 115630,
+            "endMs": 116050,
+            "word": " यिए",
+            "probability": 0.34970029070973396
+          },
+          {
+            "startMs": 116050,
+            "endMs": 119850,
+            "word": " रएब",
+            "probability": 0.21065354331706962
+          },
+          {
+            "startMs": 119850,
+            "endMs": 120470,
+            "word": " घ",
+            "probability": 0.1369536011479795
+          },
+          {
+            "startMs": 120470,
+            "endMs": 120470,
+            "word": " na",
+            "probability": 7.001099220360629e-07
+          },
+          {
+            "startMs": 120470,
+            "endMs": 120930,
+            "word": " राख",
+            "probability": 0.20507184863090516
+          }
+        ]
+      },
+      {
+        "startMs": 120930,
+        "endMs": 122190,
+        "text": "आथ इस आण Anda",
+        "avgLogprob": -2.505371998932402,
+        "noSpeechProb": 1.5142570530812804e-09,
+        "compressionRatio": 1.801762114537445,
+        "words": [
+          {
+            "startMs": 120930,
+            "endMs": 120990,
+            "word": " आथ",
+            "probability": 0.1665909169241786
+          },
+          {
+            "startMs": 120990,
+            "endMs": 122190,
+            "word": " इस",
+            "probability": 0.18867230291167894
+          },
+          {
+            "startMs": 122190,
+            "endMs": 122190,
+            "word": " आण",
+            "probability": 0.19723614398390055
+          },
+          {
+            "startMs": 122190,
+            "endMs": 122190,
+            "word": " Anda",
+            "probability": 2.0937162844347768e-05
+          }
+        ]
+      },
+      {
+        "startMs": 129260,
+        "endMs": 130920,
+        "text": "चलो जर चलते हैं",
+        "avgLogprob": -0.3941092789173126,
+        "noSpeechProb": 8.122476025107517e-09,
+        "compressionRatio": 0.8863636363636364,
+        "words": [
+          {
+            "startMs": 129260,
+            "endMs": 130000,
+            "word": " चलो",
+            "probability": 0.8106062561273575
+          },
+          {
+            "startMs": 130000,
+            "endMs": 130360,
+            "word": " जर",
+            "probability": 0.5576943457126617
+          },
+          {
+            "startMs": 130360,
+            "endMs": 130740,
+            "word": " चलते",
+            "probability": 0.9520872950553894
+          },
+          {
+            "startMs": 130740,
+            "endMs": 130920,
+            "word": " हैं",
+            "probability": 0.9568716684977213
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 7774,
+      "durationMs": 7774,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 2,
+      "startMs": 9543,
+      "endMs": 25025,
+      "durationMs": 15482,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "sceneId": 3,
+      "startMs": 25025,
+      "endMs": 27027,
+      "durationMs": 2002,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 4,
+      "startMs": 27027,
+      "endMs": 31398,
+      "durationMs": 4371,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 5,
+      "startMs": 31398,
+      "endMs": 32733,
+      "durationMs": 1335,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 6,
+      "startMs": 32733,
+      "endMs": 49816,
+      "durationMs": 17083,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "sceneId": 7,
+      "startMs": 49816,
+      "endMs": 51118,
+      "durationMs": 1302,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 8,
+      "startMs": 51118,
+      "endMs": 52452,
+      "durationMs": 1334,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 9,
+      "startMs": 53120,
+      "endMs": 60127,
+      "durationMs": 7007,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 10,
+      "startMs": 60127,
+      "endMs": 62796,
+      "durationMs": 2669,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 11,
+      "startMs": 62796,
+      "endMs": 83617,
+      "durationMs": 20821,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 12,
+      "startMs": 83617,
+      "endMs": 85018,
+      "durationMs": 1401,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 13,
+      "startMs": 86687,
+      "endMs": 87721,
+      "durationMs": 1034,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 14,
+      "startMs": 87721,
+      "endMs": 88722,
+      "durationMs": 1001,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 15,
+      "startMs": 88722,
+      "endMs": 90924,
+      "durationMs": 2202,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 16,
+      "startMs": 91692,
+      "endMs": 93126,
+      "durationMs": 1434,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "sceneId": 17,
+      "startMs": 93126,
+      "endMs": 97264,
+      "durationMs": 4138,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 18,
+      "startMs": 97264,
+      "endMs": 102636,
+      "durationMs": 5372,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "sceneId": 19,
+      "startMs": 102636,
+      "endMs": 103670,
+      "durationMs": 1034,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 20,
+      "startMs": 103670,
+      "endMs": 105172,
+      "durationMs": 1502,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 21,
+      "startMs": 105172,
+      "endMs": 110077,
+      "durationMs": 4905,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 22,
+      "startMs": 110077,
+      "endMs": 112713,
+      "durationMs": 2636,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "sceneId": 23,
+      "startMs": 113313,
+      "endMs": 117951,
+      "durationMs": 4638,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "sceneId": 24,
+      "startMs": 117951,
+      "endMs": 120053,
+      "durationMs": 2102,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 25,
+      "startMs": 120053,
+      "endMs": 132399,
+      "durationMs": 12346,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 77674,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 3887,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 70928,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 7773,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 81049,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 9543,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 91590,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 88323,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 99530,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 94456,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 109304,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25024,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 109304,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25025,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 109304,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 27026,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0011.jpg",
+      "exists": true,
+      "sizeBytes": 115705,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 27027,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0012.jpg",
+      "exists": true,
+      "sizeBytes": 115705,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 29212,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0013.jpg",
+      "exists": true,
+      "sizeBytes": 154549,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0014.jpg",
+      "exists": true,
+      "sizeBytes": 137520,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 31398,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0015.jpg",
+      "exists": true,
+      "sizeBytes": 126957,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 32065,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0016.jpg",
+      "exists": true,
+      "sizeBytes": 92518,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 32732,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0017.jpg",
+      "exists": true,
+      "sizeBytes": 76653,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 35000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0018.jpg",
+      "exists": true,
+      "sizeBytes": 71915,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0019.jpg",
+      "exists": true,
+      "sizeBytes": 70982,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 41274,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0020.jpg",
+      "exists": true,
+      "sizeBytes": 69794,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0021.jpg",
+      "exists": true,
+      "sizeBytes": 96954,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 49816,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0022.jpg",
+      "exists": true,
+      "sizeBytes": 63943,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 50000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0023.jpg",
+      "exists": true,
+      "sizeBytes": 58041,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 50467,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0024.jpg",
+      "exists": true,
+      "sizeBytes": 98040,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 51117,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0025.jpg",
+      "exists": true,
+      "sizeBytes": 89513,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 51785,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0026.jpg",
+      "exists": true,
+      "sizeBytes": 92478,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 52451,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0027.jpg",
+      "exists": true,
+      "sizeBytes": 102579,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 53120,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0028.jpg",
+      "exists": true,
+      "sizeBytes": 129641,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 55000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0029.jpg",
+      "exists": true,
+      "sizeBytes": 108992,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 60000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0030.jpg",
+      "exists": true,
+      "sizeBytes": 47302,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 60126,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0031.jpg",
+      "exists": true,
+      "sizeBytes": 57683,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 60127,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0032.jpg",
+      "exists": true,
+      "sizeBytes": 58175,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 62795,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0033.jpg",
+      "exists": true,
+      "sizeBytes": 120935,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 62796,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0034.jpg",
+      "exists": true,
+      "sizeBytes": 120935,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 65000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0035.jpg",
+      "exists": true,
+      "sizeBytes": 104238,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 70000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0036.jpg",
+      "exists": true,
+      "sizeBytes": 92167,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 75000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0037.jpg",
+      "exists": true,
+      "sizeBytes": 92065,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 80000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0038.jpg",
+      "exists": true,
+      "sizeBytes": 100594,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 83616,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0039.jpg",
+      "exists": true,
+      "sizeBytes": 85888,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 83617,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0040.jpg",
+      "exists": true,
+      "sizeBytes": 80025,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 85000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0041.jpg",
+      "exists": true,
+      "sizeBytes": 70688,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 85017,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0042.jpg",
+      "exists": true,
+      "sizeBytes": 70688,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 86687,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0043.jpg",
+      "exists": true,
+      "sizeBytes": 77860,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 87204,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0044.jpg",
+      "exists": true,
+      "sizeBytes": 87531,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 87721,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0045.jpg",
+      "exists": true,
+      "sizeBytes": 94183,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 88221,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0046.jpg",
+      "exists": true,
+      "sizeBytes": 100788,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 88721,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0047.jpg",
+      "exists": true,
+      "sizeBytes": 80996,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 88722,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0048.jpg",
+      "exists": true,
+      "sizeBytes": 83323,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 90000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0049.jpg",
+      "exists": true,
+      "sizeBytes": 92790,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 90923,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0050.jpg",
+      "exists": true,
+      "sizeBytes": 61530,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 91692,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0051.jpg",
+      "exists": true,
+      "sizeBytes": 66318,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 93125,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0052.jpg",
+      "exists": true,
+      "sizeBytes": 71498,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 93126,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0053.jpg",
+      "exists": true,
+      "sizeBytes": 71498,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 95000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0054.jpg",
+      "exists": true,
+      "sizeBytes": 93728,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 95195,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0055.jpg",
+      "exists": true,
+      "sizeBytes": 98711,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 97264,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0056.jpg",
+      "exists": true,
+      "sizeBytes": 71306,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 99950,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0057.jpg",
+      "exists": true,
+      "sizeBytes": 95319,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 100000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0058.jpg",
+      "exists": true,
+      "sizeBytes": 90534,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 102635,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0059.jpg",
+      "exists": true,
+      "sizeBytes": 74924,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 103153,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0060.jpg",
+      "exists": true,
+      "sizeBytes": 80831,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 103669,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0061.jpg",
+      "exists": true,
+      "sizeBytes": 71728,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 103670,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0062.jpg",
+      "exists": true,
+      "sizeBytes": 71728,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 104421,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0063.jpg",
+      "exists": true,
+      "sizeBytes": 43031,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 105171,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0064.jpg",
+      "exists": true,
+      "sizeBytes": 77928,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 105172,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0065.jpg",
+      "exists": true,
+      "sizeBytes": 71814,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 107624,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0066.jpg",
+      "exists": true,
+      "sizeBytes": 66878,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 110076,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0067.jpg",
+      "exists": true,
+      "sizeBytes": 72208,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 110077,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0068.jpg",
+      "exists": true,
+      "sizeBytes": 80028,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 111395,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0069.jpg",
+      "exists": true,
+      "sizeBytes": 113255,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 112712,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0070.jpg",
+      "exists": true,
+      "sizeBytes": 123451,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 115000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0071.jpg",
+      "exists": true,
+      "sizeBytes": 91945,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 115632,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0072.jpg",
+      "exists": true,
+      "sizeBytes": 98891,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 117950,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0073.jpg",
+      "exists": true,
+      "sizeBytes": 73945,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 117951,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0074.jpg",
+      "exists": true,
+      "sizeBytes": 73945,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 120000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0075.jpg",
+      "exists": true,
+      "sizeBytes": 83803,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 120052,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0076.jpg",
+      "exists": true,
+      "sizeBytes": 88118,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 120053,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0077.jpg",
+      "exists": true,
+      "sizeBytes": 88118,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 125000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0078.jpg",
+      "exists": true,
+      "sizeBytes": 93973,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 130000,
+      "frameFile": "DJI_20260830162420_0278_D/frames/frame_0079.jpg",
+      "exists": true,
+      "sizeBytes": 141052,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 132398,
+      "frameFile": "frames/frame_0080.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830162420_0278_D.MP4",
+    "durationMs": 132399,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 7774,
+        "durationMs": 7774,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 2,
+        "startMs": 9543,
+        "endMs": 25025,
+        "durationMs": 15482,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      },
+      {
+        "sceneId": 3,
+        "startMs": 25025,
+        "endMs": 27027,
+        "durationMs": 2002,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 4,
+        "startMs": 27027,
+        "endMs": 31398,
+        "durationMs": 4371,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 5,
+        "startMs": 31398,
+        "endMs": 32733,
+        "durationMs": 1335,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 6,
+        "startMs": 32733,
+        "endMs": 49816,
+        "durationMs": 17083,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      },
+      {
+        "sceneId": 7,
+        "startMs": 49816,
+        "endMs": 51118,
+        "durationMs": 1302,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 8,
+        "startMs": 51118,
+        "endMs": 52452,
+        "durationMs": 1334,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 9,
+        "startMs": 53120,
+        "endMs": 60127,
+        "durationMs": 7007,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 10,
+        "startMs": 60127,
+        "endMs": 62796,
+        "durationMs": 2669,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 11,
+        "startMs": 62796,
+        "endMs": 83617,
+        "durationMs": 20821,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 12,
+        "startMs": 83617,
+        "endMs": 85018,
+        "durationMs": 1401,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 13,
+        "startMs": 86687,
+        "endMs": 87721,
+        "durationMs": 1034,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 14,
+        "startMs": 87721,
+        "endMs": 88722,
+        "durationMs": 1001,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 15,
+        "startMs": 88722,
+        "endMs": 90924,
+        "durationMs": 2202,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 16,
+        "startMs": 91692,
+        "endMs": 93126,
+        "durationMs": 1434,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      },
+      {
+        "sceneId": 17,
+        "startMs": 93126,
+        "endMs": 97264,
+        "durationMs": 4138,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 18,
+        "startMs": 97264,
+        "endMs": 102636,
+        "durationMs": 5372,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      },
+      {
+        "sceneId": 19,
+        "startMs": 102636,
+        "endMs": 103670,
+        "durationMs": 1034,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 20,
+        "startMs": 103670,
+        "endMs": 105172,
+        "durationMs": 1502,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 21,
+        "startMs": 105172,
+        "endMs": 110077,
+        "durationMs": 4905,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 22,
+        "startMs": 110077,
+        "endMs": 112713,
+        "durationMs": 2636,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      },
+      {
+        "sceneId": 23,
+        "startMs": 113313,
+        "endMs": 117951,
+        "durationMs": 4638,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      },
+      {
+        "sceneId": 24,
+        "startMs": 117951,
+        "endMs": 120053,
+        "durationMs": 2102,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 25,
+        "startMs": 120053,
+        "endMs": 132399,
+        "durationMs": 12346,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 0,
+        "endMs": 10800,
+        "text": "जहां पर आपको अन्य प्रसाद मिलता है तो पता नहीं यह इफ को लिखा वाए वट लिखा आन्य प्रसाद का टाइमिंग है 12.32, 3.30",
+        "avgLogprob": -0.16428336249457465,
+        "noSpeechProb": 8.562729192362895e-09,
+        "compressionRatio": 2.3529411764705883,
+        "words": [
+          {
+            "startMs": 0,
+            "endMs": 380,
+            "word": " जहां",
+            "probability": 0.7198715955018997
+          },
+          {
+            "startMs": 380,
+            "endMs": 540,
+            "word": " पर",
+            "probability": 0.7736736734708151
+          },
+          {
+            "startMs": 540,
+            "endMs": 820,
+            "word": " आपको",
+            "probability": 0.9829800923665365
+          },
+          {
+            "startMs": 820,
+            "endMs": 1060,
+            "word": " अन्य",
+            "probability": 0.6453238070011139
+          },
+          {
+            "startMs": 1060,
+            "endMs": 1380,
+            "word": " प्रसाद",
+            "probability": 0.8924638330936432
+          },
+          {
+            "startMs": 1380,
+            "endMs": 1740,
+            "word": " मिलता",
+            "probability": 0.9866209983825683
+          },
+          {
+            "startMs": 1740,
+            "endMs": 1860,
+            "word": " है",
+            "probability": 0.9890800714492798
+          },
+          {
+            "startMs": 1860,
+            "endMs": 3440,
+            "word": " तो",
+            "probability": 0.8843831817309061
+          },
+          {
+            "startMs": 3440,
+            "endMs": 4900,
+            "word": " पता",
+            "probability": 0.9636967331171036
+          },
+          {
+            "startMs": 4900,
+            "endMs": 5020,
+            "word": " नहीं",
+            "probability": 0.8449178457260131
+          },
+          {
+            "startMs": 5020,
+            "endMs": 5140,
+            "word": " यह",
+            "probability": 0.6507782737414042
+          },
+          {
+            "startMs": 5140,
+            "endMs": 5300,
+            "word": " इफ",
+            "probability": 0.8522517383098602
+          },
+          {
+            "startMs": 5300,
+            "endMs": 5540,
+            "word": " को",
+            "probability": 0.8588705956935883
+          },
+          {
+            "startMs": 5540,
+            "endMs": 5940,
+            "word": " लिखा",
+            "probability": 0.9908355474472046
+          },
+          {
+            "startMs": 5940,
+            "endMs": 6160,
+            "word": " वाए",
+            "probability": 0.7124301016330719
+          },
+          {
+            "startMs": 6160,
+            "endMs": 6360,
+            "word": " वट",
+            "probability": 0.6507118716835976
+          },
+          {
+            "startMs": 6360,
+            "endMs": 7920,
+            "word": " लिखा",
+            "probability": 0.79354960223039
+          },
+          {
+            "startMs": 7920,
+            "endMs": 8220,
+            "word": " आन्य",
+            "probability": 0.741989940404892
+          },
+          {
+            "startMs": 8220,
+            "endMs": 8600,
+            "word": " प्रसाद",
+            "probability": 0.9766069427132607
+          },
+          {
+            "startMs": 8600,
+            "endMs": 8800,
+            "word": " का",
+            "probability": 0.9875736236572266
+          },
+          {
+            "startMs": 8800,
+            "endMs": 9200,
+            "word": " टाइमिंग",
+            "probability": 0.9748266100883484
+          },
+          {
+            "startMs": 9200,
+            "endMs": 9360,
+            "word": " है",
+            "probability": 0.9648770987987518
+          },
+          {
+            "startMs": 9360,
+            "endMs": 9780,
+            "word": " 12",
+            "probability": 0.6176231503486633
+          },
+          {
+            "startMs": 9780,
+            "endMs": 10200,
+            "word": ".32,",
+            "probability": 0.3885963410139084
+          },
+          {
+            "startMs": 10360,
+            "endMs": 10460,
+            "word": " 3",
+            "probability": 0.2517542839050293
+          },
+          {
+            "startMs": 10460,
+            "endMs": 10800,
+            "word": ".30",
+            "probability": 0.9497130215167999
+          }
+        ]
+      },
+      {
+        "startMs": 15580,
+        "endMs": 39540,
+        "text": "अगली बार अगर आते हैं तो प्रसाद भी खाया जाएगा नहीं कि आए प्रसाद खा सकते हैं आपि टेंपल्ष दिर्शन करके आए कि प्रसाद खा कि अच्य यह है यह जगहreno मिलता है अच्यांud",
+        "avgLogprob": -0.6664580702781677,
+        "noSpeechProb": 1.1467816696253408e-09,
+        "compressionRatio": 2.0793650793650795,
+        "words": [
+          {
+            "startMs": 15580,
+            "endMs": 16180,
+            "word": " अगली",
+            "probability": 0.5905668909351031
+          },
+          {
+            "startMs": 16180,
+            "endMs": 16420,
+            "word": " बार",
+            "probability": 0.9698035269975662
+          },
+          {
+            "startMs": 16420,
+            "endMs": 16620,
+            "word": " अगर",
+            "probability": 0.926273500919342
+          },
+          {
+            "startMs": 16620,
+            "endMs": 16880,
+            "word": " आते",
+            "probability": 0.9881731569766998
+          },
+          {
+            "startMs": 16880,
+            "endMs": 16940,
+            "word": " हैं",
+            "probability": 0.9864057501157125
+          },
+          {
+            "startMs": 16940,
+            "endMs": 17140,
+            "word": " तो",
+            "probability": 0.9864162007967631
+          },
+          {
+            "startMs": 17140,
+            "endMs": 17980,
+            "word": " प्रसाद",
+            "probability": 0.8788780719041824
+          },
+          {
+            "startMs": 17980,
+            "endMs": 18120,
+            "word": " भी",
+            "probability": 0.981585681438446
+          },
+          {
+            "startMs": 18120,
+            "endMs": 18420,
+            "word": " खाया",
+            "probability": 0.9637647271156311
+          },
+          {
+            "startMs": 18420,
+            "endMs": 18720,
+            "word": " जाएगा",
+            "probability": 0.9640246331691742
+          },
+          {
+            "startMs": 21760,
+            "endMs": 22960,
+            "word": " नहीं",
+            "probability": 0.6302987799048424
+          },
+          {
+            "startMs": 22960,
+            "endMs": 22960,
+            "word": " कि",
+            "probability": 0.2289665937423706
+          },
+          {
+            "startMs": 22960,
+            "endMs": 22960,
+            "word": " आए",
+            "probability": 0.4852067264728248
+          },
+          {
+            "startMs": 22960,
+            "endMs": 23480,
+            "word": " प्रसाद",
+            "probability": 0.7977559641003609
+          },
+          {
+            "startMs": 23480,
+            "endMs": 23660,
+            "word": " खा",
+            "probability": 0.8489998777707418
+          },
+          {
+            "startMs": 23660,
+            "endMs": 23960,
+            "word": " सकते",
+            "probability": 0.8098811134696007
+          },
+          {
+            "startMs": 23960,
+            "endMs": 24040,
+            "word": " हैं",
+            "probability": 0.9712132215499878
+          },
+          {
+            "startMs": 24040,
+            "endMs": 24300,
+            "word": " आपि",
+            "probability": 0.4003934422507882
+          },
+          {
+            "startMs": 24300,
+            "endMs": 26260,
+            "word": " टेंपल्ष",
+            "probability": 0.5718024879693985
+          },
+          {
+            "startMs": 26260,
+            "endMs": 26580,
+            "word": " दिर्शन",
+            "probability": 0.6545962844975293
+          },
+          {
+            "startMs": 26580,
+            "endMs": 26920,
+            "word": " करके",
+            "probability": 0.909190446138382
+          },
+          {
+            "startMs": 26920,
+            "endMs": 27400,
+            "word": " आए",
+            "probability": 0.5946057345718145
+          },
+          {
+            "startMs": 27400,
+            "endMs": 28140,
+            "word": " कि",
+            "probability": 0.46679846197366714
+          },
+          {
+            "startMs": 28140,
+            "endMs": 29260,
+            "word": " प्रसाद",
+            "probability": 0.9368836805224419
+          },
+          {
+            "startMs": 29260,
+            "endMs": 29460,
+            "word": " खा",
+            "probability": 0.9058566490809122
+          },
+          {
+            "startMs": 29460,
+            "endMs": 29660,
+            "word": " कि",
+            "probability": 0.07395283877849579
+          },
+          {
+            "startMs": 29660,
+            "endMs": 31700,
+            "word": " अच्य",
+            "probability": 0.7434439883412173
+          },
+          {
+            "startMs": 31700,
+            "endMs": 31980,
+            "word": " यह",
+            "probability": 0.6473546226819357
+          },
+          {
+            "startMs": 31980,
+            "endMs": 32220,
+            "word": " है",
+            "probability": 0.7144146859645844
+          },
+          {
+            "startMs": 34080,
+            "endMs": 35060,
+            "word": " यह",
+            "probability": 0.9440544644991556
+          },
+          {
+            "startMs": 35060,
+            "endMs": 35720,
+            "word": " जगहreno",
+            "probability": 0.7842079450563233
+          },
+          {
+            "startMs": 35720,
+            "endMs": 38200,
+            "word": " मिलता",
+            "probability": 0.6486083969473839
+          },
+          {
+            "startMs": 38200,
+            "endMs": 38420,
+            "word": " है",
+            "probability": 0.9602912664413452
+          },
+          {
+            "startMs": 38420,
+            "endMs": 39540,
+            "word": " अच्यांud",
+            "probability": 0.5284778085181946
+          }
+        ]
+      },
+      {
+        "startMs": 39540,
+        "endMs": 56520,
+        "text": "दाटके खिलाए जाता है काफी सही जगाय गए तो अगर आपको अपरसाद खाना है तो आप यहां के खा सकते है परसाद इल्ला त्टीट हटी लास्ट",
+        "avgLogprob": -0.5554806264241536,
+        "noSpeechProb": 7.461409268216812e-09,
+        "compressionRatio": 2.393013100436681,
+        "words": [
+          {
+            "startMs": 39540,
+            "endMs": 39760,
+            "word": " दाटके",
+            "probability": 0.6113166891570602
+          },
+          {
+            "startMs": 39760,
+            "endMs": 40140,
+            "word": " खिलाए",
+            "probability": 0.9178388799939837
+          },
+          {
+            "startMs": 40140,
+            "endMs": 40400,
+            "word": " जाता",
+            "probability": 0.9868648409843445
+          },
+          {
+            "startMs": 40400,
+            "endMs": 40500,
+            "word": " है",
+            "probability": 0.9400628507137299
+          },
+          {
+            "startMs": 40500,
+            "endMs": 41080,
+            "word": " काफी",
+            "probability": 0.9703452110290527
+          },
+          {
+            "startMs": 41080,
+            "endMs": 41540,
+            "word": " सही",
+            "probability": 0.7527725299199423
+          },
+          {
+            "startMs": 41540,
+            "endMs": 41880,
+            "word": " जगाय",
+            "probability": 0.7324990319708983
+          },
+          {
+            "startMs": 41880,
+            "endMs": 42640,
+            "word": " गए",
+            "probability": 0.2686379801016301
+          },
+          {
+            "startMs": 47180,
+            "endMs": 47340,
+            "word": " तो",
+            "probability": 0.8528827428817749
+          },
+          {
+            "startMs": 47340,
+            "endMs": 47580,
+            "word": " अगर",
+            "probability": 0.6048404455184937
+          },
+          {
+            "startMs": 47580,
+            "endMs": 47820,
+            "word": " आपको",
+            "probability": 0.9335528413454691
+          },
+          {
+            "startMs": 47820,
+            "endMs": 48320,
+            "word": " अपरसाद",
+            "probability": 0.6627044214142693
+          },
+          {
+            "startMs": 48320,
+            "endMs": 48700,
+            "word": " खाना",
+            "probability": 0.9662704229354858
+          },
+          {
+            "startMs": 48700,
+            "endMs": 48840,
+            "word": " है",
+            "probability": 0.9756379425525665
+          },
+          {
+            "startMs": 48840,
+            "endMs": 49100,
+            "word": " तो",
+            "probability": 0.9361941417058309
+          },
+          {
+            "startMs": 49100,
+            "endMs": 49280,
+            "word": " आप",
+            "probability": 0.8897095918655396
+          },
+          {
+            "startMs": 49280,
+            "endMs": 49480,
+            "word": " यहां",
+            "probability": 0.8782468199729919
+          },
+          {
+            "startMs": 49480,
+            "endMs": 49680,
+            "word": " के",
+            "probability": 0.6773847937583923
+          },
+          {
+            "startMs": 49680,
+            "endMs": 49860,
+            "word": " खा",
+            "probability": 0.942142128944397
+          },
+          {
+            "startMs": 49860,
+            "endMs": 50200,
+            "word": " सकते",
+            "probability": 0.9731316566467285
+          },
+          {
+            "startMs": 50200,
+            "endMs": 50300,
+            "word": " है",
+            "probability": 0.9208677113056183
+          },
+          {
+            "startMs": 51710,
+            "endMs": 52730,
+            "word": " परसाद",
+            "probability": 0.7786717425499644
+          },
+          {
+            "startMs": 52730,
+            "endMs": 52990,
+            "word": " इल्ला",
+            "probability": 0.7224119851986567
+          },
+          {
+            "startMs": 54560,
+            "endMs": 56080,
+            "word": " त्टीट",
+            "probability": 0.3557677164208144
+          },
+          {
+            "startMs": 56080,
+            "endMs": 56240,
+            "word": " हटी",
+            "probability": 0.41384588554501534
+          },
+          {
+            "startMs": 56240,
+            "endMs": 56520,
+            "word": " लास्ट",
+            "probability": 0.9606094360351562
+          }
+        ]
+      },
+      {
+        "startMs": 65280,
+        "endMs": 92210,
+        "text": "चाहलो नहीं है तो अगह के पेकेटल्टी ना परशादे पर लेसर अले कुट कोई श्याग कहतां विदू दैरिंहा हो इधसे निले भांगर्षा नहीं प्वचािए न करें लेद्धा वाला",
+        "avgLogprob": -1.5532701449924045,
+        "noSpeechProb": 1.9931386319171907e-08,
+        "compressionRatio": 2.2,
+        "words": [
+          {
+            "startMs": 65280,
+            "endMs": 66440,
+            "word": " चाहलो",
+            "probability": 0.48514595068991184
+          },
+          {
+            "startMs": 68810,
+            "endMs": 69830,
+            "word": " नहीं",
+            "probability": 0.7479298532009124
+          },
+          {
+            "startMs": 69830,
+            "endMs": 70030,
+            "word": " है",
+            "probability": 0.8932760655879974
+          },
+          {
+            "startMs": 72660,
+            "endMs": 73660,
+            "word": " तो",
+            "probability": 0.5226749777793884
+          },
+          {
+            "startMs": 73660,
+            "endMs": 74880,
+            "word": " अगह",
+            "probability": 0.27803037986159324
+          },
+          {
+            "startMs": 74880,
+            "endMs": 75240,
+            "word": " के",
+            "probability": 0.7809743881225586
+          },
+          {
+            "startMs": 75240,
+            "endMs": 76540,
+            "word": " पेकेटल्टी",
+            "probability": 0.580360647290945
+          },
+          {
+            "startMs": 76540,
+            "endMs": 76660,
+            "word": " ना",
+            "probability": 0.39479968945185345
+          },
+          {
+            "startMs": 76660,
+            "endMs": 77580,
+            "word": " परशादे",
+            "probability": 0.6833333107125428
+          },
+          {
+            "startMs": 77580,
+            "endMs": 77800,
+            "word": " पर",
+            "probability": 0.24889054894447327
+          },
+          {
+            "startMs": 77800,
+            "endMs": 78060,
+            "word": " लेसर",
+            "probability": 0.1518165037035942
+          },
+          {
+            "startMs": 78060,
+            "endMs": 79000,
+            "word": " अले",
+            "probability": 0.497897207736969
+          },
+          {
+            "startMs": 79000,
+            "endMs": 79480,
+            "word": " कुट",
+            "probability": 0.6301633358001709
+          },
+          {
+            "startMs": 79480,
+            "endMs": 79660,
+            "word": " कोई",
+            "probability": 0.5209319740533829
+          },
+          {
+            "startMs": 79660,
+            "endMs": 80580,
+            "word": " श्याग",
+            "probability": 0.3024958288962288
+          },
+          {
+            "startMs": 80580,
+            "endMs": 80680,
+            "word": " कहतां",
+            "probability": 0.09472856540232896
+          },
+          {
+            "startMs": 80680,
+            "endMs": 81080,
+            "word": " विदू",
+            "probability": 0.4787979887000152
+          },
+          {
+            "startMs": 81080,
+            "endMs": 81720,
+            "word": " दैरिंहा",
+            "probability": 0.34166117710992694
+          },
+          {
+            "startMs": 81720,
+            "endMs": 82000,
+            "word": " हो",
+            "probability": 0.15399949252605438
+          },
+          {
+            "startMs": 82000,
+            "endMs": 83960,
+            "word": " इधसे",
+            "probability": 0.28342226745250326
+          },
+          {
+            "startMs": 85270,
+            "endMs": 86330,
+            "word": " निले",
+            "probability": 0.29843556694686413
+          },
+          {
+            "startMs": 86330,
+            "endMs": 88310,
+            "word": " भांगर्षा",
+            "probability": 0.2783543685959144
+          },
+          {
+            "startMs": 88310,
+            "endMs": 90950,
+            "word": " नहीं",
+            "probability": 0.5111612096428871
+          },
+          {
+            "startMs": 90950,
+            "endMs": 91610,
+            "word": " प्वचािए",
+            "probability": 0.17991479961942372
+          },
+          {
+            "startMs": 91610,
+            "endMs": 91630,
+            "word": " न",
+            "probability": 0.39958877861499786
+          },
+          {
+            "startMs": 91630,
+            "endMs": 91770,
+            "word": " करें",
+            "probability": 0.27984434738755226
+          },
+          {
+            "startMs": 91770,
+            "endMs": 91790,
+            "word": " लेद्धा",
+            "probability": 0.3402918051514361
+          },
+          {
+            "startMs": 91790,
+            "endMs": 92210,
+            "word": " वाला",
+            "probability": 0.14677146971225738
+          }
+        ]
+      },
+      {
+        "startMs": 92210,
+        "endMs": 99890,
+        "text": "कि लिए को अप्ले के नाक儀 cham",
+        "avgLogprob": -2.505371998932402,
+        "noSpeechProb": 1.5142570530812804e-09,
+        "compressionRatio": 1.801762114537445,
+        "words": [
+          {
+            "startMs": 92210,
+            "endMs": 93230,
+            "word": " कि",
+            "probability": 0.2762034758925438
+          },
+          {
+            "startMs": 93230,
+            "endMs": 93390,
+            "word": " लिए",
+            "probability": 0.5233873508870601
+          },
+          {
+            "startMs": 93390,
+            "endMs": 94550,
+            "word": " को",
+            "probability": 0.17788342386484146
+          },
+          {
+            "startMs": 94550,
+            "endMs": 98670,
+            "word": " अप्ले",
+            "probability": 0.2721431047788688
+          },
+          {
+            "startMs": 98670,
+            "endMs": 98890,
+            "word": " के",
+            "probability": 0.13922817632555962
+          },
+          {
+            "startMs": 98890,
+            "endMs": 99890,
+            "word": " नाक儀",
+            "probability": 0.21028323973871466
+          },
+          {
+            "startMs": 99890,
+            "endMs": 99890,
+            "word": " cham",
+            "probability": 3.5418786410446046e-06
+          }
+        ]
+      },
+      {
+        "startMs": 99890,
+        "endMs": 110930,
+        "text": "किनेक्सать रतभेसी जो ये न्युटुनेजुने लिए जो Geoff",
+        "avgLogprob": -2.505371998932402,
+        "noSpeechProb": 1.5142570530812804e-09,
+        "compressionRatio": 1.801762114537445,
+        "words": [
+          {
+            "startMs": 99890,
+            "endMs": 101250,
+            "word": " किनेक्सать",
+            "probability": 0.2744176751275518
+          },
+          {
+            "startMs": 101250,
+            "endMs": 101750,
+            "word": " रतभेसी",
+            "probability": 0.07755844667553902
+          },
+          {
+            "startMs": 101750,
+            "endMs": 102150,
+            "word": " जो",
+            "probability": 0.22528858110308647
+          },
+          {
+            "startMs": 102150,
+            "endMs": 103190,
+            "word": " ये",
+            "probability": 0.19435604785879454
+          },
+          {
+            "startMs": 103190,
+            "endMs": 109290,
+            "word": " न्युटुनेजुने",
+            "probability": 0.26895791706111694
+          },
+          {
+            "startMs": 109290,
+            "endMs": 109410,
+            "word": " लिए",
+            "probability": 0.5196459293365479
+          },
+          {
+            "startMs": 109410,
+            "endMs": 109410,
+            "word": " जो",
+            "probability": 0.31659966210524243
+          },
+          {
+            "startMs": 109410,
+            "endMs": 110930,
+            "word": " Geoff",
+            "probability": 1.1377991171457325e-07
+          }
+        ]
+      },
+      {
+        "startMs": 110930,
+        "endMs": 115430,
+        "text": "कि अधण काले किसदो किसमे तक नमस Tianna",
+        "avgLogprob": -2.505371998932402,
+        "noSpeechProb": 1.5142570530812804e-09,
+        "compressionRatio": 1.801762114537445,
+        "words": [
+          {
+            "startMs": 110930,
+            "endMs": 111090,
+            "word": " कि",
+            "probability": 0.205818188842386
+          },
+          {
+            "startMs": 111090,
+            "endMs": 112110,
+            "word": " अधण",
+            "probability": 0.2505606582077841
+          },
+          {
+            "startMs": 112110,
+            "endMs": 114510,
+            "word": " काले",
+            "probability": 0.059184637386351824
+          },
+          {
+            "startMs": 114510,
+            "endMs": 115370,
+            "word": " किसदो",
+            "probability": 0.11348760578160484
+          },
+          {
+            "startMs": 115370,
+            "endMs": 115430,
+            "word": " किसमे",
+            "probability": 0.223544954508543
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " तक",
+            "probability": 0.058145357916752495
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " नमस",
+            "probability": 0.11010674806311727
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " Tianna",
+            "probability": 0.013881209637816028
+          }
+        ]
+      },
+      {
+        "startMs": 115430,
+        "endMs": 120930,
+        "text": "तरह में को चते सतक्फून्ह नाय यिए रएब घ na राख",
+        "avgLogprob": -2.505371998932402,
+        "noSpeechProb": 1.5142570530812804e-09,
+        "compressionRatio": 1.801762114537445,
+        "words": [
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " तरह",
+            "probability": 0.09270186582580209
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " में",
+            "probability": 0.42342017218470573
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " को",
+            "probability": 0.09518828988075256
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " चते",
+            "probability": 0.1600344135076739
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115430,
+            "word": " सतक्फून्ह",
+            "probability": 0.18950773767110976
+          },
+          {
+            "startMs": 115430,
+            "endMs": 115630,
+            "word": " नाय",
+            "probability": 0.07008767779916525
+          },
+          {
+            "startMs": 115630,
+            "endMs": 116050,
+            "word": " यिए",
+            "probability": 0.34970029070973396
+          },
+          {
+            "startMs": 116050,
+            "endMs": 119850,
+            "word": " रएब",
+            "probability": 0.21065354331706962
+          },
+          {
+            "startMs": 119850,
+            "endMs": 120470,
+            "word": " घ",
+            "probability": 0.1369536011479795
+          },
+          {
+            "startMs": 120470,
+            "endMs": 120470,
+            "word": " na",
+            "probability": 7.001099220360629e-07
+          },
+          {
+            "startMs": 120470,
+            "endMs": 120930,
+            "word": " राख",
+            "probability": 0.20507184863090516
+          }
+        ]
+      },
+      {
+        "startMs": 120930,
+        "endMs": 122190,
+        "text": "आथ इस आण Anda",
+        "avgLogprob": -2.505371998932402,
+        "noSpeechProb": 1.5142570530812804e-09,
+        "compressionRatio": 1.801762114537445,
+        "words": [
+          {
+            "startMs": 120930,
+            "endMs": 120990,
+            "word": " आथ",
+            "probability": 0.1665909169241786
+          },
+          {
+            "startMs": 120990,
+            "endMs": 122190,
+            "word": " इस",
+            "probability": 0.18867230291167894
+          },
+          {
+            "startMs": 122190,
+            "endMs": 122190,
+            "word": " आण",
+            "probability": 0.19723614398390055
+          },
+          {
+            "startMs": 122190,
+            "endMs": 122190,
+            "word": " Anda",
+            "probability": 2.0937162844347768e-05
+          }
+        ]
+      },
+      {
+        "startMs": 129260,
+        "endMs": 130920,
+        "text": "चलो जर चलते हैं",
+        "avgLogprob": -0.3941092789173126,
+        "noSpeechProb": 8.122476025107517e-09,
+        "compressionRatio": 0.8863636363636364,
+        "words": [
+          {
+            "startMs": 129260,
+            "endMs": 130000,
+            "word": " चलो",
+            "probability": 0.8106062561273575
+          },
+          {
+            "startMs": 130000,
+            "endMs": 130360,
+            "word": " जर",
+            "probability": 0.5576943457126617
+          },
+          {
+            "startMs": 130360,
+            "endMs": 130740,
+            "word": " चलते",
+            "probability": 0.9520872950553894
+          },
+          {
+            "startMs": 130740,
+            "endMs": 130920,
+            "word": " हैं",
+            "probability": 0.9568716684977213
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 3887
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 7773
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 9543
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 25024
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 25025
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 27026
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 27027
+      },
+      {
+        "frameFile": "frames/frame_0013.jpg",
+        "timestampMs": 29212
+      },
+      {
+        "frameFile": "frames/frame_0014.jpg",
+        "timestampMs": 30000
+      },
+      {
+        "frameFile": "frames/frame_0015.jpg",
+        "timestampMs": 31398
+      },
+      {
+        "frameFile": "frames/frame_0016.jpg",
+        "timestampMs": 32065
+      },
+      {
+        "frameFile": "frames/frame_0017.jpg",
+        "timestampMs": 32732
+      },
+      {
+        "frameFile": "frames/frame_0018.jpg",
+        "timestampMs": 35000
+      },
+      {
+        "frameFile": "frames/frame_0019.jpg",
+        "timestampMs": 40000
+      },
+      {
+        "frameFile": "frames/frame_0020.jpg",
+        "timestampMs": 41274
+      },
+      {
+        "frameFile": "frames/frame_0021.jpg",
+        "timestampMs": 45000
+      },
+      {
+        "frameFile": "frames/frame_0022.jpg",
+        "timestampMs": 49816
+      },
+      {
+        "frameFile": "frames/frame_0023.jpg",
+        "timestampMs": 50000
+      },
+      {
+        "frameFile": "frames/frame_0024.jpg",
+        "timestampMs": 50467
+      },
+      {
+        "frameFile": "frames/frame_0025.jpg",
+        "timestampMs": 51117
+      },
+      {
+        "frameFile": "frames/frame_0026.jpg",
+        "timestampMs": 51785
+      },
+      {
+        "frameFile": "frames/frame_0027.jpg",
+        "timestampMs": 52451
+      },
+      {
+        "frameFile": "frames/frame_0028.jpg",
+        "timestampMs": 53120
+      },
+      {
+        "frameFile": "frames/frame_0029.jpg",
+        "timestampMs": 55000
+      },
+      {
+        "frameFile": "frames/frame_0030.jpg",
+        "timestampMs": 60000
+      },
+      {
+        "frameFile": "frames/frame_0031.jpg",
+        "timestampMs": 60126
+      },
+      {
+        "frameFile": "frames/frame_0032.jpg",
+        "timestampMs": 60127
+      },
+      {
+        "frameFile": "frames/frame_0033.jpg",
+        "timestampMs": 62795
+      },
+      {
+        "frameFile": "frames/frame_0034.jpg",
+        "timestampMs": 62796
+      },
+      {
+        "frameFile": "frames/frame_0035.jpg",
+        "timestampMs": 65000
+      },
+      {
+        "frameFile": "frames/frame_0036.jpg",
+        "timestampMs": 70000
+      },
+      {
+        "frameFile": "frames/frame_0037.jpg",
+        "timestampMs": 75000
+      },
+      {
+        "frameFile": "frames/frame_0038.jpg",
+        "timestampMs": 80000
+      },
+      {
+        "frameFile": "frames/frame_0039.jpg",
+        "timestampMs": 83616
+      },
+      {
+        "frameFile": "frames/frame_0040.jpg",
+        "timestampMs": 83617
+      },
+      {
+        "frameFile": "frames/frame_0041.jpg",
+        "timestampMs": 85000
+      },
+      {
+        "frameFile": "frames/frame_0042.jpg",
+        "timestampMs": 85017
+      },
+      {
+        "frameFile": "frames/frame_0043.jpg",
+        "timestampMs": 86687
+      },
+      {
+        "frameFile": "frames/frame_0044.jpg",
+        "timestampMs": 87204
+      },
+      {
+        "frameFile": "frames/frame_0045.jpg",
+        "timestampMs": 87721
+      },
+      {
+        "frameFile": "frames/frame_0046.jpg",
+        "timestampMs": 88221
+      },
+      {
+        "frameFile": "frames/frame_0047.jpg",
+        "timestampMs": 88721
+      },
+      {
+        "frameFile": "frames/frame_0048.jpg",
+        "timestampMs": 88722
+      },
+      {
+        "frameFile": "frames/frame_0049.jpg",
+        "timestampMs": 90000
+      },
+      {
+        "frameFile": "frames/frame_0050.jpg",
+        "timestampMs": 90923
+      },
+      {
+        "frameFile": "frames/frame_0051.jpg",
+        "timestampMs": 91692
+      },
+      {
+        "frameFile": "frames/frame_0052.jpg",
+        "timestampMs": 93125
+      },
+      {
+        "frameFile": "frames/frame_0053.jpg",
+        "timestampMs": 93126
+      },
+      {
+        "frameFile": "frames/frame_0054.jpg",
+        "timestampMs": 95000
+      },
+      {
+        "frameFile": "frames/frame_0055.jpg",
+        "timestampMs": 95195
+      },
+      {
+        "frameFile": "frames/frame_0056.jpg",
+        "timestampMs": 97264
+      },
+      {
+        "frameFile": "frames/frame_0057.jpg",
+        "timestampMs": 99950
+      },
+      {
+        "frameFile": "frames/frame_0058.jpg",
+        "timestampMs": 100000
+      },
+      {
+        "frameFile": "frames/frame_0059.jpg",
+        "timestampMs": 102635
+      },
+      {
+        "frameFile": "frames/frame_0060.jpg",
+        "timestampMs": 103153
+      },
+      {
+        "frameFile": "frames/frame_0061.jpg",
+        "timestampMs": 103669
+      },
+      {
+        "frameFile": "frames/frame_0062.jpg",
+        "timestampMs": 103670
+      },
+      {
+        "frameFile": "frames/frame_0063.jpg",
+        "timestampMs": 104421
+      },
+      {
+        "frameFile": "frames/frame_0064.jpg",
+        "timestampMs": 105171
+      },
+      {
+        "frameFile": "frames/frame_0065.jpg",
+        "timestampMs": 105172
+      },
+      {
+        "frameFile": "frames/frame_0066.jpg",
+        "timestampMs": 107624
+      },
+      {
+        "frameFile": "frames/frame_0067.jpg",
+        "timestampMs": 110076
+      },
+      {
+        "frameFile": "frames/frame_0068.jpg",
+        "timestampMs": 110077
+      },
+      {
+        "frameFile": "frames/frame_0069.jpg",
+        "timestampMs": 111395
+      },
+      {
+        "frameFile": "frames/frame_0070.jpg",
+        "timestampMs": 112712
+      },
+      {
+        "frameFile": "frames/frame_0071.jpg",
+        "timestampMs": 115000
+      },
+      {
+        "frameFile": "frames/frame_0072.jpg",
+        "timestampMs": 115632
+      },
+      {
+        "frameFile": "frames/frame_0073.jpg",
+        "timestampMs": 117950
+      },
+      {
+        "frameFile": "frames/frame_0074.jpg",
+        "timestampMs": 117951
+      },
+      {
+        "frameFile": "frames/frame_0075.jpg",
+        "timestampMs": 120000
+      },
+      {
+        "frameFile": "frames/frame_0076.jpg",
+        "timestampMs": 120052
+      },
+      {
+        "frameFile": "frames/frame_0077.jpg",
+        "timestampMs": 120053
+      },
+      {
+        "frameFile": "frames/frame_0078.jpg",
+        "timestampMs": 125000
+      },
+      {
+        "frameFile": "frames/frame_0079.jpg",
+        "timestampMs": 130000
+      },
+      {
+        "frameFile": "frames/frame_0080.jpg",
+        "timestampMs": 132398
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

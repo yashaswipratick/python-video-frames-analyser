@@ -1,0 +1,1158 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830123104_0221_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830123104_0221_D",
+    "durationMs": 29333,
+    "sha256": "814a55cfaa1267d6951b5aa67386086df49e7fcf1e74a4f554220509501024c9"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830123104_0221_D/analysis.json",
+    "transcriptJson": "DJI_20260830123104_0221_D/transcript.json",
+    "scenesJson": "DJI_20260830123104_0221_D/scenes.json",
+    "framesDirectory": "DJI_20260830123104_0221_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "54478583"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "hi",
+    "languageProbability": 0.5591593980789185,
+    "segments": [
+      {
+        "startMs": 4560,
+        "endMs": 24120,
+        "text": "हेलो फ्रेंड्स वेलकम तो अनदर ब्लॉग तो आज अपन कैला सगरी हिल्स जा रहे है बहुत फेमस टेमपल है वहाँ पे एक हिल्स के अंदर के अंदर एक टेमपल बना हुए है तो वहाँ पे सुना है कि एक आफ रोड ट्रेल भी है जहां यू कन टेक यूर कार्ड तू दो",
+        "avgLogprob": -0.16490616268581815,
+        "noSpeechProb": 4.816504972637858e-09,
+        "compressionRatio": 2.3636363636363638,
+        "words": [
+          {
+            "startMs": 4560,
+            "endMs": 5140,
+            "word": " हेलो",
+            "probability": 0.7264022305607796
+          },
+          {
+            "startMs": 5140,
+            "endMs": 5520,
+            "word": " फ्रेंड्स",
+            "probability": 0.9048315107822418
+          },
+          {
+            "startMs": 5520,
+            "endMs": 6040,
+            "word": " वेलकम",
+            "probability": 0.8390935063362122
+          },
+          {
+            "startMs": 6040,
+            "endMs": 6200,
+            "word": " तो",
+            "probability": 0.7291204531987509
+          },
+          {
+            "startMs": 6200,
+            "endMs": 6520,
+            "word": " अनदर",
+            "probability": 0.7524585127830505
+          },
+          {
+            "startMs": 6520,
+            "endMs": 6820,
+            "word": " ब्लॉग",
+            "probability": 0.9020539373159409
+          },
+          {
+            "startMs": 6820,
+            "endMs": 7520,
+            "word": " तो",
+            "probability": 0.932508111000061
+          },
+          {
+            "startMs": 7520,
+            "endMs": 8020,
+            "word": " आज",
+            "probability": 0.844759538769722
+          },
+          {
+            "startMs": 8020,
+            "endMs": 8500,
+            "word": " अपन",
+            "probability": 0.866719388961792
+          },
+          {
+            "startMs": 8500,
+            "endMs": 8900,
+            "word": " कैला",
+            "probability": 0.7719667553901672
+          },
+          {
+            "startMs": 8900,
+            "endMs": 9220,
+            "word": " सगरी",
+            "probability": 0.7335639595985413
+          },
+          {
+            "startMs": 9220,
+            "endMs": 9500,
+            "word": " हिल्स",
+            "probability": 0.8388829231262207
+          },
+          {
+            "startMs": 9500,
+            "endMs": 9740,
+            "word": " जा",
+            "probability": 0.9795439839363098
+          },
+          {
+            "startMs": 9740,
+            "endMs": 9860,
+            "word": " रहे",
+            "probability": 0.9770775437355042
+          },
+          {
+            "startMs": 9860,
+            "endMs": 9920,
+            "word": " है",
+            "probability": 0.9644695520401001
+          },
+          {
+            "startMs": 9920,
+            "endMs": 10940,
+            "word": " बहुत",
+            "probability": 0.9333223402500153
+          },
+          {
+            "startMs": 10940,
+            "endMs": 11260,
+            "word": " फेमस",
+            "probability": 0.8830832481384278
+          },
+          {
+            "startMs": 11260,
+            "endMs": 11620,
+            "word": " टेमपल",
+            "probability": 0.7480573313576835
+          },
+          {
+            "startMs": 11620,
+            "endMs": 11700,
+            "word": " है",
+            "probability": 0.8952261805534363
+          },
+          {
+            "startMs": 11700,
+            "endMs": 11940,
+            "word": " वहाँ",
+            "probability": 0.9281292061010996
+          },
+          {
+            "startMs": 11940,
+            "endMs": 12100,
+            "word": " पे",
+            "probability": 0.8478016058603922
+          },
+          {
+            "startMs": 12100,
+            "endMs": 12740,
+            "word": " एक",
+            "probability": 0.9714087843894958
+          },
+          {
+            "startMs": 12740,
+            "endMs": 13040,
+            "word": " हिल्स",
+            "probability": 0.9394734501838684
+          },
+          {
+            "startMs": 13040,
+            "endMs": 13180,
+            "word": " के",
+            "probability": 0.9785027205944061
+          },
+          {
+            "startMs": 13180,
+            "endMs": 13440,
+            "word": " अंदर",
+            "probability": 0.9708273609479269
+          },
+          {
+            "startMs": 13440,
+            "endMs": 13760,
+            "word": " के",
+            "probability": 0.9025978147983551
+          },
+          {
+            "startMs": 13760,
+            "endMs": 14560,
+            "word": " अंदर",
+            "probability": 0.9001206755638123
+          },
+          {
+            "startMs": 14560,
+            "endMs": 15060,
+            "word": " एक",
+            "probability": 0.9134082396825155
+          },
+          {
+            "startMs": 15060,
+            "endMs": 15360,
+            "word": " टेमपल",
+            "probability": 0.9563712307385036
+          },
+          {
+            "startMs": 15360,
+            "endMs": 15580,
+            "word": " बना",
+            "probability": 0.991301879286766
+          },
+          {
+            "startMs": 15580,
+            "endMs": 15740,
+            "word": " हुए",
+            "probability": 0.7939129948616028
+          },
+          {
+            "startMs": 15740,
+            "endMs": 15840,
+            "word": " है",
+            "probability": 0.9533263444900513
+          },
+          {
+            "startMs": 15840,
+            "endMs": 16100,
+            "word": " तो",
+            "probability": 0.9721395572026571
+          },
+          {
+            "startMs": 16100,
+            "endMs": 16620,
+            "word": " वहाँ",
+            "probability": 0.8826581537723541
+          },
+          {
+            "startMs": 16620,
+            "endMs": 16820,
+            "word": " पे",
+            "probability": 0.9211553732554117
+          },
+          {
+            "startMs": 16820,
+            "endMs": 18780,
+            "word": " सुना",
+            "probability": 0.9824051260948181
+          },
+          {
+            "startMs": 18780,
+            "endMs": 18920,
+            "word": " है",
+            "probability": 0.9859485030174255
+          },
+          {
+            "startMs": 18920,
+            "endMs": 19240,
+            "word": " कि",
+            "probability": 0.8648363947868347
+          },
+          {
+            "startMs": 19240,
+            "endMs": 19520,
+            "word": " एक",
+            "probability": 0.9781526128451029
+          },
+          {
+            "startMs": 19520,
+            "endMs": 19740,
+            "word": " आफ",
+            "probability": 0.8054303452372551
+          },
+          {
+            "startMs": 19740,
+            "endMs": 19960,
+            "word": " रोड",
+            "probability": 0.7432104229927063
+          },
+          {
+            "startMs": 19960,
+            "endMs": 20200,
+            "word": " ट्रेल",
+            "probability": 0.9227498769760132
+          },
+          {
+            "startMs": 20200,
+            "endMs": 20340,
+            "word": " भी",
+            "probability": 0.970520039399465
+          },
+          {
+            "startMs": 20340,
+            "endMs": 20500,
+            "word": " है",
+            "probability": 0.9846767783164978
+          },
+          {
+            "startMs": 20500,
+            "endMs": 20960,
+            "word": " जहां",
+            "probability": 0.9713304162025451
+          },
+          {
+            "startMs": 20960,
+            "endMs": 21100,
+            "word": " यू",
+            "probability": 0.8994405716657639
+          },
+          {
+            "startMs": 21100,
+            "endMs": 21220,
+            "word": " कन",
+            "probability": 0.6069099009037018
+          },
+          {
+            "startMs": 21220,
+            "endMs": 21480,
+            "word": " टेक",
+            "probability": 0.960143581032753
+          },
+          {
+            "startMs": 21480,
+            "endMs": 21620,
+            "word": " यूर",
+            "probability": 0.8752358317375183
+          },
+          {
+            "startMs": 21620,
+            "endMs": 22120,
+            "word": " कार्ड",
+            "probability": 0.7593560516834259
+          },
+          {
+            "startMs": 22120,
+            "endMs": 22280,
+            "word": " तू",
+            "probability": 0.6646301746368408
+          },
+          {
+            "startMs": 22280,
+            "endMs": 24120,
+            "word": " दो",
+            "probability": 0.694133480389913
+          }
+        ]
+      },
+      {
+        "startMs": 24120,
+        "endMs": 29300,
+        "text": "चलते हैं एक्स्प्लोर करते हैं देखते हैं कैला सगरी में क्या मिलेदा है कि आप आप आप आप आप आप आप आप आप आप",
+        "avgLogprob": -0.3419249476689213,
+        "noSpeechProb": 9.768502673423995e-10,
+        "compressionRatio": 2.2280701754385963,
+        "words": [
+          {
+            "startMs": 24120,
+            "endMs": 24900,
+            "word": " चलते",
+            "probability": 0.7753983929753303
+          },
+          {
+            "startMs": 24900,
+            "endMs": 25240,
+            "word": " हैं",
+            "probability": 0.99032062292099
+          },
+          {
+            "startMs": 25240,
+            "endMs": 25680,
+            "word": " एक्स्प्लोर",
+            "probability": 0.8060667638977369
+          },
+          {
+            "startMs": 25680,
+            "endMs": 26040,
+            "word": " करते",
+            "probability": 0.9871978014707565
+          },
+          {
+            "startMs": 26040,
+            "endMs": 26100,
+            "word": " हैं",
+            "probability": 0.8764696518580118
+          },
+          {
+            "startMs": 26100,
+            "endMs": 26520,
+            "word": " देखते",
+            "probability": 0.9375954100063869
+          },
+          {
+            "startMs": 26520,
+            "endMs": 26620,
+            "word": " हैं",
+            "probability": 0.9258659482002258
+          },
+          {
+            "startMs": 26620,
+            "endMs": 26960,
+            "word": " कैला",
+            "probability": 0.7103396616876125
+          },
+          {
+            "startMs": 26960,
+            "endMs": 27240,
+            "word": " सगरी",
+            "probability": 0.7428679168224335
+          },
+          {
+            "startMs": 27240,
+            "endMs": 27360,
+            "word": " में",
+            "probability": 0.9769600431124369
+          },
+          {
+            "startMs": 27360,
+            "endMs": 27520,
+            "word": " क्या",
+            "probability": 0.9790044873952866
+          },
+          {
+            "startMs": 27520,
+            "endMs": 27860,
+            "word": " मिलेदा",
+            "probability": 0.7229795019541468
+          },
+          {
+            "startMs": 27860,
+            "endMs": 27980,
+            "word": " है",
+            "probability": 0.9642525017261505
+          },
+          {
+            "startMs": 27980,
+            "endMs": 28320,
+            "word": " कि",
+            "probability": 0.31091392040252686
+          },
+          {
+            "startMs": 28320,
+            "endMs": 28800,
+            "word": " आप",
+            "probability": 0.3688422553241253
+          },
+          {
+            "startMs": 28800,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.6116771996021271
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.7731923609972
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.8476505726575851
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.8880116641521454
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.916199192404747
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.9108070582151413
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.9252668619155884
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.9348573535680771
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.93376325070858
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 28662,
+      "durationMs": 28662,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830123104_0221_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 30449,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830123104_0221_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 63001,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830123104_0221_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 62082,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 14331,
+      "frameFile": "DJI_20260830123104_0221_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 64359,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830123104_0221_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 66425,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830123104_0221_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 66288,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830123104_0221_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 62770,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 28661,
+      "frameFile": "DJI_20260830123104_0221_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 65487,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 29332,
+      "frameFile": "frames/frame_0009.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830123104_0221_D.MP4",
+    "durationMs": 29333,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 28662,
+        "durationMs": 28662,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 4560,
+        "endMs": 24120,
+        "text": "हेलो फ्रेंड्स वेलकम तो अनदर ब्लॉग तो आज अपन कैला सगरी हिल्स जा रहे है बहुत फेमस टेमपल है वहाँ पे एक हिल्स के अंदर के अंदर एक टेमपल बना हुए है तो वहाँ पे सुना है कि एक आफ रोड ट्रेल भी है जहां यू कन टेक यूर कार्ड तू दो",
+        "avgLogprob": -0.16490616268581815,
+        "noSpeechProb": 4.816504972637858e-09,
+        "compressionRatio": 2.3636363636363638,
+        "words": [
+          {
+            "startMs": 4560,
+            "endMs": 5140,
+            "word": " हेलो",
+            "probability": 0.7264022305607796
+          },
+          {
+            "startMs": 5140,
+            "endMs": 5520,
+            "word": " फ्रेंड्स",
+            "probability": 0.9048315107822418
+          },
+          {
+            "startMs": 5520,
+            "endMs": 6040,
+            "word": " वेलकम",
+            "probability": 0.8390935063362122
+          },
+          {
+            "startMs": 6040,
+            "endMs": 6200,
+            "word": " तो",
+            "probability": 0.7291204531987509
+          },
+          {
+            "startMs": 6200,
+            "endMs": 6520,
+            "word": " अनदर",
+            "probability": 0.7524585127830505
+          },
+          {
+            "startMs": 6520,
+            "endMs": 6820,
+            "word": " ब्लॉग",
+            "probability": 0.9020539373159409
+          },
+          {
+            "startMs": 6820,
+            "endMs": 7520,
+            "word": " तो",
+            "probability": 0.932508111000061
+          },
+          {
+            "startMs": 7520,
+            "endMs": 8020,
+            "word": " आज",
+            "probability": 0.844759538769722
+          },
+          {
+            "startMs": 8020,
+            "endMs": 8500,
+            "word": " अपन",
+            "probability": 0.866719388961792
+          },
+          {
+            "startMs": 8500,
+            "endMs": 8900,
+            "word": " कैला",
+            "probability": 0.7719667553901672
+          },
+          {
+            "startMs": 8900,
+            "endMs": 9220,
+            "word": " सगरी",
+            "probability": 0.7335639595985413
+          },
+          {
+            "startMs": 9220,
+            "endMs": 9500,
+            "word": " हिल्स",
+            "probability": 0.8388829231262207
+          },
+          {
+            "startMs": 9500,
+            "endMs": 9740,
+            "word": " जा",
+            "probability": 0.9795439839363098
+          },
+          {
+            "startMs": 9740,
+            "endMs": 9860,
+            "word": " रहे",
+            "probability": 0.9770775437355042
+          },
+          {
+            "startMs": 9860,
+            "endMs": 9920,
+            "word": " है",
+            "probability": 0.9644695520401001
+          },
+          {
+            "startMs": 9920,
+            "endMs": 10940,
+            "word": " बहुत",
+            "probability": 0.9333223402500153
+          },
+          {
+            "startMs": 10940,
+            "endMs": 11260,
+            "word": " फेमस",
+            "probability": 0.8830832481384278
+          },
+          {
+            "startMs": 11260,
+            "endMs": 11620,
+            "word": " टेमपल",
+            "probability": 0.7480573313576835
+          },
+          {
+            "startMs": 11620,
+            "endMs": 11700,
+            "word": " है",
+            "probability": 0.8952261805534363
+          },
+          {
+            "startMs": 11700,
+            "endMs": 11940,
+            "word": " वहाँ",
+            "probability": 0.9281292061010996
+          },
+          {
+            "startMs": 11940,
+            "endMs": 12100,
+            "word": " पे",
+            "probability": 0.8478016058603922
+          },
+          {
+            "startMs": 12100,
+            "endMs": 12740,
+            "word": " एक",
+            "probability": 0.9714087843894958
+          },
+          {
+            "startMs": 12740,
+            "endMs": 13040,
+            "word": " हिल्स",
+            "probability": 0.9394734501838684
+          },
+          {
+            "startMs": 13040,
+            "endMs": 13180,
+            "word": " के",
+            "probability": 0.9785027205944061
+          },
+          {
+            "startMs": 13180,
+            "endMs": 13440,
+            "word": " अंदर",
+            "probability": 0.9708273609479269
+          },
+          {
+            "startMs": 13440,
+            "endMs": 13760,
+            "word": " के",
+            "probability": 0.9025978147983551
+          },
+          {
+            "startMs": 13760,
+            "endMs": 14560,
+            "word": " अंदर",
+            "probability": 0.9001206755638123
+          },
+          {
+            "startMs": 14560,
+            "endMs": 15060,
+            "word": " एक",
+            "probability": 0.9134082396825155
+          },
+          {
+            "startMs": 15060,
+            "endMs": 15360,
+            "word": " टेमपल",
+            "probability": 0.9563712307385036
+          },
+          {
+            "startMs": 15360,
+            "endMs": 15580,
+            "word": " बना",
+            "probability": 0.991301879286766
+          },
+          {
+            "startMs": 15580,
+            "endMs": 15740,
+            "word": " हुए",
+            "probability": 0.7939129948616028
+          },
+          {
+            "startMs": 15740,
+            "endMs": 15840,
+            "word": " है",
+            "probability": 0.9533263444900513
+          },
+          {
+            "startMs": 15840,
+            "endMs": 16100,
+            "word": " तो",
+            "probability": 0.9721395572026571
+          },
+          {
+            "startMs": 16100,
+            "endMs": 16620,
+            "word": " वहाँ",
+            "probability": 0.8826581537723541
+          },
+          {
+            "startMs": 16620,
+            "endMs": 16820,
+            "word": " पे",
+            "probability": 0.9211553732554117
+          },
+          {
+            "startMs": 16820,
+            "endMs": 18780,
+            "word": " सुना",
+            "probability": 0.9824051260948181
+          },
+          {
+            "startMs": 18780,
+            "endMs": 18920,
+            "word": " है",
+            "probability": 0.9859485030174255
+          },
+          {
+            "startMs": 18920,
+            "endMs": 19240,
+            "word": " कि",
+            "probability": 0.8648363947868347
+          },
+          {
+            "startMs": 19240,
+            "endMs": 19520,
+            "word": " एक",
+            "probability": 0.9781526128451029
+          },
+          {
+            "startMs": 19520,
+            "endMs": 19740,
+            "word": " आफ",
+            "probability": 0.8054303452372551
+          },
+          {
+            "startMs": 19740,
+            "endMs": 19960,
+            "word": " रोड",
+            "probability": 0.7432104229927063
+          },
+          {
+            "startMs": 19960,
+            "endMs": 20200,
+            "word": " ट्रेल",
+            "probability": 0.9227498769760132
+          },
+          {
+            "startMs": 20200,
+            "endMs": 20340,
+            "word": " भी",
+            "probability": 0.970520039399465
+          },
+          {
+            "startMs": 20340,
+            "endMs": 20500,
+            "word": " है",
+            "probability": 0.9846767783164978
+          },
+          {
+            "startMs": 20500,
+            "endMs": 20960,
+            "word": " जहां",
+            "probability": 0.9713304162025451
+          },
+          {
+            "startMs": 20960,
+            "endMs": 21100,
+            "word": " यू",
+            "probability": 0.8994405716657639
+          },
+          {
+            "startMs": 21100,
+            "endMs": 21220,
+            "word": " कन",
+            "probability": 0.6069099009037018
+          },
+          {
+            "startMs": 21220,
+            "endMs": 21480,
+            "word": " टेक",
+            "probability": 0.960143581032753
+          },
+          {
+            "startMs": 21480,
+            "endMs": 21620,
+            "word": " यूर",
+            "probability": 0.8752358317375183
+          },
+          {
+            "startMs": 21620,
+            "endMs": 22120,
+            "word": " कार्ड",
+            "probability": 0.7593560516834259
+          },
+          {
+            "startMs": 22120,
+            "endMs": 22280,
+            "word": " तू",
+            "probability": 0.6646301746368408
+          },
+          {
+            "startMs": 22280,
+            "endMs": 24120,
+            "word": " दो",
+            "probability": 0.694133480389913
+          }
+        ]
+      },
+      {
+        "startMs": 24120,
+        "endMs": 29300,
+        "text": "चलते हैं एक्स्प्लोर करते हैं देखते हैं कैला सगरी में क्या मिलेदा है कि आप आप आप आप आप आप आप आप आप आप",
+        "avgLogprob": -0.3419249476689213,
+        "noSpeechProb": 9.768502673423995e-10,
+        "compressionRatio": 2.2280701754385963,
+        "words": [
+          {
+            "startMs": 24120,
+            "endMs": 24900,
+            "word": " चलते",
+            "probability": 0.7753983929753303
+          },
+          {
+            "startMs": 24900,
+            "endMs": 25240,
+            "word": " हैं",
+            "probability": 0.99032062292099
+          },
+          {
+            "startMs": 25240,
+            "endMs": 25680,
+            "word": " एक्स्प्लोर",
+            "probability": 0.8060667638977369
+          },
+          {
+            "startMs": 25680,
+            "endMs": 26040,
+            "word": " करते",
+            "probability": 0.9871978014707565
+          },
+          {
+            "startMs": 26040,
+            "endMs": 26100,
+            "word": " हैं",
+            "probability": 0.8764696518580118
+          },
+          {
+            "startMs": 26100,
+            "endMs": 26520,
+            "word": " देखते",
+            "probability": 0.9375954100063869
+          },
+          {
+            "startMs": 26520,
+            "endMs": 26620,
+            "word": " हैं",
+            "probability": 0.9258659482002258
+          },
+          {
+            "startMs": 26620,
+            "endMs": 26960,
+            "word": " कैला",
+            "probability": 0.7103396616876125
+          },
+          {
+            "startMs": 26960,
+            "endMs": 27240,
+            "word": " सगरी",
+            "probability": 0.7428679168224335
+          },
+          {
+            "startMs": 27240,
+            "endMs": 27360,
+            "word": " में",
+            "probability": 0.9769600431124369
+          },
+          {
+            "startMs": 27360,
+            "endMs": 27520,
+            "word": " क्या",
+            "probability": 0.9790044873952866
+          },
+          {
+            "startMs": 27520,
+            "endMs": 27860,
+            "word": " मिलेदा",
+            "probability": 0.7229795019541468
+          },
+          {
+            "startMs": 27860,
+            "endMs": 27980,
+            "word": " है",
+            "probability": 0.9642525017261505
+          },
+          {
+            "startMs": 27980,
+            "endMs": 28320,
+            "word": " कि",
+            "probability": 0.31091392040252686
+          },
+          {
+            "startMs": 28320,
+            "endMs": 28800,
+            "word": " आप",
+            "probability": 0.3688422553241253
+          },
+          {
+            "startMs": 28800,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.6116771996021271
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.7731923609972
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.8476505726575851
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.8880116641521454
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.916199192404747
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.9108070582151413
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.9252668619155884
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.9348573535680771
+          },
+          {
+            "startMs": 29300,
+            "endMs": 29300,
+            "word": " आप",
+            "probability": 0.93376325070858
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 14331
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 28661
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 29332
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

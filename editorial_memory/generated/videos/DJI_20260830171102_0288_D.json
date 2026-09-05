@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830171102_0288_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830171102_0288_D",
+    "durationMs": 10043,
+    "sha256": "68c6b109e6812c6851c6d298aeaccf0e1f0fcc28b311069268f836d322fc36af"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830171102_0288_D/analysis.json",
+    "transcriptJson": "DJI_20260830171102_0288_D/transcript.json",
+    "scenesJson": "DJI_20260830171102_0288_D/scenes.json",
+    "framesDirectory": "DJI_20260830171102_0288_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 1920,
+    "height": 1080,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": null,
+    "audioChannels": null,
+    "audioSampleRate": null,
+    "bitRate": "74055184"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": null,
+    "languageProbability": null,
+    "segments": []
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 10043,
+      "durationMs": 10043,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830171102_0288_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 58082,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830171102_0288_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 58860,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5021,
+      "frameFile": "DJI_20260830171102_0288_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 60770,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830171102_0288_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 60784,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10042,
+      "frameFile": "frames/frame_0005.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830171102_0288_D.MP4",
+    "durationMs": 10043,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 10043,
+        "durationMs": 10043,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      }
+    ],
+    "speechSegments": [],
+    "audio": {
+      "speechPresent": false,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 5021
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 10042
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

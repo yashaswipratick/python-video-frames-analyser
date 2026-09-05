@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830161224_0276_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830161224_0276_D",
+    "durationMs": 21655,
+    "sha256": "b6e21023084e722f69a820f2e7c0ec85953428f01783fafc3a524c70a3fe73ab"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830161224_0276_D/analysis.json",
+    "transcriptJson": "DJI_20260830161224_0276_D/transcript.json",
+    "scenesJson": "DJI_20260830161224_0276_D/scenes.json",
+    "framesDirectory": "DJI_20260830161224_0276_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "56100851"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.7295029163360596,
+    "segments": [
+      {
+        "startMs": 1890,
+        "endMs": 2910,
+        "text": "**Skete grudge, luchate, no!**",
+        "avgLogprob": -1.9633241619980126,
+        "noSpeechProb": 9.127811839704236e-10,
+        "compressionRatio": 2.2653061224489797,
+        "words": [
+          {
+            "startMs": 1890,
+            "endMs": 2330,
+            "word": " **Skete",
+            "probability": 0.020928182340867352
+          },
+          {
+            "startMs": 2330,
+            "endMs": 2330,
+            "word": " grudge,",
+            "probability": 0.0038850209675729275
+          },
+          {
+            "startMs": 2330,
+            "endMs": 2710,
+            "word": " luchate,",
+            "probability": 0.01192434838352104
+          },
+          {
+            "startMs": 2750,
+            "endMs": 2910,
+            "word": " no",
+            "probability": 0.0038377519231289625
+          },
+          {
+            "startMs": 2910,
+            "endMs": 2910,
+            "word": "!**",
+            "probability": 0.22912875714246184
+          }
+        ]
+      },
+      {
+        "startMs": 2910,
+        "endMs": 6690,
+        "text": "**Skete grudge, luchate, luchate!**",
+        "avgLogprob": -1.9633241619980126,
+        "noSpeechProb": 9.127811839704236e-10,
+        "compressionRatio": 2.2653061224489797,
+        "words": [
+          {
+            "startMs": 2910,
+            "endMs": 2950,
+            "word": " **Skete",
+            "probability": 0.7502261251211166
+          },
+          {
+            "startMs": 2950,
+            "endMs": 3170,
+            "word": " grudge,",
+            "probability": 0.9768714010715485
+          },
+          {
+            "startMs": 3210,
+            "endMs": 3650,
+            "word": " luchate,",
+            "probability": 0.7537226776281992
+          },
+          {
+            "startMs": 3690,
+            "endMs": 4130,
+            "word": " luchate",
+            "probability": 0.818018356959025
+          },
+          {
+            "startMs": 4130,
+            "endMs": 6690,
+            "word": "!**",
+            "probability": 0.3967331349849701
+          }
+        ]
+      },
+      {
+        "startMs": 9110,
+        "endMs": 11210,
+        "text": "**Skete grudge, luchate, luchate, luchate.**",
+        "avgLogprob": -1.9633241619980126,
+        "noSpeechProb": 9.127811839704236e-10,
+        "compressionRatio": 2.2653061224489797,
+        "words": [
+          {
+            "startMs": 9110,
+            "endMs": 9550,
+            "word": " **Skete",
+            "probability": 0.864529624581337
+          },
+          {
+            "startMs": 9550,
+            "endMs": 9570,
+            "word": " grudge,",
+            "probability": 0.9852555096149445
+          },
+          {
+            "startMs": 9570,
+            "endMs": 9570,
+            "word": " luchate,",
+            "probability": 0.9155134558677673
+          },
+          {
+            "startMs": 9650,
+            "endMs": 9810,
+            "word": " luchate,",
+            "probability": 0.9402923583984375
+          },
+          {
+            "startMs": 9810,
+            "endMs": 10290,
+            "word": " luchate",
+            "probability": 0.9496352473894755
+          },
+          {
+            "startMs": 10290,
+            "endMs": 11210,
+            "word": ".**",
+            "probability": 0.4490300305187702
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 1001,
+      "durationMs": 1001,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 2,
+      "startMs": 1001,
+      "endMs": 2536,
+      "durationMs": 1535,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 3,
+      "startMs": 2536,
+      "endMs": 21655,
+      "durationMs": 19119,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 152323,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 500,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 127378,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 1000,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 108032,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 1001,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 108032,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 1768,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 76175,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 2535,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 85048,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 2536,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 88274,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 101595,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 93096,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 12095,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 103017,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0011.jpg",
+      "exists": true,
+      "sizeBytes": 103905,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830161224_0276_D/frames/frame_0012.jpg",
+      "exists": true,
+      "sizeBytes": 114218,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 21654,
+      "frameFile": "frames/frame_0013.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830161224_0276_D.MP4",
+    "durationMs": 21655,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 1001,
+        "durationMs": 1001,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 2,
+        "startMs": 1001,
+        "endMs": 2536,
+        "durationMs": 1535,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 3,
+        "startMs": 2536,
+        "endMs": 21655,
+        "durationMs": 19119,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 1890,
+        "endMs": 2910,
+        "text": "**Skete grudge, luchate, no!**",
+        "avgLogprob": -1.9633241619980126,
+        "noSpeechProb": 9.127811839704236e-10,
+        "compressionRatio": 2.2653061224489797,
+        "words": [
+          {
+            "startMs": 1890,
+            "endMs": 2330,
+            "word": " **Skete",
+            "probability": 0.020928182340867352
+          },
+          {
+            "startMs": 2330,
+            "endMs": 2330,
+            "word": " grudge,",
+            "probability": 0.0038850209675729275
+          },
+          {
+            "startMs": 2330,
+            "endMs": 2710,
+            "word": " luchate,",
+            "probability": 0.01192434838352104
+          },
+          {
+            "startMs": 2750,
+            "endMs": 2910,
+            "word": " no",
+            "probability": 0.0038377519231289625
+          },
+          {
+            "startMs": 2910,
+            "endMs": 2910,
+            "word": "!**",
+            "probability": 0.22912875714246184
+          }
+        ]
+      },
+      {
+        "startMs": 2910,
+        "endMs": 6690,
+        "text": "**Skete grudge, luchate, luchate!**",
+        "avgLogprob": -1.9633241619980126,
+        "noSpeechProb": 9.127811839704236e-10,
+        "compressionRatio": 2.2653061224489797,
+        "words": [
+          {
+            "startMs": 2910,
+            "endMs": 2950,
+            "word": " **Skete",
+            "probability": 0.7502261251211166
+          },
+          {
+            "startMs": 2950,
+            "endMs": 3170,
+            "word": " grudge,",
+            "probability": 0.9768714010715485
+          },
+          {
+            "startMs": 3210,
+            "endMs": 3650,
+            "word": " luchate,",
+            "probability": 0.7537226776281992
+          },
+          {
+            "startMs": 3690,
+            "endMs": 4130,
+            "word": " luchate",
+            "probability": 0.818018356959025
+          },
+          {
+            "startMs": 4130,
+            "endMs": 6690,
+            "word": "!**",
+            "probability": 0.3967331349849701
+          }
+        ]
+      },
+      {
+        "startMs": 9110,
+        "endMs": 11210,
+        "text": "**Skete grudge, luchate, luchate, luchate.**",
+        "avgLogprob": -1.9633241619980126,
+        "noSpeechProb": 9.127811839704236e-10,
+        "compressionRatio": 2.2653061224489797,
+        "words": [
+          {
+            "startMs": 9110,
+            "endMs": 9550,
+            "word": " **Skete",
+            "probability": 0.864529624581337
+          },
+          {
+            "startMs": 9550,
+            "endMs": 9570,
+            "word": " grudge,",
+            "probability": 0.9852555096149445
+          },
+          {
+            "startMs": 9570,
+            "endMs": 9570,
+            "word": " luchate,",
+            "probability": 0.9155134558677673
+          },
+          {
+            "startMs": 9650,
+            "endMs": 9810,
+            "word": " luchate,",
+            "probability": 0.9402923583984375
+          },
+          {
+            "startMs": 9810,
+            "endMs": 10290,
+            "word": " luchate",
+            "probability": 0.9496352473894755
+          },
+          {
+            "startMs": 10290,
+            "endMs": 11210,
+            "word": ".**",
+            "probability": 0.4490300305187702
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 500
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 1000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 1001
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 1768
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 2535
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 2536
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 12095
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0013.jpg",
+        "timestampMs": 21654
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

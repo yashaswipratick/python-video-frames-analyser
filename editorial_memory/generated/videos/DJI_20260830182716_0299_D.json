@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830182716_0299_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830182716_0299_D",
+    "durationMs": 5013,
+    "sha256": "1294bb738b35c13c411b14bd53cc52e6c2957eaeb70c3e6877f74ad9a2b9e81b"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830182716_0299_D/analysis.json",
+    "transcriptJson": "DJI_20260830182716_0299_D/transcript.json",
+    "scenesJson": "DJI_20260830182716_0299_D/scenes.json",
+    "framesDirectory": "DJI_20260830182716_0299_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "51991139"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.9498097896575928,
+    "segments": [
+      {
+        "startMs": 940,
+        "endMs": 2200,
+        "text": "See you in the next one",
+        "avgLogprob": -0.19924579986504146,
+        "noSpeechProb": 1.2519277281519692e-10,
+        "compressionRatio": 0.7948717948717948,
+        "words": [
+          {
+            "startMs": 940,
+            "endMs": 1440,
+            "word": " See",
+            "probability": 0.813096284866333
+          },
+          {
+            "startMs": 1440,
+            "endMs": 1560,
+            "word": " you",
+            "probability": 0.9814795851707458
+          },
+          {
+            "startMs": 1560,
+            "endMs": 1660,
+            "word": " in",
+            "probability": 0.9848431348800659
+          },
+          {
+            "startMs": 1660,
+            "endMs": 1760,
+            "word": " the",
+            "probability": 0.9981077909469604
+          },
+          {
+            "startMs": 1760,
+            "endMs": 1980,
+            "word": " next",
+            "probability": 0.9978733062744141
+          },
+          {
+            "startMs": 1980,
+            "endMs": 2200,
+            "word": " one",
+            "probability": 0.9879838228225708
+          }
+        ]
+      },
+      {
+        "startMs": 3580,
+        "endMs": 4080,
+        "text": "Bye-bye",
+        "avgLogprob": -0.19924579986504146,
+        "noSpeechProb": 1.2519277281519692e-10,
+        "compressionRatio": 0.7948717948717948,
+        "words": [
+          {
+            "startMs": 3580,
+            "endMs": 3940,
+            "word": " Bye",
+            "probability": 0.24570514261722565
+          },
+          {
+            "startMs": 3940,
+            "endMs": 4080,
+            "word": "-bye",
+            "probability": 0.6491578072309494
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 5013,
+      "durationMs": 5013,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830182716_0299_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 81895,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 2506,
+      "frameFile": "DJI_20260830182716_0299_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 81684,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "frames/frame_0003.jpg",
+      "exists": false
+    },
+    {
+      "timestampMs": 5012,
+      "frameFile": "frames/frame_0004.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830182716_0299_D.MP4",
+    "durationMs": 5013,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 5013,
+        "durationMs": 5013,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 940,
+        "endMs": 2200,
+        "text": "See you in the next one",
+        "avgLogprob": -0.19924579986504146,
+        "noSpeechProb": 1.2519277281519692e-10,
+        "compressionRatio": 0.7948717948717948,
+        "words": [
+          {
+            "startMs": 940,
+            "endMs": 1440,
+            "word": " See",
+            "probability": 0.813096284866333
+          },
+          {
+            "startMs": 1440,
+            "endMs": 1560,
+            "word": " you",
+            "probability": 0.9814795851707458
+          },
+          {
+            "startMs": 1560,
+            "endMs": 1660,
+            "word": " in",
+            "probability": 0.9848431348800659
+          },
+          {
+            "startMs": 1660,
+            "endMs": 1760,
+            "word": " the",
+            "probability": 0.9981077909469604
+          },
+          {
+            "startMs": 1760,
+            "endMs": 1980,
+            "word": " next",
+            "probability": 0.9978733062744141
+          },
+          {
+            "startMs": 1980,
+            "endMs": 2200,
+            "word": " one",
+            "probability": 0.9879838228225708
+          }
+        ]
+      },
+      {
+        "startMs": 3580,
+        "endMs": 4080,
+        "text": "Bye-bye",
+        "avgLogprob": -0.19924579986504146,
+        "noSpeechProb": 1.2519277281519692e-10,
+        "compressionRatio": 0.7948717948717948,
+        "words": [
+          {
+            "startMs": 3580,
+            "endMs": 3940,
+            "word": " Bye",
+            "probability": 0.24570514261722565
+          },
+          {
+            "startMs": 3940,
+            "endMs": 4080,
+            "word": "-bye",
+            "probability": 0.6491578072309494
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 2506
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 5012
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

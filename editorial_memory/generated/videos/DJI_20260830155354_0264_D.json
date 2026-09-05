@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830155354_0264_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830155354_0264_D",
+    "durationMs": 13973,
+    "sha256": "16a873610bbf5dea0918884d871a7fe964e5a9804ca9f1bae7dea57fac7ae698"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830155354_0264_D/analysis.json",
+    "transcriptJson": "DJI_20260830155354_0264_D/transcript.json",
+    "scenesJson": "DJI_20260830155354_0264_D/scenes.json",
+    "framesDirectory": "DJI_20260830155354_0264_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "53487675"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.3491683602333069,
+    "segments": [
+      {
+        "startMs": 20,
+        "endMs": 11920,
+        "text": "Thank you so much for joining us.",
+        "avgLogprob": -1.237985979426991,
+        "noSpeechProb": 1.3829129508202698e-10,
+        "compressionRatio": 0.8048780487804879,
+        "words": [
+          {
+            "startMs": 20,
+            "endMs": 420,
+            "word": " Thank",
+            "probability": 0.045547474175691605
+          },
+          {
+            "startMs": 420,
+            "endMs": 740,
+            "word": " you",
+            "probability": 0.9928970336914062
+          },
+          {
+            "startMs": 740,
+            "endMs": 960,
+            "word": " so",
+            "probability": 0.07783137261867523
+          },
+          {
+            "startMs": 960,
+            "endMs": 7460,
+            "word": " much",
+            "probability": 0.9934773445129395
+          },
+          {
+            "startMs": 7460,
+            "endMs": 7840,
+            "word": " for",
+            "probability": 0.30146104097366333
+          },
+          {
+            "startMs": 7840,
+            "endMs": 11460,
+            "word": " joining",
+            "probability": 0.1236865445971489
+          },
+          {
+            "startMs": 11460,
+            "endMs": 11920,
+            "word": " us.",
+            "probability": 0.704003632068634
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 12079,
+      "durationMs": 12079,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 2,
+      "startMs": 12079,
+      "endMs": 13947,
+      "durationMs": 1868,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830155354_0264_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 55607,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830155354_0264_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 130584,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 6039,
+      "frameFile": "DJI_20260830155354_0264_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 97351,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830155354_0264_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 128802,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 12078,
+      "frameFile": "DJI_20260830155354_0264_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 28252,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 12079,
+      "frameFile": "DJI_20260830155354_0264_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 26656,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 13013,
+      "frameFile": "DJI_20260830155354_0264_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 33331,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 13946,
+      "frameFile": "frames/frame_0008.jpg",
+      "exists": false
+    },
+    {
+      "timestampMs": 13972,
+      "frameFile": "frames/frame_0009.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830155354_0264_D.MP4",
+    "durationMs": 13973,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 12079,
+        "durationMs": 12079,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 2,
+        "startMs": 12079,
+        "endMs": 13947,
+        "durationMs": 1868,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 20,
+        "endMs": 11920,
+        "text": "Thank you so much for joining us.",
+        "avgLogprob": -1.237985979426991,
+        "noSpeechProb": 1.3829129508202698e-10,
+        "compressionRatio": 0.8048780487804879,
+        "words": [
+          {
+            "startMs": 20,
+            "endMs": 420,
+            "word": " Thank",
+            "probability": 0.045547474175691605
+          },
+          {
+            "startMs": 420,
+            "endMs": 740,
+            "word": " you",
+            "probability": 0.9928970336914062
+          },
+          {
+            "startMs": 740,
+            "endMs": 960,
+            "word": " so",
+            "probability": 0.07783137261867523
+          },
+          {
+            "startMs": 960,
+            "endMs": 7460,
+            "word": " much",
+            "probability": 0.9934773445129395
+          },
+          {
+            "startMs": 7460,
+            "endMs": 7840,
+            "word": " for",
+            "probability": 0.30146104097366333
+          },
+          {
+            "startMs": 7840,
+            "endMs": 11460,
+            "word": " joining",
+            "probability": 0.1236865445971489
+          },
+          {
+            "startMs": 11460,
+            "endMs": 11920,
+            "word": " us.",
+            "probability": 0.704003632068634
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 6039
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 12078
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 12079
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 13013
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 13946
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 13972
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

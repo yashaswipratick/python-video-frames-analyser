@@ -1,0 +1,724 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830140709_0230_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830140709_0230_D",
+    "durationMs": 24958,
+    "sha256": "2fd4e85d0a2090a9e3cab017b93b64f16396790204995700e2e2a0dbe8c1866f"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830140709_0230_D/analysis.json",
+    "transcriptJson": "DJI_20260830140709_0230_D/transcript.json",
+    "scenesJson": "DJI_20260830140709_0230_D/scenes.json",
+    "framesDirectory": "DJI_20260830140709_0230_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "56111689"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.6732948422431946,
+    "segments": [
+      {
+        "startMs": 0,
+        "endMs": 980,
+        "text": "This is a swap.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 0,
+            "endMs": 420,
+            "word": " This",
+            "probability": 0.17856378853321075
+          },
+          {
+            "startMs": 420,
+            "endMs": 420,
+            "word": " is",
+            "probability": 0.6889506578445435
+          },
+          {
+            "startMs": 420,
+            "endMs": 560,
+            "word": " a",
+            "probability": 0.32721424102783203
+          },
+          {
+            "startMs": 560,
+            "endMs": 980,
+            "word": " swap.",
+            "probability": 0.8548005819320679
+          }
+        ]
+      },
+      {
+        "startMs": 1380,
+        "endMs": 2160,
+        "text": "It's on the left side.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 1380,
+            "endMs": 1720,
+            "word": " It's",
+            "probability": 0.30809593200683594
+          },
+          {
+            "startMs": 1720,
+            "endMs": 1780,
+            "word": " on",
+            "probability": 0.44710561633110046
+          },
+          {
+            "startMs": 1780,
+            "endMs": 1780,
+            "word": " the",
+            "probability": 0.9252071380615234
+          },
+          {
+            "startMs": 1780,
+            "endMs": 1980,
+            "word": " left",
+            "probability": 0.978350043296814
+          },
+          {
+            "startMs": 1980,
+            "endMs": 2160,
+            "word": " side.",
+            "probability": 0.9454526305198669
+          }
+        ]
+      },
+      {
+        "startMs": 2880,
+        "endMs": 6940,
+        "text": "We have to eat idli here.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 2880,
+            "endMs": 3460,
+            "word": " We",
+            "probability": 0.6978625059127808
+          },
+          {
+            "startMs": 3460,
+            "endMs": 3800,
+            "word": " have",
+            "probability": 0.09380289912223816
+          },
+          {
+            "startMs": 3800,
+            "endMs": 3880,
+            "word": " to",
+            "probability": 0.17000804841518402
+          },
+          {
+            "startMs": 3880,
+            "endMs": 5860,
+            "word": " eat",
+            "probability": 0.5235216021537781
+          },
+          {
+            "startMs": 5860,
+            "endMs": 6900,
+            "word": " idli",
+            "probability": 0.396532753482461
+          },
+          {
+            "startMs": 6900,
+            "endMs": 6940,
+            "word": " here.",
+            "probability": 0.38289952278137207
+          }
+        ]
+      },
+      {
+        "startMs": 7840,
+        "endMs": 9500,
+        "text": "It's a good idli.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 7840,
+            "endMs": 8600,
+            "word": " It's",
+            "probability": 0.36957941949367523
+          },
+          {
+            "startMs": 8600,
+            "endMs": 8720,
+            "word": " a",
+            "probability": 0.2791235148906708
+          },
+          {
+            "startMs": 8720,
+            "endMs": 8780,
+            "word": " good",
+            "probability": 0.18157044053077698
+          },
+          {
+            "startMs": 8780,
+            "endMs": 9500,
+            "word": " idli.",
+            "probability": 0.6262233108282089
+          }
+        ]
+      },
+      {
+        "startMs": 9740,
+        "endMs": 10840,
+        "text": "It's a local truck.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 9740,
+            "endMs": 10120,
+            "word": " It's",
+            "probability": 0.5414631366729736
+          },
+          {
+            "startMs": 10120,
+            "endMs": 10160,
+            "word": " a",
+            "probability": 0.7878381013870239
+          },
+          {
+            "startMs": 10160,
+            "endMs": 10280,
+            "word": " local",
+            "probability": 0.9145376682281494
+          },
+          {
+            "startMs": 10280,
+            "endMs": 10840,
+            "word": " truck.",
+            "probability": 0.9083343744277954
+          }
+        ]
+      },
+      {
+        "startMs": 17300,
+        "endMs": 18660,
+        "text": "Seray Punjab.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 17300,
+            "endMs": 18060,
+            "word": " Seray",
+            "probability": 0.071735137142241
+          },
+          {
+            "startMs": 18060,
+            "endMs": 18660,
+            "word": " Punjab.",
+            "probability": 0.9246377944946289
+          }
+        ]
+      },
+      {
+        "startMs": 19380,
+        "endMs": 20300,
+        "text": "Seray Punjab.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 19380,
+            "endMs": 19920,
+            "word": " Seray",
+            "probability": 0.5889587551355362
+          },
+          {
+            "startMs": 19920,
+            "endMs": 20300,
+            "word": " Punjab.",
+            "probability": 0.9914548695087433
+          }
+        ]
+      },
+      {
+        "startMs": 20420,
+        "endMs": 21620,
+        "text": "Seray Punjab is here.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 20420,
+            "endMs": 20980,
+            "word": " Seray",
+            "probability": 0.6621515452861786
+          },
+          {
+            "startMs": 20980,
+            "endMs": 21340,
+            "word": " Punjab",
+            "probability": 0.9915180802345276
+          },
+          {
+            "startMs": 21340,
+            "endMs": 21420,
+            "word": " is",
+            "probability": 0.2718224823474884
+          },
+          {
+            "startMs": 21420,
+            "endMs": 21620,
+            "word": " here.",
+            "probability": 0.06794742494821548
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 24958,
+      "durationMs": 24958,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830140709_0230_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 83943,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830140709_0230_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 80995,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830140709_0230_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 72899,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 12479,
+      "frameFile": "DJI_20260830140709_0230_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 77354,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830140709_0230_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 92144,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830140709_0230_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 86396,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 24957,
+      "frameFile": "frames/frame_0007.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830140709_0230_D.MP4",
+    "durationMs": 24958,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 24958,
+        "durationMs": 24958,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 0,
+        "endMs": 980,
+        "text": "This is a swap.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 0,
+            "endMs": 420,
+            "word": " This",
+            "probability": 0.17856378853321075
+          },
+          {
+            "startMs": 420,
+            "endMs": 420,
+            "word": " is",
+            "probability": 0.6889506578445435
+          },
+          {
+            "startMs": 420,
+            "endMs": 560,
+            "word": " a",
+            "probability": 0.32721424102783203
+          },
+          {
+            "startMs": 560,
+            "endMs": 980,
+            "word": " swap.",
+            "probability": 0.8548005819320679
+          }
+        ]
+      },
+      {
+        "startMs": 1380,
+        "endMs": 2160,
+        "text": "It's on the left side.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 1380,
+            "endMs": 1720,
+            "word": " It's",
+            "probability": 0.30809593200683594
+          },
+          {
+            "startMs": 1720,
+            "endMs": 1780,
+            "word": " on",
+            "probability": 0.44710561633110046
+          },
+          {
+            "startMs": 1780,
+            "endMs": 1780,
+            "word": " the",
+            "probability": 0.9252071380615234
+          },
+          {
+            "startMs": 1780,
+            "endMs": 1980,
+            "word": " left",
+            "probability": 0.978350043296814
+          },
+          {
+            "startMs": 1980,
+            "endMs": 2160,
+            "word": " side.",
+            "probability": 0.9454526305198669
+          }
+        ]
+      },
+      {
+        "startMs": 2880,
+        "endMs": 6940,
+        "text": "We have to eat idli here.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 2880,
+            "endMs": 3460,
+            "word": " We",
+            "probability": 0.6978625059127808
+          },
+          {
+            "startMs": 3460,
+            "endMs": 3800,
+            "word": " have",
+            "probability": 0.09380289912223816
+          },
+          {
+            "startMs": 3800,
+            "endMs": 3880,
+            "word": " to",
+            "probability": 0.17000804841518402
+          },
+          {
+            "startMs": 3880,
+            "endMs": 5860,
+            "word": " eat",
+            "probability": 0.5235216021537781
+          },
+          {
+            "startMs": 5860,
+            "endMs": 6900,
+            "word": " idli",
+            "probability": 0.396532753482461
+          },
+          {
+            "startMs": 6900,
+            "endMs": 6940,
+            "word": " here.",
+            "probability": 0.38289952278137207
+          }
+        ]
+      },
+      {
+        "startMs": 7840,
+        "endMs": 9500,
+        "text": "It's a good idli.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 7840,
+            "endMs": 8600,
+            "word": " It's",
+            "probability": 0.36957941949367523
+          },
+          {
+            "startMs": 8600,
+            "endMs": 8720,
+            "word": " a",
+            "probability": 0.2791235148906708
+          },
+          {
+            "startMs": 8720,
+            "endMs": 8780,
+            "word": " good",
+            "probability": 0.18157044053077698
+          },
+          {
+            "startMs": 8780,
+            "endMs": 9500,
+            "word": " idli.",
+            "probability": 0.6262233108282089
+          }
+        ]
+      },
+      {
+        "startMs": 9740,
+        "endMs": 10840,
+        "text": "It's a local truck.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 9740,
+            "endMs": 10120,
+            "word": " It's",
+            "probability": 0.5414631366729736
+          },
+          {
+            "startMs": 10120,
+            "endMs": 10160,
+            "word": " a",
+            "probability": 0.7878381013870239
+          },
+          {
+            "startMs": 10160,
+            "endMs": 10280,
+            "word": " local",
+            "probability": 0.9145376682281494
+          },
+          {
+            "startMs": 10280,
+            "endMs": 10840,
+            "word": " truck.",
+            "probability": 0.9083343744277954
+          }
+        ]
+      },
+      {
+        "startMs": 17300,
+        "endMs": 18660,
+        "text": "Seray Punjab.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 17300,
+            "endMs": 18060,
+            "word": " Seray",
+            "probability": 0.071735137142241
+          },
+          {
+            "startMs": 18060,
+            "endMs": 18660,
+            "word": " Punjab.",
+            "probability": 0.9246377944946289
+          }
+        ]
+      },
+      {
+        "startMs": 19380,
+        "endMs": 20300,
+        "text": "Seray Punjab.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 19380,
+            "endMs": 19920,
+            "word": " Seray",
+            "probability": 0.5889587551355362
+          },
+          {
+            "startMs": 19920,
+            "endMs": 20300,
+            "word": " Punjab.",
+            "probability": 0.9914548695087433
+          }
+        ]
+      },
+      {
+        "startMs": 20420,
+        "endMs": 21620,
+        "text": "Seray Punjab is here.",
+        "avgLogprob": -0.7459110163930637,
+        "noSpeechProb": 3.609314180863521e-09,
+        "compressionRatio": 1.4205607476635513,
+        "words": [
+          {
+            "startMs": 20420,
+            "endMs": 20980,
+            "word": " Seray",
+            "probability": 0.6621515452861786
+          },
+          {
+            "startMs": 20980,
+            "endMs": 21340,
+            "word": " Punjab",
+            "probability": 0.9915180802345276
+          },
+          {
+            "startMs": 21340,
+            "endMs": 21420,
+            "word": " is",
+            "probability": 0.2718224823474884
+          },
+          {
+            "startMs": 21420,
+            "endMs": 21620,
+            "word": " here.",
+            "probability": 0.06794742494821548
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 12479
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 24957
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

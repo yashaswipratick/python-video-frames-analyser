@@ -1,0 +1,3691 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830154154_0255_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830154154_0255_D",
+    "durationMs": 221722,
+    "sha256": "cce2ab93b27829b699e6b6eea2fd74d3f2081832a500d96dbc12e9deff31939e"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830154154_0255_D/analysis.json",
+    "transcriptJson": "DJI_20260830154154_0255_D/transcript.json",
+    "scenesJson": "DJI_20260830154154_0255_D/scenes.json",
+    "framesDirectory": "DJI_20260830154154_0255_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "55758980"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.6565483808517456,
+    "segments": [
+      {
+        "startMs": 11180,
+        "endMs": 15740,
+        "text": "Which organization is this?",
+        "avgLogprob": -0.7738468738702627,
+        "noSpeechProb": 2.0970816194676445e-07,
+        "compressionRatio": 1.125,
+        "words": [
+          {
+            "startMs": 11180,
+            "endMs": 12580,
+            "word": " Which",
+            "probability": 0.24195799231529236
+          },
+          {
+            "startMs": 14720,
+            "endMs": 15280,
+            "word": " organization",
+            "probability": 0.7762933969497681
+          },
+          {
+            "startMs": 15280,
+            "endMs": 15580,
+            "word": " is",
+            "probability": 0.741712212562561
+          },
+          {
+            "startMs": 15580,
+            "endMs": 15740,
+            "word": " this?",
+            "probability": 0.9133113622665405
+          }
+        ]
+      },
+      {
+        "startMs": 17080,
+        "endMs": 17680,
+        "text": "Which organization?",
+        "avgLogprob": -0.7738468738702627,
+        "noSpeechProb": 2.0970816194676445e-07,
+        "compressionRatio": 1.125,
+        "words": [
+          {
+            "startMs": 17080,
+            "endMs": 17080,
+            "word": " Which",
+            "probability": 0.11310479789972305
+          },
+          {
+            "startMs": 17080,
+            "endMs": 17680,
+            "word": " organization?",
+            "probability": 0.9733484387397766
+          }
+        ]
+      },
+      {
+        "startMs": 23340,
+        "endMs": 24740,
+        "text": "SPYSY",
+        "avgLogprob": -0.7738468738702627,
+        "noSpeechProb": 2.0970816194676445e-07,
+        "compressionRatio": 1.125,
+        "words": [
+          {
+            "startMs": 23340,
+            "endMs": 24740,
+            "word": " SPYSY",
+            "probability": 0.5182548370212317
+          }
+        ]
+      },
+      {
+        "startMs": 24740,
+        "endMs": 26560,
+        "text": "Patanjali",
+        "avgLogprob": -0.7738468738702627,
+        "noSpeechProb": 2.0970816194676445e-07,
+        "compressionRatio": 1.125,
+        "words": [
+          {
+            "startMs": 24740,
+            "endMs": 26560,
+            "word": " Patanjali",
+            "probability": 0.7357544470578432
+          }
+        ]
+      },
+      {
+        "startMs": 34580,
+        "endMs": 35980,
+        "text": "MySour",
+        "avgLogprob": -0.9427554077572293,
+        "noSpeechProb": 6.182451439684655e-09,
+        "compressionRatio": 1.0,
+        "words": [
+          {
+            "startMs": 34580,
+            "endMs": 35980,
+            "word": " MySour",
+            "probability": 0.08289806544780731
+          }
+        ]
+      },
+      {
+        "startMs": 36560,
+        "endMs": 39960,
+        "text": "Thank you",
+        "avgLogprob": -0.9427554077572293,
+        "noSpeechProb": 6.182451439684655e-09,
+        "compressionRatio": 1.0,
+        "words": [
+          {
+            "startMs": 36560,
+            "endMs": 37380,
+            "word": " Thank",
+            "probability": 0.03726690262556076
+          },
+          {
+            "startMs": 37380,
+            "endMs": 39960,
+            "word": " you",
+            "probability": 0.8841741681098938
+          }
+        ]
+      },
+      {
+        "startMs": 39960,
+        "endMs": 45520,
+        "text": "What is this?",
+        "avgLogprob": -0.9427554077572293,
+        "noSpeechProb": 6.182451439684655e-09,
+        "compressionRatio": 1.0,
+        "words": [
+          {
+            "startMs": 39960,
+            "endMs": 40200,
+            "word": " What",
+            "probability": 0.012792916037142277
+          },
+          {
+            "startMs": 43020,
+            "endMs": 45520,
+            "word": " is",
+            "probability": 0.3053409159183502
+          },
+          {
+            "startMs": 45520,
+            "endMs": 45520,
+            "word": " this?",
+            "probability": 0.3264828026294708
+          }
+        ]
+      },
+      {
+        "startMs": 46020,
+        "endMs": 48440,
+        "text": "I have a trip to Karnataka",
+        "avgLogprob": -0.9427554077572293,
+        "noSpeechProb": 6.182451439684655e-09,
+        "compressionRatio": 1.0,
+        "words": [
+          {
+            "startMs": 46020,
+            "endMs": 46720,
+            "word": " I",
+            "probability": 0.14534969627857208
+          },
+          {
+            "startMs": 46720,
+            "endMs": 47380,
+            "word": " have",
+            "probability": 0.17229945957660675
+          },
+          {
+            "startMs": 47380,
+            "endMs": 47380,
+            "word": " a",
+            "probability": 0.20520319044589996
+          },
+          {
+            "startMs": 47380,
+            "endMs": 47760,
+            "word": " trip",
+            "probability": 0.3467331528663635
+          },
+          {
+            "startMs": 47760,
+            "endMs": 47760,
+            "word": " to",
+            "probability": 0.27530163526535034
+          },
+          {
+            "startMs": 47760,
+            "endMs": 48440,
+            "word": " Karnataka",
+            "probability": 0.7838518247008324
+          }
+        ]
+      },
+      {
+        "startMs": 50060,
+        "endMs": 53700,
+        "text": "Where is Kaira?",
+        "avgLogprob": -0.9427554077572293,
+        "noSpeechProb": 6.182451439684655e-09,
+        "compressionRatio": 1.0,
+        "words": [
+          {
+            "startMs": 50060,
+            "endMs": 51460,
+            "word": " Where",
+            "probability": 0.05080703645944595
+          },
+          {
+            "startMs": 51460,
+            "endMs": 52860,
+            "word": " is",
+            "probability": 0.5112133622169495
+          },
+          {
+            "startMs": 52860,
+            "endMs": 53700,
+            "word": " Kaira?",
+            "probability": 0.26079340899984044
+          }
+        ]
+      },
+      {
+        "startMs": 53700,
+        "endMs": 54400,
+        "text": "We are from Kaira",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 53700,
+            "endMs": 53960,
+            "word": " We",
+            "probability": 0.0015954331029206514
+          },
+          {
+            "startMs": 53960,
+            "endMs": 53960,
+            "word": " are",
+            "probability": 0.25062721967697144
+          },
+          {
+            "startMs": 53960,
+            "endMs": 54120,
+            "word": " from",
+            "probability": 0.025087594985961914
+          },
+          {
+            "startMs": 54120,
+            "endMs": 54400,
+            "word": " Kaira",
+            "probability": 0.13303708471357822
+          }
+        ]
+      },
+      {
+        "startMs": 55600,
+        "endMs": 57440,
+        "text": "Yes, in Kaira",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 55600,
+            "endMs": 56000,
+            "word": " Yes,",
+            "probability": 8.956899546319619e-05
+          },
+          {
+            "startMs": 57020,
+            "endMs": 57040,
+            "word": " in",
+            "probability": 0.009994563646614552
+          },
+          {
+            "startMs": 57040,
+            "endMs": 57440,
+            "word": " Kaira",
+            "probability": 0.7916731635729471
+          }
+        ]
+      },
+      {
+        "startMs": 57440,
+        "endMs": 58740,
+        "text": "Right now",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 57440,
+            "endMs": 58720,
+            "word": " Right",
+            "probability": 0.0010547528509050608
+          },
+          {
+            "startMs": 58720,
+            "endMs": 58740,
+            "word": " now",
+            "probability": 0.04363017901778221
+          }
+        ]
+      },
+      {
+        "startMs": 59340,
+        "endMs": 59740,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 59340,
+            "endMs": 59740,
+            "word": " Isha",
+            "probability": 0.3213891088962555
+          }
+        ]
+      },
+      {
+        "startMs": 60700,
+        "endMs": 61280,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 60700,
+            "endMs": 61280,
+            "word": " Isha",
+            "probability": 0.51816775649786
+          }
+        ]
+      },
+      {
+        "startMs": 61280,
+        "endMs": 62100,
+        "text": "Isha foundation",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 61280,
+            "endMs": 62100,
+            "word": " Isha",
+            "probability": 0.5186271853744984
+          },
+          {
+            "startMs": 62100,
+            "endMs": 62100,
+            "word": " foundation",
+            "probability": 0.13483236730098724
+          }
+        ]
+      },
+      {
+        "startMs": 62700,
+        "endMs": 63140,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 62700,
+            "endMs": 63140,
+            "word": " Isha",
+            "probability": 0.5234702229499817
+          }
+        ]
+      },
+      {
+        "startMs": 63140,
+        "endMs": 63440,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 63140,
+            "endMs": 63440,
+            "word": " Isha",
+            "probability": 0.543618768453598
+          }
+        ]
+      },
+      {
+        "startMs": 63440,
+        "endMs": 63840,
+        "text": "It is more of a",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 63440,
+            "endMs": 63440,
+            "word": " It",
+            "probability": 0.029672440141439438
+          },
+          {
+            "startMs": 63440,
+            "endMs": 63440,
+            "word": " is",
+            "probability": 0.3929201066493988
+          },
+          {
+            "startMs": 63440,
+            "endMs": 63440,
+            "word": " more",
+            "probability": 0.002611821750178933
+          },
+          {
+            "startMs": 63440,
+            "endMs": 63840,
+            "word": " of",
+            "probability": 0.2752821445465088
+          },
+          {
+            "startMs": 63840,
+            "endMs": 63840,
+            "word": " a",
+            "probability": 0.1526428610086441
+          }
+        ]
+      },
+      {
+        "startMs": 67950,
+        "endMs": 68750,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 67950,
+            "endMs": 68750,
+            "word": " Isha",
+            "probability": 0.4983232336817309
+          }
+        ]
+      },
+      {
+        "startMs": 71380,
+        "endMs": 71940,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 71380,
+            "endMs": 71940,
+            "word": " Isha",
+            "probability": 0.5445637740194798
+          }
+        ]
+      },
+      {
+        "startMs": 71940,
+        "endMs": 72120,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 71940,
+            "endMs": 72120,
+            "word": " Isha",
+            "probability": 0.5224701687693596
+          }
+        ]
+      },
+      {
+        "startMs": 72120,
+        "endMs": 72200,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 72120,
+            "endMs": 72200,
+            "word": " Isha",
+            "probability": 0.5227834321558475
+          }
+        ]
+      },
+      {
+        "startMs": 72200,
+        "endMs": 72220,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 72200,
+            "endMs": 72220,
+            "word": " Isha",
+            "probability": 0.5815310850739479
+          }
+        ]
+      },
+      {
+        "startMs": 72220,
+        "endMs": 72600,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 72220,
+            "endMs": 72600,
+            "word": " Isha",
+            "probability": 0.5831789299845695
+          }
+        ]
+      },
+      {
+        "startMs": 72600,
+        "endMs": 72740,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 72600,
+            "endMs": 72740,
+            "word": " Isha",
+            "probability": 0.7134206891059875
+          }
+        ]
+      },
+      {
+        "startMs": 72740,
+        "endMs": 72820,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 72740,
+            "endMs": 72820,
+            "word": " Isha",
+            "probability": 0.7784731984138489
+          }
+        ]
+      },
+      {
+        "startMs": 73840,
+        "endMs": 74640,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 73840,
+            "endMs": 74640,
+            "word": " Isha",
+            "probability": 0.766078770160675
+          }
+        ]
+      },
+      {
+        "startMs": 74640,
+        "endMs": 75180,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 74640,
+            "endMs": 75180,
+            "word": " Isha",
+            "probability": 0.7894656360149384
+          }
+        ]
+      },
+      {
+        "startMs": 112440,
+        "endMs": 113240,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 112440,
+            "endMs": 113240,
+            "word": " Isha",
+            "probability": 0.8459146022796631
+          }
+        ]
+      },
+      {
+        "startMs": 113240,
+        "endMs": 114380,
+        "text": "I don't want to stay strong.",
+        "avgLogprob": -0.5368405840613625,
+        "noSpeechProb": 5.27529631089152e-10,
+        "compressionRatio": 1.278688524590164,
+        "words": [
+          {
+            "startMs": 113240,
+            "endMs": 113320,
+            "word": " I",
+            "probability": 0.03964816406369209
+          },
+          {
+            "startMs": 113320,
+            "endMs": 113500,
+            "word": " don't",
+            "probability": 0.5201279129832983
+          },
+          {
+            "startMs": 113500,
+            "endMs": 113500,
+            "word": " want",
+            "probability": 0.10184898227453232
+          },
+          {
+            "startMs": 113500,
+            "endMs": 113780,
+            "word": " to",
+            "probability": 0.7606521248817444
+          },
+          {
+            "startMs": 113780,
+            "endMs": 113940,
+            "word": " stay",
+            "probability": 0.08368735760450363
+          },
+          {
+            "startMs": 113940,
+            "endMs": 114380,
+            "word": " strong.",
+            "probability": 0.09248360991477966
+          }
+        ]
+      },
+      {
+        "startMs": 142700,
+        "endMs": 144920,
+        "text": "Bro, it's so, so much crowded.",
+        "avgLogprob": -0.5368405840613625,
+        "noSpeechProb": 5.27529631089152e-10,
+        "compressionRatio": 1.278688524590164,
+        "words": [
+          {
+            "startMs": 142700,
+            "endMs": 143120,
+            "word": " Bro,",
+            "probability": 0.5655073523521423
+          },
+          {
+            "startMs": 143340,
+            "endMs": 143420,
+            "word": " it's",
+            "probability": 0.7967516779899597
+          },
+          {
+            "startMs": 143420,
+            "endMs": 143620,
+            "word": " so,",
+            "probability": 0.9614291787147522
+          },
+          {
+            "startMs": 143640,
+            "endMs": 144060,
+            "word": " so",
+            "probability": 0.9847063422203064
+          },
+          {
+            "startMs": 144060,
+            "endMs": 144460,
+            "word": " much",
+            "probability": 0.9507954716682434
+          },
+          {
+            "startMs": 144460,
+            "endMs": 144920,
+            "word": " crowded.",
+            "probability": 0.9878673553466797
+          }
+        ]
+      },
+      {
+        "startMs": 149460,
+        "endMs": 151980,
+        "text": "It was not like this, bro. There was no one here.",
+        "avgLogprob": -0.5368405840613625,
+        "noSpeechProb": 5.27529631089152e-10,
+        "compressionRatio": 1.278688524590164,
+        "words": [
+          {
+            "startMs": 149460,
+            "endMs": 149880,
+            "word": " It",
+            "probability": 0.7652660012245178
+          },
+          {
+            "startMs": 149880,
+            "endMs": 150040,
+            "word": " was",
+            "probability": 0.916256308555603
+          },
+          {
+            "startMs": 150040,
+            "endMs": 150200,
+            "word": " not",
+            "probability": 0.9892857670783997
+          },
+          {
+            "startMs": 150200,
+            "endMs": 150480,
+            "word": " like",
+            "probability": 0.9907171130180359
+          },
+          {
+            "startMs": 150480,
+            "endMs": 150700,
+            "word": " this,",
+            "probability": 0.9573380947113037
+          },
+          {
+            "startMs": 150820,
+            "endMs": 150900,
+            "word": " bro.",
+            "probability": 0.8583168983459473
+          },
+          {
+            "startMs": 151100,
+            "endMs": 151180,
+            "word": " There",
+            "probability": 0.9795284271240234
+          },
+          {
+            "startMs": 151180,
+            "endMs": 151360,
+            "word": " was",
+            "probability": 0.8547939658164978
+          },
+          {
+            "startMs": 151360,
+            "endMs": 151480,
+            "word": " no",
+            "probability": 0.9949935078620911
+          },
+          {
+            "startMs": 151480,
+            "endMs": 151700,
+            "word": " one",
+            "probability": 0.9963976740837097
+          },
+          {
+            "startMs": 151700,
+            "endMs": 151980,
+            "word": " here.",
+            "probability": 0.9989608526229858
+          }
+        ]
+      },
+      {
+        "startMs": 158270,
+        "endMs": 161070,
+        "text": "No, this is now, this is a very famous temple.",
+        "avgLogprob": -0.5368405840613625,
+        "noSpeechProb": 5.27529631089152e-10,
+        "compressionRatio": 1.278688524590164,
+        "words": [
+          {
+            "startMs": 158270,
+            "endMs": 158690,
+            "word": " No,",
+            "probability": 0.5611587762832642
+          },
+          {
+            "startMs": 159010,
+            "endMs": 159290,
+            "word": " this",
+            "probability": 0.9743514657020569
+          },
+          {
+            "startMs": 159290,
+            "endMs": 159430,
+            "word": " is",
+            "probability": 0.9948166012763977
+          },
+          {
+            "startMs": 159430,
+            "endMs": 159630,
+            "word": " now,",
+            "probability": 0.8170774579048157
+          },
+          {
+            "startMs": 159790,
+            "endMs": 160150,
+            "word": " this",
+            "probability": 0.8732282519340515
+          },
+          {
+            "startMs": 160150,
+            "endMs": 160310,
+            "word": " is",
+            "probability": 0.995114803314209
+          },
+          {
+            "startMs": 160310,
+            "endMs": 160390,
+            "word": " a",
+            "probability": 0.9767546057701111
+          },
+          {
+            "startMs": 160390,
+            "endMs": 160490,
+            "word": " very",
+            "probability": 0.9965015649795532
+          },
+          {
+            "startMs": 160490,
+            "endMs": 160810,
+            "word": " famous",
+            "probability": 0.9988991022109985
+          },
+          {
+            "startMs": 160810,
+            "endMs": 161070,
+            "word": " temple.",
+            "probability": 0.9153627753257751
+          }
+        ]
+      },
+      {
+        "startMs": 161070,
+        "endMs": 163290,
+        "text": "When I came here, there were only 10 people.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 161070,
+            "endMs": 161170,
+            "word": " When",
+            "probability": 0.0042118350975215435
+          },
+          {
+            "startMs": 161170,
+            "endMs": 161630,
+            "word": " I",
+            "probability": 0.8714911937713623
+          },
+          {
+            "startMs": 161630,
+            "endMs": 161910,
+            "word": " came",
+            "probability": 0.3961166441440582
+          },
+          {
+            "startMs": 161910,
+            "endMs": 162150,
+            "word": " here,",
+            "probability": 0.3574216067790985
+          },
+          {
+            "startMs": 162150,
+            "endMs": 162310,
+            "word": " there",
+            "probability": 0.19248975813388824
+          },
+          {
+            "startMs": 162310,
+            "endMs": 162510,
+            "word": " were",
+            "probability": 0.6296983361244202
+          },
+          {
+            "startMs": 162510,
+            "endMs": 162770,
+            "word": " only",
+            "probability": 0.3411886692047119
+          },
+          {
+            "startMs": 162770,
+            "endMs": 163110,
+            "word": " 10",
+            "probability": 0.6420117616653442
+          },
+          {
+            "startMs": 163110,
+            "endMs": 163290,
+            "word": " people.",
+            "probability": 0.838916003704071
+          }
+        ]
+      },
+      {
+        "startMs": 164390,
+        "endMs": 166050,
+        "text": "I felt like I was wrong.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 164390,
+            "endMs": 164870,
+            "word": " I",
+            "probability": 0.7504498362541199
+          },
+          {
+            "startMs": 164870,
+            "endMs": 165110,
+            "word": " felt",
+            "probability": 0.250725656747818
+          },
+          {
+            "startMs": 165110,
+            "endMs": 165550,
+            "word": " like",
+            "probability": 0.4326961636543274
+          },
+          {
+            "startMs": 165550,
+            "endMs": 165710,
+            "word": " I",
+            "probability": 0.7106960415840149
+          },
+          {
+            "startMs": 165710,
+            "endMs": 166050,
+            "word": " was",
+            "probability": 0.5302513837814331
+          },
+          {
+            "startMs": 166050,
+            "endMs": 166050,
+            "word": " wrong.",
+            "probability": 0.3141121566295624
+          }
+        ]
+      },
+      {
+        "startMs": 166590,
+        "endMs": 167590,
+        "text": "Today, it was like this.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 166590,
+            "endMs": 166790,
+            "word": " Today,",
+            "probability": 0.08931557834148407
+          },
+          {
+            "startMs": 166790,
+            "endMs": 166990,
+            "word": " it",
+            "probability": 0.2255582958459854
+          },
+          {
+            "startMs": 166990,
+            "endMs": 167010,
+            "word": " was",
+            "probability": 0.4013783931732178
+          },
+          {
+            "startMs": 167010,
+            "endMs": 167070,
+            "word": " like",
+            "probability": 0.35265251994132996
+          },
+          {
+            "startMs": 167070,
+            "endMs": 167590,
+            "word": " this.",
+            "probability": 0.0874648317694664
+          }
+        ]
+      },
+      {
+        "startMs": 168050,
+        "endMs": 168530,
+        "text": "Weekend.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 168050,
+            "endMs": 168530,
+            "word": " Weekend.",
+            "probability": 0.5414726659655571
+          }
+        ]
+      },
+      {
+        "startMs": 169010,
+        "endMs": 169490,
+        "text": "Weekend.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 169010,
+            "endMs": 169490,
+            "word": " Weekend.",
+            "probability": 0.5138410367071629
+          }
+        ]
+      },
+      {
+        "startMs": 169690,
+        "endMs": 170850,
+        "text": "I used to drive a bike first.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 169690,
+            "endMs": 169890,
+            "word": " I",
+            "probability": 0.25441405177116394
+          },
+          {
+            "startMs": 169890,
+            "endMs": 170410,
+            "word": " used",
+            "probability": 0.23288434743881226
+          },
+          {
+            "startMs": 170410,
+            "endMs": 170470,
+            "word": " to",
+            "probability": 0.7136240005493164
+          },
+          {
+            "startMs": 170470,
+            "endMs": 170470,
+            "word": " drive",
+            "probability": 0.4268287122249603
+          },
+          {
+            "startMs": 170470,
+            "endMs": 170470,
+            "word": " a",
+            "probability": 0.19296012818813324
+          },
+          {
+            "startMs": 170470,
+            "endMs": 170650,
+            "word": " bike",
+            "probability": 0.8896333575248718
+          },
+          {
+            "startMs": 170650,
+            "endMs": 170850,
+            "word": " first.",
+            "probability": 0.34142762422561646
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 6773,
+      "durationMs": 6773,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 2,
+      "startMs": 7674,
+      "endMs": 9076,
+      "durationMs": 1402,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 3,
+      "startMs": 9076,
+      "endMs": 13914,
+      "durationMs": 4838,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 4,
+      "startMs": 13914,
+      "endMs": 19486,
+      "durationMs": 5572,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    },
+    {
+      "sceneId": 5,
+      "startMs": 19486,
+      "endMs": 21088,
+      "durationMs": 1602,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 6,
+      "startMs": 21088,
+      "endMs": 23390,
+      "durationMs": 2302,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 7,
+      "startMs": 24057,
+      "endMs": 39907,
+      "durationMs": 15850,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "sceneId": 8,
+      "startMs": 40641,
+      "endMs": 42876,
+      "durationMs": 2235,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 9,
+      "startMs": 42876,
+      "endMs": 45412,
+      "durationMs": 2536,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1
+      ]
+    },
+    {
+      "sceneId": 10,
+      "startMs": 45412,
+      "endMs": 56456,
+      "durationMs": 11044,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "sceneId": 11,
+      "startMs": 56456,
+      "endMs": 65799,
+      "durationMs": 9343,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "sceneId": 12,
+      "startMs": 65799,
+      "endMs": 67734,
+      "durationMs": 1935,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 13,
+      "startMs": 67734,
+      "endMs": 82816,
+      "durationMs": 15082,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "sceneId": 14,
+      "startMs": 84151,
+      "endMs": 89990,
+      "durationMs": 5839,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 15,
+      "startMs": 89990,
+      "endMs": 91191,
+      "durationMs": 1201,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 16,
+      "startMs": 91858,
+      "endMs": 93927,
+      "durationMs": 2069,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 17,
+      "startMs": 93927,
+      "endMs": 102469,
+      "durationMs": 8542,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 18,
+      "startMs": 102469,
+      "endMs": 107407,
+      "durationMs": 4938,
+      "speechPresent": false,
+      "speechSegmentIds": []
+    },
+    {
+      "sceneId": 19,
+      "startMs": 108275,
+      "endMs": 221722,
+      "durationMs": 113447,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 118318,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 3386,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 100065,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 6772,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 71414,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 7674,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 116621,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 8375,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 105942,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 9075,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 119432,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 120712,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 11495,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 141882,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 13913,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 106408,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 13914,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 111448,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 16700,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0011.jpg",
+      "exists": true,
+      "sizeBytes": 116798,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 19485,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0012.jpg",
+      "exists": true,
+      "sizeBytes": 83855,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 19486,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0013.jpg",
+      "exists": true,
+      "sizeBytes": 83855,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0014.jpg",
+      "exists": true,
+      "sizeBytes": 125487,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 21087,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0015.jpg",
+      "exists": true,
+      "sizeBytes": 145984,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 21088,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0016.jpg",
+      "exists": true,
+      "sizeBytes": 137056,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 22239,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0017.jpg",
+      "exists": true,
+      "sizeBytes": 160728,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 24057,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0018.jpg",
+      "exists": true,
+      "sizeBytes": 108183,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0019.jpg",
+      "exists": true,
+      "sizeBytes": 105624,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0020.jpg",
+      "exists": true,
+      "sizeBytes": 129399,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 31982,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0021.jpg",
+      "exists": true,
+      "sizeBytes": 118820,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 39906,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0022.jpg",
+      "exists": true,
+      "sizeBytes": 90595,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0023.jpg",
+      "exists": true,
+      "sizeBytes": 97384,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40641,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0024.jpg",
+      "exists": true,
+      "sizeBytes": 68021,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 41758,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0025.jpg",
+      "exists": true,
+      "sizeBytes": 65813,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 42876,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0026.jpg",
+      "exists": true,
+      "sizeBytes": 55010,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 44144,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0027.jpg",
+      "exists": true,
+      "sizeBytes": 63493,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0028.jpg",
+      "exists": true,
+      "sizeBytes": 70149,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45411,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0029.jpg",
+      "exists": true,
+      "sizeBytes": 90756,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 50000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0030.jpg",
+      "exists": true,
+      "sizeBytes": 106571,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 50934,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0031.jpg",
+      "exists": true,
+      "sizeBytes": 114679,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 55000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0032.jpg",
+      "exists": true,
+      "sizeBytes": 109221,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 56456,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0033.jpg",
+      "exists": true,
+      "sizeBytes": 75103,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 60000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0034.jpg",
+      "exists": true,
+      "sizeBytes": 122673,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 61127,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0035.jpg",
+      "exists": true,
+      "sizeBytes": 119436,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 65000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0036.jpg",
+      "exists": true,
+      "sizeBytes": 127758,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 65799,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0037.jpg",
+      "exists": true,
+      "sizeBytes": 119478,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 66766,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0038.jpg",
+      "exists": true,
+      "sizeBytes": 115501,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 67733,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0039.jpg",
+      "exists": true,
+      "sizeBytes": 89424,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 67734,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0040.jpg",
+      "exists": true,
+      "sizeBytes": 89424,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 75000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0041.jpg",
+      "exists": true,
+      "sizeBytes": 52445,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 75275,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0042.jpg",
+      "exists": true,
+      "sizeBytes": 62656,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 80000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0043.jpg",
+      "exists": true,
+      "sizeBytes": 48710,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 82815,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0044.jpg",
+      "exists": true,
+      "sizeBytes": 109323,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 85000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0045.jpg",
+      "exists": true,
+      "sizeBytes": 68840,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 87070,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0046.jpg",
+      "exists": true,
+      "sizeBytes": 58253,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 89989,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0047.jpg",
+      "exists": true,
+      "sizeBytes": 50822,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 89990,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0048.jpg",
+      "exists": true,
+      "sizeBytes": 50103,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 90590,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0049.jpg",
+      "exists": true,
+      "sizeBytes": 60581,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 91190,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0050.jpg",
+      "exists": true,
+      "sizeBytes": 78939,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 91858,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0051.jpg",
+      "exists": true,
+      "sizeBytes": 101707,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 93926,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0052.jpg",
+      "exists": true,
+      "sizeBytes": 90990,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 93927,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0053.jpg",
+      "exists": true,
+      "sizeBytes": 90990,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 95000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0054.jpg",
+      "exists": true,
+      "sizeBytes": 89351,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 98198,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0055.jpg",
+      "exists": true,
+      "sizeBytes": 124829,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 102468,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0056.jpg",
+      "exists": true,
+      "sizeBytes": 79021,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 102469,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0057.jpg",
+      "exists": true,
+      "sizeBytes": 79021,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 104938,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0058.jpg",
+      "exists": true,
+      "sizeBytes": 158244,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 105000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0059.jpg",
+      "exists": true,
+      "sizeBytes": 137016,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 108275,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0060.jpg",
+      "exists": true,
+      "sizeBytes": 108304,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 110000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0061.jpg",
+      "exists": true,
+      "sizeBytes": 149039,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 115000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0062.jpg",
+      "exists": true,
+      "sizeBytes": 110279,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 120000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0063.jpg",
+      "exists": true,
+      "sizeBytes": 135880,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 130000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0064.jpg",
+      "exists": true,
+      "sizeBytes": 126153,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 135000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0065.jpg",
+      "exists": true,
+      "sizeBytes": 129886,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 140000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0066.jpg",
+      "exists": true,
+      "sizeBytes": 142513,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 150000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0067.jpg",
+      "exists": true,
+      "sizeBytes": 90945,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 155000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0068.jpg",
+      "exists": true,
+      "sizeBytes": 104688,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 160000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0069.jpg",
+      "exists": true,
+      "sizeBytes": 94176,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 164998,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0070.jpg",
+      "exists": true,
+      "sizeBytes": 87168,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 170000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0071.jpg",
+      "exists": true,
+      "sizeBytes": 50246,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 175000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0072.jpg",
+      "exists": true,
+      "sizeBytes": 45565,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 180000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0073.jpg",
+      "exists": true,
+      "sizeBytes": 103607,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 185000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0074.jpg",
+      "exists": true,
+      "sizeBytes": 81261,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 195000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0075.jpg",
+      "exists": true,
+      "sizeBytes": 81396,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 200000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0076.jpg",
+      "exists": true,
+      "sizeBytes": 89490,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 205000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0077.jpg",
+      "exists": true,
+      "sizeBytes": 104452,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 210000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0078.jpg",
+      "exists": true,
+      "sizeBytes": 60469,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 220000,
+      "frameFile": "DJI_20260830154154_0255_D/frames/frame_0079.jpg",
+      "exists": true,
+      "sizeBytes": 74085,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 221721,
+      "frameFile": "frames/frame_0080.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830154154_0255_D.MP4",
+    "durationMs": 221722,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 6773,
+        "durationMs": 6773,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 2,
+        "startMs": 7674,
+        "endMs": 9076,
+        "durationMs": 1402,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 3,
+        "startMs": 9076,
+        "endMs": 13914,
+        "durationMs": 4838,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 4,
+        "startMs": 13914,
+        "endMs": 19486,
+        "durationMs": 5572,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      },
+      {
+        "sceneId": 5,
+        "startMs": 19486,
+        "endMs": 21088,
+        "durationMs": 1602,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 6,
+        "startMs": 21088,
+        "endMs": 23390,
+        "durationMs": 2302,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 7,
+        "startMs": 24057,
+        "endMs": 39907,
+        "durationMs": 15850,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "sceneId": 8,
+        "startMs": 40641,
+        "endMs": 42876,
+        "durationMs": 2235,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 9,
+        "startMs": 42876,
+        "endMs": 45412,
+        "durationMs": 2536,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1
+        ]
+      },
+      {
+        "sceneId": 10,
+        "startMs": 45412,
+        "endMs": 56456,
+        "durationMs": 11044,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "sceneId": 11,
+        "startMs": 56456,
+        "endMs": 65799,
+        "durationMs": 9343,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "sceneId": 12,
+        "startMs": 65799,
+        "endMs": 67734,
+        "durationMs": 1935,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 13,
+        "startMs": 67734,
+        "endMs": 82816,
+        "durationMs": 15082,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "sceneId": 14,
+        "startMs": 84151,
+        "endMs": 89990,
+        "durationMs": 5839,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 15,
+        "startMs": 89990,
+        "endMs": 91191,
+        "durationMs": 1201,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 16,
+        "startMs": 91858,
+        "endMs": 93927,
+        "durationMs": 2069,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 17,
+        "startMs": 93927,
+        "endMs": 102469,
+        "durationMs": 8542,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 18,
+        "startMs": 102469,
+        "endMs": 107407,
+        "durationMs": 4938,
+        "speechPresent": false,
+        "speechSegmentIds": []
+      },
+      {
+        "sceneId": 19,
+        "startMs": 108275,
+        "endMs": 221722,
+        "durationMs": 113447,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 11180,
+        "endMs": 15740,
+        "text": "Which organization is this?",
+        "avgLogprob": -0.7738468738702627,
+        "noSpeechProb": 2.0970816194676445e-07,
+        "compressionRatio": 1.125,
+        "words": [
+          {
+            "startMs": 11180,
+            "endMs": 12580,
+            "word": " Which",
+            "probability": 0.24195799231529236
+          },
+          {
+            "startMs": 14720,
+            "endMs": 15280,
+            "word": " organization",
+            "probability": 0.7762933969497681
+          },
+          {
+            "startMs": 15280,
+            "endMs": 15580,
+            "word": " is",
+            "probability": 0.741712212562561
+          },
+          {
+            "startMs": 15580,
+            "endMs": 15740,
+            "word": " this?",
+            "probability": 0.9133113622665405
+          }
+        ]
+      },
+      {
+        "startMs": 17080,
+        "endMs": 17680,
+        "text": "Which organization?",
+        "avgLogprob": -0.7738468738702627,
+        "noSpeechProb": 2.0970816194676445e-07,
+        "compressionRatio": 1.125,
+        "words": [
+          {
+            "startMs": 17080,
+            "endMs": 17080,
+            "word": " Which",
+            "probability": 0.11310479789972305
+          },
+          {
+            "startMs": 17080,
+            "endMs": 17680,
+            "word": " organization?",
+            "probability": 0.9733484387397766
+          }
+        ]
+      },
+      {
+        "startMs": 23340,
+        "endMs": 24740,
+        "text": "SPYSY",
+        "avgLogprob": -0.7738468738702627,
+        "noSpeechProb": 2.0970816194676445e-07,
+        "compressionRatio": 1.125,
+        "words": [
+          {
+            "startMs": 23340,
+            "endMs": 24740,
+            "word": " SPYSY",
+            "probability": 0.5182548370212317
+          }
+        ]
+      },
+      {
+        "startMs": 24740,
+        "endMs": 26560,
+        "text": "Patanjali",
+        "avgLogprob": -0.7738468738702627,
+        "noSpeechProb": 2.0970816194676445e-07,
+        "compressionRatio": 1.125,
+        "words": [
+          {
+            "startMs": 24740,
+            "endMs": 26560,
+            "word": " Patanjali",
+            "probability": 0.7357544470578432
+          }
+        ]
+      },
+      {
+        "startMs": 34580,
+        "endMs": 35980,
+        "text": "MySour",
+        "avgLogprob": -0.9427554077572293,
+        "noSpeechProb": 6.182451439684655e-09,
+        "compressionRatio": 1.0,
+        "words": [
+          {
+            "startMs": 34580,
+            "endMs": 35980,
+            "word": " MySour",
+            "probability": 0.08289806544780731
+          }
+        ]
+      },
+      {
+        "startMs": 36560,
+        "endMs": 39960,
+        "text": "Thank you",
+        "avgLogprob": -0.9427554077572293,
+        "noSpeechProb": 6.182451439684655e-09,
+        "compressionRatio": 1.0,
+        "words": [
+          {
+            "startMs": 36560,
+            "endMs": 37380,
+            "word": " Thank",
+            "probability": 0.03726690262556076
+          },
+          {
+            "startMs": 37380,
+            "endMs": 39960,
+            "word": " you",
+            "probability": 0.8841741681098938
+          }
+        ]
+      },
+      {
+        "startMs": 39960,
+        "endMs": 45520,
+        "text": "What is this?",
+        "avgLogprob": -0.9427554077572293,
+        "noSpeechProb": 6.182451439684655e-09,
+        "compressionRatio": 1.0,
+        "words": [
+          {
+            "startMs": 39960,
+            "endMs": 40200,
+            "word": " What",
+            "probability": 0.012792916037142277
+          },
+          {
+            "startMs": 43020,
+            "endMs": 45520,
+            "word": " is",
+            "probability": 0.3053409159183502
+          },
+          {
+            "startMs": 45520,
+            "endMs": 45520,
+            "word": " this?",
+            "probability": 0.3264828026294708
+          }
+        ]
+      },
+      {
+        "startMs": 46020,
+        "endMs": 48440,
+        "text": "I have a trip to Karnataka",
+        "avgLogprob": -0.9427554077572293,
+        "noSpeechProb": 6.182451439684655e-09,
+        "compressionRatio": 1.0,
+        "words": [
+          {
+            "startMs": 46020,
+            "endMs": 46720,
+            "word": " I",
+            "probability": 0.14534969627857208
+          },
+          {
+            "startMs": 46720,
+            "endMs": 47380,
+            "word": " have",
+            "probability": 0.17229945957660675
+          },
+          {
+            "startMs": 47380,
+            "endMs": 47380,
+            "word": " a",
+            "probability": 0.20520319044589996
+          },
+          {
+            "startMs": 47380,
+            "endMs": 47760,
+            "word": " trip",
+            "probability": 0.3467331528663635
+          },
+          {
+            "startMs": 47760,
+            "endMs": 47760,
+            "word": " to",
+            "probability": 0.27530163526535034
+          },
+          {
+            "startMs": 47760,
+            "endMs": 48440,
+            "word": " Karnataka",
+            "probability": 0.7838518247008324
+          }
+        ]
+      },
+      {
+        "startMs": 50060,
+        "endMs": 53700,
+        "text": "Where is Kaira?",
+        "avgLogprob": -0.9427554077572293,
+        "noSpeechProb": 6.182451439684655e-09,
+        "compressionRatio": 1.0,
+        "words": [
+          {
+            "startMs": 50060,
+            "endMs": 51460,
+            "word": " Where",
+            "probability": 0.05080703645944595
+          },
+          {
+            "startMs": 51460,
+            "endMs": 52860,
+            "word": " is",
+            "probability": 0.5112133622169495
+          },
+          {
+            "startMs": 52860,
+            "endMs": 53700,
+            "word": " Kaira?",
+            "probability": 0.26079340899984044
+          }
+        ]
+      },
+      {
+        "startMs": 53700,
+        "endMs": 54400,
+        "text": "We are from Kaira",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 53700,
+            "endMs": 53960,
+            "word": " We",
+            "probability": 0.0015954331029206514
+          },
+          {
+            "startMs": 53960,
+            "endMs": 53960,
+            "word": " are",
+            "probability": 0.25062721967697144
+          },
+          {
+            "startMs": 53960,
+            "endMs": 54120,
+            "word": " from",
+            "probability": 0.025087594985961914
+          },
+          {
+            "startMs": 54120,
+            "endMs": 54400,
+            "word": " Kaira",
+            "probability": 0.13303708471357822
+          }
+        ]
+      },
+      {
+        "startMs": 55600,
+        "endMs": 57440,
+        "text": "Yes, in Kaira",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 55600,
+            "endMs": 56000,
+            "word": " Yes,",
+            "probability": 8.956899546319619e-05
+          },
+          {
+            "startMs": 57020,
+            "endMs": 57040,
+            "word": " in",
+            "probability": 0.009994563646614552
+          },
+          {
+            "startMs": 57040,
+            "endMs": 57440,
+            "word": " Kaira",
+            "probability": 0.7916731635729471
+          }
+        ]
+      },
+      {
+        "startMs": 57440,
+        "endMs": 58740,
+        "text": "Right now",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 57440,
+            "endMs": 58720,
+            "word": " Right",
+            "probability": 0.0010547528509050608
+          },
+          {
+            "startMs": 58720,
+            "endMs": 58740,
+            "word": " now",
+            "probability": 0.04363017901778221
+          }
+        ]
+      },
+      {
+        "startMs": 59340,
+        "endMs": 59740,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 59340,
+            "endMs": 59740,
+            "word": " Isha",
+            "probability": 0.3213891088962555
+          }
+        ]
+      },
+      {
+        "startMs": 60700,
+        "endMs": 61280,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 60700,
+            "endMs": 61280,
+            "word": " Isha",
+            "probability": 0.51816775649786
+          }
+        ]
+      },
+      {
+        "startMs": 61280,
+        "endMs": 62100,
+        "text": "Isha foundation",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 61280,
+            "endMs": 62100,
+            "word": " Isha",
+            "probability": 0.5186271853744984
+          },
+          {
+            "startMs": 62100,
+            "endMs": 62100,
+            "word": " foundation",
+            "probability": 0.13483236730098724
+          }
+        ]
+      },
+      {
+        "startMs": 62700,
+        "endMs": 63140,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 62700,
+            "endMs": 63140,
+            "word": " Isha",
+            "probability": 0.5234702229499817
+          }
+        ]
+      },
+      {
+        "startMs": 63140,
+        "endMs": 63440,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 63140,
+            "endMs": 63440,
+            "word": " Isha",
+            "probability": 0.543618768453598
+          }
+        ]
+      },
+      {
+        "startMs": 63440,
+        "endMs": 63840,
+        "text": "It is more of a",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 63440,
+            "endMs": 63440,
+            "word": " It",
+            "probability": 0.029672440141439438
+          },
+          {
+            "startMs": 63440,
+            "endMs": 63440,
+            "word": " is",
+            "probability": 0.3929201066493988
+          },
+          {
+            "startMs": 63440,
+            "endMs": 63440,
+            "word": " more",
+            "probability": 0.002611821750178933
+          },
+          {
+            "startMs": 63440,
+            "endMs": 63840,
+            "word": " of",
+            "probability": 0.2752821445465088
+          },
+          {
+            "startMs": 63840,
+            "endMs": 63840,
+            "word": " a",
+            "probability": 0.1526428610086441
+          }
+        ]
+      },
+      {
+        "startMs": 67950,
+        "endMs": 68750,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 67950,
+            "endMs": 68750,
+            "word": " Isha",
+            "probability": 0.4983232336817309
+          }
+        ]
+      },
+      {
+        "startMs": 71380,
+        "endMs": 71940,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 71380,
+            "endMs": 71940,
+            "word": " Isha",
+            "probability": 0.5445637740194798
+          }
+        ]
+      },
+      {
+        "startMs": 71940,
+        "endMs": 72120,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 71940,
+            "endMs": 72120,
+            "word": " Isha",
+            "probability": 0.5224701687693596
+          }
+        ]
+      },
+      {
+        "startMs": 72120,
+        "endMs": 72200,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 72120,
+            "endMs": 72200,
+            "word": " Isha",
+            "probability": 0.5227834321558475
+          }
+        ]
+      },
+      {
+        "startMs": 72200,
+        "endMs": 72220,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 72200,
+            "endMs": 72220,
+            "word": " Isha",
+            "probability": 0.5815310850739479
+          }
+        ]
+      },
+      {
+        "startMs": 72220,
+        "endMs": 72600,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 72220,
+            "endMs": 72600,
+            "word": " Isha",
+            "probability": 0.5831789299845695
+          }
+        ]
+      },
+      {
+        "startMs": 72600,
+        "endMs": 72740,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 72600,
+            "endMs": 72740,
+            "word": " Isha",
+            "probability": 0.7134206891059875
+          }
+        ]
+      },
+      {
+        "startMs": 72740,
+        "endMs": 72820,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 72740,
+            "endMs": 72820,
+            "word": " Isha",
+            "probability": 0.7784731984138489
+          }
+        ]
+      },
+      {
+        "startMs": 73840,
+        "endMs": 74640,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 73840,
+            "endMs": 74640,
+            "word": " Isha",
+            "probability": 0.766078770160675
+          }
+        ]
+      },
+      {
+        "startMs": 74640,
+        "endMs": 75180,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 74640,
+            "endMs": 75180,
+            "word": " Isha",
+            "probability": 0.7894656360149384
+          }
+        ]
+      },
+      {
+        "startMs": 112440,
+        "endMs": 113240,
+        "text": "Isha",
+        "avgLogprob": -0.6412504840705354,
+        "noSpeechProb": 7.283868175278485e-09,
+        "compressionRatio": 2.225,
+        "words": [
+          {
+            "startMs": 112440,
+            "endMs": 113240,
+            "word": " Isha",
+            "probability": 0.8459146022796631
+          }
+        ]
+      },
+      {
+        "startMs": 113240,
+        "endMs": 114380,
+        "text": "I don't want to stay strong.",
+        "avgLogprob": -0.5368405840613625,
+        "noSpeechProb": 5.27529631089152e-10,
+        "compressionRatio": 1.278688524590164,
+        "words": [
+          {
+            "startMs": 113240,
+            "endMs": 113320,
+            "word": " I",
+            "probability": 0.03964816406369209
+          },
+          {
+            "startMs": 113320,
+            "endMs": 113500,
+            "word": " don't",
+            "probability": 0.5201279129832983
+          },
+          {
+            "startMs": 113500,
+            "endMs": 113500,
+            "word": " want",
+            "probability": 0.10184898227453232
+          },
+          {
+            "startMs": 113500,
+            "endMs": 113780,
+            "word": " to",
+            "probability": 0.7606521248817444
+          },
+          {
+            "startMs": 113780,
+            "endMs": 113940,
+            "word": " stay",
+            "probability": 0.08368735760450363
+          },
+          {
+            "startMs": 113940,
+            "endMs": 114380,
+            "word": " strong.",
+            "probability": 0.09248360991477966
+          }
+        ]
+      },
+      {
+        "startMs": 142700,
+        "endMs": 144920,
+        "text": "Bro, it's so, so much crowded.",
+        "avgLogprob": -0.5368405840613625,
+        "noSpeechProb": 5.27529631089152e-10,
+        "compressionRatio": 1.278688524590164,
+        "words": [
+          {
+            "startMs": 142700,
+            "endMs": 143120,
+            "word": " Bro,",
+            "probability": 0.5655073523521423
+          },
+          {
+            "startMs": 143340,
+            "endMs": 143420,
+            "word": " it's",
+            "probability": 0.7967516779899597
+          },
+          {
+            "startMs": 143420,
+            "endMs": 143620,
+            "word": " so,",
+            "probability": 0.9614291787147522
+          },
+          {
+            "startMs": 143640,
+            "endMs": 144060,
+            "word": " so",
+            "probability": 0.9847063422203064
+          },
+          {
+            "startMs": 144060,
+            "endMs": 144460,
+            "word": " much",
+            "probability": 0.9507954716682434
+          },
+          {
+            "startMs": 144460,
+            "endMs": 144920,
+            "word": " crowded.",
+            "probability": 0.9878673553466797
+          }
+        ]
+      },
+      {
+        "startMs": 149460,
+        "endMs": 151980,
+        "text": "It was not like this, bro. There was no one here.",
+        "avgLogprob": -0.5368405840613625,
+        "noSpeechProb": 5.27529631089152e-10,
+        "compressionRatio": 1.278688524590164,
+        "words": [
+          {
+            "startMs": 149460,
+            "endMs": 149880,
+            "word": " It",
+            "probability": 0.7652660012245178
+          },
+          {
+            "startMs": 149880,
+            "endMs": 150040,
+            "word": " was",
+            "probability": 0.916256308555603
+          },
+          {
+            "startMs": 150040,
+            "endMs": 150200,
+            "word": " not",
+            "probability": 0.9892857670783997
+          },
+          {
+            "startMs": 150200,
+            "endMs": 150480,
+            "word": " like",
+            "probability": 0.9907171130180359
+          },
+          {
+            "startMs": 150480,
+            "endMs": 150700,
+            "word": " this,",
+            "probability": 0.9573380947113037
+          },
+          {
+            "startMs": 150820,
+            "endMs": 150900,
+            "word": " bro.",
+            "probability": 0.8583168983459473
+          },
+          {
+            "startMs": 151100,
+            "endMs": 151180,
+            "word": " There",
+            "probability": 0.9795284271240234
+          },
+          {
+            "startMs": 151180,
+            "endMs": 151360,
+            "word": " was",
+            "probability": 0.8547939658164978
+          },
+          {
+            "startMs": 151360,
+            "endMs": 151480,
+            "word": " no",
+            "probability": 0.9949935078620911
+          },
+          {
+            "startMs": 151480,
+            "endMs": 151700,
+            "word": " one",
+            "probability": 0.9963976740837097
+          },
+          {
+            "startMs": 151700,
+            "endMs": 151980,
+            "word": " here.",
+            "probability": 0.9989608526229858
+          }
+        ]
+      },
+      {
+        "startMs": 158270,
+        "endMs": 161070,
+        "text": "No, this is now, this is a very famous temple.",
+        "avgLogprob": -0.5368405840613625,
+        "noSpeechProb": 5.27529631089152e-10,
+        "compressionRatio": 1.278688524590164,
+        "words": [
+          {
+            "startMs": 158270,
+            "endMs": 158690,
+            "word": " No,",
+            "probability": 0.5611587762832642
+          },
+          {
+            "startMs": 159010,
+            "endMs": 159290,
+            "word": " this",
+            "probability": 0.9743514657020569
+          },
+          {
+            "startMs": 159290,
+            "endMs": 159430,
+            "word": " is",
+            "probability": 0.9948166012763977
+          },
+          {
+            "startMs": 159430,
+            "endMs": 159630,
+            "word": " now,",
+            "probability": 0.8170774579048157
+          },
+          {
+            "startMs": 159790,
+            "endMs": 160150,
+            "word": " this",
+            "probability": 0.8732282519340515
+          },
+          {
+            "startMs": 160150,
+            "endMs": 160310,
+            "word": " is",
+            "probability": 0.995114803314209
+          },
+          {
+            "startMs": 160310,
+            "endMs": 160390,
+            "word": " a",
+            "probability": 0.9767546057701111
+          },
+          {
+            "startMs": 160390,
+            "endMs": 160490,
+            "word": " very",
+            "probability": 0.9965015649795532
+          },
+          {
+            "startMs": 160490,
+            "endMs": 160810,
+            "word": " famous",
+            "probability": 0.9988991022109985
+          },
+          {
+            "startMs": 160810,
+            "endMs": 161070,
+            "word": " temple.",
+            "probability": 0.9153627753257751
+          }
+        ]
+      },
+      {
+        "startMs": 161070,
+        "endMs": 163290,
+        "text": "When I came here, there were only 10 people.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 161070,
+            "endMs": 161170,
+            "word": " When",
+            "probability": 0.0042118350975215435
+          },
+          {
+            "startMs": 161170,
+            "endMs": 161630,
+            "word": " I",
+            "probability": 0.8714911937713623
+          },
+          {
+            "startMs": 161630,
+            "endMs": 161910,
+            "word": " came",
+            "probability": 0.3961166441440582
+          },
+          {
+            "startMs": 161910,
+            "endMs": 162150,
+            "word": " here,",
+            "probability": 0.3574216067790985
+          },
+          {
+            "startMs": 162150,
+            "endMs": 162310,
+            "word": " there",
+            "probability": 0.19248975813388824
+          },
+          {
+            "startMs": 162310,
+            "endMs": 162510,
+            "word": " were",
+            "probability": 0.6296983361244202
+          },
+          {
+            "startMs": 162510,
+            "endMs": 162770,
+            "word": " only",
+            "probability": 0.3411886692047119
+          },
+          {
+            "startMs": 162770,
+            "endMs": 163110,
+            "word": " 10",
+            "probability": 0.6420117616653442
+          },
+          {
+            "startMs": 163110,
+            "endMs": 163290,
+            "word": " people.",
+            "probability": 0.838916003704071
+          }
+        ]
+      },
+      {
+        "startMs": 164390,
+        "endMs": 166050,
+        "text": "I felt like I was wrong.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 164390,
+            "endMs": 164870,
+            "word": " I",
+            "probability": 0.7504498362541199
+          },
+          {
+            "startMs": 164870,
+            "endMs": 165110,
+            "word": " felt",
+            "probability": 0.250725656747818
+          },
+          {
+            "startMs": 165110,
+            "endMs": 165550,
+            "word": " like",
+            "probability": 0.4326961636543274
+          },
+          {
+            "startMs": 165550,
+            "endMs": 165710,
+            "word": " I",
+            "probability": 0.7106960415840149
+          },
+          {
+            "startMs": 165710,
+            "endMs": 166050,
+            "word": " was",
+            "probability": 0.5302513837814331
+          },
+          {
+            "startMs": 166050,
+            "endMs": 166050,
+            "word": " wrong.",
+            "probability": 0.3141121566295624
+          }
+        ]
+      },
+      {
+        "startMs": 166590,
+        "endMs": 167590,
+        "text": "Today, it was like this.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 166590,
+            "endMs": 166790,
+            "word": " Today,",
+            "probability": 0.08931557834148407
+          },
+          {
+            "startMs": 166790,
+            "endMs": 166990,
+            "word": " it",
+            "probability": 0.2255582958459854
+          },
+          {
+            "startMs": 166990,
+            "endMs": 167010,
+            "word": " was",
+            "probability": 0.4013783931732178
+          },
+          {
+            "startMs": 167010,
+            "endMs": 167070,
+            "word": " like",
+            "probability": 0.35265251994132996
+          },
+          {
+            "startMs": 167070,
+            "endMs": 167590,
+            "word": " this.",
+            "probability": 0.0874648317694664
+          }
+        ]
+      },
+      {
+        "startMs": 168050,
+        "endMs": 168530,
+        "text": "Weekend.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 168050,
+            "endMs": 168530,
+            "word": " Weekend.",
+            "probability": 0.5414726659655571
+          }
+        ]
+      },
+      {
+        "startMs": 169010,
+        "endMs": 169490,
+        "text": "Weekend.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 169010,
+            "endMs": 169490,
+            "word": " Weekend.",
+            "probability": 0.5138410367071629
+          }
+        ]
+      },
+      {
+        "startMs": 169690,
+        "endMs": 170850,
+        "text": "I used to drive a bike first.",
+        "avgLogprob": -0.7198756979062007,
+        "noSpeechProb": 1.4681275292693918e-11,
+        "compressionRatio": 1.2792792792792793,
+        "words": [
+          {
+            "startMs": 169690,
+            "endMs": 169890,
+            "word": " I",
+            "probability": 0.25441405177116394
+          },
+          {
+            "startMs": 169890,
+            "endMs": 170410,
+            "word": " used",
+            "probability": 0.23288434743881226
+          },
+          {
+            "startMs": 170410,
+            "endMs": 170470,
+            "word": " to",
+            "probability": 0.7136240005493164
+          },
+          {
+            "startMs": 170470,
+            "endMs": 170470,
+            "word": " drive",
+            "probability": 0.4268287122249603
+          },
+          {
+            "startMs": 170470,
+            "endMs": 170470,
+            "word": " a",
+            "probability": 0.19296012818813324
+          },
+          {
+            "startMs": 170470,
+            "endMs": 170650,
+            "word": " bike",
+            "probability": 0.8896333575248718
+          },
+          {
+            "startMs": 170650,
+            "endMs": 170850,
+            "word": " first.",
+            "probability": 0.34142762422561646
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 3386
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 6772
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 7674
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 8375
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 9075
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 11495
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 13913
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 13914
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 16700
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 19485
+      },
+      {
+        "frameFile": "frames/frame_0013.jpg",
+        "timestampMs": 19486
+      },
+      {
+        "frameFile": "frames/frame_0014.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0015.jpg",
+        "timestampMs": 21087
+      },
+      {
+        "frameFile": "frames/frame_0016.jpg",
+        "timestampMs": 21088
+      },
+      {
+        "frameFile": "frames/frame_0017.jpg",
+        "timestampMs": 22239
+      },
+      {
+        "frameFile": "frames/frame_0018.jpg",
+        "timestampMs": 24057
+      },
+      {
+        "frameFile": "frames/frame_0019.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0020.jpg",
+        "timestampMs": 30000
+      },
+      {
+        "frameFile": "frames/frame_0021.jpg",
+        "timestampMs": 31982
+      },
+      {
+        "frameFile": "frames/frame_0022.jpg",
+        "timestampMs": 39906
+      },
+      {
+        "frameFile": "frames/frame_0023.jpg",
+        "timestampMs": 40000
+      },
+      {
+        "frameFile": "frames/frame_0024.jpg",
+        "timestampMs": 40641
+      },
+      {
+        "frameFile": "frames/frame_0025.jpg",
+        "timestampMs": 41758
+      },
+      {
+        "frameFile": "frames/frame_0026.jpg",
+        "timestampMs": 42876
+      },
+      {
+        "frameFile": "frames/frame_0027.jpg",
+        "timestampMs": 44144
+      },
+      {
+        "frameFile": "frames/frame_0028.jpg",
+        "timestampMs": 45000
+      },
+      {
+        "frameFile": "frames/frame_0029.jpg",
+        "timestampMs": 45411
+      },
+      {
+        "frameFile": "frames/frame_0030.jpg",
+        "timestampMs": 50000
+      },
+      {
+        "frameFile": "frames/frame_0031.jpg",
+        "timestampMs": 50934
+      },
+      {
+        "frameFile": "frames/frame_0032.jpg",
+        "timestampMs": 55000
+      },
+      {
+        "frameFile": "frames/frame_0033.jpg",
+        "timestampMs": 56456
+      },
+      {
+        "frameFile": "frames/frame_0034.jpg",
+        "timestampMs": 60000
+      },
+      {
+        "frameFile": "frames/frame_0035.jpg",
+        "timestampMs": 61127
+      },
+      {
+        "frameFile": "frames/frame_0036.jpg",
+        "timestampMs": 65000
+      },
+      {
+        "frameFile": "frames/frame_0037.jpg",
+        "timestampMs": 65799
+      },
+      {
+        "frameFile": "frames/frame_0038.jpg",
+        "timestampMs": 66766
+      },
+      {
+        "frameFile": "frames/frame_0039.jpg",
+        "timestampMs": 67733
+      },
+      {
+        "frameFile": "frames/frame_0040.jpg",
+        "timestampMs": 67734
+      },
+      {
+        "frameFile": "frames/frame_0041.jpg",
+        "timestampMs": 75000
+      },
+      {
+        "frameFile": "frames/frame_0042.jpg",
+        "timestampMs": 75275
+      },
+      {
+        "frameFile": "frames/frame_0043.jpg",
+        "timestampMs": 80000
+      },
+      {
+        "frameFile": "frames/frame_0044.jpg",
+        "timestampMs": 82815
+      },
+      {
+        "frameFile": "frames/frame_0045.jpg",
+        "timestampMs": 85000
+      },
+      {
+        "frameFile": "frames/frame_0046.jpg",
+        "timestampMs": 87070
+      },
+      {
+        "frameFile": "frames/frame_0047.jpg",
+        "timestampMs": 89989
+      },
+      {
+        "frameFile": "frames/frame_0048.jpg",
+        "timestampMs": 89990
+      },
+      {
+        "frameFile": "frames/frame_0049.jpg",
+        "timestampMs": 90590
+      },
+      {
+        "frameFile": "frames/frame_0050.jpg",
+        "timestampMs": 91190
+      },
+      {
+        "frameFile": "frames/frame_0051.jpg",
+        "timestampMs": 91858
+      },
+      {
+        "frameFile": "frames/frame_0052.jpg",
+        "timestampMs": 93926
+      },
+      {
+        "frameFile": "frames/frame_0053.jpg",
+        "timestampMs": 93927
+      },
+      {
+        "frameFile": "frames/frame_0054.jpg",
+        "timestampMs": 95000
+      },
+      {
+        "frameFile": "frames/frame_0055.jpg",
+        "timestampMs": 98198
+      },
+      {
+        "frameFile": "frames/frame_0056.jpg",
+        "timestampMs": 102468
+      },
+      {
+        "frameFile": "frames/frame_0057.jpg",
+        "timestampMs": 102469
+      },
+      {
+        "frameFile": "frames/frame_0058.jpg",
+        "timestampMs": 104938
+      },
+      {
+        "frameFile": "frames/frame_0059.jpg",
+        "timestampMs": 105000
+      },
+      {
+        "frameFile": "frames/frame_0060.jpg",
+        "timestampMs": 108275
+      },
+      {
+        "frameFile": "frames/frame_0061.jpg",
+        "timestampMs": 110000
+      },
+      {
+        "frameFile": "frames/frame_0062.jpg",
+        "timestampMs": 115000
+      },
+      {
+        "frameFile": "frames/frame_0063.jpg",
+        "timestampMs": 120000
+      },
+      {
+        "frameFile": "frames/frame_0064.jpg",
+        "timestampMs": 130000
+      },
+      {
+        "frameFile": "frames/frame_0065.jpg",
+        "timestampMs": 135000
+      },
+      {
+        "frameFile": "frames/frame_0066.jpg",
+        "timestampMs": 140000
+      },
+      {
+        "frameFile": "frames/frame_0067.jpg",
+        "timestampMs": 150000
+      },
+      {
+        "frameFile": "frames/frame_0068.jpg",
+        "timestampMs": 155000
+      },
+      {
+        "frameFile": "frames/frame_0069.jpg",
+        "timestampMs": 160000
+      },
+      {
+        "frameFile": "frames/frame_0070.jpg",
+        "timestampMs": 164998
+      },
+      {
+        "frameFile": "frames/frame_0071.jpg",
+        "timestampMs": 170000
+      },
+      {
+        "frameFile": "frames/frame_0072.jpg",
+        "timestampMs": 175000
+      },
+      {
+        "frameFile": "frames/frame_0073.jpg",
+        "timestampMs": 180000
+      },
+      {
+        "frameFile": "frames/frame_0074.jpg",
+        "timestampMs": 185000
+      },
+      {
+        "frameFile": "frames/frame_0075.jpg",
+        "timestampMs": 195000
+      },
+      {
+        "frameFile": "frames/frame_0076.jpg",
+        "timestampMs": 200000
+      },
+      {
+        "frameFile": "frames/frame_0077.jpg",
+        "timestampMs": 205000
+      },
+      {
+        "frameFile": "frames/frame_0078.jpg",
+        "timestampMs": 210000
+      },
+      {
+        "frameFile": "frames/frame_0079.jpg",
+        "timestampMs": 220000
+      },
+      {
+        "frameFile": "frames/frame_0080.jpg",
+        "timestampMs": 221721
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

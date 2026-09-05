@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830125037_0225_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830125037_0225_D",
+    "durationMs": 7741,
+    "sha256": "00d64b019375fc96abf37819f52516871afb28435bfa607838241ea1273d76f0"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830125037_0225_D/analysis.json",
+    "transcriptJson": "DJI_20260830125037_0225_D/transcript.json",
+    "scenesJson": "DJI_20260830125037_0225_D/scenes.json",
+    "framesDirectory": "DJI_20260830125037_0225_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "55037185"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "hi",
+    "languageProbability": 0.752020537853241,
+    "segments": [
+      {
+        "startMs": 1420,
+        "endMs": 3900,
+        "text": "घर से निकलते ऑफ रोडिंग चालू होगी है",
+        "avgLogprob": -0.2344827778258566,
+        "noSpeechProb": 5.85681325659948e-09,
+        "compressionRatio": 1.3548387096774193,
+        "words": [
+          {
+            "startMs": 1420,
+            "endMs": 1880,
+            "word": " घर",
+            "probability": 0.6897116800149282
+          },
+          {
+            "startMs": 1880,
+            "endMs": 2060,
+            "word": " से",
+            "probability": 0.9900242984294891
+          },
+          {
+            "startMs": 2060,
+            "endMs": 2480,
+            "word": " निकलते",
+            "probability": 0.9340867144720895
+          },
+          {
+            "startMs": 2480,
+            "endMs": 2760,
+            "word": " ऑफ",
+            "probability": 0.5656763762235641
+          },
+          {
+            "startMs": 2760,
+            "endMs": 3040,
+            "word": " रोडिंग",
+            "probability": 0.9194530447324117
+          },
+          {
+            "startMs": 3040,
+            "endMs": 3340,
+            "word": " चालू",
+            "probability": 0.9177222947279612
+          },
+          {
+            "startMs": 3340,
+            "endMs": 3540,
+            "word": " होगी",
+            "probability": 0.9581780672073364
+          },
+          {
+            "startMs": 3540,
+            "endMs": 3900,
+            "word": " है",
+            "probability": 0.9803341627120972
+          }
+        ]
+      },
+      {
+        "startMs": 6590,
+        "endMs": 7690,
+        "text": "अबने रिकॉर्ड",
+        "avgLogprob": -0.2344827778258566,
+        "noSpeechProb": 5.85681325659948e-09,
+        "compressionRatio": 1.3548387096774193,
+        "words": [
+          {
+            "startMs": 6590,
+            "endMs": 7250,
+            "word": " अबने",
+            "probability": 0.7050440907478333
+          },
+          {
+            "startMs": 7250,
+            "endMs": 7690,
+            "word": " रिकॉर्ड",
+            "probability": 0.8962203234434127
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 7741,
+      "durationMs": 7741,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830125037_0225_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 74677,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 3870,
+      "frameFile": "DJI_20260830125037_0225_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 70302,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830125037_0225_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 69684,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 7740,
+      "frameFile": "frames/frame_0004.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830125037_0225_D.MP4",
+    "durationMs": 7741,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 7741,
+        "durationMs": 7741,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 1420,
+        "endMs": 3900,
+        "text": "घर से निकलते ऑफ रोडिंग चालू होगी है",
+        "avgLogprob": -0.2344827778258566,
+        "noSpeechProb": 5.85681325659948e-09,
+        "compressionRatio": 1.3548387096774193,
+        "words": [
+          {
+            "startMs": 1420,
+            "endMs": 1880,
+            "word": " घर",
+            "probability": 0.6897116800149282
+          },
+          {
+            "startMs": 1880,
+            "endMs": 2060,
+            "word": " से",
+            "probability": 0.9900242984294891
+          },
+          {
+            "startMs": 2060,
+            "endMs": 2480,
+            "word": " निकलते",
+            "probability": 0.9340867144720895
+          },
+          {
+            "startMs": 2480,
+            "endMs": 2760,
+            "word": " ऑफ",
+            "probability": 0.5656763762235641
+          },
+          {
+            "startMs": 2760,
+            "endMs": 3040,
+            "word": " रोडिंग",
+            "probability": 0.9194530447324117
+          },
+          {
+            "startMs": 3040,
+            "endMs": 3340,
+            "word": " चालू",
+            "probability": 0.9177222947279612
+          },
+          {
+            "startMs": 3340,
+            "endMs": 3540,
+            "word": " होगी",
+            "probability": 0.9581780672073364
+          },
+          {
+            "startMs": 3540,
+            "endMs": 3900,
+            "word": " है",
+            "probability": 0.9803341627120972
+          }
+        ]
+      },
+      {
+        "startMs": 6590,
+        "endMs": 7690,
+        "text": "अबने रिकॉर्ड",
+        "avgLogprob": -0.2344827778258566,
+        "noSpeechProb": 5.85681325659948e-09,
+        "compressionRatio": 1.3548387096774193,
+        "words": [
+          {
+            "startMs": 6590,
+            "endMs": 7250,
+            "word": " अबने",
+            "probability": 0.7050440907478333
+          },
+          {
+            "startMs": 7250,
+            "endMs": 7690,
+            "word": " रिकॉर्ड",
+            "probability": 0.8962203234434127
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 3870
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 7740
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

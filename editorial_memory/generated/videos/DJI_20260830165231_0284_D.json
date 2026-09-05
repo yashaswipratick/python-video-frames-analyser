@@ -1,0 +1,3455 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830165231_0284_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830165231_0284_D",
+    "durationMs": 296096,
+    "sha256": "a12a22fb7bcf828b365f7003dce9d6faca4e9e1216b4bc4ff3f9012f49bf9eac"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830165231_0284_D/analysis.json",
+    "transcriptJson": "DJI_20260830165231_0284_D/transcript.json",
+    "scenesJson": "DJI_20260830165231_0284_D/scenes.json",
+    "framesDirectory": "DJI_20260830165231_0284_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "56315078"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.5251829624176025,
+    "segments": [
+      {
+        "startMs": 28430,
+        "endMs": 33310,
+        "text": "There is a lot of wood on this road, so there will be a lot of tension on this road.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 28430,
+            "endMs": 28490,
+            "word": " There",
+            "probability": 0.016283495351672173
+          },
+          {
+            "startMs": 28490,
+            "endMs": 28510,
+            "word": " is",
+            "probability": 0.4429665505886078
+          },
+          {
+            "startMs": 28510,
+            "endMs": 28530,
+            "word": " a",
+            "probability": 0.3313383460044861
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28530,
+            "word": " lot",
+            "probability": 0.40502139925956726
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28530,
+            "word": " of",
+            "probability": 0.9216651320457458
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28530,
+            "word": " wood",
+            "probability": 0.09623401612043381
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28530,
+            "word": " on",
+            "probability": 0.24804441630840302
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28530,
+            "word": " this",
+            "probability": 0.567656934261322
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28730,
+            "word": " road,",
+            "probability": 0.9525945782661438
+          },
+          {
+            "startMs": 29790,
+            "endMs": 30790,
+            "word": " so",
+            "probability": 0.5438687205314636
+          },
+          {
+            "startMs": 30790,
+            "endMs": 30930,
+            "word": " there",
+            "probability": 0.19620735943317413
+          },
+          {
+            "startMs": 30930,
+            "endMs": 31790,
+            "word": " will",
+            "probability": 0.2887446880340576
+          },
+          {
+            "startMs": 31790,
+            "endMs": 31790,
+            "word": " be",
+            "probability": 0.8300632834434509
+          },
+          {
+            "startMs": 31790,
+            "endMs": 31790,
+            "word": " a",
+            "probability": 0.26118046045303345
+          },
+          {
+            "startMs": 31790,
+            "endMs": 32010,
+            "word": " lot",
+            "probability": 0.8299931287765503
+          },
+          {
+            "startMs": 32010,
+            "endMs": 32230,
+            "word": " of",
+            "probability": 0.9777136445045471
+          },
+          {
+            "startMs": 32230,
+            "endMs": 32230,
+            "word": " tension",
+            "probability": 0.26696521043777466
+          },
+          {
+            "startMs": 32230,
+            "endMs": 33150,
+            "word": " on",
+            "probability": 0.10484128445386887
+          },
+          {
+            "startMs": 33150,
+            "endMs": 33150,
+            "word": " this",
+            "probability": 0.20431827008724213
+          },
+          {
+            "startMs": 33150,
+            "endMs": 33310,
+            "word": " road.",
+            "probability": 0.9109025597572327
+          }
+        ]
+      },
+      {
+        "startMs": 37880,
+        "endMs": 41520,
+        "text": "If it's a little bit of wood, it will be a little damage.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 37880,
+            "endMs": 38280,
+            "word": " If",
+            "probability": 0.13307754695415497
+          },
+          {
+            "startMs": 38280,
+            "endMs": 38680,
+            "word": " it's",
+            "probability": 0.2286372110247612
+          },
+          {
+            "startMs": 38680,
+            "endMs": 38720,
+            "word": " a",
+            "probability": 0.37453001737594604
+          },
+          {
+            "startMs": 38720,
+            "endMs": 38780,
+            "word": " little",
+            "probability": 0.7408125996589661
+          },
+          {
+            "startMs": 38780,
+            "endMs": 38960,
+            "word": " bit",
+            "probability": 0.2709789574146271
+          },
+          {
+            "startMs": 38960,
+            "endMs": 39160,
+            "word": " of",
+            "probability": 0.256943941116333
+          },
+          {
+            "startMs": 39160,
+            "endMs": 39160,
+            "word": " wood,",
+            "probability": 0.20921525359153748
+          },
+          {
+            "startMs": 39300,
+            "endMs": 41200,
+            "word": " it",
+            "probability": 0.4443427324295044
+          },
+          {
+            "startMs": 41200,
+            "endMs": 41220,
+            "word": " will",
+            "probability": 0.7573787569999695
+          },
+          {
+            "startMs": 41220,
+            "endMs": 41220,
+            "word": " be",
+            "probability": 0.27038249373435974
+          },
+          {
+            "startMs": 41220,
+            "endMs": 41220,
+            "word": " a",
+            "probability": 0.21958355605602264
+          },
+          {
+            "startMs": 41220,
+            "endMs": 41520,
+            "word": " little",
+            "probability": 0.27160128951072693
+          },
+          {
+            "startMs": 41520,
+            "endMs": 41520,
+            "word": " damage.",
+            "probability": 0.7373225092887878
+          }
+        ]
+      },
+      {
+        "startMs": 42300,
+        "endMs": 46060,
+        "text": "But our ground clearance is good.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 42300,
+            "endMs": 42700,
+            "word": " But",
+            "probability": 0.6879385709762573
+          },
+          {
+            "startMs": 44560,
+            "endMs": 44920,
+            "word": " our",
+            "probability": 0.1012304499745369
+          },
+          {
+            "startMs": 44920,
+            "endMs": 45340,
+            "word": " ground",
+            "probability": 0.7136288285255432
+          },
+          {
+            "startMs": 45340,
+            "endMs": 45740,
+            "word": " clearance",
+            "probability": 0.9138579964637756
+          },
+          {
+            "startMs": 45740,
+            "endMs": 45900,
+            "word": " is",
+            "probability": 0.7748960852622986
+          },
+          {
+            "startMs": 45900,
+            "endMs": 46060,
+            "word": " good.",
+            "probability": 0.6555268168449402
+          }
+        ]
+      },
+      {
+        "startMs": 56600,
+        "endMs": 58680,
+        "text": "It's like the top of the road, it's like the top of the road.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 56600,
+            "endMs": 57000,
+            "word": " It's",
+            "probability": 0.40602972358465195
+          },
+          {
+            "startMs": 57000,
+            "endMs": 57000,
+            "word": " like",
+            "probability": 0.17143335938453674
+          },
+          {
+            "startMs": 57000,
+            "endMs": 57000,
+            "word": " the",
+            "probability": 0.18343326449394226
+          },
+          {
+            "startMs": 57000,
+            "endMs": 57580,
+            "word": " top",
+            "probability": 0.05784321576356888
+          },
+          {
+            "startMs": 57580,
+            "endMs": 57580,
+            "word": " of",
+            "probability": 0.1486142873764038
+          },
+          {
+            "startMs": 57580,
+            "endMs": 57800,
+            "word": " the",
+            "probability": 0.6744025945663452
+          },
+          {
+            "startMs": 57800,
+            "endMs": 57920,
+            "word": " road,",
+            "probability": 0.32960838079452515
+          },
+          {
+            "startMs": 57980,
+            "endMs": 58120,
+            "word": " it's",
+            "probability": 0.38058270514011383
+          },
+          {
+            "startMs": 58120,
+            "endMs": 58220,
+            "word": " like",
+            "probability": 0.3544025421142578
+          },
+          {
+            "startMs": 58220,
+            "endMs": 58220,
+            "word": " the",
+            "probability": 0.28458064794540405
+          },
+          {
+            "startMs": 58220,
+            "endMs": 58240,
+            "word": " top",
+            "probability": 0.8375645279884338
+          },
+          {
+            "startMs": 58240,
+            "endMs": 58380,
+            "word": " of",
+            "probability": 0.49675261974334717
+          },
+          {
+            "startMs": 58380,
+            "endMs": 58600,
+            "word": " the",
+            "probability": 0.8977143168449402
+          },
+          {
+            "startMs": 58600,
+            "endMs": 58680,
+            "word": " road.",
+            "probability": 0.8991692662239075
+          }
+        ]
+      },
+      {
+        "startMs": 60420,
+        "endMs": 60980,
+        "text": "What is this?",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 60420,
+            "endMs": 60820,
+            "word": " What",
+            "probability": 0.48806968331336975
+          },
+          {
+            "startMs": 60820,
+            "endMs": 60820,
+            "word": " is",
+            "probability": 0.4645521640777588
+          },
+          {
+            "startMs": 60820,
+            "endMs": 60980,
+            "word": " this?",
+            "probability": 0.6038020253181458
+          }
+        ]
+      },
+      {
+        "startMs": 62820,
+        "endMs": 64200,
+        "text": "Ladakh, people don't go on the road.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 62820,
+            "endMs": 63220,
+            "word": " Ladakh,",
+            "probability": 0.6184182316064835
+          },
+          {
+            "startMs": 63220,
+            "endMs": 63620,
+            "word": " people",
+            "probability": 0.5115367770195007
+          },
+          {
+            "startMs": 63620,
+            "endMs": 63720,
+            "word": " don't",
+            "probability": 0.6274618208408356
+          },
+          {
+            "startMs": 63720,
+            "endMs": 63760,
+            "word": " go",
+            "probability": 0.2155415415763855
+          },
+          {
+            "startMs": 63760,
+            "endMs": 63980,
+            "word": " on",
+            "probability": 0.3739761412143707
+          },
+          {
+            "startMs": 63980,
+            "endMs": 64060,
+            "word": " the",
+            "probability": 0.5160018801689148
+          },
+          {
+            "startMs": 64060,
+            "endMs": 64200,
+            "word": " road.",
+            "probability": 0.9843001961708069
+          }
+        ]
+      },
+      {
+        "startMs": 64520,
+        "endMs": 66040,
+        "text": "It's like this car is going on.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 64520,
+            "endMs": 64600,
+            "word": " It's",
+            "probability": 0.39503390714526176
+          },
+          {
+            "startMs": 64600,
+            "endMs": 64780,
+            "word": " like",
+            "probability": 0.15673203766345978
+          },
+          {
+            "startMs": 64780,
+            "endMs": 65360,
+            "word": " this",
+            "probability": 0.43656614422798157
+          },
+          {
+            "startMs": 65360,
+            "endMs": 65360,
+            "word": " car",
+            "probability": 0.10494370013475418
+          },
+          {
+            "startMs": 65360,
+            "endMs": 65500,
+            "word": " is",
+            "probability": 0.20765723288059235
+          },
+          {
+            "startMs": 65500,
+            "endMs": 65500,
+            "word": " going",
+            "probability": 0.08969969302415848
+          },
+          {
+            "startMs": 65500,
+            "endMs": 66040,
+            "word": " on.",
+            "probability": 0.4504926800727844
+          }
+        ]
+      },
+      {
+        "startMs": 68770,
+        "endMs": 69690,
+        "text": "I have two of them.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 68770,
+            "endMs": 69170,
+            "word": " I",
+            "probability": 0.2532293200492859
+          },
+          {
+            "startMs": 69170,
+            "endMs": 69230,
+            "word": " have",
+            "probability": 0.09831567108631134
+          },
+          {
+            "startMs": 69230,
+            "endMs": 69410,
+            "word": " two",
+            "probability": 0.1670362651348114
+          },
+          {
+            "startMs": 69410,
+            "endMs": 69630,
+            "word": " of",
+            "probability": 0.3155060410499573
+          },
+          {
+            "startMs": 69630,
+            "endMs": 69690,
+            "word": " them.",
+            "probability": 0.7103725075721741
+          }
+        ]
+      },
+      {
+        "startMs": 71270,
+        "endMs": 71670,
+        "text": "Ladakh.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 71270,
+            "endMs": 71670,
+            "word": " Ladakh.",
+            "probability": 0.8870646357536316
+          }
+        ]
+      },
+      {
+        "startMs": 71670,
+        "endMs": 73170,
+        "text": "They are selling a new car.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 71670,
+            "endMs": 72810,
+            "word": " They",
+            "probability": 0.0007968851714394987
+          },
+          {
+            "startMs": 72810,
+            "endMs": 72830,
+            "word": " are",
+            "probability": 0.2142103612422943
+          },
+          {
+            "startMs": 72830,
+            "endMs": 73010,
+            "word": " selling",
+            "probability": 0.12260253727436066
+          },
+          {
+            "startMs": 73010,
+            "endMs": 73010,
+            "word": " a",
+            "probability": 0.20690332353115082
+          },
+          {
+            "startMs": 73010,
+            "endMs": 73010,
+            "word": " new",
+            "probability": 0.8507893681526184
+          },
+          {
+            "startMs": 73010,
+            "endMs": 73170,
+            "word": " car.",
+            "probability": 0.8264272809028625
+          }
+        ]
+      },
+      {
+        "startMs": 74610,
+        "endMs": 140180,
+        "text": "You can make a video here.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 74610,
+            "endMs": 75210,
+            "word": " You",
+            "probability": 0.08167729526758194
+          },
+          {
+            "startMs": 138820,
+            "endMs": 139180,
+            "word": " can",
+            "probability": 0.27751025557518005
+          },
+          {
+            "startMs": 139180,
+            "endMs": 139200,
+            "word": " make",
+            "probability": 0.38489648699760437
+          },
+          {
+            "startMs": 139200,
+            "endMs": 139460,
+            "word": " a",
+            "probability": 0.6162233352661133
+          },
+          {
+            "startMs": 139460,
+            "endMs": 139860,
+            "word": " video",
+            "probability": 0.9454209804534912
+          },
+          {
+            "startMs": 139860,
+            "endMs": 140180,
+            "word": " here.",
+            "probability": 0.1325741857290268
+          }
+        ]
+      },
+      {
+        "startMs": 142130,
+        "endMs": 143230,
+        "text": "Put it in the selfie stick.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 142130,
+            "endMs": 142690,
+            "word": " Put",
+            "probability": 0.15418921411037445
+          },
+          {
+            "startMs": 142690,
+            "endMs": 142690,
+            "word": " it",
+            "probability": 0.3646574318408966
+          },
+          {
+            "startMs": 142690,
+            "endMs": 142830,
+            "word": " in",
+            "probability": 0.3590252101421356
+          },
+          {
+            "startMs": 142830,
+            "endMs": 142870,
+            "word": " the",
+            "probability": 0.2771223485469818
+          },
+          {
+            "startMs": 142870,
+            "endMs": 143030,
+            "word": " selfie",
+            "probability": 0.77338045835495
+          },
+          {
+            "startMs": 143030,
+            "endMs": 143230,
+            "word": " stick.",
+            "probability": 0.7879859209060669
+          }
+        ]
+      },
+      {
+        "startMs": 157490,
+        "endMs": 159190,
+        "text": "Put it in the selfie stick.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 157490,
+            "endMs": 158090,
+            "word": " Put",
+            "probability": 0.15117572247982025
+          },
+          {
+            "startMs": 158090,
+            "endMs": 158690,
+            "word": " it",
+            "probability": 0.8161724209785461
+          },
+          {
+            "startMs": 158690,
+            "endMs": 158690,
+            "word": " in",
+            "probability": 0.7746893763542175
+          },
+          {
+            "startMs": 158690,
+            "endMs": 158890,
+            "word": " the",
+            "probability": 0.7999494075775146
+          },
+          {
+            "startMs": 158890,
+            "endMs": 158890,
+            "word": " selfie",
+            "probability": 0.666649341583252
+          },
+          {
+            "startMs": 158890,
+            "endMs": 159190,
+            "word": " stick.",
+            "probability": 0.968485414981842
+          }
+        ]
+      },
+      {
+        "startMs": 159630,
+        "endMs": 162760,
+        "text": "Put it in the selfie stick.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 159630,
+            "endMs": 160230,
+            "word": " Put",
+            "probability": 0.24610798060894012
+          },
+          {
+            "startMs": 162120,
+            "endMs": 162180,
+            "word": " it",
+            "probability": 0.8109023571014404
+          },
+          {
+            "startMs": 162180,
+            "endMs": 162240,
+            "word": " in",
+            "probability": 0.7969847321510315
+          },
+          {
+            "startMs": 162240,
+            "endMs": 162360,
+            "word": " the",
+            "probability": 0.8849653601646423
+          },
+          {
+            "startMs": 162360,
+            "endMs": 162460,
+            "word": " selfie",
+            "probability": 0.6696295142173767
+          },
+          {
+            "startMs": 162460,
+            "endMs": 162760,
+            "word": " stick.",
+            "probability": 0.9723487496376038
+          }
+        ]
+      },
+      {
+        "startMs": 162760,
+        "endMs": 163240,
+        "text": "It's like this.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 162760,
+            "endMs": 163020,
+            "word": " It's",
+            "probability": 0.3157818615436554
+          },
+          {
+            "startMs": 163020,
+            "endMs": 163180,
+            "word": " like",
+            "probability": 0.027122830972075462
+          },
+          {
+            "startMs": 163180,
+            "endMs": 163240,
+            "word": " this.",
+            "probability": 0.15579450130462646
+          }
+        ]
+      },
+      {
+        "startMs": 163480,
+        "endMs": 190740,
+        "text": "It's not the same.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 163480,
+            "endMs": 164020,
+            "word": " It's",
+            "probability": 0.5361193269491196
+          },
+          {
+            "startMs": 190000,
+            "endMs": 190060,
+            "word": " not",
+            "probability": 0.0635756105184555
+          },
+          {
+            "startMs": 190060,
+            "endMs": 190080,
+            "word": " the",
+            "probability": 0.0791478380560875
+          },
+          {
+            "startMs": 190080,
+            "endMs": 190740,
+            "word": " same.",
+            "probability": 0.3158710300922394
+          }
+        ]
+      },
+      {
+        "startMs": 191060,
+        "endMs": 192240,
+        "text": "You can put it on the side.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 191060,
+            "endMs": 191660,
+            "word": " You",
+            "probability": 0.41284608840942383
+          },
+          {
+            "startMs": 191660,
+            "endMs": 191880,
+            "word": " can",
+            "probability": 0.4339562952518463
+          },
+          {
+            "startMs": 191880,
+            "endMs": 191880,
+            "word": " put",
+            "probability": 0.11377278715372086
+          },
+          {
+            "startMs": 191880,
+            "endMs": 191880,
+            "word": " it",
+            "probability": 0.8264973163604736
+          },
+          {
+            "startMs": 191880,
+            "endMs": 191960,
+            "word": " on",
+            "probability": 0.2683672308921814
+          },
+          {
+            "startMs": 191960,
+            "endMs": 191980,
+            "word": " the",
+            "probability": 0.7691910862922668
+          },
+          {
+            "startMs": 191980,
+            "endMs": 192240,
+            "word": " side.",
+            "probability": 0.68765789270401
+          }
+        ]
+      },
+      {
+        "startMs": 206850,
+        "endMs": 208050,
+        "text": "Put it there.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 206850,
+            "endMs": 207450,
+            "word": " Put",
+            "probability": 0.2092188447713852
+          },
+          {
+            "startMs": 207450,
+            "endMs": 208050,
+            "word": " it",
+            "probability": 0.9475022554397583
+          },
+          {
+            "startMs": 208050,
+            "endMs": 208050,
+            "word": " there.",
+            "probability": 0.076182059943676
+          }
+        ]
+      },
+      {
+        "startMs": 210190,
+        "endMs": 226300,
+        "text": "Then we have Bluetooth.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 210190,
+            "endMs": 210490,
+            "word": " Then",
+            "probability": 0.05354025959968567
+          },
+          {
+            "startMs": 225920,
+            "endMs": 225940,
+            "word": " we",
+            "probability": 0.11294016987085342
+          },
+          {
+            "startMs": 225940,
+            "endMs": 225940,
+            "word": " have",
+            "probability": 0.11023236066102982
+          },
+          {
+            "startMs": 225940,
+            "endMs": 226300,
+            "word": " Bluetooth.",
+            "probability": 0.5075924396514893
+          }
+        ]
+      },
+      {
+        "startMs": 228620,
+        "endMs": 229740,
+        "text": "Press it.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 228620,
+            "endMs": 229220,
+            "word": " Press",
+            "probability": 0.022360235452651978
+          },
+          {
+            "startMs": 229220,
+            "endMs": 229740,
+            "word": " it.",
+            "probability": 0.7678055167198181
+          }
+        ]
+      },
+      {
+        "startMs": 231540,
+        "endMs": 232500,
+        "text": "There will be a blue light.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 231540,
+            "endMs": 232140,
+            "word": " There",
+            "probability": 0.2509956359863281
+          },
+          {
+            "startMs": 232140,
+            "endMs": 232140,
+            "word": " will",
+            "probability": 0.504858136177063
+          },
+          {
+            "startMs": 232140,
+            "endMs": 232140,
+            "word": " be",
+            "probability": 0.6992946863174438
+          },
+          {
+            "startMs": 232140,
+            "endMs": 232260,
+            "word": " a",
+            "probability": 0.39982303977012634
+          },
+          {
+            "startMs": 232260,
+            "endMs": 232260,
+            "word": " blue",
+            "probability": 0.9383028745651245
+          },
+          {
+            "startMs": 232260,
+            "endMs": 232500,
+            "word": " light.",
+            "probability": 0.9950195550918579
+          }
+        ]
+      },
+      {
+        "startMs": 232500,
+        "endMs": 240140,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 232500,
+            "endMs": 234020,
+            "word": " Let's",
+            "probability": 0.4025124376639724
+          },
+          {
+            "startMs": 240140,
+            "endMs": 240140,
+            "word": " see.",
+            "probability": 0.5613812208175659
+          }
+        ]
+      },
+      {
+        "startMs": 241380,
+        "endMs": 241540,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 241380,
+            "endMs": 241540,
+            "word": " Let's",
+            "probability": 0.5137912333011627
+          },
+          {
+            "startMs": 241540,
+            "endMs": 241540,
+            "word": " see.",
+            "probability": 0.47202450037002563
+          }
+        ]
+      },
+      {
+        "startMs": 241540,
+        "endMs": 242020,
+        "text": "Video.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 241540,
+            "endMs": 242020,
+            "word": " Video.",
+            "probability": 0.09727244824171066
+          }
+        ]
+      },
+      {
+        "startMs": 260480,
+        "endMs": 261680,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 260480,
+            "endMs": 261680,
+            "word": " Let's",
+            "probability": 0.6424862742424011
+          },
+          {
+            "startMs": 261680,
+            "endMs": 261680,
+            "word": " see.",
+            "probability": 0.17367130517959595
+          }
+        ]
+      },
+      {
+        "startMs": 270190,
+        "endMs": 270830,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 270190,
+            "endMs": 270790,
+            "word": " Let's",
+            "probability": 0.5454616844654083
+          },
+          {
+            "startMs": 270790,
+            "endMs": 270830,
+            "word": " see.",
+            "probability": 0.2678649127483368
+          }
+        ]
+      },
+      {
+        "startMs": 271090,
+        "endMs": 272170,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 271090,
+            "endMs": 272110,
+            "word": " Let's",
+            "probability": 0.5855085030198097
+          },
+          {
+            "startMs": 272110,
+            "endMs": 272170,
+            "word": " see.",
+            "probability": 0.427437424659729
+          }
+        ]
+      },
+      {
+        "startMs": 274270,
+        "endMs": 275590,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 274270,
+            "endMs": 275470,
+            "word": " Let's",
+            "probability": 0.6636983305215836
+          },
+          {
+            "startMs": 275470,
+            "endMs": 275590,
+            "word": " see.",
+            "probability": 0.4446413815021515
+          }
+        ]
+      },
+      {
+        "startMs": 275590,
+        "endMs": 275810,
+        "text": "Let's see.",
+        "avgLogprob": -1.5220284895463423,
+        "noSpeechProb": 8.453343060266238e-12,
+        "compressionRatio": 1.255813953488372,
+        "words": [
+          {
+            "startMs": 275590,
+            "endMs": 275670,
+            "word": " Let's",
+            "probability": 0.45761429076083004
+          },
+          {
+            "startMs": 275670,
+            "endMs": 275810,
+            "word": " see.",
+            "probability": 0.04777722433209419
+          }
+        ]
+      },
+      {
+        "startMs": 275810,
+        "endMs": 275870,
+        "text": "Let's see.",
+        "avgLogprob": -1.5220284895463423,
+        "noSpeechProb": 8.453343060266238e-12,
+        "compressionRatio": 1.255813953488372,
+        "words": [
+          {
+            "startMs": 275810,
+            "endMs": 275870,
+            "word": " Let's",
+            "probability": 0.6108185574412346
+          },
+          {
+            "startMs": 275870,
+            "endMs": 275870,
+            "word": " see.",
+            "probability": 0.544373631477356
+          }
+        ]
+      },
+      {
+        "startMs": 275870,
+        "endMs": 275890,
+        "text": "Let's see.",
+        "avgLogprob": -1.5220284895463423,
+        "noSpeechProb": 8.453343060266238e-12,
+        "compressionRatio": 1.255813953488372,
+        "words": [
+          {
+            "startMs": 275870,
+            "endMs": 275890,
+            "word": " Let's",
+            "probability": 0.7738391160964966
+          },
+          {
+            "startMs": 275890,
+            "endMs": 275890,
+            "word": " see.",
+            "probability": 0.8699571490287781
+          }
+        ]
+      },
+      {
+        "startMs": 275890,
+        "endMs": 275930,
+        "text": "See?",
+        "avgLogprob": -1.5220284895463423,
+        "noSpeechProb": 8.453343060266238e-12,
+        "compressionRatio": 1.255813953488372,
+        "words": [
+          {
+            "startMs": 275890,
+            "endMs": 275930,
+            "word": " See?",
+            "probability": 0.009991881437599659
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 296096,
+      "durationMs": 296096,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 97495,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 72153,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 75457,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 15000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 78641,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 20000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0005.jpg",
+      "exists": true,
+      "sizeBytes": 79760,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 25000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0006.jpg",
+      "exists": true,
+      "sizeBytes": 80230,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 30000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0007.jpg",
+      "exists": true,
+      "sizeBytes": 74901,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 35000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0008.jpg",
+      "exists": true,
+      "sizeBytes": 82664,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 40000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0009.jpg",
+      "exists": true,
+      "sizeBytes": 73873,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 45000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0010.jpg",
+      "exists": true,
+      "sizeBytes": 70121,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 50000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0011.jpg",
+      "exists": true,
+      "sizeBytes": 73737,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 55000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0012.jpg",
+      "exists": true,
+      "sizeBytes": 66551,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 60000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0013.jpg",
+      "exists": true,
+      "sizeBytes": 74299,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 65000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0014.jpg",
+      "exists": true,
+      "sizeBytes": 78314,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 70000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0015.jpg",
+      "exists": true,
+      "sizeBytes": 69381,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 75000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0016.jpg",
+      "exists": true,
+      "sizeBytes": 76749,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 80000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0017.jpg",
+      "exists": true,
+      "sizeBytes": 83207,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 85000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0018.jpg",
+      "exists": true,
+      "sizeBytes": 87979,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 90000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0019.jpg",
+      "exists": true,
+      "sizeBytes": 77031,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 95000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0020.jpg",
+      "exists": true,
+      "sizeBytes": 80311,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 100000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0021.jpg",
+      "exists": true,
+      "sizeBytes": 71929,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 105000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0022.jpg",
+      "exists": true,
+      "sizeBytes": 73181,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 110000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0023.jpg",
+      "exists": true,
+      "sizeBytes": 68050,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 115000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0024.jpg",
+      "exists": true,
+      "sizeBytes": 75902,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 120000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0025.jpg",
+      "exists": true,
+      "sizeBytes": 99928,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 125000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0026.jpg",
+      "exists": true,
+      "sizeBytes": 95256,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 130000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0027.jpg",
+      "exists": true,
+      "sizeBytes": 75555,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 135000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0028.jpg",
+      "exists": true,
+      "sizeBytes": 73074,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 140000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0029.jpg",
+      "exists": true,
+      "sizeBytes": 101682,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 145000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0030.jpg",
+      "exists": true,
+      "sizeBytes": 82552,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 148048,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0031.jpg",
+      "exists": true,
+      "sizeBytes": 80585,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 150000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0032.jpg",
+      "exists": true,
+      "sizeBytes": 84462,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 155000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0033.jpg",
+      "exists": true,
+      "sizeBytes": 73306,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 160000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0034.jpg",
+      "exists": true,
+      "sizeBytes": 83150,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 165000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0035.jpg",
+      "exists": true,
+      "sizeBytes": 103536,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 170000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0036.jpg",
+      "exists": true,
+      "sizeBytes": 87514,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 175000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0037.jpg",
+      "exists": true,
+      "sizeBytes": 71401,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 180000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0038.jpg",
+      "exists": true,
+      "sizeBytes": 76562,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 185000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0039.jpg",
+      "exists": true,
+      "sizeBytes": 77460,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 190000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0040.jpg",
+      "exists": true,
+      "sizeBytes": 78190,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 195000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0041.jpg",
+      "exists": true,
+      "sizeBytes": 76875,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 200000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0042.jpg",
+      "exists": true,
+      "sizeBytes": 72568,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 205000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0043.jpg",
+      "exists": true,
+      "sizeBytes": 75750,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 210000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0044.jpg",
+      "exists": true,
+      "sizeBytes": 86740,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 215000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0045.jpg",
+      "exists": true,
+      "sizeBytes": 68704,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 220000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0046.jpg",
+      "exists": true,
+      "sizeBytes": 68034,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 225000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0047.jpg",
+      "exists": true,
+      "sizeBytes": 77377,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 230000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0048.jpg",
+      "exists": true,
+      "sizeBytes": 75155,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 235000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0049.jpg",
+      "exists": true,
+      "sizeBytes": 76347,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 240000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0050.jpg",
+      "exists": true,
+      "sizeBytes": 119813,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 245000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0051.jpg",
+      "exists": true,
+      "sizeBytes": 102825,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 250000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0052.jpg",
+      "exists": true,
+      "sizeBytes": 129141,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 255000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0053.jpg",
+      "exists": true,
+      "sizeBytes": 118685,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 260000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0054.jpg",
+      "exists": true,
+      "sizeBytes": 99015,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 265000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0055.jpg",
+      "exists": true,
+      "sizeBytes": 112344,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 270000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0056.jpg",
+      "exists": true,
+      "sizeBytes": 110910,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 275000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0057.jpg",
+      "exists": true,
+      "sizeBytes": 111437,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 280000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0058.jpg",
+      "exists": true,
+      "sizeBytes": 111496,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 285000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0059.jpg",
+      "exists": true,
+      "sizeBytes": 111835,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 290000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0060.jpg",
+      "exists": true,
+      "sizeBytes": 117252,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 295000,
+      "frameFile": "DJI_20260830165231_0284_D/frames/frame_0061.jpg",
+      "exists": true,
+      "sizeBytes": 116085,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 296095,
+      "frameFile": "frames/frame_0062.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830165231_0284_D.MP4",
+    "durationMs": 296096,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 296096,
+        "durationMs": 296096,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 28430,
+        "endMs": 33310,
+        "text": "There is a lot of wood on this road, so there will be a lot of tension on this road.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 28430,
+            "endMs": 28490,
+            "word": " There",
+            "probability": 0.016283495351672173
+          },
+          {
+            "startMs": 28490,
+            "endMs": 28510,
+            "word": " is",
+            "probability": 0.4429665505886078
+          },
+          {
+            "startMs": 28510,
+            "endMs": 28530,
+            "word": " a",
+            "probability": 0.3313383460044861
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28530,
+            "word": " lot",
+            "probability": 0.40502139925956726
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28530,
+            "word": " of",
+            "probability": 0.9216651320457458
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28530,
+            "word": " wood",
+            "probability": 0.09623401612043381
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28530,
+            "word": " on",
+            "probability": 0.24804441630840302
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28530,
+            "word": " this",
+            "probability": 0.567656934261322
+          },
+          {
+            "startMs": 28530,
+            "endMs": 28730,
+            "word": " road,",
+            "probability": 0.9525945782661438
+          },
+          {
+            "startMs": 29790,
+            "endMs": 30790,
+            "word": " so",
+            "probability": 0.5438687205314636
+          },
+          {
+            "startMs": 30790,
+            "endMs": 30930,
+            "word": " there",
+            "probability": 0.19620735943317413
+          },
+          {
+            "startMs": 30930,
+            "endMs": 31790,
+            "word": " will",
+            "probability": 0.2887446880340576
+          },
+          {
+            "startMs": 31790,
+            "endMs": 31790,
+            "word": " be",
+            "probability": 0.8300632834434509
+          },
+          {
+            "startMs": 31790,
+            "endMs": 31790,
+            "word": " a",
+            "probability": 0.26118046045303345
+          },
+          {
+            "startMs": 31790,
+            "endMs": 32010,
+            "word": " lot",
+            "probability": 0.8299931287765503
+          },
+          {
+            "startMs": 32010,
+            "endMs": 32230,
+            "word": " of",
+            "probability": 0.9777136445045471
+          },
+          {
+            "startMs": 32230,
+            "endMs": 32230,
+            "word": " tension",
+            "probability": 0.26696521043777466
+          },
+          {
+            "startMs": 32230,
+            "endMs": 33150,
+            "word": " on",
+            "probability": 0.10484128445386887
+          },
+          {
+            "startMs": 33150,
+            "endMs": 33150,
+            "word": " this",
+            "probability": 0.20431827008724213
+          },
+          {
+            "startMs": 33150,
+            "endMs": 33310,
+            "word": " road.",
+            "probability": 0.9109025597572327
+          }
+        ]
+      },
+      {
+        "startMs": 37880,
+        "endMs": 41520,
+        "text": "If it's a little bit of wood, it will be a little damage.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 37880,
+            "endMs": 38280,
+            "word": " If",
+            "probability": 0.13307754695415497
+          },
+          {
+            "startMs": 38280,
+            "endMs": 38680,
+            "word": " it's",
+            "probability": 0.2286372110247612
+          },
+          {
+            "startMs": 38680,
+            "endMs": 38720,
+            "word": " a",
+            "probability": 0.37453001737594604
+          },
+          {
+            "startMs": 38720,
+            "endMs": 38780,
+            "word": " little",
+            "probability": 0.7408125996589661
+          },
+          {
+            "startMs": 38780,
+            "endMs": 38960,
+            "word": " bit",
+            "probability": 0.2709789574146271
+          },
+          {
+            "startMs": 38960,
+            "endMs": 39160,
+            "word": " of",
+            "probability": 0.256943941116333
+          },
+          {
+            "startMs": 39160,
+            "endMs": 39160,
+            "word": " wood,",
+            "probability": 0.20921525359153748
+          },
+          {
+            "startMs": 39300,
+            "endMs": 41200,
+            "word": " it",
+            "probability": 0.4443427324295044
+          },
+          {
+            "startMs": 41200,
+            "endMs": 41220,
+            "word": " will",
+            "probability": 0.7573787569999695
+          },
+          {
+            "startMs": 41220,
+            "endMs": 41220,
+            "word": " be",
+            "probability": 0.27038249373435974
+          },
+          {
+            "startMs": 41220,
+            "endMs": 41220,
+            "word": " a",
+            "probability": 0.21958355605602264
+          },
+          {
+            "startMs": 41220,
+            "endMs": 41520,
+            "word": " little",
+            "probability": 0.27160128951072693
+          },
+          {
+            "startMs": 41520,
+            "endMs": 41520,
+            "word": " damage.",
+            "probability": 0.7373225092887878
+          }
+        ]
+      },
+      {
+        "startMs": 42300,
+        "endMs": 46060,
+        "text": "But our ground clearance is good.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 42300,
+            "endMs": 42700,
+            "word": " But",
+            "probability": 0.6879385709762573
+          },
+          {
+            "startMs": 44560,
+            "endMs": 44920,
+            "word": " our",
+            "probability": 0.1012304499745369
+          },
+          {
+            "startMs": 44920,
+            "endMs": 45340,
+            "word": " ground",
+            "probability": 0.7136288285255432
+          },
+          {
+            "startMs": 45340,
+            "endMs": 45740,
+            "word": " clearance",
+            "probability": 0.9138579964637756
+          },
+          {
+            "startMs": 45740,
+            "endMs": 45900,
+            "word": " is",
+            "probability": 0.7748960852622986
+          },
+          {
+            "startMs": 45900,
+            "endMs": 46060,
+            "word": " good.",
+            "probability": 0.6555268168449402
+          }
+        ]
+      },
+      {
+        "startMs": 56600,
+        "endMs": 58680,
+        "text": "It's like the top of the road, it's like the top of the road.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 56600,
+            "endMs": 57000,
+            "word": " It's",
+            "probability": 0.40602972358465195
+          },
+          {
+            "startMs": 57000,
+            "endMs": 57000,
+            "word": " like",
+            "probability": 0.17143335938453674
+          },
+          {
+            "startMs": 57000,
+            "endMs": 57000,
+            "word": " the",
+            "probability": 0.18343326449394226
+          },
+          {
+            "startMs": 57000,
+            "endMs": 57580,
+            "word": " top",
+            "probability": 0.05784321576356888
+          },
+          {
+            "startMs": 57580,
+            "endMs": 57580,
+            "word": " of",
+            "probability": 0.1486142873764038
+          },
+          {
+            "startMs": 57580,
+            "endMs": 57800,
+            "word": " the",
+            "probability": 0.6744025945663452
+          },
+          {
+            "startMs": 57800,
+            "endMs": 57920,
+            "word": " road,",
+            "probability": 0.32960838079452515
+          },
+          {
+            "startMs": 57980,
+            "endMs": 58120,
+            "word": " it's",
+            "probability": 0.38058270514011383
+          },
+          {
+            "startMs": 58120,
+            "endMs": 58220,
+            "word": " like",
+            "probability": 0.3544025421142578
+          },
+          {
+            "startMs": 58220,
+            "endMs": 58220,
+            "word": " the",
+            "probability": 0.28458064794540405
+          },
+          {
+            "startMs": 58220,
+            "endMs": 58240,
+            "word": " top",
+            "probability": 0.8375645279884338
+          },
+          {
+            "startMs": 58240,
+            "endMs": 58380,
+            "word": " of",
+            "probability": 0.49675261974334717
+          },
+          {
+            "startMs": 58380,
+            "endMs": 58600,
+            "word": " the",
+            "probability": 0.8977143168449402
+          },
+          {
+            "startMs": 58600,
+            "endMs": 58680,
+            "word": " road.",
+            "probability": 0.8991692662239075
+          }
+        ]
+      },
+      {
+        "startMs": 60420,
+        "endMs": 60980,
+        "text": "What is this?",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 60420,
+            "endMs": 60820,
+            "word": " What",
+            "probability": 0.48806968331336975
+          },
+          {
+            "startMs": 60820,
+            "endMs": 60820,
+            "word": " is",
+            "probability": 0.4645521640777588
+          },
+          {
+            "startMs": 60820,
+            "endMs": 60980,
+            "word": " this?",
+            "probability": 0.6038020253181458
+          }
+        ]
+      },
+      {
+        "startMs": 62820,
+        "endMs": 64200,
+        "text": "Ladakh, people don't go on the road.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 62820,
+            "endMs": 63220,
+            "word": " Ladakh,",
+            "probability": 0.6184182316064835
+          },
+          {
+            "startMs": 63220,
+            "endMs": 63620,
+            "word": " people",
+            "probability": 0.5115367770195007
+          },
+          {
+            "startMs": 63620,
+            "endMs": 63720,
+            "word": " don't",
+            "probability": 0.6274618208408356
+          },
+          {
+            "startMs": 63720,
+            "endMs": 63760,
+            "word": " go",
+            "probability": 0.2155415415763855
+          },
+          {
+            "startMs": 63760,
+            "endMs": 63980,
+            "word": " on",
+            "probability": 0.3739761412143707
+          },
+          {
+            "startMs": 63980,
+            "endMs": 64060,
+            "word": " the",
+            "probability": 0.5160018801689148
+          },
+          {
+            "startMs": 64060,
+            "endMs": 64200,
+            "word": " road.",
+            "probability": 0.9843001961708069
+          }
+        ]
+      },
+      {
+        "startMs": 64520,
+        "endMs": 66040,
+        "text": "It's like this car is going on.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 64520,
+            "endMs": 64600,
+            "word": " It's",
+            "probability": 0.39503390714526176
+          },
+          {
+            "startMs": 64600,
+            "endMs": 64780,
+            "word": " like",
+            "probability": 0.15673203766345978
+          },
+          {
+            "startMs": 64780,
+            "endMs": 65360,
+            "word": " this",
+            "probability": 0.43656614422798157
+          },
+          {
+            "startMs": 65360,
+            "endMs": 65360,
+            "word": " car",
+            "probability": 0.10494370013475418
+          },
+          {
+            "startMs": 65360,
+            "endMs": 65500,
+            "word": " is",
+            "probability": 0.20765723288059235
+          },
+          {
+            "startMs": 65500,
+            "endMs": 65500,
+            "word": " going",
+            "probability": 0.08969969302415848
+          },
+          {
+            "startMs": 65500,
+            "endMs": 66040,
+            "word": " on.",
+            "probability": 0.4504926800727844
+          }
+        ]
+      },
+      {
+        "startMs": 68770,
+        "endMs": 69690,
+        "text": "I have two of them.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 68770,
+            "endMs": 69170,
+            "word": " I",
+            "probability": 0.2532293200492859
+          },
+          {
+            "startMs": 69170,
+            "endMs": 69230,
+            "word": " have",
+            "probability": 0.09831567108631134
+          },
+          {
+            "startMs": 69230,
+            "endMs": 69410,
+            "word": " two",
+            "probability": 0.1670362651348114
+          },
+          {
+            "startMs": 69410,
+            "endMs": 69630,
+            "word": " of",
+            "probability": 0.3155060410499573
+          },
+          {
+            "startMs": 69630,
+            "endMs": 69690,
+            "word": " them.",
+            "probability": 0.7103725075721741
+          }
+        ]
+      },
+      {
+        "startMs": 71270,
+        "endMs": 71670,
+        "text": "Ladakh.",
+        "avgLogprob": -0.9830248741240337,
+        "noSpeechProb": 1.1701414059928084e-08,
+        "compressionRatio": 1.8368421052631578,
+        "words": [
+          {
+            "startMs": 71270,
+            "endMs": 71670,
+            "word": " Ladakh.",
+            "probability": 0.8870646357536316
+          }
+        ]
+      },
+      {
+        "startMs": 71670,
+        "endMs": 73170,
+        "text": "They are selling a new car.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 71670,
+            "endMs": 72810,
+            "word": " They",
+            "probability": 0.0007968851714394987
+          },
+          {
+            "startMs": 72810,
+            "endMs": 72830,
+            "word": " are",
+            "probability": 0.2142103612422943
+          },
+          {
+            "startMs": 72830,
+            "endMs": 73010,
+            "word": " selling",
+            "probability": 0.12260253727436066
+          },
+          {
+            "startMs": 73010,
+            "endMs": 73010,
+            "word": " a",
+            "probability": 0.20690332353115082
+          },
+          {
+            "startMs": 73010,
+            "endMs": 73010,
+            "word": " new",
+            "probability": 0.8507893681526184
+          },
+          {
+            "startMs": 73010,
+            "endMs": 73170,
+            "word": " car.",
+            "probability": 0.8264272809028625
+          }
+        ]
+      },
+      {
+        "startMs": 74610,
+        "endMs": 140180,
+        "text": "You can make a video here.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 74610,
+            "endMs": 75210,
+            "word": " You",
+            "probability": 0.08167729526758194
+          },
+          {
+            "startMs": 138820,
+            "endMs": 139180,
+            "word": " can",
+            "probability": 0.27751025557518005
+          },
+          {
+            "startMs": 139180,
+            "endMs": 139200,
+            "word": " make",
+            "probability": 0.38489648699760437
+          },
+          {
+            "startMs": 139200,
+            "endMs": 139460,
+            "word": " a",
+            "probability": 0.6162233352661133
+          },
+          {
+            "startMs": 139460,
+            "endMs": 139860,
+            "word": " video",
+            "probability": 0.9454209804534912
+          },
+          {
+            "startMs": 139860,
+            "endMs": 140180,
+            "word": " here.",
+            "probability": 0.1325741857290268
+          }
+        ]
+      },
+      {
+        "startMs": 142130,
+        "endMs": 143230,
+        "text": "Put it in the selfie stick.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 142130,
+            "endMs": 142690,
+            "word": " Put",
+            "probability": 0.15418921411037445
+          },
+          {
+            "startMs": 142690,
+            "endMs": 142690,
+            "word": " it",
+            "probability": 0.3646574318408966
+          },
+          {
+            "startMs": 142690,
+            "endMs": 142830,
+            "word": " in",
+            "probability": 0.3590252101421356
+          },
+          {
+            "startMs": 142830,
+            "endMs": 142870,
+            "word": " the",
+            "probability": 0.2771223485469818
+          },
+          {
+            "startMs": 142870,
+            "endMs": 143030,
+            "word": " selfie",
+            "probability": 0.77338045835495
+          },
+          {
+            "startMs": 143030,
+            "endMs": 143230,
+            "word": " stick.",
+            "probability": 0.7879859209060669
+          }
+        ]
+      },
+      {
+        "startMs": 157490,
+        "endMs": 159190,
+        "text": "Put it in the selfie stick.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 157490,
+            "endMs": 158090,
+            "word": " Put",
+            "probability": 0.15117572247982025
+          },
+          {
+            "startMs": 158090,
+            "endMs": 158690,
+            "word": " it",
+            "probability": 0.8161724209785461
+          },
+          {
+            "startMs": 158690,
+            "endMs": 158690,
+            "word": " in",
+            "probability": 0.7746893763542175
+          },
+          {
+            "startMs": 158690,
+            "endMs": 158890,
+            "word": " the",
+            "probability": 0.7999494075775146
+          },
+          {
+            "startMs": 158890,
+            "endMs": 158890,
+            "word": " selfie",
+            "probability": 0.666649341583252
+          },
+          {
+            "startMs": 158890,
+            "endMs": 159190,
+            "word": " stick.",
+            "probability": 0.968485414981842
+          }
+        ]
+      },
+      {
+        "startMs": 159630,
+        "endMs": 162760,
+        "text": "Put it in the selfie stick.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 159630,
+            "endMs": 160230,
+            "word": " Put",
+            "probability": 0.24610798060894012
+          },
+          {
+            "startMs": 162120,
+            "endMs": 162180,
+            "word": " it",
+            "probability": 0.8109023571014404
+          },
+          {
+            "startMs": 162180,
+            "endMs": 162240,
+            "word": " in",
+            "probability": 0.7969847321510315
+          },
+          {
+            "startMs": 162240,
+            "endMs": 162360,
+            "word": " the",
+            "probability": 0.8849653601646423
+          },
+          {
+            "startMs": 162360,
+            "endMs": 162460,
+            "word": " selfie",
+            "probability": 0.6696295142173767
+          },
+          {
+            "startMs": 162460,
+            "endMs": 162760,
+            "word": " stick.",
+            "probability": 0.9723487496376038
+          }
+        ]
+      },
+      {
+        "startMs": 162760,
+        "endMs": 163240,
+        "text": "It's like this.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 162760,
+            "endMs": 163020,
+            "word": " It's",
+            "probability": 0.3157818615436554
+          },
+          {
+            "startMs": 163020,
+            "endMs": 163180,
+            "word": " like",
+            "probability": 0.027122830972075462
+          },
+          {
+            "startMs": 163180,
+            "endMs": 163240,
+            "word": " this.",
+            "probability": 0.15579450130462646
+          }
+        ]
+      },
+      {
+        "startMs": 163480,
+        "endMs": 190740,
+        "text": "It's not the same.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 163480,
+            "endMs": 164020,
+            "word": " It's",
+            "probability": 0.5361193269491196
+          },
+          {
+            "startMs": 190000,
+            "endMs": 190060,
+            "word": " not",
+            "probability": 0.0635756105184555
+          },
+          {
+            "startMs": 190060,
+            "endMs": 190080,
+            "word": " the",
+            "probability": 0.0791478380560875
+          },
+          {
+            "startMs": 190080,
+            "endMs": 190740,
+            "word": " same.",
+            "probability": 0.3158710300922394
+          }
+        ]
+      },
+      {
+        "startMs": 191060,
+        "endMs": 192240,
+        "text": "You can put it on the side.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 191060,
+            "endMs": 191660,
+            "word": " You",
+            "probability": 0.41284608840942383
+          },
+          {
+            "startMs": 191660,
+            "endMs": 191880,
+            "word": " can",
+            "probability": 0.4339562952518463
+          },
+          {
+            "startMs": 191880,
+            "endMs": 191880,
+            "word": " put",
+            "probability": 0.11377278715372086
+          },
+          {
+            "startMs": 191880,
+            "endMs": 191880,
+            "word": " it",
+            "probability": 0.8264973163604736
+          },
+          {
+            "startMs": 191880,
+            "endMs": 191960,
+            "word": " on",
+            "probability": 0.2683672308921814
+          },
+          {
+            "startMs": 191960,
+            "endMs": 191980,
+            "word": " the",
+            "probability": 0.7691910862922668
+          },
+          {
+            "startMs": 191980,
+            "endMs": 192240,
+            "word": " side.",
+            "probability": 0.68765789270401
+          }
+        ]
+      },
+      {
+        "startMs": 206850,
+        "endMs": 208050,
+        "text": "Put it there.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 206850,
+            "endMs": 207450,
+            "word": " Put",
+            "probability": 0.2092188447713852
+          },
+          {
+            "startMs": 207450,
+            "endMs": 208050,
+            "word": " it",
+            "probability": 0.9475022554397583
+          },
+          {
+            "startMs": 208050,
+            "endMs": 208050,
+            "word": " there.",
+            "probability": 0.076182059943676
+          }
+        ]
+      },
+      {
+        "startMs": 210190,
+        "endMs": 226300,
+        "text": "Then we have Bluetooth.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 210190,
+            "endMs": 210490,
+            "word": " Then",
+            "probability": 0.05354025959968567
+          },
+          {
+            "startMs": 225920,
+            "endMs": 225940,
+            "word": " we",
+            "probability": 0.11294016987085342
+          },
+          {
+            "startMs": 225940,
+            "endMs": 225940,
+            "word": " have",
+            "probability": 0.11023236066102982
+          },
+          {
+            "startMs": 225940,
+            "endMs": 226300,
+            "word": " Bluetooth.",
+            "probability": 0.5075924396514893
+          }
+        ]
+      },
+      {
+        "startMs": 228620,
+        "endMs": 229740,
+        "text": "Press it.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 228620,
+            "endMs": 229220,
+            "word": " Press",
+            "probability": 0.022360235452651978
+          },
+          {
+            "startMs": 229220,
+            "endMs": 229740,
+            "word": " it.",
+            "probability": 0.7678055167198181
+          }
+        ]
+      },
+      {
+        "startMs": 231540,
+        "endMs": 232500,
+        "text": "There will be a blue light.",
+        "avgLogprob": -0.7817993176103842,
+        "noSpeechProb": 1.9867402861750705e-11,
+        "compressionRatio": 1.8223684210526316,
+        "words": [
+          {
+            "startMs": 231540,
+            "endMs": 232140,
+            "word": " There",
+            "probability": 0.2509956359863281
+          },
+          {
+            "startMs": 232140,
+            "endMs": 232140,
+            "word": " will",
+            "probability": 0.504858136177063
+          },
+          {
+            "startMs": 232140,
+            "endMs": 232140,
+            "word": " be",
+            "probability": 0.6992946863174438
+          },
+          {
+            "startMs": 232140,
+            "endMs": 232260,
+            "word": " a",
+            "probability": 0.39982303977012634
+          },
+          {
+            "startMs": 232260,
+            "endMs": 232260,
+            "word": " blue",
+            "probability": 0.9383028745651245
+          },
+          {
+            "startMs": 232260,
+            "endMs": 232500,
+            "word": " light.",
+            "probability": 0.9950195550918579
+          }
+        ]
+      },
+      {
+        "startMs": 232500,
+        "endMs": 240140,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 232500,
+            "endMs": 234020,
+            "word": " Let's",
+            "probability": 0.4025124376639724
+          },
+          {
+            "startMs": 240140,
+            "endMs": 240140,
+            "word": " see.",
+            "probability": 0.5613812208175659
+          }
+        ]
+      },
+      {
+        "startMs": 241380,
+        "endMs": 241540,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 241380,
+            "endMs": 241540,
+            "word": " Let's",
+            "probability": 0.5137912333011627
+          },
+          {
+            "startMs": 241540,
+            "endMs": 241540,
+            "word": " see.",
+            "probability": 0.47202450037002563
+          }
+        ]
+      },
+      {
+        "startMs": 241540,
+        "endMs": 242020,
+        "text": "Video.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 241540,
+            "endMs": 242020,
+            "word": " Video.",
+            "probability": 0.09727244824171066
+          }
+        ]
+      },
+      {
+        "startMs": 260480,
+        "endMs": 261680,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 260480,
+            "endMs": 261680,
+            "word": " Let's",
+            "probability": 0.6424862742424011
+          },
+          {
+            "startMs": 261680,
+            "endMs": 261680,
+            "word": " see.",
+            "probability": 0.17367130517959595
+          }
+        ]
+      },
+      {
+        "startMs": 270190,
+        "endMs": 270830,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 270190,
+            "endMs": 270790,
+            "word": " Let's",
+            "probability": 0.5454616844654083
+          },
+          {
+            "startMs": 270790,
+            "endMs": 270830,
+            "word": " see.",
+            "probability": 0.2678649127483368
+          }
+        ]
+      },
+      {
+        "startMs": 271090,
+        "endMs": 272170,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 271090,
+            "endMs": 272110,
+            "word": " Let's",
+            "probability": 0.5855085030198097
+          },
+          {
+            "startMs": 272110,
+            "endMs": 272170,
+            "word": " see.",
+            "probability": 0.427437424659729
+          }
+        ]
+      },
+      {
+        "startMs": 274270,
+        "endMs": 275590,
+        "text": "Let's see.",
+        "avgLogprob": -0.6468716774668012,
+        "noSpeechProb": 1.3670196918891264e-10,
+        "compressionRatio": 2.4,
+        "words": [
+          {
+            "startMs": 274270,
+            "endMs": 275470,
+            "word": " Let's",
+            "probability": 0.6636983305215836
+          },
+          {
+            "startMs": 275470,
+            "endMs": 275590,
+            "word": " see.",
+            "probability": 0.4446413815021515
+          }
+        ]
+      },
+      {
+        "startMs": 275590,
+        "endMs": 275810,
+        "text": "Let's see.",
+        "avgLogprob": -1.5220284895463423,
+        "noSpeechProb": 8.453343060266238e-12,
+        "compressionRatio": 1.255813953488372,
+        "words": [
+          {
+            "startMs": 275590,
+            "endMs": 275670,
+            "word": " Let's",
+            "probability": 0.45761429076083004
+          },
+          {
+            "startMs": 275670,
+            "endMs": 275810,
+            "word": " see.",
+            "probability": 0.04777722433209419
+          }
+        ]
+      },
+      {
+        "startMs": 275810,
+        "endMs": 275870,
+        "text": "Let's see.",
+        "avgLogprob": -1.5220284895463423,
+        "noSpeechProb": 8.453343060266238e-12,
+        "compressionRatio": 1.255813953488372,
+        "words": [
+          {
+            "startMs": 275810,
+            "endMs": 275870,
+            "word": " Let's",
+            "probability": 0.6108185574412346
+          },
+          {
+            "startMs": 275870,
+            "endMs": 275870,
+            "word": " see.",
+            "probability": 0.544373631477356
+          }
+        ]
+      },
+      {
+        "startMs": 275870,
+        "endMs": 275890,
+        "text": "Let's see.",
+        "avgLogprob": -1.5220284895463423,
+        "noSpeechProb": 8.453343060266238e-12,
+        "compressionRatio": 1.255813953488372,
+        "words": [
+          {
+            "startMs": 275870,
+            "endMs": 275890,
+            "word": " Let's",
+            "probability": 0.7738391160964966
+          },
+          {
+            "startMs": 275890,
+            "endMs": 275890,
+            "word": " see.",
+            "probability": 0.8699571490287781
+          }
+        ]
+      },
+      {
+        "startMs": 275890,
+        "endMs": 275930,
+        "text": "See?",
+        "avgLogprob": -1.5220284895463423,
+        "noSpeechProb": 8.453343060266238e-12,
+        "compressionRatio": 1.255813953488372,
+        "words": [
+          {
+            "startMs": 275890,
+            "endMs": 275930,
+            "word": " See?",
+            "probability": 0.009991881437599659
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 15000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 20000
+      },
+      {
+        "frameFile": "frames/frame_0006.jpg",
+        "timestampMs": 25000
+      },
+      {
+        "frameFile": "frames/frame_0007.jpg",
+        "timestampMs": 30000
+      },
+      {
+        "frameFile": "frames/frame_0008.jpg",
+        "timestampMs": 35000
+      },
+      {
+        "frameFile": "frames/frame_0009.jpg",
+        "timestampMs": 40000
+      },
+      {
+        "frameFile": "frames/frame_0010.jpg",
+        "timestampMs": 45000
+      },
+      {
+        "frameFile": "frames/frame_0011.jpg",
+        "timestampMs": 50000
+      },
+      {
+        "frameFile": "frames/frame_0012.jpg",
+        "timestampMs": 55000
+      },
+      {
+        "frameFile": "frames/frame_0013.jpg",
+        "timestampMs": 60000
+      },
+      {
+        "frameFile": "frames/frame_0014.jpg",
+        "timestampMs": 65000
+      },
+      {
+        "frameFile": "frames/frame_0015.jpg",
+        "timestampMs": 70000
+      },
+      {
+        "frameFile": "frames/frame_0016.jpg",
+        "timestampMs": 75000
+      },
+      {
+        "frameFile": "frames/frame_0017.jpg",
+        "timestampMs": 80000
+      },
+      {
+        "frameFile": "frames/frame_0018.jpg",
+        "timestampMs": 85000
+      },
+      {
+        "frameFile": "frames/frame_0019.jpg",
+        "timestampMs": 90000
+      },
+      {
+        "frameFile": "frames/frame_0020.jpg",
+        "timestampMs": 95000
+      },
+      {
+        "frameFile": "frames/frame_0021.jpg",
+        "timestampMs": 100000
+      },
+      {
+        "frameFile": "frames/frame_0022.jpg",
+        "timestampMs": 105000
+      },
+      {
+        "frameFile": "frames/frame_0023.jpg",
+        "timestampMs": 110000
+      },
+      {
+        "frameFile": "frames/frame_0024.jpg",
+        "timestampMs": 115000
+      },
+      {
+        "frameFile": "frames/frame_0025.jpg",
+        "timestampMs": 120000
+      },
+      {
+        "frameFile": "frames/frame_0026.jpg",
+        "timestampMs": 125000
+      },
+      {
+        "frameFile": "frames/frame_0027.jpg",
+        "timestampMs": 130000
+      },
+      {
+        "frameFile": "frames/frame_0028.jpg",
+        "timestampMs": 135000
+      },
+      {
+        "frameFile": "frames/frame_0029.jpg",
+        "timestampMs": 140000
+      },
+      {
+        "frameFile": "frames/frame_0030.jpg",
+        "timestampMs": 145000
+      },
+      {
+        "frameFile": "frames/frame_0031.jpg",
+        "timestampMs": 148048
+      },
+      {
+        "frameFile": "frames/frame_0032.jpg",
+        "timestampMs": 150000
+      },
+      {
+        "frameFile": "frames/frame_0033.jpg",
+        "timestampMs": 155000
+      },
+      {
+        "frameFile": "frames/frame_0034.jpg",
+        "timestampMs": 160000
+      },
+      {
+        "frameFile": "frames/frame_0035.jpg",
+        "timestampMs": 165000
+      },
+      {
+        "frameFile": "frames/frame_0036.jpg",
+        "timestampMs": 170000
+      },
+      {
+        "frameFile": "frames/frame_0037.jpg",
+        "timestampMs": 175000
+      },
+      {
+        "frameFile": "frames/frame_0038.jpg",
+        "timestampMs": 180000
+      },
+      {
+        "frameFile": "frames/frame_0039.jpg",
+        "timestampMs": 185000
+      },
+      {
+        "frameFile": "frames/frame_0040.jpg",
+        "timestampMs": 190000
+      },
+      {
+        "frameFile": "frames/frame_0041.jpg",
+        "timestampMs": 195000
+      },
+      {
+        "frameFile": "frames/frame_0042.jpg",
+        "timestampMs": 200000
+      },
+      {
+        "frameFile": "frames/frame_0043.jpg",
+        "timestampMs": 205000
+      },
+      {
+        "frameFile": "frames/frame_0044.jpg",
+        "timestampMs": 210000
+      },
+      {
+        "frameFile": "frames/frame_0045.jpg",
+        "timestampMs": 215000
+      },
+      {
+        "frameFile": "frames/frame_0046.jpg",
+        "timestampMs": 220000
+      },
+      {
+        "frameFile": "frames/frame_0047.jpg",
+        "timestampMs": 225000
+      },
+      {
+        "frameFile": "frames/frame_0048.jpg",
+        "timestampMs": 230000
+      },
+      {
+        "frameFile": "frames/frame_0049.jpg",
+        "timestampMs": 235000
+      },
+      {
+        "frameFile": "frames/frame_0050.jpg",
+        "timestampMs": 240000
+      },
+      {
+        "frameFile": "frames/frame_0051.jpg",
+        "timestampMs": 245000
+      },
+      {
+        "frameFile": "frames/frame_0052.jpg",
+        "timestampMs": 250000
+      },
+      {
+        "frameFile": "frames/frame_0053.jpg",
+        "timestampMs": 255000
+      },
+      {
+        "frameFile": "frames/frame_0054.jpg",
+        "timestampMs": 260000
+      },
+      {
+        "frameFile": "frames/frame_0055.jpg",
+        "timestampMs": 265000
+      },
+      {
+        "frameFile": "frames/frame_0056.jpg",
+        "timestampMs": 270000
+      },
+      {
+        "frameFile": "frames/frame_0057.jpg",
+        "timestampMs": 275000
+      },
+      {
+        "frameFile": "frames/frame_0058.jpg",
+        "timestampMs": 280000
+      },
+      {
+        "frameFile": "frames/frame_0059.jpg",
+        "timestampMs": 285000
+      },
+      {
+        "frameFile": "frames/frame_0060.jpg",
+        "timestampMs": 290000
+      },
+      {
+        "frameFile": "frames/frame_0061.jpg",
+        "timestampMs": 295000
+      },
+      {
+        "frameFile": "frames/frame_0062.jpg",
+        "timestampMs": 296095
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}

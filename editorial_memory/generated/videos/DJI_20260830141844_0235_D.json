@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "LOCAL_EDITORIAL_EVIDENCE",
+  "source": {
+    "fileName": "DJI_20260830141844_0235_D.MP4",
+    "relativeAnalysisPackage": "DJI_20260830141844_0235_D",
+    "durationMs": 12379,
+    "sha256": "1cba0f7e4d22e271d6cb98860666eaf2a5c65da5fbd2799fc983e313455e74ae"
+  },
+  "artifacts": {
+    "analysisJson": "DJI_20260830141844_0235_D/analysis.json",
+    "transcriptJson": "DJI_20260830141844_0235_D/transcript.json",
+    "scenesJson": "DJI_20260830141844_0235_D/scenes.json",
+    "framesDirectory": "DJI_20260830141844_0235_D/frames"
+  },
+  "technical": {
+    "container": "mov,mp4,m4a,3gp,3g2,mj2",
+    "videoCodec": "hevc",
+    "videoCodecLongName": "H.265 / HEVC (High Efficiency Video Coding)",
+    "width": 3840,
+    "height": 2160,
+    "fps": 29.97002997002997,
+    "pixelFormat": "yuv420p",
+    "rotation": null,
+    "audioCodec": "aac",
+    "audioChannels": 2,
+    "audioSampleRate": "48000",
+    "bitRate": "56947298"
+  },
+  "processing": {
+    "proxyHeight": 720,
+    "proxyBitrate": "3M",
+    "frameEverySec": 5.0,
+    "maxFrames": 80,
+    "whisperModel": "large-v3-turbo",
+    "whisperDevice": "cpu",
+    "whisperComputeType": "int8",
+    "languageHint": null
+  },
+  "speech": {
+    "language": "en",
+    "languageProbability": 0.9233106970787048,
+    "segments": [
+      {
+        "startMs": 750,
+        "endMs": 1590,
+        "text": "It's not coming.",
+        "avgLogprob": -1.0925514623522758,
+        "noSpeechProb": 3.1267405331547593e-10,
+        "compressionRatio": 0.8695652173913043,
+        "words": [
+          {
+            "startMs": 750,
+            "endMs": 1150,
+            "word": " It's",
+            "probability": 0.21439184248447418
+          },
+          {
+            "startMs": 1150,
+            "endMs": 1150,
+            "word": " not",
+            "probability": 0.6782752275466919
+          },
+          {
+            "startMs": 1150,
+            "endMs": 1590,
+            "word": " coming.",
+            "probability": 0.40528979897499084
+          }
+        ]
+      },
+      {
+        "startMs": 2050,
+        "endMs": 4130,
+        "text": "It looks like the bike.",
+        "avgLogprob": -1.0925514623522758,
+        "noSpeechProb": 3.1267405331547593e-10,
+        "compressionRatio": 0.8695652173913043,
+        "words": [
+          {
+            "startMs": 2050,
+            "endMs": 2110,
+            "word": " It",
+            "probability": 0.1434556245803833
+          },
+          {
+            "startMs": 2110,
+            "endMs": 3470,
+            "word": " looks",
+            "probability": 0.25494036078453064
+          },
+          {
+            "startMs": 3470,
+            "endMs": 4110,
+            "word": " like",
+            "probability": 0.5697570443153381
+          },
+          {
+            "startMs": 4110,
+            "endMs": 4130,
+            "word": " the",
+            "probability": 0.43622341752052307
+          },
+          {
+            "startMs": 4130,
+            "endMs": 4130,
+            "word": " bike.",
+            "probability": 0.7331774234771729
+          }
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "sceneId": 1,
+      "startMs": 0,
+      "endMs": 12379,
+      "durationMs": 12379,
+      "speechPresent": true,
+      "speechSegmentIds": [
+        1,
+        2
+      ]
+    }
+  ],
+  "frameSamples": [
+    {
+      "timestampMs": 0,
+      "frameFile": "DJI_20260830141844_0235_D/frames/frame_0001.jpg",
+      "exists": true,
+      "sizeBytes": 159587,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 5000,
+      "frameFile": "DJI_20260830141844_0235_D/frames/frame_0002.jpg",
+      "exists": true,
+      "sizeBytes": 105003,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 6189,
+      "frameFile": "DJI_20260830141844_0235_D/frames/frame_0003.jpg",
+      "exists": true,
+      "sizeBytes": 112929,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 10000,
+      "frameFile": "DJI_20260830141844_0235_D/frames/frame_0004.jpg",
+      "exists": true,
+      "sizeBytes": 100724,
+      "visualMetrics": {
+        "available": false
+      }
+    },
+    {
+      "timestampMs": 12378,
+      "frameFile": "frames/frame_0005.jpg",
+      "exists": false
+    }
+  ],
+  "pipelineAnalysis": {
+    "sourceFileName": "DJI_20260830141844_0235_D.MP4",
+    "durationMs": 12379,
+    "scenes": [
+      {
+        "sceneId": 1,
+        "startMs": 0,
+        "endMs": 12379,
+        "durationMs": 12379,
+        "speechPresent": true,
+        "speechSegmentIds": [
+          1,
+          2
+        ]
+      }
+    ],
+    "speechSegments": [
+      {
+        "startMs": 750,
+        "endMs": 1590,
+        "text": "It's not coming.",
+        "avgLogprob": -1.0925514623522758,
+        "noSpeechProb": 3.1267405331547593e-10,
+        "compressionRatio": 0.8695652173913043,
+        "words": [
+          {
+            "startMs": 750,
+            "endMs": 1150,
+            "word": " It's",
+            "probability": 0.21439184248447418
+          },
+          {
+            "startMs": 1150,
+            "endMs": 1150,
+            "word": " not",
+            "probability": 0.6782752275466919
+          },
+          {
+            "startMs": 1150,
+            "endMs": 1590,
+            "word": " coming.",
+            "probability": 0.40528979897499084
+          }
+        ]
+      },
+      {
+        "startMs": 2050,
+        "endMs": 4130,
+        "text": "It looks like the bike.",
+        "avgLogprob": -1.0925514623522758,
+        "noSpeechProb": 3.1267405331547593e-10,
+        "compressionRatio": 0.8695652173913043,
+        "words": [
+          {
+            "startMs": 2050,
+            "endMs": 2110,
+            "word": " It",
+            "probability": 0.1434556245803833
+          },
+          {
+            "startMs": 2110,
+            "endMs": 3470,
+            "word": " looks",
+            "probability": 0.25494036078453064
+          },
+          {
+            "startMs": 3470,
+            "endMs": 4110,
+            "word": " like",
+            "probability": 0.5697570443153381
+          },
+          {
+            "startMs": 4110,
+            "endMs": 4130,
+            "word": " the",
+            "probability": 0.43622341752052307
+          },
+          {
+            "startMs": 4130,
+            "endMs": 4130,
+            "word": " bike.",
+            "probability": 0.7331774234771729
+          }
+        ]
+      }
+    ],
+    "audio": {
+      "speechPresent": true,
+      "speechClarityScore": null,
+      "backgroundNoiseScore": null,
+      "musicPresent": null
+    },
+    "visualQualityScore": null,
+    "aiVisionStatus": "PENDING_AI_VISION",
+    "storyAnalysisStatus": "PENDING_AI_EDITOR",
+    "frameSamples": [
+      {
+        "frameFile": "frames/frame_0001.jpg",
+        "timestampMs": 0
+      },
+      {
+        "frameFile": "frames/frame_0002.jpg",
+        "timestampMs": 5000
+      },
+      {
+        "frameFile": "frames/frame_0003.jpg",
+        "timestampMs": 6189
+      },
+      {
+        "frameFile": "frames/frame_0004.jpg",
+        "timestampMs": 10000
+      },
+      {
+        "frameFile": "frames/frame_0005.jpg",
+        "timestampMs": 12378
+      }
+    ]
+  },
+  "editorialLLMStatus": "PENDING_EDITORIAL_LLM",
+  "deterministicVisualMetricsNote": "Metrics are descriptive signals only (dimensions, luminance, edge density). They do not identify objects, people, locations or story meaning."
+}
