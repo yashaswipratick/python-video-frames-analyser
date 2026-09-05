@@ -1,26 +1,237 @@
 {
   "memoryVersion": 1,
   "bundleId": "analysis_bundle_005",
-  "status": "PENDING_DETAILED_CAPTURE",
-  "rule": "This file is a deliberate placeholder until bundle 005 can be processed. No unsupported editorial conclusions are stored.",
+  "status": "DETAILED_PERSISTED_FROM_GENERATED_EVIDENCE",
+  "scope": "Late destination/return/closing material: steep-path and cow observation, sunset/camera experiment, closing CTAs, spontaneous monkey interaction, sunset/worth-it reflection, possible night epilogue, and final adventure verdict.",
   "sourcePackage": {
-    "filename":"analysis_bundle_005.zip",
-    "sizeBytes":389563161
+    "filename": "analysis_bundle_005.zip",
+    "sizeBytes": 389563161,
+    "analysisEvidenceSource": "Repository-generated per-video evidence records. The heavy raw ZIP was not directly extractable in the working runtime."
   },
-  "processingNote":"The bundle is attached and registered, but attempts to process the heavy ZIP currently time out in the working runtime. The repository must be updated with the full evidence-derived memory once processing succeeds.",
-  "requiredCapture": [
-    "bundle manifest/video list",
-    "source durations and hashes",
-    "per-video visual observations",
-    "exact speech ranges and useful dialogue",
-    "exact keep/remove/shorten ranges",
-    "closed visual event labels",
-    "B-roll candidates with exact source ranges",
-    "music candidates with exact source ranges",
-    "story-role mapping",
-    "cross-bundle relationships",
-    "repetition and continuity notes",
-    "evidence ambiguities",
-    "whether any frame-boundary continuations from bundle 004 are present"
-  ]
+  "evidenceBoundary": {
+    "visualInspection": "Deterministic source records expose frame samples, but aiVisionStatus remains PENDING_AI_VISION. This memory therefore does not invent visual event labels from speech alone.",
+    "frameBoundaryContinuation": "Bundle 004 frame-boundary continuations were not physically verified from the heavy ZIP in this runtime. Do not claim that the missing bundle 004 frames were recovered here."
+  },
+  "videos": {
+    "DJI_20260830182058_0295_D.MP4": {
+      "sourceDuration": "00:02:21.008",
+      "sourceSha256": "8be612dc93bce40c1cd530c9b4189250c1fbfce3fdbc27178e1f254ce8a63057",
+      "overallDecision": "KEEP_WITH_EDITS",
+      "storyRole": "DESTINATION_SIDE_OBSERVATION",
+      "selectedRanges": [
+        {
+          "start": "00:00.620",
+          "end": "00:27.140",
+          "decision": "KEEP_WITH_BROLL",
+          "mediaRole": "speech + B-roll",
+          "speechRole": "Explains that one section is actually steep and references the path used toward Durga temple; then notices the cowshed/cows.",
+          "editorialReason": "Useful concrete destination-side detail and a natural small observation after the main exploration."
+        },
+        {
+          "start": "00:28.620",
+          "end": "01:09.220",
+          "decision": "SHORTEN",
+          "mediaRole": "speech + B-roll",
+          "speechRole": "Notices many cows, wonders about the cold, and reacts to/addresses one.",
+          "editorialReason": "Potentially funny local observation. Keep a compact section rather than the full stretch unless the visual interaction is exceptional."
+        }
+      ],
+      "evidenceCaveat": "ASR is noisy; preserve only wording that is clearly audible when editing.",
+      "visualEvents": []
+    },
+    "DJI_20260830182407_0296_D.MP4": {
+      "sourceDuration": "00:01:57.484",
+      "sourceSha256": "33022d72bd9619f86c315abcabcc0dd937238095c032ec73ee80df2c3e2b9ad9",
+      "overallDecision": "REVIEW",
+      "storyRole": "SUNSET_EXPERIMENT",
+      "selectedRanges": [
+        {
+          "start": "00:05.700",
+          "end": "00:17.860",
+          "decision": "KEEP_WITH_EDITS",
+          "mediaRole": "speech + B-roll",
+          "speechRole": "Plans to show the sunset and reacts that it looks good.",
+          "editorialReason": "Supports the sunset payoff, but final inclusion depends on visual quality. Use as a short reveal rather than a long explanation."
+        },
+        {
+          "start": "00:18.760",
+          "end": "00:20.220",
+          "decision": "KEEP_WITH_BROLL",
+          "mediaRole": "speech + B-roll",
+          "speechRole": "Says he will stop behind the forest.",
+          "editorialReason": "Connects into a small spontaneous stop/experiment."
+        },
+        {
+          "start": "00:26.340",
+          "end": "00:31.840",
+          "decision": "KEEP_WITH_BROLL",
+          "mediaRole": "speech + B-roll",
+          "speechRole": "Says he will show something and wonders whether it will work.",
+          "editorialReason": "Creates a compact curiosity loop."
+        },
+        {
+          "start": "00:33.140",
+          "end": "00:54.230",
+          "decision": "SHORTEN",
+          "mediaRole": "speech-driven",
+          "speechRole": "Camera handoff request.",
+          "editorialReason": "Potentially useful only if it contains a genuine handoff or interaction; avoid a long setup."
+        }
+      ],
+      "visualEvents": []
+    },
+    "DJI_20260830182625_0297_D.MP4": {
+      "sourceDuration": "00:00:21.696",
+      "sourceSha256": "c921c21b4550f1fbad24c1e3ea9b04dfb8f723119ea0c501391f6b27996ac50a",
+      "overallDecision": "KEEP_FOR_OUTRO",
+      "storyRole": "OUTRO_CTA",
+      "selectedRanges": [
+        {
+          "start": "00:02.450",
+          "end": "00:19.310",
+          "decision": "SHORTEN",
+          "mediaRole": "speech-driven",
+          "speechRole": "Thank-you, like/subscribe/share CTA, and next-vlog signoff.",
+          "editorialReason": "Usable closing anchor, but too long for the final cut. Keep only the cleanest compact CTA portion."
+        }
+      ],
+      "visualEvents": []
+    },
+    "DJI_20260830182656_0298_D.MP4": {
+      "sourceDuration": "00:00:08.811",
+      "sourceSha256": "52a831e234482530db1bc12a141dd6b8ae41c8db764ec0a3a4af780f559fc143",
+      "overallDecision": "KEEP_AS_TRANSITION",
+      "storyRole": "OUTRO_TAG",
+      "selectedRanges": [
+        {
+          "start": "00:01.420",
+          "end": "00:03.180",
+          "decision": "KEEP_AS_TRANSITION",
+          "mediaRole": "speech-driven",
+          "speechRole": "Short next-vlog signoff."
+        },
+        {
+          "start": "00:05.280",
+          "end": "00:07.120",
+          "decision": "KEEP_AS_TRANSITION",
+          "mediaRole": "speech-driven",
+          "speechRole": "Short next-vlog signoff."
+        }
+      ],
+      "editorialReason": "Tiny tag candidate; choose this OR another short outro tag, not all of them.",
+      "visualEvents": []
+    },
+    "DJI_20260830182716_0299_D.MP4": {
+      "sourceDuration": "00:00:05.013",
+      "sourceSha256": "1294bb738b35c13c411b14bd53cc52e6c2957eaeb70c3e6877f74ad9a2b9e81b",
+      "overallDecision": "KEEP_AS_OUTRO_TAG",
+      "storyRole": "OUTRO_TAG",
+      "selectedRanges": [
+        {
+          "start": "00:00.940",
+          "end": "00:02.200",
+          "decision": "KEEP_AS_OUTRO_TAG",
+          "mediaRole": "speech-driven",
+          "speechRole": "See you in the next one."
+        },
+        {
+          "start": "00:03.580",
+          "end": "00:04.080",
+          "decision": "KEEP_AS_OUTRO_TAG",
+          "mediaRole": "speech-driven",
+          "speechRole": "Bye-bye."
+        }
+      ],
+      "editorialReason": "Most compact spoken signoff; likely preferable to the longer CTA ending if a full CTA has already been used.",
+      "visualEvents": []
+    },
+    "DJI_20260830182750_0300_D.MP4": {
+      "sourceDuration": "00:05:12.917",
+      "sourceSha256": "a9c5b27b4dca4ac1f7e2ad000659946fc00859baa529cc7bf99bafe18cc0c060",
+      "overallDecision": "STRONG_KEEP",
+      "storyRole": "SPONTANEOUS_REACTION_AND_VERDICT",
+      "selectedRanges": [
+        {
+          "start": "00:00:22.640",
+          "end": "00:00:53.500",
+          "decision": "KEEP_WITH_BROLL",
+          "mediaRole": "speech + B-roll",
+          "speechRole": "Spontaneous remarks about the road/atmosphere.",
+          "editorialReason": "Natural post-adventure chatter; keep only the strongest line(s)."
+        },
+        {
+          "start": "00:02:08.370",
+          "end": "00:02:19.490",
+          "decision": "KEEP_WITH_BROLL",
+          "mediaRole": "speech + B-roll",
+          "speechRole": "Road is empty and there are no people; a monkey is beside him.",
+          "editorialReason": "High-value authentic comedy/wildlife beat. Potentially one of the most memorable closing moments if visually clear."
+        },
+        {
+          "start": "00:02:24.000",
+          "end": "00:03:22.660",
+          "decision": "SHORTEN",
+          "mediaRole": "speech + B-roll",
+          "speechRole": "Sunset has happened, people have left, wind is strong, and he reflects on whether the visit was worth it.",
+          "editorialReason": "Strong reflective verdict after the physical adventure; compress hard to avoid rambling."
+        }
+      ],
+      "evidenceCaveat": "ASR is moderately noisy. The monkey and sunset references are speech evidence and should remain subject to visual confirmation before assigning closed visual events.",
+      "visualEvents": []
+    },
+    "DJI_20260830184319_0301_D.MP4": {
+      "sourceDuration": "00:06:55.488",
+      "sourceSha256": "f90f4fe9c3c2363e0fdc5dfc90cc38bf57f8051c7d1b8bbd05456678e158bd54",
+      "overallDecision": "REVIEW",
+      "storyRole": "NIGHT_EPILOGUE",
+      "selectedRanges": [
+        {
+          "start": "00:06:00.210",
+          "end": "00:06:08.010",
+          "decision": "REVIEW",
+          "mediaRole": "speech + B-roll",
+          "speechRole": "Says it gets more fun at night and comments that the road looks different from far away at night.",
+          "editorialReason": "Potential late-night bonus beat only if it adds a visually distinct ending; otherwise remove to protect pacing."
+        }
+      ],
+      "evidenceCaveat": "Night is not assigned as a closed visual event because the currently accessible generated evidence only provides speech and frame samples while AI vision remains pending.",
+      "visualEvents": []
+    },
+    "DJI_20260830185028_0302_D.MP4": {
+      "sourceDuration": "00:01:00.843",
+      "sourceSha256": "d4d46c489572e08c5cc1e8326c6613d2497f614cc3d1644a99caa8589edea407",
+      "overallDecision": "STRONG_KEEP_WITH_EDITS",
+      "storyRole": "FINAL_VERDICT_AND_OUTRO",
+      "selectedRanges": [
+        {
+          "start": "00:00:07.150",
+          "end": "00:00:30.070",
+          "decision": "KEEP",
+          "mediaRole": "speech-driven",
+          "speechRole": "Final verdict: trip was fun/adventurous, a lot was seen, the off-road trail mentioned at the start was real, normal cars also go, and the experience was good.",
+          "editorialReason": "Best evidence-backed final verdict in this bundle. It directly resolves the opening promise."
+        },
+        {
+          "start": "00:00:30.070",
+          "end": "00:00:51.040",
+          "decision": "SHORTEN",
+          "mediaRole": "speech-driven",
+          "speechRole": "Closing CTA, motivation, and goodbye.",
+          "editorialReason": "Retain a compact CTA/signoff only after the verdict; avoid repeating the other outro clips."
+        }
+      ],
+      "visualEvents": []
+    }
+  },
+  "crossBundleEditorialNotes": {
+    "closingStrategy": "Use the 0300 spontaneous monkey/empty-road and sunset reflection material as selective human texture, then land on the 0302 final verdict. Do not stack every outro.",
+    "outroDeduplication": "0297, 0298, and 0299 are overlapping signoff candidates. Pick one concise ending tag after the main verdict.",
+    "curiosity": "0296 contains a real mini-open-loop ('show you something' / 'if this will work') and may be worth a very short insert if the visual result is strong.",
+    "adventurePayoffLink": "0302 explicitly confirms the off-road trail promised at the beginning and says normal cars also go; this closes the structural loop created by the earlier setup and adventure bundles.",
+    "humanTexture": "0295 cows and 0300 monkey/empty-road remarks provide small local observations that keep the closing from becoming only roads/temples/driving.",
+    "nightMaterial": "0301 is optional late epilogue material and should only survive if visually distinct and strong.",
+    "repetitionRisk": "Most closing footage is speech-heavy. Compress aggressively, avoid multiple CTAs, and do not let the ending become longer than the payoff warrants.",
+    "frameBoundaryIssues": "No physical recovery of bundle 004 boundary frames was verified from the heavy ZIP in the working runtime."
+  },
+  "editorialConclusion": "Bundle 005 is primarily the post-adventure closing layer. Its highest-value story material is the spontaneous local observation, sunset/worth-it reflection, and final verdict that the off-road trail promised at the start was indeed real. The final edit should converge quickly after that verdict rather than stacking multiple outros."
 }
