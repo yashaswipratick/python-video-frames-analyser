@@ -22,8 +22,8 @@
     },
     "bundle_003": {
       "path": "editorial_memory/bundle_003_editorial_memory.json",
-      "status": "NOT_YET_PERSISTED",
-      "notes": "Earlier review included destination/cave-temple/crowd/local-interaction material, but exact bundle-specific reasoning is not currently stored in the repository. Capture the evidence-derived detail before final consolidation rather than guessing."
+      "status": "DETAILED_PERSISTED",
+      "notes": "Destination/cave-temple exploration, crowd and organization observations, prasada/access notes, parking/off-road setup, traffic/route surprise, and humorous handoff into bundle 004 adventure. Exact uncertain proper names are flagged for listen-check."
     },
     "bundle_004": {
       "path": "editorial_memory/bundle_004_editorial_memory.json",
