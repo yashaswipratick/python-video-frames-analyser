@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "status": "AI_ANALYZED_PARTIAL_BUNDLE",
+  "purpose": "AI editorial decisions keyed by exact source video filename for downstream DaVinci Resolve timeline generation.",
+  "videos": {
+    "DJI_20260830123104_0221_D.MP4": {
+      "sourceFileName": "DJI_20260830123104_0221_D.MP4",
+      "durationMs": 29333,
+      "overallDecision": "KEEP_WITH_EDITS",
+      "recommendedEditedDurationMs": 23000,
+      "summary": "Single continuous talking-head intro. The destination is introduced clearly and the off-road trail creates the strongest curiosity hook. Reduce static talking-head time and cover explanatory speech with destination/road/off-road B-roll when available.",
+      "storyRole": "INTRO_AND_ADVENTURE_SETUP",
+      "timeline": [
+        {
+          "sourceStartMs": 0,
+          "sourceEndMs": 4560,
+          "action": "REMOVE",
+          "reason": "No speech; opening visual is less useful as a cold open than the later direct-to-camera introduction.",
+          "davinci": {
+            "track": "VIDEO",
+            "operation": "CUT"
+          }
+        },
+        {
+          "sourceStartMs": 4560,
+          "sourceEndMs": 7520,
+          "action": "KEEP",
+          "reason": "Natural greeting and vlog opening.",
+          "editPurpose": "HOOK_SETUP",
+          "davinci": {
+            "track": "VIDEO_AUDIO",
+            "operation": "KEEP"
+          }
+        },
+        {
+          "sourceStartMs": 7520,
+          "sourceEndMs": 16060,
+          "action": "KEEP_AS_PRIMARY_SPEECH_WITH_BROLL",
+          "reason": "Clearly establishes the destination and the distinctive temple-inside-the-hill premise. Static talking head should be visually supported by relevant travel footage if available.",
+          "editPurpose": "DESTINATION_SETUP",
+          "davinci": {
+            "track": "VIDEO_AUDIO",
+            "operation": "J_CUT_OR_L_CUT_WITH_BROLL"
+          }
+        },
+        {
+          "sourceStartMs": 16060,
+          "sourceEndMs": 20500,
+          "action": "KEEP",
+          "reason": "Strong narrative information leading into the off-road thread.",
+          "editPurpose": "DISCOVERY_SETUP"
+        },
+        {
+          "sourceStartMs": 20500,
+          "sourceEndMs": 24100,
+          "action": "STRONG_KEEP",
+          "reason": "Best hook in the clip: the off-road trail and the possibility of taking a car to the hilltop creates a concrete unresolved question/adventure thread.",
+          "editPurpose": "ADVENTURE_HOOK",
+          "priority": "HIGH",
+          "davinci": {
+            "track": "VIDEO_AUDIO",
+            "operation": "KEEP_AND_EMPHASIZE"
+          }
+        },
+        {
+          "sourceStartMs": 24100,
+          "sourceEndMs": 28000,
+          "action": "KEEP_AS_TRANSITION",
+          "reason": "Natural transition from setup into the journey/exploration section.",
+          "editPurpose": "TRANSITION",
+          "davinci": {
+            "track": "VIDEO_AUDIO",
+            "operation": "KEEP"
+          }
+        },
+        {
+          "sourceStartMs": 28000,
+          "sourceEndMs": 29333,
+          "action": "REMOVE_OR_TRIM",
+          "reason": "Trailing material adds little editorial value after the transition into the journey.",
+          "editPurpose": "PACING"
+        }
+      ],
+      "speech": {
+        "languageDetected": "hi",
+        "transcriptQuality": "GOOD_WITH_HINGLISH_PHONETIC_VARIATIONS",
+        "speechSegments": [
+          {
+            "startMs": 4560,
+            "endMs": 24100,
+            "editorialRole": "INTRO_DESTINATION_AND_ADVENTURE_SETUP"
+          },
+          {
+            "startMs": 24100,
+            "endMs": 28000,
+            "editorialRole": "TRANSITION_TO_EXPLORATION"
+          }
+        ]
+      },
+      "visual": {
+        "sceneCountDetected": 1,
+        "sceneDetectionNote": "PySceneDetect identified one continuous camera scene; editorial beats are finer-grained than camera-cut boundaries.",
+        "visualEditorialAssessment": "Talking-head intro with clear subject visibility and usable framing. Later framing is more useful than the opening moment. Static delivery should be broken up with B-roll rather than removed wholesale because the speech establishes the vlog premise."
+      },
+      "brollRecommendations": [
+        {
+          "coverSpeech": "Destination introduction",
+          "preferredVisuals": ["driving POV", "road", "destination sign", "hill", "temple exterior"]
+        },
+        {
+          "coverSpeech": "Temple inside the hill",
+          "preferredVisuals": ["hill entrance", "cave/temple", "destination close-up"]
+        },
+        {
+          "coverSpeech": "Off-road trail / car access",
+          "preferredVisuals": ["car", "rough road", "off-road trail", "hill climb"]
+        }
+      ],
+      "daVinci": {
+        "assemblyOrder": 1,
+        "recommendedSequence": [
+          "KEEP 4560-7520",
+          "BROLL_OVER 7520-16060",
+          "KEEP/BROLL 16060-20500",
+          "EMPHASIZE 20500-24100",
+          "KEEP 24100-28000",
+          "TRIM 28000-29333"
+        ]
+      }
+    }
+  }
+}
