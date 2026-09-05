@@ -1,7 +1,43 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "analysisType": "AI_EDITOR_TIMELINE",
   "sourcePolicy": "Only evidence present in the processed analysis bundle is used. Visual events are closed-set labels and must be visibly supported.",
+  "editorialDurationPolicy": {
+    "preferredRange": {
+      "minMinutes": 8,
+      "maxMinutes": 12
+    },
+    "preferredTargetRange": {
+      "minMinutes": 10,
+      "maxMinutes": 12
+    },
+    "targetIsFlexible": true,
+    "rules": [
+      "Do not force the finished vlog to 12 minutes.",
+      "Use 10–12 minutes when strong story material genuinely supports it.",
+      "If strong story material is shorter, keep the stronger shorter cut rather than padding it.",
+      "If strong story material is longer, remove repetition, dead time and weak material to target roughly 10–12 minutes.",
+      "The primary objective is story quality and viewer retention, not filling a duration quota.",
+      "Never add weak footage merely to reach the target duration."
+    ],
+    "examples": [
+      {
+        "strongStoryMaterial": "07:40",
+        "expectedFinalRange": "~07:40",
+        "reason": "The story is already stronger at its natural length."
+      },
+      {
+        "strongStoryMaterial": "11:20",
+        "expectedFinalRange": "~11:20",
+        "reason": "The available story naturally fits the preferred range."
+      },
+      {
+        "strongStoryMaterial": "18:00",
+        "expectedFinalRange": "~10:00–12:00",
+        "reason": "Cut repetition, dead time and weak material instead of stretching the final cut."
+      }
+    ]
+  },
   "eventTaxonomy": [
     "Landscape",
     "Mountain",
