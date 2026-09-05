@@ -1,303 +1,210 @@
 #!/usr/bin/env python3
-"""
-Generate an FCPXML timeline from edit_timeline.json for DaVinci Resolve.
-
-The JSON remains the editorial source of truth. This script converts the
-chronological masterTimeline into an interchange timeline that Resolve can
-import, while preserving the exact source filenames and source IN/OUT points.
-
-Usage:
-    python3 generate_fcpxml.py \
-        --timeline edit_timeline.json \
-        --media-dir ./videos \
-        --output edit_timeline.fcpxml
-
-Notes:
-- This generator uses only the Python standard library.
-- Raw media is never changed.
-- The XML references the original source files. It does not copy media.
-- Master-timeline clips are assembled sequentially in editorial order.
-- Music-driven master-timeline items are placed on a secondary audio lane
-  when the source range is a dedicated audio/music asset; otherwise they stay
-  on the primary video track so the visual montage remains intact.
-- B-roll recommendations in the current JSON are informational unless they
-  are present as masterTimeline items. They should not be guessed into the
-  timeline because that would violate the exact-evidence rule.
-"""
-
+"""Generate an FCPXML timeline from edit_timeline.json for DaVinci Resolve."""
 from __future__ import annotations
 
 import argparse
 import json
-import os
 from dataclasses import dataclass
 from fractions import Fraction
 from pathlib import Path
-from typing import Any
 from urllib.parse import quote
 import xml.etree.ElementTree as ET
 
-
-DEFAULT_FPS = 30
 TIMESCALE = 600
-
 
 @dataclass(frozen=True)
 class ClipSpec:
-    sequence_order: int
-    editorial_section: str
-    source_file: str
-    source_start: Fraction
-    source_end: Fraction
+    order: int
+    section: str
+    source: str
+    start: Fraction
+    end: Fraction
     decision: str
-    media_role: str
+    role: str
     events: tuple[str, ...]
     reason: str
-
     @property
     def duration(self) -> Fraction:
-        value = self.source_end - self.source_start
+        value = self.end - self.start
         if value <= 0:
-            raise ValueError(
-                f"Invalid range for {self.source_file}: "
-                f"{format_time(self.source_start)} -> {format_time(self.source_end)}"
-            )
+            raise ValueError(f"Invalid source range: {self.source} {self.start}->{self.end}")
         return value
 
-
-def parse_timestamp(value: str | int | float) -> Fraction:
+def ts(value: str | int | float) -> Fraction:
     if isinstance(value, (int, float)):
         return Fraction(str(value))
-    text = str(value).strip()
-    parts = text.split(":")
+    parts = str(value).strip().split(":")
     if len(parts) == 1:
         return Fraction(parts[0])
     if len(parts) != 3:
-        raise ValueError(f"Unsupported timestamp: {value!r}")
-    hours = Fraction(parts[0])
-    minutes = Fraction(parts[1])
-    seconds = Fraction(parts[2])
-    if minutes < 0 or minutes >= 60 or seconds < 0 or seconds >= 60:
         raise ValueError(f"Invalid timestamp: {value!r}")
-    return hours * 3600 + minutes * 60 + seconds
+    h, m, s = (Fraction(part) for part in parts)
+    if not (0 <= m < 60 and 0 <= s < 60):
+        raise ValueError(f"Invalid timestamp: {value!r}")
+    return h * 3600 + m * 60 + s
 
-
-def format_time(value: Fraction) -> str:
+def fmt(value: Fraction) -> str:
     total_ms = int(round(float(value) * 1000))
-    hours, rem = divmod(total_ms, 3_600_000)
-    minutes, rem = divmod(rem, 60_000)
-    seconds, millis = divmod(rem, 1000)
-    return f"{hours:02d}:{minutes:02d}:{seconds:02d}.{millis:03d}"
+    h, rem = divmod(total_ms, 3_600_000)
+    m, rem = divmod(rem, 60_000)
+    s, ms = divmod(rem, 1000)
+    return f"{h:02d}:{m:02d}:{s:02d}.{ms:03d}"
 
+def fx(value: Fraction) -> str:
+    return f"{int(round(float(value) * TIMESCALE))}/{TIMESCALE}s"
 
-def to_fcpx_time(value: Fraction, timescale: int = TIMESCALE) -> str:
-    ticks = int(round(float(value) * timescale))
-    return f"{ticks}/{timescale}s"
+def file_url(path: Path) -> str:
+    return "file://" + quote(str(path.expanduser().resolve()), safe="/:@-._~")
 
-
-def xml_escape_url(path: Path) -> str:
-    absolute = path.expanduser().resolve()
-    return "file://" + quote(str(absolute), safe="/:@-._~")
-
-
-def find_source(media_dir: Path, filename: str) -> Path:
-    direct = media_dir / filename
-    if direct.exists():
+def find_media(media_dir: Path, name: str) -> Path:
+    direct = media_dir / name
+    if direct.is_file():
         return direct
-
-    matches = list(media_dir.rglob(filename))
-    if len(matches) == 1:
-        return matches[0]
+    matches = [p for p in media_dir.rglob(name) if p.is_file()]
     if not matches:
-        raise FileNotFoundError(
-            f"Source media not found: {filename!r} under {media_dir}"
-        )
-    paths = "\n".join(f"  - {item}" for item in matches[:10])
-    raise RuntimeError(
-        f"Multiple source files named {filename!r} were found under {media_dir}.\n"
-        "Use --media-dir pointing at the intended source folder.\n"
-        f"Matches:\n{paths}"
-    )
+        raise FileNotFoundError(f"Source media not found: {name} under {media_dir}")
+    if len(matches) > 1:
+        raise RuntimeError("Multiple source files found for " + name + ":\n" + "\n".join(f"  {p}" for p in matches[:10]))
+    return matches[0]
 
-
-def load_timeline(path: Path) -> dict[str, Any]:
-    payload = json.loads(path.read_text(encoding="utf-8"))
-    if not isinstance(payload, dict):
-        raise ValueError("Timeline JSON root must be an object")
-    master = payload.get("masterTimeline")
-    if not isinstance(master, list):
+def load(path: Path) -> dict:
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, dict) or not isinstance(data.get("masterTimeline"), list):
         raise ValueError("edit_timeline.json must contain masterTimeline[]")
-    return payload
+    return data
 
-
-def build_clip_specs(payload: dict[str, Any]) -> list[ClipSpec]:
-    specs: list[ClipSpec] = []
-    for item in payload["masterTimeline"]:
+def clips(data: dict) -> list[ClipSpec]:
+    result: list[ClipSpec] = []
+    for index, item in enumerate(data["masterTimeline"], 1):
         if not isinstance(item, dict):
             continue
-        decision = str(item.get("decision", "KEEP")).upper()
-        if decision == "REMOVE":
+        if str(item.get("decision", "KEEP")).upper() == "REMOVE":
             continue
-        source_file = str(item.get("sourceFile", "")).strip()
-        if not source_file:
-            raise ValueError(f"Master timeline item is missing sourceFile: {item!r}")
-        specs.append(
-            ClipSpec(
-                sequence_order=int(item.get("sequenceOrder", len(specs) + 1)),
-                editorial_section=str(item.get("editorialSection", "")).strip(),
-                source_file=source_file,
-                source_start=parse_timestamp(item["sourceStart"]),
-                source_end=parse_timestamp(item["sourceEnd"]),
-                decision=decision,
-                media_role=str(item.get("mediaRole", "")).strip().lower(),
-                events=tuple(str(event) for event in item.get("events", [])),
-                reason=str(item.get("reason", "")).strip(),
-            )
-        )
-    specs.sort(key=lambda item: item.sequence_order)
-    return specs
+        source = str(item.get("sourceFile", "")).strip()
+        if not source:
+            raise ValueError(f"masterTimeline[{index}] missing sourceFile")
+        result.append(ClipSpec(
+            order=int(item.get("sequenceOrder", index)),
+            section=str(item.get("editorialSection", "")),
+            source=source,
+            start=ts(item["sourceStart"]),
+            end=ts(item["sourceEnd"]),
+            decision=str(item.get("decision", "KEEP")),
+            role=str(item.get("mediaRole", "")),
+            events=tuple(str(x) for x in item.get("events", [])),
+            reason=str(item.get("reason", "")),
+        ))
+    return sorted(result, key=lambda x: x.order)
 
+def note(parent: ET.Element, text: str) -> None:
+    ET.SubElement(parent, "note").text = text
 
-def media_role_is_music(role: str) -> bool:
-    return role == "music-driven" or "music" in role
+def generate(data: dict, media_dir: Path, fps: int) -> tuple[str, dict]:
+    items = clips(data)
+    if not items:
+        raise ValueError("masterTimeline has no usable items")
 
-
-def make_element(tag: str, **attrs: str) -> ET.Element:
-    return ET.Element(tag, attrs)
-
-
-def add_text_asset(doc: ET.Element, ref: str, name: str, src: str) -> ET.Element:
-    asset = make_element(
-        "asset",
-        id=ref,
-        name=name,
-        src=src,
-        start="0s",
-        duration="0s",
-        hasVideo="1",
-        hasAudio="1",
-        formatRef="r1",
-    )
-    doc.append(asset)
-    return asset
-
-
-def prettify(root: ET.Element) -> str:
-    ET.indent(root, space="  ")
-    body = ET.tostring(root, encoding="unicode")
-    return '<?xml version="1.0" encoding="UTF-8"?>\n' + body + "\n"
-
-
-def generate_xml(payload: dict[str, Any], media_dir: Path) -> tuple[str, dict[str, Any]]:
-    specs = build_clip_specs(payload)
-    if not specs:
-        raise ValueError("masterTimeline contains no usable clips")
-
-    # FCPXML 1.10 is broadly understood by current NLE interchange workflows.
-    root = make_element("fcpxml", version="1.10")
+    root = ET.Element("fcpxml", {"version": "1.10"})
     resources = ET.SubElement(root, "resources")
-    ET.SubElement(resources, "format", id="r1", name="FFVideoFormat1080p30", frameDuration="1/30s", width="1920", height="1080")
+    ET.SubElement(resources, "format", {
+        "id": "r1",
+        "name": f"FFVideoFormat{fps}p",
+        "frameDuration": f"1/{fps}s",
+        "width": "1920",
+        "height": "1080",
+    })
 
-    source_paths: dict[str, Path] = {}
-    for spec in specs:
-        source_paths.setdefault(spec.source_file, find_source(media_dir, spec.source_file))
+    media: dict[str, Path] = {}
+    for item in items:
+        media.setdefault(item.source, find_media(media_dir, item.source))
 
-    asset_refs: dict[str, str] = {}
-    for index, (filename, path) in enumerate(source_paths.items(), start=1):
-        ref = f"r{index + 1}"
-        asset_refs[filename] = ref
-        add_text_asset(resources, ref, filename, xml_escape_url(path))
+    refs: dict[str, str] = {}
+    for i, (name, path) in enumerate(media.items(), start=2):
+        ref = f"r{i}"
+        refs[name] = ref
+        duration = max((x.end for x in items if x.source == name), default=Fraction(1))
+        ET.SubElement(resources, "asset", {
+            "id": ref,
+            "name": name,
+            "src": file_url(path),
+            "start": "0s",
+            "duration": fx(duration),
+            "hasVideo": "1",
+            "hasAudio": "1",
+            "format": "r1",
+        })
 
     library = ET.SubElement(root, "library")
-    event = ET.SubElement(library, "event", name="AI Editorial Timeline")
-    project = ET.SubElement(event, "project", name="AI Editorial Timeline")
-    sequence = ET.SubElement(
-        project,
-        "sequence",
-        format="r1",
-        tcStart="0s",
-        tcFormat="NDF",
-        audioRate="48k",
-    )
+    event = ET.SubElement(library, "event", {"name": "AI Editorial Timeline"})
+    project = ET.SubElement(event, "project", {"name": "AI Editorial Timeline"})
+    sequence = ET.SubElement(project, "sequence", {
+        "format": "r1",
+        "tcStart": "0s",
+        "tcFormat": "NDF",
+        "audioRate": "48k",
+    })
     spine = ET.SubElement(sequence, "spine")
 
-    current = Fraction(0)
-    counts = {"video": 0, "music": 0, "total": 0}
-    first_clip_ref: str | None = None
+    cursor = Fraction(0)
+    for item in items:
+        clip = ET.SubElement(spine, "asset-clip", {
+            "name": item.source,
+            "ref": refs[item.source],
+            "offset": fx(cursor),
+            "start": fx(item.start),
+            "duration": fx(item.duration),
+            "enabled": "1",
+        })
+        note(clip, " | ".join([
+            f"sequenceOrder={item.order}",
+            f"editorialSection={item.section}",
+            f"decision={item.decision}",
+            f"mediaRole={item.role}",
+            f"events={','.join(item.events)}",
+            f"reason={item.reason}",
+        ]))
+        cursor += item.duration
 
-    # The current edit_timeline.json provides a single chronological master
-    # timeline. We therefore build one deterministic primary spine. Roles are
-    # preserved in clip metadata so a later schema revision can fan them out
-    # into dedicated V2/A2 lanes without guessing placement.
-    for spec in specs:
-        ref = asset_refs[spec.source_file]
-        offset = current
-        clip = ET.SubElement(
-            spine,
-            "asset-clip",
-            name=spec.source_file,
-            ref=ref,
-            offset=to_fcpx_time(offset),
-            start=to_fcpx_time(spec.source_start),
-            duration=to_fcpx_time(spec.duration),
-            enabled="1",
-            tcFormat="NDF",
-        )
-        ET.SubElement(clip, "note", key="editorialSection", value=spec.editorial_section)
-        ET.SubElement(clip, "note", key="sequenceOrder", value=str(spec.sequence_order))
-        ET.SubElement(clip, "note", key="decision", value=spec.decision)
-        ET.SubElement(clip, "note", key="mediaRole", value=spec.media_role)
-        ET.SubElement(clip, "note", key="events", value=", ".join(spec.events))
-        ET.SubElement(clip, "note", key="reason", value=spec.reason)
+    metadata = ET.SubElement(root, "metadata")
+    note(metadata, f"Generated from edit_timeline.json schemaVersion={data.get('schemaVersion')}")
+    note(metadata, "Exact masterTimeline source IN/OUT values preserved.")
+    note(metadata, "B-roll/music recommendations without explicit timeline placement were not guessed into the XML.")
 
-        current += spec.duration
-        counts["total"] += 1
-        if media_role_is_music(spec.media_role):
-            counts["music"] += 1
-        else:
-            counts["video"] += 1
-        if first_clip_ref is None:
-            first_clip_ref = ref
-
+    ET.indent(root, space="  ")
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + ET.tostring(root, encoding="unicode") + "\n"
     summary = {
-        "masterTimelineItems": len(specs),
-        "assembledDurationSeconds": float(current),
-        "assembledDuration": format_time(current),
-        "sourceAssets": len(source_paths),
-        **counts,
-        "notes": [
-            "The timeline is deterministic and follows masterTimeline sequenceOrder.",
-            "No source media is modified or copied.",
-            "B-roll/music recommendations that are not explicit masterTimeline items are intentionally not guessed into the sequence.",
-            "Resolve may require media relinking after XML import if the machine path differs from the generated XML references.",
+        "masterTimelineItems": len(items),
+        "sourceAssets": len(media),
+        "timelineDuration": fmt(cursor),
+        "timelineDurationSeconds": float(cursor),
+        "fps": fps,
+        "sourceMediaModified": False,
+        "brollOverlayPlacement": "NOT_GUESSED_FROM_CURRENT_SCHEMA",
+        "musicAsset": None,
+        "warnings": [
+            "Current edit_timeline.json does not provide timelineStart/lane coordinates for B-roll overlays.",
+            "Current music sections identify footage suitable for music but do not identify a separate music audio file.",
+            "This converter therefore builds the exact master story spine; a schema upgrade is needed for fully automatic V2/A2 placement.",
         ],
     }
-    return prettify(root), summary
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--timeline", type=Path, default=Path("edit_timeline.json"), help="Path to edit_timeline.json")
-    parser.add_argument("--media-dir", type=Path, required=True, help="Directory containing original source videos")
-    parser.add_argument("--output", type=Path, default=Path("edit_timeline.fcpxml"), help="Output FCPXML path")
-    return parser.parse_args()
-
+    return xml, summary
 
 def main() -> int:
-    args = parse_args()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--timeline", type=Path, default=Path("edit_timeline.json"))
+    parser.add_argument("--media-dir", type=Path, required=True)
+    parser.add_argument("--output", type=Path, default=Path("edit_timeline.fcpxml"))
+    parser.add_argument("--fps", type=int, default=30, choices=(24, 25, 30, 50, 60))
+    args = parser.parse_args()
     try:
-        payload = load_timeline(args.timeline)
-        xml_text, summary = generate_xml(payload, args.media_dir)
+        xml, summary = generate(load(args.timeline), args.media_dir, args.fps)
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(xml, encoding="utf-8")
     except Exception as exc:
-        print(f"ERROR: {exc}", flush=True)
+        print(f"ERROR: {exc}")
         return 1
-
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(xml_text, encoding="utf-8")
-
     print(json.dumps({"output": str(args.output.resolve()), **summary}, indent=2))
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())
