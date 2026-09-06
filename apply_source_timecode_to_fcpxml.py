@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Apply embedded camera source timecode to an existing FCPXML timeline.
+"""Apply embedded camera source timecode to FCPXML media assets.
 
-The editorial ranges remain relative to each source clip. This pass translates
-those relative source positions into the actual source-media timecode Resolve
-uses when conforming footage.
+The editorial ranges remain relative to each source clip. This pass sets each
+video asset's media start to the embedded camera timecode so Resolve can conform
+against the source file's actual timecode. Clip-local starts are intentionally
+left unchanged; changing them as well would double-apply the source offset and
+can produce negative or otherwise invalid conform timecodes for connected
+clips.
 """
 
 from __future__ import annotations
@@ -17,8 +20,9 @@ from pathlib import Path
 
 
 def tc_to_seconds(value: str, fps: int) -> Fraction:
-    text = value.strip().replace(";", ":")
-    parts = text.split(":")
+    """Convert HH:MM:SS:FF or HH:MM:SS;FF timecode to seconds."""
+    normalized = value.strip().replace(";", ":")
+    parts = normalized.split(":")
     if len(parts) != 4:
         raise ValueError(
             f"Unsupported source timecode {value!r}; expected HH:MM:SS:FF or HH:MM:SS;FF"
@@ -52,16 +56,6 @@ def probe_timecode(path: Path) -> str | None:
     return str(value) if value else None
 
 
-def seconds_attr(value: str) -> Fraction:
-    text = value.strip()
-    if text.endswith("s"):
-        text = text[:-1]
-    if "/" in text:
-        numerator, denominator = text.split("/", 1)
-        return Fraction(numerator) / Fraction(denominator)
-    return Fraction(text)
-
-
 def fx(value: Fraction, timescale: int = 600) -> str:
     return f"{int(round(float(value) * timescale))}/{timescale}s"
 
@@ -79,21 +73,20 @@ def main() -> int:
     if resources is None:
         raise ValueError("FCPXML has no resources element")
 
-    assets: dict[str, tuple[str, Path, Fraction]] = {}
+    adjusted_assets = 0
     warnings: list[str] = []
 
     for asset in resources.findall("asset"):
         ref = asset.get("id")
         if not ref or asset.get("hasVideo") != "1":
             continue
+
         media_rep = asset.find("media-rep")
         src = media_rep.get("src") if media_rep is not None else None
         if not src:
             warnings.append(f"{ref}: no original-media src; left unchanged")
             continue
 
-        # FCPXML stores a file URL. Use the decoded path only for the local
-        # source lookup; the XML src itself is preserved.
         path_text = src
         if path_text.startswith("file://"):
             path_text = path_text[7:]
@@ -106,24 +99,20 @@ def main() -> int:
                 warnings.append(f"{ref}: source file not found: {path}")
                 continue
 
-        tc = probe_timecode(path)
-        if not tc:
-            warnings.append(f"{path.name}: no embedded timecode; left unchanged")
+        try:
+            tc = probe_timecode(path)
+            if not tc:
+                warnings.append(f"{path.name}: no embedded timecode; left unchanged")
+                continue
+            offset = tc_to_seconds(tc, args.fps)
+        except (subprocess.CalledProcessError, json.JSONDecodeError, ValueError) as exc:
+            warnings.append(f"{path.name}: could not read timecode ({exc}); left unchanged")
             continue
 
-        offset = tc_to_seconds(tc, args.fps)
+        # The asset's start establishes the media's real source-timecode base.
+        # Keep every asset-clip's existing relative start untouched.
         asset.set("start", fx(offset))
-        assets[ref] = (path.name, path, offset)
-
-    changed_clips = 0
-    for clip in root.iter("asset-clip"):
-        ref = clip.get("ref")
-        if ref not in assets:
-            continue
-        _, _, offset = assets[ref]
-        current = seconds_attr(clip.get("start", "0s"))
-        clip.set("start", fx(offset + current))
-        changed_clips += 1
+        adjusted_assets += 1
 
     ET.indent(root, space="  ")
     tree.write(args.fcpxml, encoding="utf-8", xml_declaration=True)
@@ -131,8 +120,8 @@ def main() -> int:
     print(json.dumps({
         "status": "SOURCE_TIMECODE_APPLIED",
         "fcpxml": str(args.fcpxml.resolve()),
-        "assetsAdjusted": len(assets),
-        "clipsAdjusted": changed_clips,
+        "assetsAdjusted": adjusted_assets,
+        "clipsAdjusted": 0,
         "warnings": warnings,
     }, indent=2))
     return 0
