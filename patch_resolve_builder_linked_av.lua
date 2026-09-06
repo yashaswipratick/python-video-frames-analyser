@@ -1,6 +1,5 @@
--- Patches the installed Resolve Lua builder so main story media is inserted as
--- linked A/V (mediaType=3) instead of separate video/audio insertions.
--- Run once from Workspace > Scripts > Utility.
+-- Robustly patches the installed Resolve Lua builder so main story clips are inserted
+-- as linked A/V (mediaType=3). It does not depend on the previous exact formatting.
 
 local BUILDER = "/Users/yashaswipratick/Library/Containers/com.blackmagic-design.DaVinciResolveLite/Data/Library/Application Support/Fusion/Scripts/Utility/resolve_lua_native_builder.lua"
 
@@ -22,44 +21,67 @@ end
 local text = f:read("*all")
 f:close()
 
-local oldBlock = [[        appendClip(mediaPool, mediaItem, sourceIn, sourceOut, recordFrame, 1, 1, "V1 mainTimeline[" .. idx .. "]")
-        mainPlaced = mainPlaced + 1
+-- Find the first main-story V1 insertion and the record-frame advance that closes
+-- that insertion block. Everything between them is replaced with linked A/V.
+local v1Marker = 'appendClip(mediaPool,mediaItem,sourceIn,sourceOut,recordFrame,1,1,'
+local v1Start = text:find(v1Marker, 1, true)
 
-        local audioOk, audioErr = pcall(function()
-            appendClip(mediaPool, mediaItem, sourceIn, sourceOut, recordFrame, 1, 2, "A1 mainTimeline[" .. idx .. "]")
-        end)
+if not v1Start then
+    -- Also accept the spaced variant used by older builder revisions.
+    v1Marker = 'appendClip(mediaPool, mediaItem, sourceIn, sourceOut, recordFrame, 1, 1,'
+    v1Start = text:find(v1Marker, 1, true)
+end
 
-        if audioOk then
-            mainAudioPlaced = mainAudioPlaced + 1
-        else
-            print("RESOLVE LUA BUILDER WARNING: skipping A1 mainTimeline[" .. idx .. "] for " .. name .. ": " .. tostring(audioErr))
-        end
-]]
+if not v1Start then
+    show("ERROR: Could not locate the main V1 insertion in the installed builder. No changes made.")
+    return
+end
 
-local newBlock = [[        -- Insert the camera clip once as linked video + source audio.
-        -- Resolve mediaType=3 keeps the native A/V relationship intact.
+local blockStart = v1Start
+local recordMarker1 = 'recordFrame=recordFrame+duration'
+local recordMarker2 = 'recordFrame = recordFrame + duration'
+local recordEnd = text:find(recordMarker1, v1Start, true)
+local recordMarkerUsed = recordMarker1
+if not recordEnd then
+    recordEnd = text:find(recordMarker2, v1Start, true)
+    recordMarkerUsed = recordMarker2
+end
+
+if not recordEnd then
+    show("ERROR: Could not locate the main record-frame advance. No changes made.")
+    return
+end
+
+local replacement = [[        -- Insert the camera clip once as linked video + source audio.
+        -- Resolve mediaType=3 preserves the native A/V relationship and timing.
         local avOk, avResult = pcall(function()
             return appendClip(mediaPool, mediaItem, sourceIn, sourceOut, recordFrame, 1, 3, "V1+A1 mainTimeline[" .. idx .. "]")
         end)
 
-        if avOk then
-            mainPlaced = mainPlaced + 1
-            mainAudioPlaced = mainAudioPlaced + 1
-        else
+        if not avOk then
             error("Failed to place linked A/V mainTimeline[" .. idx .. "] for " .. name .. ": " .. tostring(avResult))
         end
+
+        mainPlaced = mainPlaced + 1
+        mainAudioPlaced = mainAudioPlaced + 1
+
 ]]
 
-if not text:find("local avOk, avResult", 1, true) then
-    if not text:find(oldBlock, 1, true) then
-        show("ERROR: Expected main V1/A1 block was not found. Builder was not changed.")
-        return
+-- Preserve the existing record-frame line itself.
+local recordLineEnd = recordEnd
+while recordLineEnd <= #text do
+    local c = text:sub(recordLineEnd, recordLineEnd)
+    if c == "\n" then
+        break
     end
-    text = text:gsub(oldBlock, newBlock, 1)
+    recordLineEnd = recordLineEnd + 1
 end
 
--- Update the report wording to make linked A/V explicit.
-text = text:gsub("Main A1 audio: %d / %d", "Linked A/V main clips: %d / %d", 1)
+text = text:sub(1, blockStart - 1) .. replacement .. text:sub(recordEnd, recordLineEnd)
+
+-- Make the final report describe the actual linked A/V count.
+text = text:gsub("Main A1 audio clips: %%d / %%d", "Linked A/V main clips: %%d / %%d")
+text = text:gsub("Main A1 audio: %%d / %%d", "Linked A/V main clips: %%d / %%d")
 
 local out = io.open(BUILDER, "wb")
 if not out then
@@ -69,4 +91,4 @@ end
 out:write(text)
 out:close()
 
-show("PATCH SUCCESS\n\nMain story clips now use linked A/V insertion (mediaType=3).\n\nThe separate A1 insertion path has been removed.\n\nRe-run resolve_lua_native_builder after deleting/ignoring the previous generated timeline.")
+show("PATCH SUCCESS\n\nMain story insertion is now linked A/V (mediaType=3).\n\nNo Resolve project or timeline was modified by this patch.")
