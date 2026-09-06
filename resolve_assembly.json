@@ -11,9 +11,9 @@
     "A2": "external_music_bed"
   },
   "musicPolicy": {
-    "externalAudioFile": "/Users/yashaswipratick/projects/youtube-analysis/youtube-analytics/video/Kailashagiri-hills/music/Warriyo-Laura Brehm-Mortals.mp3",
+    "externalAudioFile": null,
     "requiredForFinal": true,
-    "instruction": "Use this exact MP3 on A2 for the configured music cues. Keep dialogue on A1 and duck the music beneath speech. Do not substitute another track automatically."
+    "instruction": "The external music file must be supplied explicitly with the build command using --music-file. Do not configure or infer a fixed music path from this assembly file. Keep dialogue on A1 and duck the music beneath speech."
   },
   "mainTimeline": [
     {"order":1,"section":"HOOK","sourceFile":"DJI_20260830123104_0221_D.MP4","sourceStart":"00:04.560","sourceEnd":"00:24.120","mediaRole":"speech-driven","reason":"Fast hook: hill/temple premise plus off-road promise."},
