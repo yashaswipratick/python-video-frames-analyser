@@ -2,20 +2,21 @@
 """Build the editorial assembly directly inside a running DaVinci Resolve instance.
 
 This avoids FCPXML conform matching entirely. Source trim positions are interpreted
-relative to each source clip's media start, and Resolve is told the exact source
-frame range plus record frame.
+relative to each source clip's media start, and Resolve receives exact source frame
+ranges plus record frames.
 
 Requires DaVinci Resolve to be running with scripting enabled and the
 DaVinciResolveScript Python module available. The script does not modify source
 media or edit_timeline.json / resolve_assembly.json.
 """
+
 from __future__ import annotations
 
 import argparse
 import json
 import os
-import sys
 import subprocess
+import sys
 from fractions import Fraction
 from pathlib import Path
 from typing import Any
@@ -73,7 +74,10 @@ def probe_fps(path: Path) -> Fraction:
     stream = (data.get("streams") or [{}])[0]
     value = stream.get("avg_frame_rate") or stream.get("r_frame_rate") or "30/1"
     num, den = value.split("/", 1)
-    return Fraction(int(num), int(den))
+    fps = Fraction(int(num), int(den))
+    if fps <= 0:
+        return Fraction(30, 1)
+    return fps
 
 
 def find_media(media_dir: Path, filename: str) -> Path:
@@ -84,29 +88,53 @@ def find_media(media_dir: Path, filename: str) -> Path:
     if not matches:
         raise FileNotFoundError(f"Source media not found: {filename}")
     if len(matches) > 1:
-        raise RuntimeError("Multiple source files found for " + filename + ":\n" + "\n".join(str(p) for p in matches[:10]))
+        raise RuntimeError(
+            "Multiple source files found for " + filename + ":\n" +
+            "\n".join(str(p) for p in matches[:10])
+        )
     return matches[0]
 
 
-def frame_number(seconds: Fraction, fps: Fraction) -> int:
-    # Resolve scripting uses integer source frames. Round to the nearest frame
-    # while clamping negative values to the first source frame.
-    value = seconds * fps
-    return max(0, int(round(float(value))))
+def frame_at(seconds: Fraction, fps: Fraction) -> int:
+    """Convert a source-relative time to the nearest integer source frame."""
+    return max(0, int(round(float(seconds * fps))))
 
 
-def resolve_clip_info(media_item: Any, source_start: int, source_end: int, record_frame: int, track_index: int = 1) -> dict[str, Any]:
+def duration_frames(start: Fraction, end: Fraction, fps: Fraction) -> tuple[int, int]:
+    """Return an inclusive Resolve source-frame range for [start, end)."""
+    source_start = frame_at(start, fps)
+    source_end_exclusive = frame_at(end, fps)
+    source_end = source_end_exclusive - 1
+    if source_end < source_start:
+        source_end = source_start
+    return source_start, source_end
+
+
+def clip_info(
+    media_item: Any,
+    source_start: int,
+    source_end: int,
+    record_frame: int,
+    *,
+    track_index: int,
+    media_type: int,
+) -> dict[str, Any]:
+    """Create a Resolve AppendToTimeline clip descriptor.
+
+    mediaType: 1=video, 2=audio, 3=both.
+    """
     return {
         "mediaPoolItem": media_item,
         "startFrame": source_start,
         "endFrame": source_end,
         "recordFrame": record_frame,
         "trackIndex": track_index,
+        "mediaType": media_type,
     }
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--assembly", type=Path, default=Path("resolve_assembly.json"))
     parser.add_argument("--media-dir", type=Path, required=True)
     parser.add_argument("--timeline-name", default=None)
@@ -140,9 +168,10 @@ def main() -> int:
     root_folder = media_pool.GetRootFolder()
     if root_folder is None:
         raise RuntimeError("Could not access Resolve Media Pool root folder")
+    media_pool.SetCurrentFolder(root_folder)
 
-    filenames = []
-    seen = set()
+    filenames: list[str] = []
+    seen: set[str] = set()
     for item in main_items:
         name = str(item["sourceFile"])
         if name not in seen:
@@ -153,11 +182,17 @@ def main() -> int:
         if name and name not in seen:
             seen.add(name)
             filenames.append(name)
-
     if args.music_file:
-        filenames.append(args.music_file.name)
+        if args.music_file.name not in seen:
+            filenames.append(args.music_file.name)
 
-    paths = [str(find_media(args.media_dir, name)) if name != args.music_file.name else str(args.music_file) for name in filenames] if args.music_file else [str(find_media(args.media_dir, name)) for name in filenames]
+    paths: list[str] = []
+    for name in filenames:
+        if args.music_file and name == args.music_file.name:
+            paths.append(str(args.music_file.resolve()))
+        else:
+            paths.append(str(find_media(args.media_dir, name).resolve()))
+
     imported = media_pool.ImportMedia(paths)
     if not imported:
         raise RuntimeError("Resolve imported no media")
@@ -167,84 +202,86 @@ def main() -> int:
     if missing:
         raise RuntimeError("Resolve did not return imported MediaPoolItem(s): " + ", ".join(missing))
 
-    timeline_name = args.timeline_name or assembly.get("assemblyName", "AI Editorial Timeline")
-    existing = media_pool.GetCurrentFolder()
-    if existing is not root_folder:
-        media_pool.SetCurrentFolder(root_folder)
-
+    timeline_name = args.timeline_name or str(assembly.get("assemblyName", "AI Editorial Timeline"))
     timeline = media_pool.CreateEmptyTimeline(timeline_name)
     if timeline is None:
         raise RuntimeError(f"Could not create timeline {timeline_name!r}")
     project.SetCurrentTimeline(timeline)
 
-    # Ensure tracks exist for V1/A1/V2/A2. Adding both media types per clip
-    # keeps the source camera audio paired with V1; B-roll and music are placed
-    # on higher tracks where Resolve permits connected media placement.
-    for _ in range(3):
-        try:
-            timeline.AddTrack("video")
-        except Exception:
-            break
-    for _ in range(3):
-        try:
-            timeline.AddTrack("audio")
-        except Exception:
-            break
+    # Create one additional video and audio track so V2 and A2 can be addressed
+    # explicitly. A newly created Resolve timeline already has V1/A1.
+    try:
+        timeline.AddTrack("video")
+    except Exception:
+        pass
+    try:
+        timeline.AddTrack("audio")
+    except Exception:
+        pass
 
+    # Build V1 using relative source frames. No embedded camera timecode is used.
     record = 0
-    placed_main = []
+    placed_main: list[dict[str, Any]] = []
     for idx, item in enumerate(main_items, start=1):
         name = str(item["sourceFile"])
         media = by_name[name]
         path = find_media(args.media_dir, name)
         fps = probe_fps(path)
-        start_seconds = ts(item["sourceStart"])
-        end_seconds = ts(item["sourceEnd"])
-        start_frame = frame_number(start_seconds, fps)
-        end_frame = frame_number(end_seconds, fps)
-        if end_frame <= start_frame:
-            raise ValueError(f"mainTimeline[{idx}] has non-positive source frame range")
-        info = resolve_clip_info(media, start_frame, end_frame, record, 1)
+        source_start, source_end = duration_frames(
+            ts(item["sourceStart"]),
+            ts(item["sourceEnd"]),
+            fps,
+        )
+        if source_end < source_start:
+            raise ValueError(f"mainTimeline[{idx}] has invalid frame range")
+        info = clip_info(
+            media,
+            source_start,
+            source_end,
+            record,
+            track_index=1,
+            media_type=3,
+        )
         placed_main.append(info)
-        record += end_frame - start_frame
+        record += source_end - source_start + 1
 
     if not media_pool.AppendToTimeline(placed_main):
         raise RuntimeError("Resolve failed to append main V1 clips")
 
-    placed_broll = 0
-    # For explicit V2 overlays, recordFrame is interpreted in timeline frames.
-    # Build cumulative V1 record positions from the same source durations.
-    spans = []
-    record = 0
-    for idx, item in enumerate(main_items, start=1):
-        path = find_media(args.media_dir, str(item["sourceFile"]))
-        fps = probe_fps(path)
-        duration = frame_number(ts(item["sourceEnd"]) - ts(item["sourceStart"]), fps)
-        spans.append((record, record + duration, item))
-        record += duration
-
-    broll_infos = []
+    # V2: video-only so its camera audio does not occupy A2.
+    broll_infos: list[dict[str, Any]] = []
     for b in assembly.get("brollOverlays", []):
         source = str(b["sourceFile"])
-        if source not in by_name:
+        media = by_name.get(source)
+        if media is None:
             continue
-        timeline_start = ts(b["timelineStart"])
-        timeline_frame = int(round(float(timeline_start) * args.timeline_fps))
         path = find_media(args.media_dir, source)
         fps = probe_fps(path)
-        source_start = frame_number(ts(b["sourceStart"]), fps)
-        source_end = frame_number(ts(b["sourceEnd"]), fps)
-        if source_end <= source_start:
-            continue
-        broll_infos.append(resolve_clip_info(by_name[source], source_start, source_end, timeline_frame, 2))
-    if broll_infos:
-        if not media_pool.AppendToTimeline(broll_infos):
-            raise RuntimeError("Resolve failed to append V2 B-roll")
-        placed_broll = len(broll_infos)
+        source_start, source_end = duration_frames(
+            ts(b["sourceStart"]),
+            ts(b["sourceEnd"]),
+            fps,
+        )
+        timeline_frame = int(round(float(ts(b["timelineStart"])) * args.timeline_fps))
+        broll_infos.append(
+            clip_info(
+                media,
+                source_start,
+                source_end,
+                timeline_frame,
+                track_index=2,
+                media_type=1,
+            )
+        )
+    if broll_infos and not media_pool.AppendToTimeline(broll_infos):
+        raise RuntimeError("Resolve failed to append V2 B-roll")
 
+    # A2: music-only track, independent of video source timecode.
     music_placed = 0
     if args.music_file:
-        music_item = by_name[args.music_file.name]
+        music_item = by_name.get(args.music_file.name)
+        if music_item is None:
+            raise RuntimeError(f"Music file was not imported: {args.music_file.name}")
         for cue in assembly.get("musicCues", []):
             start = int(round(float(ts(cue["timelineStart"])) * args.timeline_fps))
             duration = int(round(float(ts(cue["duration"])) * args.timeline_fps))
@@ -256,6 +293,7 @@ def main() -> int:
                 "endFrame": duration - 1,
                 "recordFrame": start,
                 "trackIndex": 2,
+                "mediaType": 2,
             }
             if media_pool.AppendToTimeline([info]):
                 music_placed += 1
@@ -265,10 +303,12 @@ def main() -> int:
         "project": project.GetName(),
         "timeline": timeline.GetName(),
         "mainClips": len(main_items),
-        "brollPlaced": placed_broll,
+        "brollPlaced": len(broll_infos),
         "musicCuesPlaced": music_placed,
         "timelineFps": args.timeline_fps,
-        "note": "Source ranges use relative media frames; embedded camera timecode is not used for conforming.",
+        "sourceTimecodeConform": False,
+        "sourceTimingMode": "relative-media-frames",
+        "rawOriginalsModified": False,
     }, indent=2))
     return 0
 
