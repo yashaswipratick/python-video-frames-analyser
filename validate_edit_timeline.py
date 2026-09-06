@@ -28,6 +28,7 @@ ALLOWED_DECISIONS = {
     "STRONG_KEEP",
     "SHORTEN",
     "KEEP_WITH_BROLL",
+    "KEEP_WITH_EDITS",
     "KEEP_FOR_MUSIC",
     "KEEP_AS_TRANSITION",
     "KEEP_FOR_REVIEW",
@@ -62,49 +63,38 @@ ALLOWED_EVENTS = {
 
 
 def ts(value: str | int | float) -> Fraction:
+    """Parse either seconds, MM:SS(.mmm), or HH:MM:SS(.mmm)."""
     if isinstance(value, (int, float)):
         return Fraction(str(value))
-    parts = str(value).strip().split(":")
+
+    raw = str(value).strip()
+    parts = raw.split(":")
+
     if len(parts) == 1:
         return Fraction(parts[0])
-    if len(parts) != 3:
-        raise ValueError(f"invalid timestamp {value!r}")
-    h, m, s = (Fraction(part) for part in parts)
-    if not (0 <= m < 60 and 0 <= s < 60):
-        raise ValueError(f"invalid timestamp {value!r}")
-    return h * 3600 + m * 60 + s
+
+    if len(parts) == 2:
+        minutes, seconds = (Fraction(part) for part in parts)
+        if not (0 <= minutes and 0 <= seconds < 60):
+            raise ValueError(f"invalid timestamp {value!r}")
+        return minutes * 60 + seconds
+
+    if len(parts) == 3:
+        hours, minutes, seconds = (Fraction(part) for part in parts)
+        if not (0 <= hours and 0 <= minutes < 60 and 0 <= seconds < 60):
+            raise ValueError(f"invalid timestamp {value!r}")
+        return hours * 3600 + minutes * 60 + seconds
+
+    raise ValueError(f"invalid timestamp {value!r}")
 
 
 def load_timeline(path: Path) -> tuple[dict, list[str]]:
-    """Load strict JSON, with one narrowly-scoped EOF recovery.
-
-    The current checked-in edit_timeline.json contains one stray closing '}'
-    after the root object. raw_decode() lets us validate the actual root object
-    without silently accepting arbitrary trailing garbage. Any non-whitespace
-    trailing content other than exactly one '}' remains a hard error.
-    """
+    """Load the editorial timeline JSON strictly."""
     text = path.read_text(encoding="utf-8")
-    try:
-        data = json.loads(text)
-        if not isinstance(data, dict):
-            raise ValueError("root must be an object")
-        return data, []
-    except json.JSONDecodeError as exc:
-        decoder = json.JSONDecoder()
-        try:
-            data, end = decoder.raw_decode(text.lstrip())
-        except json.JSONDecodeError:
-            raise exc
-
-        trailing = text.lstrip()[end:]
-        if trailing.strip() != "}":
-            raise exc
-        if not isinstance(data, dict):
-            raise ValueError("root must be an object")
-        return data, [
-            "Recovered one stray trailing '}' after the root JSON object; "
-            "the checked-in file should be normalized in a subsequent cleanup."
-        ]
+    data = json.loads(text)
+    if not isinstance(data, dict):
+        raise ValueError("root must be an object")
+    return data, []
 
 
 def main() -> int:
