@@ -114,10 +114,26 @@ def main() -> int:
         if built.returncode != 0:
             return built.returncode
 
+    # Resolve conforms against the embedded camera timecode in the original
+    # MP4s. The pass only edits the generated FCPXML, never the source media or
+    # the editorial/assembly JSON files.
+    timecode_cmd = [
+        sys.executable,
+        "apply_source_timecode_to_fcpxml.py",
+        "--fcpxml", str(args.output),
+        "--media-dir", str(args.media_dir),
+        "--fps", str(args.fps),
+    ]
+    conformed = subprocess.run(timecode_cmd, text=True)
+    if conformed.returncode != 0:
+        print("ERROR: source timecode conform pass failed; FCPXML was generated but not marked Resolve-ready.")
+        return conformed.returncode
+
     print(json.dumps({
         "status": "READY_FOR_DAVINCI_IMPORT",
         "fcpxml": str(args.output.resolve()),
         "musicFile": str(args.music_file.resolve()),
+        "sourceTimecodeConform": True,
         "nextStep": "Import the generated FCPXML into DaVinci Resolve and relink to the original videos if Resolve asks.",
     }, indent=2))
     return 0
