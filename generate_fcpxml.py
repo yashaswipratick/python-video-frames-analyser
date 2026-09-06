@@ -11,16 +11,6 @@ Tracks:
   A1 = original source audio carried by V1 clips
   A2 = optional licensed external music bed
 
-Example:
-  python3 generate_fcpxml.py \
-    --timeline edit_timeline.json \
-    --assembly resolve_assembly.json \
-    --media-dir /Users/yashaswipratick/Documents/video-analyser/videos \
-    --output edit_timeline.fcpxml
-
-Add licensed music explicitly:
-  python3 generate_fcpxml.py ... --music-file "/path/to/track.m4a"
-
 The generator never modifies or copies original source media.
 """
 
@@ -89,15 +79,21 @@ class ParentSpan:
 def ts(value: str | int | float) -> Fraction:
     if isinstance(value, (int, float)):
         return Fraction(str(value))
-    parts = str(value).strip().split(":")
+    text = str(value).strip()
+    parts = text.split(":")
     if len(parts) == 1:
         return Fraction(parts[0])
+    if len(parts) == 2:
+        minutes, seconds = (Fraction(p) for p in parts)
+        if not (minutes >= 0 and 0 <= seconds < 60):
+            raise ValueError(f"Invalid timestamp: {value!r}")
+        return minutes * 60 + seconds
     if len(parts) != 3:
         raise ValueError(f"Invalid timestamp: {value!r}")
-    h, m, s = (Fraction(p) for p in parts)
-    if not (0 <= m < 60 and 0 <= s < 60):
+    hours, minutes, seconds = (Fraction(p) for p in parts)
+    if not (hours >= 0 and 0 <= minutes < 60 and 0 <= seconds < 60):
         raise ValueError(f"Invalid timestamp: {value!r}")
-    return h * 3600 + m * 60 + s
+    return hours * 3600 + minutes * 60 + seconds
 
 
 def fx(value: Fraction) -> str:
@@ -106,10 +102,10 @@ def fx(value: Fraction) -> str:
 
 def fmt(value: Fraction) -> str:
     total_ms = int(round(float(value) * 1000))
-    h, rem = divmod(total_ms, 3_600_000)
-    m, rem = divmod(rem, 60_000)
-    s, ms = divmod(rem, 1000)
-    return f"{h:02d}:{m:02d}:{s:02d}.{ms:03d}"
+    hours, rem = divmod(total_ms, 3_600_000)
+    minutes, rem = divmod(rem, 60_000)
+    seconds, milliseconds = divmod(rem, 1000)
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}.{milliseconds:03d}"
 
 
 def file_url(path: Path) -> str:
@@ -125,8 +121,8 @@ def find_media(media_dir: Path, filename: str) -> Path:
         raise FileNotFoundError(f"Source media not found: {filename!r} under {media_dir}")
     if len(matches) > 1:
         raise RuntimeError(
-            f"Multiple source files found for {filename!r}:\n" +
-            "\n".join(f"  {p}" for p in matches[:10])
+            f"Multiple source files found for {filename!r}:\n"
+            + "\n".join(f"  {p}" for p in matches[:10])
         )
     return matches[0]
 
@@ -233,13 +229,22 @@ def add_asset(
     attrs = {
         "id": ref,
         "name": name,
-        "src": file_url(path),
         "start": "0s",
         "duration": fx(duration) if duration and duration > 0 else "0s",
         "hasVideo": "1" if video else "0",
         "hasAudio": "1" if audio else "0",
     }
-    ET.SubElement(resources, "asset", attrs)
+    if video:
+        attrs["format"] = "r1"
+    asset = ET.SubElement(resources, "asset", attrs)
+    ET.SubElement(
+        asset,
+        "media-rep",
+        {
+            "kind": "original-media",
+            "src": file_url(path),
+        },
+    )
 
 
 def source_duration_requirements(
@@ -362,6 +367,7 @@ def generate(
                 "start": fx(span.clip.start),
                 "duration": fx(span.clip.duration),
                 "enabled": "1",
+                "format": "r1",
             },
         )
 
@@ -384,9 +390,9 @@ def generate(
                     "start": fx(overlay.source_start),
                     "duration": fx(duration),
                     "enabled": "1",
+                    "format": "r1",
                 },
             )
-            # Preserve A1 dialogue; B-roll camera audio is muted.
             ET.SubElement(overlay_clip, "adjust-volume", {"amount": "-96dB"})
             placed_overlays += 1
 
