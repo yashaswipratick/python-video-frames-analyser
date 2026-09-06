@@ -17,11 +17,14 @@ from pathlib import Path
 
 
 def tc_to_seconds(value: str, fps: int) -> Fraction:
-    parts = value.strip().split(":")
+    text = value.strip().replace(";", ":")
+    parts = text.split(":")
     if len(parts) != 4:
-        raise ValueError(f"Unsupported source timecode {value!r}; expected HH:MM:SS:FF")
+        raise ValueError(
+            f"Unsupported source timecode {value!r}; expected HH:MM:SS:FF or HH:MM:SS;FF"
+        )
     hours, minutes, seconds, frames = (int(part) for part in parts)
-    if not (0 <= minutes < 60 and 0 <= seconds < 60 and 0 <= frames < fps):
+    if not (hours >= 0 and 0 <= minutes < 60 and 0 <= seconds < 60 and 0 <= frames < fps):
         raise ValueError(f"Invalid source timecode {value!r} for {fps} fps")
     return Fraction(hours * 3600 + minutes * 60 + seconds) + Fraction(frames, fps)
 
