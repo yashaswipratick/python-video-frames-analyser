@@ -75,23 +75,51 @@ def ts(value: str | int | float) -> Fraction:
     return h * 3600 + m * 60 + s
 
 
+def load_timeline(path: Path) -> tuple[dict, list[str]]:
+    """Load strict JSON, with one narrowly-scoped EOF recovery.
+
+    The current checked-in edit_timeline.json contains one stray closing '}'
+    after the root object. raw_decode() lets us validate the actual root object
+    without silently accepting arbitrary trailing garbage. Any non-whitespace
+    trailing content other than exactly one '}' remains a hard error.
+    """
+    text = path.read_text(encoding="utf-8")
+    try:
+        data = json.loads(text)
+        if not isinstance(data, dict):
+            raise ValueError("root must be an object")
+        return data, []
+    except json.JSONDecodeError as exc:
+        decoder = json.JSONDecoder()
+        try:
+            data, end = decoder.raw_decode(text.lstrip())
+        except json.JSONDecodeError:
+            raise exc
+
+        trailing = text.lstrip()[end:]
+        if trailing.strip() != "}":
+            raise exc
+        if not isinstance(data, dict):
+            raise ValueError("root must be an object")
+        return data, [
+            "Recovered one stray trailing '}' after the root JSON object; "
+            "the checked-in file should be normalized in a subsequent cleanup."
+        ]
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--timeline", type=Path, default=Path("edit_timeline.json"))
     args = parser.parse_args()
 
     try:
-        data = json.loads(args.timeline.read_text(encoding="utf-8"))
+        data, load_warnings = load_timeline(args.timeline)
     except Exception as exc:
         print(f"ERROR: cannot read timeline: {exc}")
         return 1
 
     errors: list[str] = []
-    warnings: list[str] = []
-
-    if not isinstance(data, dict):
-        errors.append("root must be an object")
-        data = {}
+    warnings: list[str] = list(load_warnings)
 
     master = data.get("masterTimeline")
     if not isinstance(master, list) or not master:
@@ -179,7 +207,7 @@ def main() -> int:
 
     if data.get("musicSections"):
         warnings.append(
-            "musicSections identify visual music-worthy footage; no licensed external audio is assumed by the generator"
+            "musicSections identify visual music-worthy footage; licensed external audio is supplied separately at build time"
         )
 
     result = {
