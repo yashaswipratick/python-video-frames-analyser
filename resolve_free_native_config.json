@@ -1,0 +1,9 @@
+{
+  "assembly": "/Users/yashaswipratick/projects/python-video-frames-analyser/resolve_assembly.json",
+  "mediaDir": "/Users/yashaswipratick/Documents/video-analyser/videos",
+  "musicFile": "/Users/yashaswipratick/Documents/video-analyser/videos/Warriyo-Laura Brehm-Mortals.mp3",
+  "timelineName": "Kaiwara_Kailasagiri_Final_Edit",
+  "timelineFrameRate": 30,
+  "timelineWidth": 1920,
+  "timelineHeight": 1080
+}
