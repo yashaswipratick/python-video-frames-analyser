@@ -1,9 +1,9 @@
 -- Kaiwara / Kailasagiri edit verification helper
 --
--- Purpose: make the already-built edit timeline the CURRENT Resolve timeline.
+-- Purpose: make the already-built edit timeline the CURRENT Resolve timeline
+-- and move the playhead to the first generated clip so the timeline is
+-- immediately visible for verification.
 -- No duplicate, compound clip, or media insertion is performed.
--- This avoids unnecessary Resolve API operations and lets the user verify
--- the exact generated edit directly in the Edit page.
 
 local SOURCE_TIMELINE = "Kaiwara_Kailasagiri_Final_Edit_Lua"
 
@@ -84,6 +84,19 @@ local function findTimelineInProject(project, name)
     return nil
 end
 
+local function getItemPosition(item)
+    local okStart, startFrame = pcall(function()
+        return item:GetStart()
+    end)
+    local okEnd, endFrame = pcall(function()
+        return item:GetEnd()
+    end)
+    if okStart then
+        return tonumber(startFrame) or 0, (okEnd and tonumber(endFrame)) or nil
+    end
+    return nil, nil
+end
+
 local ok, err = xpcall(function()
     local resolve = getResolve()
     assert(resolve, "Could not obtain Resolve API")
@@ -99,18 +112,55 @@ local ok, err = xpcall(function()
     local timeline = findTimelineInProject(project, SOURCE_TIMELINE)
     assert(timeline, "Could not find source timeline in current project: " .. SOURCE_TIMELINE)
 
-    local v1 = #(timeline:GetItemListInTrack("video", 1) or {})
-    local v2 = #(timeline:GetItemListInTrack("video", 2) or {})
-    local a1 = #(timeline:GetItemListInTrack("audio", 1) or {})
-    local a2 = #(timeline:GetItemListInTrack("audio", 2) or {})
+    local v1Items = timeline:GetItemListInTrack("video", 1) or {}
+    local v2Items = timeline:GetItemListInTrack("video", 2) or {}
+    local a1Items = timeline:GetItemListInTrack("audio", 1) or {}
+    local a2Items = timeline:GetItemListInTrack("audio", 2) or {}
 
-    project:SetCurrentTimeline(timeline)
+    local firstItem = v1Items[1]
+    local firstStartFrame, firstEndFrame = nil, nil
+    if firstItem then
+        firstStartFrame, firstEndFrame = getItemPosition(firstItem)
+    end
+
+    local setTimelineOk, setTimelineErr = pcall(function()
+        project:SetCurrentTimeline(timeline)
+    end)
+    assert(setTimelineOk, "Could not set current timeline: " .. tostring(setTimelineErr))
+
+    -- Put Resolve on the Edit page.
+    pcall(function()
+        resolve:OpenPage("edit")
+    end)
+
+    -- Force the playhead onto the first generated clip.  Different Resolve
+    -- versions expose slightly different timeline-position helpers, so use
+    -- the frame value with protected calls and report what succeeded.
+    local positioned = false
+    if firstStartFrame ~= nil then
+        local okPos = pcall(function()
+            timeline:SetCurrentTimecode(firstStartFrame)
+        end)
+        if okPos then
+            positioned = true
+        else
+            okPos = pcall(function()
+                timeline:SetCurrentFrame(firstStartFrame)
+            end)
+            if okPos then
+                positioned = true
+            end
+        end
+    end
 
     print("KAIWARA VERIFY: current timeline set to " .. timeline:GetName())
-    print("KAIWARA VERIFY: V1 items = " .. tostring(v1))
-    print("KAIWARA VERIFY: V2 items = " .. tostring(v2))
-    print("KAIWARA VERIFY: A1 items = " .. tostring(a1))
-    print("KAIWARA VERIFY: A2 items = " .. tostring(a2))
+    print("KAIWARA VERIFY: V1 items = " .. tostring(#v1Items))
+    print("KAIWARA VERIFY: V2 items = " .. tostring(#v2Items))
+    print("KAIWARA VERIFY: A1 items = " .. tostring(#a1Items))
+    print("KAIWARA VERIFY: A2 items = " .. tostring(#a2Items))
+    print("KAIWARA VERIFY: first V1 start frame = " .. tostring(firstStartFrame))
+    print("KAIWARA VERIFY: first V1 end frame = " .. tostring(firstEndFrame))
+    print("KAIWARA VERIFY: playhead positioned = " .. tostring(positioned))
 
     success(string.format([[
 KAIWARA EDIT TIMELINE READY
@@ -122,10 +172,16 @@ V2 B-roll clips: %d
 A1 audio clips: %d
 A2 audio/music clips: %d
 
-Resolve is now showing the generated edit timeline directly.
+First V1 clip start frame: %s
+First V1 clip end frame: %s
+Playhead positioned: %s
+
+Resolve has been switched to the Edit page and the generated edit timeline is current.
 No clips were duplicated or modified.
-Press Play on the Edit page to verify the complete edit.]],
-        timeline:GetName(), v1, v2, a1, a2
+
+Press Play now.]],
+        timeline:GetName(), #v1Items, #v2Items, #a1Items, #a2Items,
+        tostring(firstStartFrame), tostring(firstEndFrame), tostring(positioned)
     ))
 end, debug.traceback)
 
