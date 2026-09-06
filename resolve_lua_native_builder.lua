@@ -111,7 +111,6 @@ function JSON.decode(text)
                 end
             else
                 out[#out + 1] = c
-                pos = pos + 1
             end
         end
         error("unterminated JSON string")
@@ -257,7 +256,6 @@ local function collectNames(assembly)
             names[#names + 1] = name
         end
     end
-
     for _, item in ipairs(assembly.mainTimeline or {}) do
         add(item.sourceFile)
     end
@@ -406,6 +404,18 @@ local function main()
 
     local byName = importMissing(mediaPool, root, collectNames(assembly))
     local timeline, timelineName = createTimeline(mediaPool, CONFIG.timelineName)
+
+    -- Resolve creates timelines with a default start timecode of 01:00:00:00.
+    -- Our assembly recordFrame positions are timeline-relative (0 = first frame),
+    -- so explicitly set the new timeline start to 00:00:00:00 before inserting.
+    local startTcOk = false
+    pcall(function()
+        startTcOk = timeline:SetStartTimecode("00:00:00:00") == true
+    end)
+    if not startTcOk then
+        error("Could not set timeline start timecode to 00:00:00:00")
+    end
+
     project:SetCurrentTimeline(timeline)
     ensureTracks(timeline)
 
@@ -415,8 +425,6 @@ local function main()
     local brollPlaced = 0
     local musicPlaced = 0
 
-    -- Main story is inserted once as linked A/V so Resolve maintains native
-    -- source-video/source-audio synchronization and playback characteristics.
     for idx, item in ipairs(assembly.mainTimeline or {}) do
         local name = tostring(item.sourceFile)
         local mediaItem = byName[name]
@@ -438,7 +446,6 @@ local function main()
         log(string.format("MAIN %02d/%02d %s", idx, #assembly.mainTimeline, tostring(item.section or "")))
     end
 
-    -- Explicit B-roll overlays. timelineStart is relative to the beginning of V1.
     for idx, item in ipairs(assembly.brollOverlays or {}) do
         local name = tostring(item.sourceFile)
         local mediaItem = byName[name]
@@ -453,7 +460,6 @@ local function main()
         end
     end
 
-    -- External music cues on A2.
     local musicItem = byName["Warriyo-Laura Brehm-Mortals.mp3"]
     if musicItem then
         for idx, cue in ipairs(assembly.musicCues or {}) do
@@ -481,6 +487,7 @@ local function main()
         [[RESOLVE LUA BUILDER COMPLETE
 
 Timeline: %s
+Start timecode: %s
 Main linked A/V clips: %d/%d
 Linked main audio clips: %d/%d
 V2 B-roll clips: %d/%d
@@ -490,6 +497,7 @@ Frame rate: 29.97
 Resolution: %dx%d
 Original media modified: NO]],
         timelineName,
+        tostring(timeline:GetStartTimecode()),
         mainPlaced, totalMain,
         audioPlaced, totalMain,
         brollPlaced, totalBroll,
