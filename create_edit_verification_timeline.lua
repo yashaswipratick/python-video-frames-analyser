@@ -1,13 +1,8 @@
--- Kaiwara / Kailasagiri edit verification timeline
+-- Kaiwara / Kailasagiri edit verification helper
 --
--- Purpose:
---   Take the already-built Kaiwara_Kailasagiri_Final_Edit_Lua timeline,
---   duplicate it, turn the duplicate into a compound clip, and place that
---   compound clip into a fresh verification timeline.
---
--- This gives a clearly visible timeline clip that can be played to verify
--- picture/audio playback without modifying the original edited timeline.
--- The compound clip retains the edit internally, including V1/V2/A1/A2.
+-- Finds the generated edit timeline inside the CURRENT Resolve PROJECT,
+-- duplicates it, and creates a separate verification timeline.
+-- It does not modify the original edited timeline.
 
 local SOURCE_TIMELINE = "Kaiwara_Kailasagiri_Final_Edit_Lua"
 local COMPOUND_NAME = "Kaiwara_EDIT_VERIFICATION_COMPOUND"
@@ -48,18 +43,63 @@ local function getResolve()
     return nil
 end
 
-local function safeTimelineByName(pm, name)
-    local ok, result = pcall(function()
-        return pm:GetTimelineList()
+-- IMPORTANT: timeline lookup is project-scoped. Resolve's Project API exposes
+-- GetTimelineCount/GetTimelineByIndex; ProjectManager:GetTimelineList() is not
+-- reliable for this sandboxed Resolve build.
+local function findTimelineInProject(project, name)
+    -- Fast path: the generated timeline may already be the current timeline.
+    local okCurrent, current = pcall(function()
+        return project:GetCurrentTimeline()
     end)
-    if ok and result then
-        for _, tl in ipairs(result) do
-            if tl:GetName() == name then
-                return tl
+    if okCurrent and current then
+        local okName, currentName = pcall(function()
+            return current:GetName()
+        end)
+        if okName and currentName == name then
+            return current
+        end
+    end
+
+    local okCount, count = pcall(function()
+        return project:GetTimelineCount()
+    end)
+    if not okCount or not count then
+        return nil
+    end
+
+    count = tonumber(count) or 0
+    for index = 1, count do
+        local okTimeline, timeline = pcall(function()
+            return project:GetTimelineByIndex(index)
+        end)
+        if okTimeline and timeline then
+            local okName, timelineName = pcall(function()
+                return timeline:GetName()
+            end)
+            if okName and timelineName == name then
+                return timeline
             end
         end
     end
+
     return nil
+end
+
+local function uniqueTimeline(project, mediaPool, baseName)
+    local timeline = mediaPool:CreateEmptyTimeline(baseName)
+    if timeline then
+        return timeline, baseName
+    end
+
+    for i = 2, 99 do
+        local candidate = baseName .. "_Run" .. tostring(i)
+        timeline = mediaPool:CreateEmptyTimeline(candidate)
+        if timeline then
+            return timeline, candidate
+        end
+    end
+
+    error("Could not create verification timeline: " .. baseName)
 end
 
 local ok, err = xpcall(function()
@@ -72,8 +112,10 @@ local ok, err = xpcall(function()
     local project = pm:GetCurrentProject()
     assert(project, "No current Resolve project")
 
-    local sourceTimeline = safeTimelineByName(pm, SOURCE_TIMELINE)
-    assert(sourceTimeline, "Could not find source timeline: " .. SOURCE_TIMELINE)
+    print("KAIWARA VERIFY: project = " .. tostring(project:GetName()))
+
+    local sourceTimeline = findTimelineInProject(project, SOURCE_TIMELINE)
+    assert(sourceTimeline, "Could not find source timeline in current project: " .. SOURCE_TIMELINE)
 
     print("KAIWARA VERIFY: source timeline = " .. sourceTimeline:GetName())
     print("KAIWARA VERIFY: source V1 items = " .. tostring(#(sourceTimeline:GetItemListInTrack("video", 1) or {})))
@@ -81,22 +123,21 @@ local ok, err = xpcall(function()
     print("KAIWARA VERIFY: source A1 items = " .. tostring(#(sourceTimeline:GetItemListInTrack("audio", 1) or {})))
     print("KAIWARA VERIFY: source A2 items = " .. tostring(#(sourceTimeline:GetItemListInTrack("audio", 2) or {})))
 
-    -- Duplicate first, so the original edited timeline is never modified.
+    -- Safely duplicate the existing edit.
     local duplicateName = SOURCE_TIMELINE .. "_VERIFY_SOURCE"
     local duplicate = nil
-    pcall(function()
+
+    local okDuplicate = pcall(function()
         duplicate = sourceTimeline:DuplicateTimeline(duplicateName)
     end)
 
-    if not duplicate then
-        -- Fall back to a unique duplicate name if a previous verification run
-        -- left one behind.
+    if not okDuplicate or not duplicate then
         for i = 2, 99 do
             local candidate = duplicateName .. "_" .. tostring(i)
-            pcall(function()
+            local attemptOk = pcall(function()
                 duplicate = sourceTimeline:DuplicateTimeline(candidate)
             end)
-            if duplicate then
+            if attemptOk and duplicate then
                 duplicateName = candidate
                 break
             end
@@ -119,11 +160,9 @@ local ok, err = xpcall(function()
     end
 
     assert(#allItems > 0, "Duplicated timeline contains no timeline items")
-    print("KAIWARA VERIFY: duplicate items collected = " .. tostring(#allItems))
+    print("KAIWARA VERIFY: duplicated timeline items = " .. tostring(#allItems))
 
-    -- Create a compound clip from the duplicated edit. Resolve's API provides
-    -- CreateCompoundClip([timelineItems], clipInfo); this preserves the
-    -- internal multi-track edit while making it usable as a single timeline item.
+    -- Create compound clip from every item in the duplicated edit.
     local compound = duplicate:CreateCompoundClip(allItems, {
         startTimecode = "01:00:00:00",
         name = COMPOUND_NAME
@@ -133,25 +172,12 @@ local ok, err = xpcall(function()
     local compoundMedia = compound:GetMediaPoolItem()
     assert(compoundMedia, "Compound clip has no Media Pool item")
 
-    print("KAIWARA VERIFY: compound media pool item = " .. compoundMedia:GetName())
+    print("KAIWARA VERIFY: compound media = " .. compoundMedia:GetName())
 
     local mediaPool = project:GetMediaPool()
     assert(mediaPool, "Media Pool unavailable")
 
-    local verifyName = VERIFY_TIMELINE
-    local verifyTimeline = mediaPool:CreateEmptyTimeline(verifyName)
-    if not verifyTimeline then
-        for i = 2, 99 do
-            local candidate = VERIFY_TIMELINE .. "_Run" .. tostring(i)
-            verifyTimeline = mediaPool:CreateEmptyTimeline(candidate)
-            if verifyTimeline then
-                verifyName = candidate
-                break
-            end
-        end
-    end
-    assert(verifyTimeline, "Could not create verification timeline")
-
+    local verifyTimeline, verifyName = uniqueTimeline(project, mediaPool, VERIFY_TIMELINE)
     project:SetCurrentTimeline(verifyTimeline)
 
     local placed = mediaPool:AppendToTimeline({{
@@ -166,14 +192,17 @@ local ok, err = xpcall(function()
     success(string.format([[
 KAIWARA VERIFICATION TIMELINE READY
 
-Timeline: %s
-Visible clip: %s
+Source: %s
+Verification timeline: %s
+Visible verification clip: %s
 
-The visible clip contains the complete edited timeline internally:
-V1 main story + V2 B-roll + A1 source audio + A2 music.
+Source tracks:
+V1 + V2 + A1 + A2
 
-Play this verification timeline to check audio speed, distortion,
-vibration and A/V sync. The original edited timeline was not modified.]],
+The original edited timeline was not modified.
+Play the verification timeline to inspect video, voice speed,
+distortion/vibration and background music.]],
+        SOURCE_TIMELINE,
         verifyName,
         compoundMedia:GetName()
     ))
