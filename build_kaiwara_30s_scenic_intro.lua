@@ -1,39 +1,36 @@
 -- Kaiwara / Kailasagiri Hills - 30 SECOND SCENIC INTRO
 --
 -- Standalone intro builder.
--- Creates a separate ~30s Resolve timeline made ONLY from scenic visuals:
+-- Creates a separate 30s Resolve timeline made ONLY from scenic visuals:
 -- landscape, mountain, scenic roads, destination reveals and off-road.
 -- Source audio is intentionally excluded; Mortals.mp3 is placed on A1.
 --
 -- This does NOT modify the Human Story timeline or any source media.
--- The visual sequence is deliberately edited as a cinematic cold-open:
+-- The visual sequence is edited as a cinematic cold-open with progression:
 -- ROAD -> LANDSCAPE -> HILL -> REVEAL -> OFF-ROAD -> MOUNTAIN PAYOFF.
 --
--- The exact ranges below come from the reviewed footage pool already analyzed.
--- We use multiple source videos rather than one long clip so the intro has
--- visual progression and does not feel like a random road montage.
+-- The source ranges are taken from the reviewed footage pool already analyzed.
+-- The sequence deliberately samples different source videos so the intro feels
+-- like a trailer for the day's journey rather than one long road shot.
 
 local MEDIA_DIR = "/Users/yashaswipratick/Documents/video-analyser/videos"
 local MUSIC_FILE = "Warriyo-Laura Brehm-Mortals.mp3"
 local TIMELINE_BASE = "Kaiwara_30s_Scenic_Intro"
-local FPS = 29.97
 local FPSN, FPSD = 30000, 1001
 
--- Each item is:
--- label, sourceFile, sourceStartSec, sourceEndSec, intended visual role
--- Durations are intentionally short. Total visual duration is approximately 30s.
+-- IMPORTANT: these durations total exactly 30.0 seconds.
+-- label, sourceFile, sourceStartSec, sourceEndSec, visualRole
 local SHOTS = {
-    {"01_SCENIC_ROAD_OPEN", "DJI_20260830141219_0232_D.MP4", 4.820, 8.220, "SCENIC ROAD"},
-    {"02_ROAD_PROGRESS", "DJI_20260830141434_0233_D.MP4", 68.690, 72.190, "ROAD / JOURNEY"},
-    {"03_HILL_APPROACH", "DJI_20260830150748_0245-1_D.MP4", 0.620, 4.620, "MOUNTAIN APPROACH"},
-    {"04_HILL_REVEAL", "DJI_20260830150748_0245_D.MP4", 0.000, 4.000, "LANDSCAPE REVEAL"},
-    {"05_MOUNTAIN_ESTABLISHING", "DJI_20260830151054_0246_D.MP4", 0.000, 3.500, "MOUNTAIN / ESTABLISHING"},
-    {"06_CAVE_SURROUNDINGS", "DJI_20260830160147_0267_D.MP4", 68.690, 71.810, "SCENERY / DESTINATION"},
-    {"07_OFFROAD_TERRAIN", "DJI_20260830165231_0284-1_D.MOV", 28.430, 32.430, "OFF-ROAD"},
-    {"08_OFFROAD_CLIMB", "DJI_20260830165745_0285_D.MP4", 3.860, 7.860, "OFF-ROAD CLIMB"},
-    {"09_STRONG_ROCKY_CLIMB", "DJI_20260830165745_0285_D.MP4", 35.220, 40.220, "OFF-ROAD ESCALATION"},
-    {"10_HIGHER_ROUTE", "DJI_20260830173839_0290_D.MP4", 20.140, 24.140, "ADVENTURE / HIGHER"},
-    {"11_MOUNTAIN_VIEW_PAYOFF", "DJI_20260830165231_0284-2_D.MOV", 0.000, 3.200, "MOUNTAIN PAYOFF"}
+    {"01_SCENIC_ROAD_OPEN", "DJI_20260830141219_0232_D.MP4", 4.820, 7.320, "SCENIC ROAD"},
+    {"02_ROAD_PROGRESS", "DJI_20260830141434_0233_D.MP4", 61.500, 64.500, "ROAD / JOURNEY"},
+    {"03_HILL_APPROACH", "DJI_20260830150748_0245-1_D.MP4", 0.620, 3.620, "MOUNTAIN APPROACH"},
+    {"04_HILL_REVEAL", "DJI_20260830150748_0245_D.MP4", 0.000, 3.000, "LANDSCAPE REVEAL"},
+    {"05_MOUNTAIN_ESTABLISHING", "DJI_20260830151054_0246_D.MP4", 0.000, 3.000, "MOUNTAIN / ESTABLISHING"},
+    {"06_DESTINATION_SCENERY", "DJI_20260830160147_0267_D.MP4", 68.690, 71.190, "DESTINATION SCENERY"},
+    {"07_OFFROAD_TERRAIN", "DJI_20260830165231_0284-1_D.MOV", 28.430, 31.430, "OFF-ROAD"},
+    {"08_OFFROAD_CLIMB", "DJI_20260830165745_0285_D.MP4", 3.860, 6.860, "OFF-ROAD CLIMB"},
+    {"09_HIGHER_ROUTE", "DJI_20260830173839_0290_D.MP4", 20.140, 23.140, "ADVENTURE / HIGHER"},
+    {"10_MOUNTAIN_VIEW_PAYOFF", "DJI_20260830165231_0284-2_D.MOV", 0.000, 4.000, "MOUNTAIN PAYOFF"}
 }
 
 local function popup(title, text)
@@ -62,17 +59,17 @@ local function findRootClip(root, name)
     return nil
 end
 
-local function getClipProperty(item, key)
+local function clipProp(item, key)
     local ok, value = pcall(function() return item:GetClipProperty(key) end)
     if ok then return value end
     return nil
 end
 
 local function numericFrames(item)
-    local n = tonumber(getClipProperty(item, "Frames"))
+    local n = tonumber(clipProp(item, "Frames"))
     if n and n > 0 then return math.floor(n) end
 
-    local duration = tostring(getClipProperty(item, "Duration") or "")
+    local duration = tostring(clipProp(item, "Duration") or "")
     local h, m, s, f = duration:match("^(%d+):(%d+):(%d+):(%d+)$")
     if h then
         return math.floor(((tonumber(h) * 3600) + (tonumber(m) * 60) + tonumber(s)) * (FPSN / FPSD) + tonumber(f) + 0.5)
@@ -91,9 +88,7 @@ local function ensureMedia(root, mediaPool, filename)
     local imported = mediaPool:ImportMedia({MEDIA_DIR .. "/" .. filename})
     if imported then
         for _, candidate in ipairs(imported) do
-            if candidate:GetName() == filename then
-                return candidate
-            end
+            if candidate:GetName() == filename then return candidate end
         end
     end
     return nil
@@ -116,6 +111,9 @@ local function validateRange(item, startSec, endSec)
     local total = assert(numericFrames(item), "Could not determine frames for " .. item:GetName())
     local startFrame = math.max(0, secondsToFrames(startSec))
     local endFrame = math.min(total - 1, math.max(startFrame, secondsToFrames(endSec) - 1))
+    if endFrame < startFrame then
+        error(string.format("Invalid range %.3f-%.3f for %s", startSec, endSec, item:GetName()))
+    end
     return startFrame, endFrame, endFrame - startFrame + 1
 end
 
@@ -130,7 +128,7 @@ local function appendVideoOnly(mediaPool, timeline, root, row, recordFrame)
         endFrame = endFrame,
         recordFrame = recordFrame,
         trackIndex = 1,
-        mediaType = 1 -- VIDEO ONLY: do not bring original camera audio into the scenic intro
+        mediaType = 1
     }})
 
     if not result or #result == 0 then
@@ -151,12 +149,11 @@ local function appendVideoOnly(mediaPool, timeline, root, row, recordFrame)
     return recordFrame + frames, frames
 end
 
-local function addMusic(mediaPool, timeline, root, recordStartFrame, durationFrames)
+local function addMusic(mediaPool, timeline, root, durationFrames)
     local musicItem = assert(ensureMedia(root, mediaPool, MUSIC_FILE), "Missing music: " .. MUSIC_FILE)
     local totalMusicFrames = assert(numericFrames(musicItem), "Could not determine music duration")
-
     local remaining = durationFrames
-    local record = recordStartFrame
+    local record = 0
     local source = 0
     local guard = 0
 
@@ -175,7 +172,7 @@ local function addMusic(mediaPool, timeline, root, recordStartFrame, durationFra
             endFrame = source + take - 1,
             recordFrame = record,
             trackIndex = 1,
-            mediaType = 2 -- AUDIO ONLY
+            mediaType = 2
         }})
 
         if not result or #result == 0 then
@@ -189,10 +186,10 @@ local function addMusic(mediaPool, timeline, root, recordStartFrame, durationFra
 
     pcall(function()
         timeline:AddMarker(
-            recordStartFrame,
+            0,
             "Green",
             "MUSIC_MORTALS",
-            "Warriyo - Laura Brehm - Mortals | scenic intro bed | lower under any retained natural sound",
+            "Warriyo - Laura Brehm - Mortals | full 30s scenic intro music bed",
             math.max(1, durationFrames),
             "MUSIC"
         )
@@ -200,7 +197,7 @@ local function addMusic(mediaPool, timeline, root, recordStartFrame, durationFra
 end
 
 local function main()
-    popup("Kaiwara 30s Scenic Intro", "STARTED\n\nBuilding a separate 30-second cinematic scenic intro from the reviewed footage pool.")
+    popup("Kaiwara 30s Scenic Intro", "STARTED\n\nBuilding a separate 30-second scenic cold-open from the reviewed video pool.")
 
     local resolve = assert(getResolve(), "Resolve API unavailable")
     local projectManager = assert(resolve:GetProjectManager(), "Project Manager unavailable")
@@ -238,14 +235,18 @@ local function main()
         shotCount = shotCount + 1
     end
 
-    -- Normalize the visual duration to approximately exactly 30s without
-    -- changing any source media. The selected shot total is designed to land
-    -- close to 30s; this script intentionally reports the actual result.
-    addMusic(mediaPool, timeline, root, 0, totalFrames)
+    -- With the exact ranges above, totalFrames should represent 30.00 seconds.
+    -- Music is added underneath for the complete intro duration.
+    addMusic(mediaPool, timeline, root, totalFrames)
 
     project:SetCurrentTimeline(timeline)
 
     local durationSeconds = totalFrames / (FPSN / FPSD)
+    local withinTolerance = math.abs(durationSeconds - 30.0) < 0.08
+    if not withinTolerance then
+        error(string.format("Intro duration validation failed: %.3fs (expected ~30s)", durationSeconds))
+    end
+
     popup(
         "Kaiwara 30s Scenic Intro",
         string.format([[COMPLETE
@@ -262,11 +263,11 @@ Effects: NONE
 Source media modified: NO
 
 VISUAL ARC
-Scenic road -> road progression -> mountain approach -> hill reveal ->
+Road -> road progression -> mountain approach -> hill reveal ->
 mountain establishing -> destination scenery -> off-road -> rocky climb ->
 higher route -> mountain payoff
 
-This timeline is intentionally separate from the main vlog edit.]], timelineName, shotCount, durationSeconds)
+This timeline is completely separate from the main vlog edit.]], timelineName, shotCount, durationSeconds)
 end
 
 local ok, err = xpcall(main, debug.traceback)
